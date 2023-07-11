@@ -7,7 +7,6 @@ body{
 :root, h1,h2, h3, p{
   margin: 0px;
   color: #141414 ,  #707070, #fff, #101010, #010000;
-  background: linear-gradient(#E8651A,#F98C28 );
 }
 
 ul {
