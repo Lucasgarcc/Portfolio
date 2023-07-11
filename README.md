@@ -22,7 +22,6 @@
 <p align="left">🤵🏾 Content: About Me<br>📚 Knowledge: My current experiences<br> 💻 Projects: Current projects and future projects.<br> 📞 Contact: contact area where you can find me, related to proposals and opportunities</p>
 ###
 <h1 align=left>Technologies used in this project.</h1>
-###
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
