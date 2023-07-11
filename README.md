@@ -5,7 +5,7 @@
 
 <p>Starting my project with the aim of demonstrating my skills and knowledge, which I have obtained since college until today.</p>
 ###
-#<h1>This Project contains the following features.</h1>
+<h1>This Project contains the following features.</h1>
 
 <h1 align="left"></h1>
 
