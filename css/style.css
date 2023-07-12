@@ -628,7 +628,7 @@ img {
   left: 4px;
   }
 .intro p::before {
-  background: url("../img/icones/det2.svg") no-repeat center;
+  background: url("/img/icones/det2.svg") no-repeat center;
   left: -67px;
   top: 25rem;
   }
@@ -637,7 +637,7 @@ img {
 @media  ( max-width: 320px){
 
 .intro p::before {
-  background: url("../img/icones/det2.svg") no-repeat center;
+  background: url("/img/icones/det2.svg") no-repeat center;
   left: -67px;
   top: 29rem;
   }
