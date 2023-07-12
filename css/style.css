@@ -6,7 +6,6 @@ body{
 
 :root, h1,h2, h3, p{
   margin: 0px;
-  color: #141414 ,  #707070, #fff, #101010, #010000;
 }
 
 ul {
@@ -15,10 +14,6 @@ ul {
  list-style: none;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
 
 /* Header - Cabeçalho */
 .header{
@@ -131,7 +126,7 @@ img {
     background: #e8651a;
     right:  0px;
     z-index: 1000;
-    transition: o.6s;
+    transition: 0.6s;
     visibility: hidden;
     overflow-y: hidden;
   }
@@ -343,14 +338,14 @@ img {
 
 /* Introduction - Introdução */
 
-/* background do menu */
+/* background da introdução */
 .fundo{
   margin: 0px;
   background: #101010;
-  width: 85%;
+  width: 86%;
   height: 440px;
   position: absolute;
-  left: 15%;
+  left: 12%;
   top: 170px;
   z-index: 0;
 } 
@@ -365,7 +360,7 @@ img {
 }
 
 .intro img {
-  width: 100%;
+  max-width: 100%;
   height: 572px;
   position: relative;
   top: -50px;
@@ -405,8 +400,8 @@ img {
 /* decoration down */
 .decoracao2{
   position: relative;
-  right: 27.5rem;
-  bottom: -30rem;
+  right: 31.5rem;
+  bottom: -31rem;
   z-index: -1;
 }
 
