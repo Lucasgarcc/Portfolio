@@ -300,7 +300,7 @@ ul {
 }
 @media  (max-width: 414px) {
   .garcia2 {
-    min-width: 24%;
+    min-width: 20%;
     left: 80px;
   }
   #nav.active #header--menu {
