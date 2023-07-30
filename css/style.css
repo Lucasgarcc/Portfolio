@@ -3411,6 +3411,13 @@ a span {
     left: -2%;
     z-index: 2;
   }
+  #perfil-2 {
+    width: 170%;
+    height: 75%;
+    position: relative;
+    top: 17%;
+    left: -10px;
+  }
   .competencia {
     padding: 10px;
     width: max(280px);
