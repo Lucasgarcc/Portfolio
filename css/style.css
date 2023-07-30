@@ -3225,7 +3225,7 @@ a span {
   }
   .hobbies--section{
     padding: 0px;
-    margin: 1500px auto;
+    margin: 1600px auto;
   }
   .hobbies--section h2, .hobbies--descricao {
     word-wrap: break-word;
@@ -3263,7 +3263,7 @@ a span {
   .footer {
     width: (93.4%);
     padding: 0px ;
-    margin: 2350px auto;
+    margin: 2400px auto;
   }
   .footer-contatiner{
     gap: 50px;
@@ -3281,21 +3281,32 @@ a span {
 /* IOS Swift */
 @media (max-width: 375px){
   .intro {
-    width: max(90.5%);
+    width: max(90%);
+  }
+  .sobre {
+    padding: 1.6rem;
+  }
+  .sobre--descricao {
+    padding: 0px;
+    margin-left: 22px;
+    display: grid;
+    justify-items: start;
+    grid-column: 1 / 7;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight:400
   }
   .fundo-section-2 {
     height: 1750px;
   }
   .section-2-box{
     padding-top: 40px;
-    width: max(90.1%);
   }
   .section-2-box .title-h2 {
     padding-top: -20px;
-    width: max(350px);
     position: relative;
     top: 40px;
-    left: -10px;
+    left: -46px;
     word-wrap: break-word;
     font-size: 2.5rem;
   }
@@ -3316,7 +3327,7 @@ a span {
     width: max(80%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: -2%;
+    margin-left: -8%;
     position: relative;
     justify-content: space-around;
   }
