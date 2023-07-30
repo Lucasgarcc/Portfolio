@@ -3349,7 +3349,13 @@ a span {
     margin: 1530px auto;
   }
 }
+
 /*androids */
+@media (min-width: 375px) {
+  .fundo-section-2 {
+    height: 1790px;
+  }
+}
 @media (max-width: 360px) {
   .intro {
     width: max(89.5%);
