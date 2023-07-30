@@ -3332,8 +3332,8 @@ a span {
     justify-content: space-around;
   }
   .box-competencia::before {
-  left: 10px;
-  z-index: 2;
+    left: 2px;
+    z-index: 2;
   }
 }
 /*androids */
