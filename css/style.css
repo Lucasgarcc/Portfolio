@@ -2949,7 +2949,7 @@ a span {
 
 /* despositivos mobile */
 /* IOS Swift */
-@media  ( max-width: 420px){
+@media  ( max-width: 414px){
   .fundo {
     display: none;
   }
@@ -3003,7 +3003,7 @@ a span {
    font-size: 1.1rem;
    font-weight:400
   }
-  .fundo-section-2 {
+  .section-2-box .fundo-section-2 {
     height: 3600px;
   }
   .section-2-box{
@@ -3176,10 +3176,10 @@ a span {
   }
   .section-2-box .title-h2 {
     padding-top: -20px;
-    width: max(350px);
+    width: max(330px);
     position: relative;
     top: 40px;
-    left: -25px;
+    left: -35px;
     word-wrap: break-word;
     font-size: 2.8rem;
   }
@@ -3190,7 +3190,7 @@ a span {
   }
   #perfil-2 {
     width: max(155%);
-    height: 85%;
+    height: 75%;
     position: relative;
     top: 12%;
     left: -40px;
