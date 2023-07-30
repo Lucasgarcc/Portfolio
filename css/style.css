@@ -3348,13 +3348,12 @@ a span {
     width: max(350px);
     position: relative;
     top: 40px;
-    left: -20px;
+    left: -40px;
     word-wrap: break-word;
     font-size: 2.8rem;
   }
   .section-2-box .title-h2::after {
-    left: -5%;
-    top: -29%;
+    left: -2%;
     z-index: 2;
   }
   #perfil-2 {
