@@ -2802,7 +2802,8 @@ a span {
     width: max(500px);
   }
   .fundo-section-2 {
-    height: 2119px;
+    width: max(100%);
+    height: 2519px;
   }
   .section-2-box .title-h2 {
     position: relative;
@@ -2841,7 +2842,8 @@ a span {
     z-index: 2;
   }
   .fundo-section-2 {
-    height: 2183px;
+    height: 2200px;
+    margin: 200px auto;
   }
   .section-2-box {
     width: max(780px);
@@ -2862,6 +2864,14 @@ a span {
   .hobbies--section h2, .hobbies--descricao {
     word-wrap: break-word;
     max-width: 300px;
+  }
+  .hobbies--descricao {
+    word-wrap: break-word;
+    max-width: 300px;
+    color: #cccccc;
+  }
+  .footer {
+    width: max(100%);
   }
 }
 @media  (max-width: 768px) {
@@ -3356,7 +3366,7 @@ a span {
   font-weight: 400;
   }
   .fundo-section-2 {
-    height: 1790px;
+    height: 1590px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3404,10 +3414,10 @@ a span {
    margin-left: -10px ;
   }
   .hobbies--title {
-   margin-left: 70px;
+   margin-left: 50px;
   }
   .hobbies-title {
-    margin-left: 80px;
+    margin-left: 60px;
    }
   .hobbies--title::after {
     display: block;
