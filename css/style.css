@@ -3077,6 +3077,9 @@ a span {
     word-wrap: break-word;
     max-width: 320px;
   }
+  .hobbies--descricao {
+    color: #707070;
+  }
   .hobbies--section h2 {
     color: #cacaca;
     font-size: 3.7rem;
