@@ -3004,7 +3004,7 @@ a span {
    font-weight:400
   }
   .fundo-section-2 {
-    height: 3700px;
+    height: 3600px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3165,7 +3165,7 @@ a span {
    font-weight:400
   }
   .fundo-section-2 {
-    height: 2400px;
+    height: 2500px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3237,7 +3237,7 @@ a span {
      display: block;
      content: url('/img/icones/game-mobile.svg');
     position: relative;
-    left: -18px;
+    left: -12px;
    }
    .hobbies-title::after {
      display: block;
