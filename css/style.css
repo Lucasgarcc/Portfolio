@@ -2949,12 +2949,12 @@ a span {
 
 /* despositivos mobile */
 /* IOS Swift */
-@media (max-width: 414) { 
+@media (max-width: 400) { 
   .fundo-section-2 {
     height: 1690px;
   }
 }
-@media  ( max-width: 420px){
+@media  (max-width: 420px){
   .fundo {
     display: none;
   }
