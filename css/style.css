@@ -2949,7 +2949,7 @@ a span {
 
 /* despositivos mobile */
 /* IOS Swift */
-@media  ( max-width: 420px){
+@media  ( min-width: 400px){
   .fundo {
     display: none;
   }
@@ -3004,6 +3004,168 @@ a span {
    font-weight:400
   }
   .fundo-section-2 {
+    height: 3600px;
+  }
+  .section-2-box{
+    padding-top: 40px;
+    width: max(80%);
+  }
+   figure {
+    width: max(40%);
+  }
+  .section-2-box .title-h2 {
+    padding-top: -20px;
+    width: max(340px);
+    position: relative;
+    top: 40px;
+    left: -35px;
+    word-wrap: break-word;
+    font-size: 3rem;
+  }
+  .section-2-box .title-h2::after {
+    left: -9%;
+    top: -25%;
+    z-index: 2;
+  }
+  #perfil-2 {
+    width: max(155%);
+    height: 75%;
+    position: relative;
+    top: 12%;
+    left: -40px;
+  }
+  .competencia {
+    padding: 10px;
+    width: max(80%);
+    gap: 1.2rem;
+    margin-top: 30px;
+    margin-left: -5%;
+    position: relative;
+    justify-content: space-around;
+  }
+  .box-competencia::before {
+    left: 1px;
+    z-index: 2;
+  }
+  .fundo-section-2 {
+    height: 1600px;
+  }
+  .section-2-box {
+    display: grid;
+    grId-template-columns: 2fr;
+  }
+  .hobbies--section{
+    padding: 0px;
+    margin: 1500px auto;
+  }
+  .hobbies--section h2, .hobbies--descricao {
+    word-wrap: break-word;
+    max-width: 320px;
+  }
+  .hobbies--section h2 {
+    color: #cacaca;
+    font-size: 3.7rem;
+    margin-left: 25px ;
+   }
+   .hobbies--title {
+    margin-left: 70px;
+   }
+   .hobbies-title {
+     margin-left: 80px;
+    }
+   .hobbies--title::after {
+     display: block;
+     content: url('/img/icones/game-mobile.svg');
+    position: relative;
+    left: -12px;
+   }
+   .hobbies-title::after {
+     display: block;
+     content: url('/img/icones/praia-mobile.svg');
+    position: relative;
+    left: -20px;
+   }
+   .footer::after {
+     content: url('/img/icones/detalhe-mobile.svg');
+     display: block;
+     position: absolute;
+     top: -60px;
+     left: 20px;
+   }
+  .footer {
+    width: (93.4%);
+    padding: 0px ;
+    margin: 2400px auto;
+  }
+  .footer-contatiner{
+    gap: 50px;
+    max-width: 330px;
+    padding: 6rem 0 0 0;
+  }
+  .footer-descricao {
+    width: max(335px);
+  }
+  .icone {
+    width: max(100px);
+    margin-top: -140px;
+  }
+}
+@media (max-width: 390px){
+  .fundo {
+    display: none;
+  }
+  .intro {
+    width: max(90.3%);
+    height: 400px;
+    margin-top: -1px;
+    position: relative;
+    left: -2px;
+    background: #010000;
+    z-index: -1;
+  }
+  .intro h1 {
+  font-size: 2.5rem;
+  text-indent: 1rem;
+  line-height: 4rem;
+  }
+  .intro h1::before {
+    left: 4px;
+  }
+  .intro p::before {
+    background: url("/img/icones/det3.svg") no-repeat center;
+    left: -17px;
+    top: 25rem;
+    }
+  .sobre {
+    padding: 1.6rem;
+    margin: -2px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max(86%);
+    height: 350px;
+    gap: 0px;
+    background: #F7F7F7;
+    position: relative;
+    left: -0px;
+  }
+  .sobre .subtitulo {
+   display: grid;
+   margin-left: 15px;
+   justify-items: start;
+   grid-column: 1 / 2;
+  }
+  .sobre--descricao {
+    padding: 1rem;
+    width: max(350px);
+    display: grid;
+   justify-items: start;
+   grid-column: 1 / 7;
+   color: #000000;
+   font-size: 1.1rem;
+   font-weight:400
+  }
+  .fundo-section-2 {
+    height: 2400px;
   }
   .section-2-box{
     padding-top: 40px;
