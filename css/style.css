@@ -3368,7 +3368,9 @@ a span {
   figure {
     width: max(40%);
   }
-
+  #perfil-2 {
+    width: 80%;
+  }
   .hobbies--section{
     padding-left: 1rem;
     margin: 1620px auto;
