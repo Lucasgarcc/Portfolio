@@ -3324,7 +3324,7 @@ a span {
     font-weight:400
   }
   .fundo-section-2 {
-    height: 1700px;
+    height: 1500px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3354,6 +3354,7 @@ a span {
     width: max(80%);
     gap: 1.2rem;
     margin-top: 30px;
+    left: 10px ;
     position: relative;
     justify-content: space-around;
   }
