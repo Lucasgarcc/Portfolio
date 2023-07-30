@@ -3015,7 +3015,7 @@ a span {
   }
   .section-2-box .title-h2 {
     padding-top: -20px;
-    width: max(340px);
+    width: max(350px);
     position: relative;
     top: 40px;
     left: -35px;
@@ -3077,7 +3077,7 @@ a span {
      display: block;
      content: url('/img/icones/game-mobile.svg');
     position: relative;
-    left: -12px;
+    left: -18px;
    }
    .hobbies-title::after {
      display: block;
