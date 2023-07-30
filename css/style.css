@@ -3273,10 +3273,10 @@ a span {
 /* IOS Swift */
 @media (max-width: 375px){
   .intro {
-    width: max(90%);
+    width: max(90.9%);
   }
   .fundo-section-2 {
-    height: 1850px;
+    height: 1750px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3338,7 +3338,7 @@ a span {
   }
   .section-2-box .title-h2 {
     padding-top: -20px;
-    width: max(320px);
+    width: max(350px);
     position: relative;
     top: 40px;
     left: -40px;
