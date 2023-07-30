@@ -3335,7 +3335,7 @@ a span {
     z-index: 2;
   }
   .hobbies--section{
-    padding: 0px;
+    padding-left: 1rem;
     margin: 1450px auto;
   }
 }
