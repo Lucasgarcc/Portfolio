@@ -3207,6 +3207,9 @@ a span {
   .box-competencia::before {
     left: 1px;
     z-index: 2;
+  } .box-competencia::before {
+    left: 1px;
+    z-index: 2;
   }
   .fundo-section-2 {
     height: 1500px;
@@ -3273,7 +3276,7 @@ a span {
 /* IOS Swift */
 @media (max-width: 375px){
   .intro {
-    width: max(90.9%);
+    width: max(90.5%);
   }
   .fundo-section-2 {
     height: 1750px;
@@ -3287,9 +3290,9 @@ a span {
     width: max(350px);
     position: relative;
     top: 40px;
-    left: -20px;
+    left: -10px;
     word-wrap: break-word;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -5%;
@@ -3311,6 +3314,10 @@ a span {
     margin-left: -2%;
     position: relative;
     justify-content: space-around;
+  }
+  .box-competencia::before {
+  left: 10px;
+  z-index: 2;
   }
 }
 /*androids */
