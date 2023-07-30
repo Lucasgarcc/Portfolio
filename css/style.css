@@ -3313,7 +3313,7 @@ a span {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: 6px;
+    left: 8px;
     z-index: 2;
   }
   .hobbies--section{
