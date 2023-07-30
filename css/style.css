@@ -3308,7 +3308,7 @@ a span {
 /* IOS Swift */
 @media (max-width: 375px){
   .intro {
-    width: min(343px);
+    width: min(339px);
   }
   .sobre {
     padding: 1.6rem;
@@ -3324,7 +3324,7 @@ a span {
     font-weight:400
   }
   .fundo-section-2 {
-    height: 1400px;
+    height: 1500px;
   }
   .section-2-box{
     padding-top: 40px;
