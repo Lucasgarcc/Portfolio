@@ -3044,7 +3044,7 @@ a span {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: 1px;
+    left: 10px;
     z-index: 2;
   }
   .fundo-section-2 {
@@ -3176,10 +3176,10 @@ a span {
   }
   .section-2-box .title-h2 {
     padding-top: -20px;
-    width: max(330px);
+    width: max(350px);
     position: relative;
     top: 40px;
-    left: -35px;
+    left: -25px;
     word-wrap: break-word;
     font-size: 2.8rem;
   }
@@ -3190,7 +3190,7 @@ a span {
   }
   #perfil-2 {
     width: max(155%);
-    height: 75%;
+    height: 85%;
     position: relative;
     top: 12%;
     left: -40px;
@@ -3330,7 +3330,7 @@ a span {
   font-weight: 400;
   }
   .fundo-section-2 {
-    height: 1750px;
+    height: 1790px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3341,7 +3341,7 @@ a span {
     width: max(350px);
     position: relative;
     top: 40px;
-    left: -40px;
+    left: -20px;
     word-wrap: break-word;
     font-size: 2.8rem;
   }
