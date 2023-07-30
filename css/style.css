@@ -2959,7 +2959,7 @@ a span {
     display: none;
   }
   .intro {
-    width: max(91.3%);
+    width: max(92.3%);
     height: 400px;
     margin-top: -1px;
     position: relative;
@@ -3280,6 +3280,9 @@ a span {
 }
 /* IOS Swift */
 @media (max-width: 375px){
+  .intro {
+    width: min(326px);
+  }
   .sobre {
     padding: 1.6rem;
   }
@@ -3333,7 +3336,7 @@ a span {
   }
   .hobbies--section{
     padding: 0px;
-    margin: 1600px auto;
+    margin: 1550px auto;
   }
 }
 /*androids */
