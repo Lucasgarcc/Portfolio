@@ -2949,7 +2949,7 @@ a span {
 
 /* despositivos mobile */
 /* IOS Swift */
-@media  ( min-width: 400px){
+@media  ( max-width: 400px){
   .fundo {
     display: none;
   }
