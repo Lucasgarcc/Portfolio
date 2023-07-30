@@ -3003,8 +3003,8 @@ a span {
    font-size: 1.1rem;
    font-weight:400
   }
-  .section-2-box .fundo-section-2 {
-    height: 3600px;
+  .fundo-section-2 {
+    height: 1600px;
   }
   .section-2-box{
     padding-top: 40px;
