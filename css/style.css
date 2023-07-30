@@ -2157,7 +2157,7 @@ ul {
   margin-top: 30px;
   background: #101010;
   width: 100%;
-  height: 820px;
+  height: 850px;
   position: absolute;
   z-index: -1;
 }
@@ -2364,7 +2364,6 @@ a span {
   height: max(25vh);
 }
 }
-
 @media (max-width: 2000px) {
   .hobbies--section {
    margin-top:  45%;
@@ -2390,13 +2389,11 @@ a span {
    margin-top:  68%;
    margin-bottom: 0px;
   }
-
   .footer  {
     position: absolute;
     margin-top: 120% ;
   }
 }
-
 @media screen and ( max-width: 1120px){
   .fundo{
     width: 84%;
@@ -2417,7 +2414,6 @@ a span {
     min-width: 110%;
     right: -50%;
   }
-
   .intro h1::before {
     content: " ";
     display: block;
@@ -2508,7 +2504,6 @@ a span {
   gap: 30px;
   }
 }
-
 @media screen and ( max-width: 1040px){
   .intro {
     grid-template-columns: 1fr 1fr;
@@ -2954,9 +2949,7 @@ a span {
       left: -100px;
       top: 40rem;
     }
-    
 }
-
 /* despositivos mobile */
 /* IOS Swift */
 @media (max-width: 400) { 
@@ -3292,7 +3285,7 @@ a span {
   }
 }
 /*androids */
-@media (min-width: 370px) {
+@media (max-width: 370px) {
     .section-2-box{
     padding-top: 40px;
     width: max(92%);
@@ -3387,8 +3380,6 @@ a span {
     margin: 1530px auto;
   }
 }
-
-
 @media (max-width: 360px) {
   .intro {
     width: max(89.5%);
