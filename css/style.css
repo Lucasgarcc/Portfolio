@@ -3329,7 +3329,7 @@ a span {
 /* IOS Swift */
 @media (max-width: 375px){
   .intro {
-    width: min(338.3px);
+    width: min(339px);
   }
   .sobre {
     padding: 1.6rem;
