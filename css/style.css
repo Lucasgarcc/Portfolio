@@ -3302,7 +3302,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: 1590px auto;
+    margin: 1520px auto;
   }
 }
 /* IOS Swift */
@@ -3333,13 +3333,12 @@ a span {
     padding-top: -20px;
     position: relative;
     top: 40px;
-    left: -46px;
     word-wrap: break-word;
     font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
-    left: -5%;
-    top: -39%;
+    left: -2%;
+    top: -40%;
     z-index: 2;
   }
   #perfil-2 {
@@ -3364,7 +3363,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: 1530px auto;
+    margin: 1590px auto;
   }
 }
 
