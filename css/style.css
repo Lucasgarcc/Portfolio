@@ -3282,6 +3282,7 @@ a span {
 @media (max-width: 375px){
   .intro {
     width: max(89.9%);
+    left: 1px;
   }
   .sobre {
     padding: 1.6rem;
