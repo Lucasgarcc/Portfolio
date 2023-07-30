@@ -3366,7 +3366,7 @@ a span {
     padding-top: -20px;
     position: relative;
     top: 40px;
-    left: -40px;
+    left: -45px;
     word-wrap: break-word;
     font-size: 2.6rem;
   }
@@ -3385,7 +3385,7 @@ a span {
     padding: 10px;
     width: max(280px);
     gap: 1.2rem;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 1.5%;
     position: relative;
     justify-content: space-around;
