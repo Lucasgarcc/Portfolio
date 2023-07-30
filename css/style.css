@@ -3353,7 +3353,7 @@ a span {
 /*androids */
 @media (min-width: 375px) {
   .fundo-section-2 {
-    height: 1790px;
+    height: 1690px;
   }
 }
 @media (max-width: 360px) {
