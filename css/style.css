@@ -3372,12 +3372,10 @@ a span {
     top: 17%;
     left: -10px;
   }
-  .fundo-section-2 {
-    height: 1590px;
-  }
+  
   .hobbies--section{
     padding-left: 1rem;
-    margin: 1520px auto;
+    margin: 1590px auto;
   }
 }
 @media (max-width: 360px) {
