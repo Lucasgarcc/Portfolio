@@ -2959,7 +2959,7 @@ a span {
     display: none;
   }
   .intro {
-    width: max(90.9%);
+    width: max(91.3%);
     height: 400px;
     margin-top: -1px;
     position: relative;
@@ -2985,7 +2985,7 @@ a span {
     margin: -2px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: max(87%);
+    width: max(88%);
     height: 350px;
     gap: 0px;
     background: #F7F7F7;
@@ -3009,7 +3009,7 @@ a span {
    font-weight:400
   }
   .fundo-section-2 {
-    height: 1600px;
+    height: 1750px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3028,8 +3028,8 @@ a span {
     font-size: 2.9rem;
   }
   .section-2-box .title-h2::after {
-    left: -9%;
-    top: -25%;
+    left: -5%;
+    top: -35%;
     z-index: 2;
   }
   #perfil-2 {
@@ -3049,7 +3049,7 @@ a span {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: 10px;
+    left: 6px;
     z-index: 2;
   }
   .fundo-section-2 {
@@ -3170,7 +3170,7 @@ a span {
    font-weight:400
   }
   .fundo-section-2 {
-    height: 1760px;
+    height: 1750px;
   }
   .section-2-box{
     padding-top: 40px;
