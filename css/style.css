@@ -3286,6 +3286,9 @@ a span {
 }
 /*androids */
 @media (max-width: 370px) {
+  .intro {
+    width: auto;
+  }
     .section-2-box{
     padding-top: 40px;
     width: max(92%);
