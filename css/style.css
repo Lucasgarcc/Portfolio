@@ -3341,7 +3341,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: minmax(1430px);
+    margin: max(1530px);
     
   }
 }
