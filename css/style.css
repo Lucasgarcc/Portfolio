@@ -3121,7 +3121,45 @@ a span {
     margin-top: -140px;
   }
 }
-@media (max-width: 390px){
+
+/*androids */
+@media (max-width: 300px) and (min-width: 370px) {
+  .intro {
+    width: auto;
+  }
+    .section-2-box{
+    padding-top: 40px;
+    width: max(92%);
+  }
+  .section-2-box .title-h2 {
+    font-size: 2.6rem;
+  }
+  .section-2-box .title-h2::after {
+    left: -5%;
+    top: -40%;
+    z-index: 2;
+  }
+  .fundo-section-2 {
+    height: min(1530px);
+  }
+  .competencia {
+    padding: 10px;
+    width: max(80%);
+    gap: 1.2rem;
+    margin-top: 30px;
+    left: 32px ;
+    position: relative;
+    justify-content: space-around;
+  }
+  .box-competencia::before {
+    left: 8px;
+    z-index: 2;
+  }
+  .hobbies--section{
+    padding-left: 1rem;
+    margin: 1620px auto;
+  }
+}@media (max-width: 390px){
   .fundo {
     display: none;
   }
@@ -3282,44 +3320,6 @@ a span {
   .icone {
     width: max(100px);
     margin-top: -140px;
-  }
-}
-/*androids */
-@media (max-width: 300px) and (min-width: 370px) {
-  .intro {
-    width: auto;
-  }
-    .section-2-box{
-    padding-top: 40px;
-    width: max(92%);
-  }
-  .section-2-box .title-h2 {
-    font-size: 2.6rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -5%;
-    top: -40%;
-    z-index: 2;
-  }
-  .fundo-section-2 {
-    height: max(1530px);
-  }
-  .competencia {
-    padding: 10px;
-    width: max(80%);
-    gap: 1.2rem;
-    margin-top: 30px;
-    left: 32px ;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: 8px;
-    z-index: 2;
-  }
-  .hobbies--section{
-    padding-left: 1rem;
-    margin: 1620px auto;
   }
 }
 /* IOS Swift */
