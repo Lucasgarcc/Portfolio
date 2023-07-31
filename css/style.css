@@ -3315,7 +3315,7 @@ a span {
     font-size: 2.4rem;
   }
   .section-2-box .title-h2::after {
-    left: 2%;
+    left: -4%;
     top: -60%;
     z-index: 2;
   }
