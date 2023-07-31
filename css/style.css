@@ -3285,7 +3285,7 @@ a span {
   }
 }
 /*androids */
-@media (max-width: 370px) {
+@media (max-width: 300px) and (min-width: 370px) {
   .intro {
     width: auto;
   }
