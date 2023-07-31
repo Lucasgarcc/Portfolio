@@ -3157,7 +3157,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: 1620px auto;
+    margin: max(1620px);
   }
 }@media (max-width: 390px){
   .fundo {
@@ -3323,7 +3323,8 @@ a span {
   }
 }
 /* IOS Swift */
-@media (max-width: 375px){
+@media (max-width: 375px) 
+{
   .intro {
     width: min(339px);
   }
@@ -3380,7 +3381,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: 1630px auto;
+    margin: 1530px auto;
   }
 }
 @media (max-width: 360px) {
