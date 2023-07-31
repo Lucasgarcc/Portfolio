@@ -3312,7 +3312,7 @@ a span {
   .section-2-box .title-h2 {
     padding-top: -20px;
     top: 40px;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -6%;
@@ -3341,8 +3341,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: 1530px;
-    
+    margin: 1530px auto;
   }
 }
 @media (max-width: 360px) {
