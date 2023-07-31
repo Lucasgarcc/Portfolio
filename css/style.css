@@ -3285,7 +3285,7 @@ a span {
   }
 }
 /*androids */
-@media screen and (max-width: 374px){
+@media screen and (max-width: 370px){
   .intro {
     width: auto;
   }
@@ -3319,7 +3319,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    margin: main(1620px);
+    margin: min(1620px);
   }
 }
 /* IOS Swift */
