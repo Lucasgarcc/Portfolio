@@ -3316,7 +3316,7 @@ a span {
   }
   .section-2-box .title-h2::after {
     left: -2%;
-    top: -10%;
+    top: -50%;
     z-index: 2;
   }
   #perfil-2 {
