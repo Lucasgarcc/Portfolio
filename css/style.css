@@ -3284,10 +3284,9 @@ a span {
     margin-top: -140px;
   }
 }
-
+/*androids */
 /* IOS Swift */
-@media (max-width: 375px) 
-{
+@media (max-width: 375px) and (min-width: 375px) { 
   .intro {
     width: min(339px);
   }
@@ -3305,13 +3304,15 @@ a span {
     font-weight:400
   }
   .fundo-section-2 {
-    height: min(1530px);
+    height: min(1650px);
   }
   .section-2-box{
     padding-top: 40px;
   }
   .section-2-box .title-h2 {
-    font-size: 2.6rem;
+    padding-top: -20px;
+    top: 40px;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -2%;
