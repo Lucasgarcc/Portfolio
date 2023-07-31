@@ -3121,7 +3121,7 @@ a span {
     margin-top: -140px;
   }
 }
-}@media (max-width: 390px){
+@media (max-width: 390px){
   .fundo {
     display: none;
   }
@@ -3321,7 +3321,7 @@ a span {
     padding-left: 1rem;
     margin: main(1620px);
   }
-
+}
 /* IOS Swift */
 @media (max-width: 375px) 
 {
