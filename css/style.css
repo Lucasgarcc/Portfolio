@@ -1743,7 +1743,7 @@ a span {
     font-weight:400
   }
   .fundo-section-2 {
-    height: max(1520px);
+    height: max(1620px);
   }
   .section-2-box{
     padding-top: 40px;
@@ -1751,7 +1751,7 @@ a span {
   .section-2-box .title-h2 {
     padding-top: -20px;
     top: 40px;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -10%;
@@ -1759,7 +1759,7 @@ a span {
     z-index: 2;
   }
   #perfil-2 {
-    width: 170%;
+    width: 180%;
     height: 75%;
     position: relative;
     top: 14%;
@@ -1770,7 +1770,7 @@ a span {
     width: max(80%);
     gap: 1.2rem;
     margin-top: 30px;
-    left: 4px ;
+    left: -6px ;
     position: relative;
     justify-content: space-around;
   }
@@ -1800,7 +1800,7 @@ a span {
   font-weight: 400;
   }
   .fundo-section-2 {
-    height: 1505px;
+    height: 1550px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -1812,7 +1812,7 @@ a span {
     top: 40px;
     left: -30px;
     word-wrap: break-word;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -6%;
