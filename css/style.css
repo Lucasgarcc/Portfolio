@@ -1725,7 +1725,7 @@ a span {
   }
 }
 /* IOS Swift */
-@media (max-width: 375px){ 
+@media (max-width: 375px) and (min-width: 375px) { 
   .intro {
     width: min(339px);
   }
@@ -1743,8 +1743,7 @@ a span {
     font-weight:400
   }
   .fundo-section-2 {
-    height: max(1650px);
-    margin: 30% auto;
+    height: max(1620px);
   }
   .section-2-box{
     padding-top: 40px;
