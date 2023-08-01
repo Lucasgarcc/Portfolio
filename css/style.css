@@ -1727,7 +1727,7 @@ a span {
 /* IOS Swift */
 @media (max-width: 375px) and (min-width: 375px) { 
   .intro {
-    width: min(332px);
+    width: min(338px);
   }
   .sobre {
     padding: 1.6rem;
@@ -1781,7 +1781,7 @@ a span {
   .hobbies--section{
     padding-left: 1rem;
     margin: 1520px auto;
-    margin-left: 25px ;
+    margin-left: 0px ;
   }
 }
 /*androids */
