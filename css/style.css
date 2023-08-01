@@ -1725,7 +1725,7 @@ a span {
   }
 }
 /* IOS Swift */
-@media (max-resolution: 375px) and (min-resolution: 375px) { 
+@media (max-width: 375px) and (max-resolution: 375px) { 
   .intro {
     width: min(339px);
   }
