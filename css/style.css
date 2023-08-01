@@ -1781,7 +1781,7 @@ a span {
   .hobbies--section{
     padding-left: 1rem;
     margin: 1520px auto;
-    margin-left: 0px ;
+    margin-left: -25px ;
   }
 }
 /*androids */
