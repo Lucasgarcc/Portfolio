@@ -1780,7 +1780,7 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
-    left: 20px;
+    left: -20px;
     margin: 1520px auto;
   }
 }
