@@ -1792,12 +1792,12 @@ a span {
     margin-left: -25px ;
   }
 }
-
 /*androids */
 @media (max-width: 360px) {
   .intro {
     width: max(89.5%);
   }
+  .sobre {
     padding: 1rem;
     margin-left: 0px;
     width: max(300px);
