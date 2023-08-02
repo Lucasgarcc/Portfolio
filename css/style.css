@@ -1242,7 +1242,7 @@ a span {
 }
 /* despositivos mobile */
 /* IOS Swift pro */
-@media  (max-width: 428px){
+@media  (max-width: 450px) and (min-width: 428px){
   .fundo {
     display: none;
   }
@@ -1463,7 +1463,7 @@ a span {
    font-weight:400
   }
   .fundo-section-2 {
-    top: 96%;
+    top: 100%;
   }
   .section-2-box{
     padding-top: 40px;
@@ -1633,8 +1633,8 @@ a span {
    font-weight:400
   }
   .section-2-box{
-    padding-top: 40px;
-    width: max(80%);
+   position: relative;
+   top: 100px;
   }
    figure {
     width: max(40%);
@@ -1646,11 +1646,11 @@ a span {
     top: 40px;
     left: -35px;
     word-wrap: break-word;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -9%;
-    top: -29%;
+    top: -49%;
     z-index: 2;
   }
   #perfil-2 {
