@@ -55,6 +55,7 @@ ul {
   line-height: 1.3;
   text-decoration: none;
   color: #141414;
+  text-transform: uppercase;
   display: block
 }
 
@@ -101,7 +102,7 @@ ul {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 600px){
   .header {
     height: 9rem;
     background: #0d0d0d;
@@ -247,7 +248,7 @@ ul {
     color: #707070;
   }
   #nav.active #header--menu {
-    height: calc(36.6vh - 70px);
+    height: calc(36.6vh - 126px);
     visibility: visible;
     overflow-y: auto;
   }  
@@ -308,7 +309,7 @@ ul {
     overflow-y: auto;
   }  
   }
-  @media (max-width: 460px) {
+@media (max-width: 460px) {
   #btn-mobile {
     left: 0%;
   }
@@ -1397,7 +1398,7 @@ a span {
     margin-top: -140px;
   }
 }
-/* IOS Swift simple and pro */
+/* IOS Swift simple and pro/ androids */
 @media  (max-width: 414px){
   .fundo {
     display: none;
@@ -1427,6 +1428,7 @@ a span {
   .sobre {
     padding: 1.5rem;
     margin: -2px auto;
+    min-width: 326.3px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: max(88%);
@@ -1487,7 +1489,7 @@ a span {
     padding: 10px;
     width: max(75%);
     gap: 1.2rem;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: -1%;
     position: relative;
     justify-content: space-around;
@@ -1497,7 +1499,7 @@ a span {
     z-index: 2;
   }
   .fundo-section-2 {
-    height: 1590px;
+    height: 1490px;
   }
   .section-2-box {
     display: grid;
@@ -1592,6 +1594,7 @@ a span {
   .sobre {
     padding: 1.6rem;
     margin: -2px auto;
+    width: max(330px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: max(86%);
@@ -1601,19 +1604,23 @@ a span {
     position: relative;
     left: -0px;
   }
-  .sobre .subtitulo {
+  .sobre {
+    width: max(300px);
+    gap: 10px;
+  }
+  .sobre>.subtitulo {
    display: grid;
    margin-left: 15px;
    justify-items: start;
-   grid-column: 1 / 2;
+   grid-column: 1 / 1;
   }
   .sobre--descricao {
-    padding: 1rem;
-    width: max(350px);
+    padding: 0px;
+    margin-left: 8px;
     display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: #000000;
+    justify-items: start;
+    grid-column: 1 / 7;
+    color: #000000;
    font-size: 1.1rem;
    font-weight:400
   }
@@ -1662,7 +1669,7 @@ a span {
     z-index: 2;
   }
   .fundo-section-2 {
-    height: 1590px;
+    height: 1460px;
   }
   .section-2-box {
     display: grid;
@@ -1670,7 +1677,7 @@ a span {
   }
   .hobbies--section{
     padding: 0px;
-    left: 55px;
+    left: 50px;
     margin: 1510px auto;
   }
   .hobbies--section h2, .hobbies--descricao {
@@ -1725,7 +1732,7 @@ a span {
   }
 }
 /* IOS Swift */
-@media (max-width: 370px){ 
+@media (max-width: 375px){ 
   .intro {
     width: min(339px);
   }
@@ -1735,6 +1742,7 @@ a span {
   .sobre--descricao {
     padding: 0px;
     margin-left: 22px;
+    width: max(400px);
     display: grid;
     justify-items: start;
     grid-column: 1 / 7;
@@ -1790,8 +1798,15 @@ a span {
   .intro {
     width: max(89.5%);
   }
+    padding: 1rem;
+    margin-left: 0px;
+    width: max(300px);
+    gap: 2px;
+  }
+  .sobre > .subtitulo {
+    margin-left: 3px;
+  }
   .sobre--descricao {
-  padding: .5rem;
   margin-left: 9px;
   width: max(300px);
   display: grid;
@@ -1802,7 +1817,7 @@ a span {
   font-weight: 400;
   }
   .fundo-section-2 {
-    height: 1590px;
+    height: 1530px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -1810,6 +1825,7 @@ a span {
   }
   .section-2-box .title-h2 {
     padding-top: -20px;
+    max-width: 300px;
     position: relative;
     top: 40px;
     left: -30px;
@@ -1833,7 +1849,7 @@ a span {
     width: max(280px);
     gap: 1.2rem;
     margin-top: -10px;
-    margin-left: 1.5%;
+    margin-left: 4%;
     position: relative;
     justify-content: space-around;
   }
@@ -1849,22 +1865,26 @@ a span {
   }
   .hobbies--section{
     padding-left: 1rem;
+    left: 16px;
     margin: 1530px auto;
   }
   .hobbies--section h2 {
    margin-left: -10px ;
   }
   .hobbies--title {
-   margin-left: 50px;
+   margin-left: 20px;
   }
   .hobbies-title {
-    margin-left: 60px;
+    margin-left: 30px;
+   }
+   .hobbies--descricao{
+    width: max(250px);
    }
   .hobbies--title::after {
     display: block;
     content: url('/img/icones/game-mobile.svg');
    position: relative;
-   left: -18px;
+   left: -10px;
   }
   .hobbies-title::after {
     display: block;
