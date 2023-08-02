@@ -1750,7 +1750,7 @@ a span {
   .sobre--descricao {
     padding: 0px;
     margin-left: 22px;
-    width: max(400px);
+    width: max(330px);
     display: grid;
     justify-items: start;
     grid-column: 1 / 7;
