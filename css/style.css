@@ -1746,6 +1746,9 @@ a span {
   }
   .sobre {
     padding: 1.6rem;
+    margin: -2px auto;
+    width: max(330px);
+    padding: 1.6rem;
   }
   .sobre--descricao {
     padding: 0px;
