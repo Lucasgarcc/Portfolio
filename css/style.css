@@ -626,7 +626,7 @@ a span {
     left: 80px;
   }
   #nav.active #header--menu {
-    height: calc(38.1vh - 120px);
+    height: calc(38.1vh - 118px);
     visibility: visible;
     overflow-y: auto;
   }  
