@@ -1844,7 +1844,7 @@ a span {
     width: max(80%);
     gap: 1.2rem;
     margin-top: 1px;
-    margin-left: 14%;
+    margin-left: 19%;
     position: relative;
     justify-content: space-around;
   }
@@ -1856,7 +1856,7 @@ a span {
     z-index: 2;
   }
   .fundo-section-2 {
-    height: 1460px;
+    height: 1500px;
   }
   .section-2-box {
     display: grid;
@@ -1900,9 +1900,9 @@ a span {
      top: -60px;
      left: 20px;
    }
-  .footer {
-    width: 353px;
-    padding: 0px ;
+    .footer {
+    width: 102%;
+    left: -6px;
     margin: 2400px auto;
   }
   .footer-contatiner{
