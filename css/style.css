@@ -1829,7 +1829,7 @@ a span {
   }
   .section-2-box .title-h2::after {
     left: -9%;
-    top: -69%;
+    top: -89%;
     z-index: 2;
   }
   #perfil-2 {
@@ -1856,7 +1856,7 @@ a span {
     z-index: 2;
   }
   .fundo-section-2 {
-    height: 1500px;
+    height: 1560px;
   }
   .section-2-box {
     display: grid;
