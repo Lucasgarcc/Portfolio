@@ -9,6 +9,7 @@ body{
   margin: 0px
 }
 
+/* Page inicial about me */
 ul {
  margin: 0px;
  padding: 0px;
@@ -381,6 +382,136 @@ a span {
   cursor: pointer;
 }
 
+/* Area Formation and Experience */
+
+.timeline { /* The actual timeline (the vertical ruler) */
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.container-timeline {
+  padding: 1.6rem 1.6rem;
+  margin: 3% 0 0 auto ;
+  width: max(950px);
+  height: 1200px;
+  background-color: #010000;
+  border-radius: .4rem;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #101010;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+  transition: 0.2s linear;
+}
+
+/* date timeline */
+.date-left{
+  margin: -10px 0 0 0;
+  position: absolute;
+  top: -70%;
+  left: 390px;
+  color: #707070;
+  font-weight: 460;
+  font-size: 1.225rem;
+  z-index: 3;
+  
+}
+.date { /*right*/
+  margin: -10px 0 0 0;
+  position: absolute;
+  top: -70%;
+  left: 40px;
+  color: #707070;
+  font-size: 1.225rem;
+  font-weight: 460;
+  z-index: 3;
+
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #F98C28;
+  border: 4px solid #333333;
+  top: 35px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 1.5%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 45px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #ffffff;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 40px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #ffffff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent  #F7F7F7 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #cccccc;
+  position: relative;
+  border-radius: 6px;
+  z-index: 2;
+  transition: 0.2s linear;
+}
+
+
+
 /* Area respnsible */
 @media(max-width: 800px) {
   .header {
@@ -398,6 +529,39 @@ a span {
     display: none;
   }
 }
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
 @media (max-width: 600px){
   .header {
     height: 9rem;
@@ -684,24 +848,28 @@ a span {
     margin-top: 120% ;
   }
 }
-@media screen and ( max-width: 1120px){
+@media screen and (max-width: 1500px){
   .fundo{
-    width: 84%;
+    width: 90%;
+    margin: 0 0 0 -90px ;
     height: 550px;
   }
   .intro {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem; 
+    margin: 0 0 0 -160px ;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
+   
     gap: 250px;
   }
   .intro-descricao {
     width: 100%;
+    font-size: rem;
     position: static;
   }
   .intro img {
-    min-width: 110%;
+    min-width: 80%;
     right: -50%;
   }
   .intro h1::before {
@@ -740,7 +908,7 @@ a span {
   .sobre {
     margin: 0 auto;
     display: grid;
-    width: 70%;
+    width: max(70%);
     z-index: 2;
   }
   .sobre--descricao h1 {
@@ -759,10 +927,16 @@ a span {
     display: grid;
     z-index: 2;
   }
+  .section-2-box {
+    width: max(60%);
+  }
+  .section-2-box .title-h2{
+    font-size: 3.6rem;  
+  }
   .competencia {
-  margin-top: 70px;
-  margin-left: -30%;
-  position: relative;
+    margin: 70px 0 0 0;
+    position: relative;
+    left: -20%;
   }
   .section-2-box .title-h2::after {
     display: block;
@@ -776,7 +950,11 @@ a span {
     }
   .hobbies--section{
     margin: 80% auto;
-    width: max(95%) ;
+    width: max(80%) ;
+    word-wrap: break-word;
+  }
+  .hobbies--descricao {
+    width: max(500px);
   }
   .footer {
     position: absolute;
@@ -1633,8 +1811,9 @@ a span {
    font-weight:400
   }
   .section-2-box{
+    width: max(90%);
    position: relative;
-   top: 100px;
+   top: 90px;
   }
    figure {
     width: max(40%);
@@ -1643,14 +1822,14 @@ a span {
     padding-top: -20px;
     width: max(330px);
     position: relative;
-    top: 40px;
-    left: -35px;
+    top: 20px;
+    left: -20px;
     word-wrap: break-word;
     font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
     left: -9%;
-    top: -49%;
+    top: -69%;
     z-index: 2;
   }
   #perfil-2 {
@@ -1665,7 +1844,7 @@ a span {
     width: max(80%);
     gap: 1.2rem;
     margin-top: 1px;
-    margin-left: -5%;
+    margin-left: 14%;
     position: relative;
     justify-content: space-around;
   }
@@ -1722,7 +1901,7 @@ a span {
      left: 20px;
    }
   .footer {
-    width: (93.4%);
+    width: 353px;
     padding: 0px ;
     margin: 2400px auto;
   }
