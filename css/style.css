@@ -5,7 +5,25 @@ body{
   color: #141414;
 }
 
-:root, h1,h2, h3, p{
+:root {
+  --laranja-p { background: #7C3207 };
+  --laranja-s { 
+    background: #E46014;
+    color: #E46014; 
+   };
+  --laranja-t { background: #F98C28 };
+  --preto-c9 { background: #000000 };
+  --preto-c8 { background: #010000 };
+  --preto-c7 { background: #0d0d0d};
+  --preto-c6 { background: #101010 };
+  --preto-c5 { background: #121212};
+  --preto-c4 { background: #141414};
+  --preto-c3 { background: #292929};
+  --cinza-c1 { background: #707070};
+  --cinza-c0 { background: #cccccc};
+  --branco  { background:#ffffff};
+}
+h1,h2, h3, p{
   margin: 0px
 }
 
@@ -384,20 +402,102 @@ a span {
 
 /* Area Formation and Experience */
 
-.timeline { /* The actual timeline (the vertical ruler) */
+/* The area introdution */
+.container-fundo {
+  padding: .4rem 1rem;
+  margin: 30px auto ;
+  width: max(350px);
+  height: 490px;
+  border-radius: .4rem;
+  background: #141414;
+  position: absolute;
+  left: 4rem;
+}
+.container-formacao {
+  padding: .4rem 1rem;
+  border-radius: .2rem;
+  margin: 70px auto;
+  width: max(600px);
+  height: 300px;
+  background-color: #ededed;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  left: 4rem;
+}
+
+.container-formacao > h1 {
+  padding: 2rem ;
+  margin: 15px auto auto -30px;
+  font-size: 5rem;
+}
+
+.ponto-title { /*details titile*/
+  color: #F98C28;
+}
+
+.container-formacao p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #707070;
+}
+
+.laptop-svg {
+  margin: 70px auto;
+  width: 130%;
+  position: relative;
+  left: 700px;
+}
+
+/* Experience */
+
+  .container-experiencia{
+    padding: 2.3rem 3rem;
+    width: max(1200px);
+    display: grid;
+    grid-template-columns: repeat(2, auto)1fr;
+    gap: 100px;
+    position: static;
+  }
+  
+  .container-experiencia-descricao {
+    position: relative;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    padding-top: 20.5rem;
+    font-size: 72px;
+    font-size: 5rem;
+    line-height: 1.125;
+    color: #c9c9c9;
+    z-index: -1;
+  }
+
+  .competencia-.container-experiencia h2::after {
+    display: block;
+    content: url('/img/icones/det3.svg') ;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+    }
+
+
+/* Timeline*/
+.timeline { /* The actual timeline (the vertical ruler) */
+  display: grid;
+  grid-column: 2 / 4;
+  width: max(900px);
+  position: relative;
+  z-index: 3;
 }
 
 /* The actual timeline (the vertical ruler) */
 .container-timeline {
   padding: 1.6rem 1.6rem;
   margin: 3% 0 0 auto ;
-  width: max(950px);
-  height: 1200px;
+  width: max(900px);
+  height: 1000px;
   background-color: #010000;
-  border-radius: .4rem;
+  border-radius: .9rem;
 }
 .timeline::after {
   content: '';
@@ -423,8 +523,19 @@ a span {
 .date-left{
   margin: -10px 0 0 0;
   position: absolute;
-  top: -70%;
-  left: 390px;
+  top: -73%;
+  left: 315px;
+  color: #707070;
+  font-weight: 460;
+  font-size: 1.225rem;
+  z-index: 3;
+  
+}
+.date-left2{
+  margin: -10px 0 0 0;
+  position: absolute;
+  top: 25%;
+  left: -120px;
   color: #707070;
   font-weight: 460;
   font-size: 1.225rem;
@@ -434,13 +545,39 @@ a span {
 .date { /*right*/
   margin: -10px 0 0 0;
   position: absolute;
-  top: -70%;
-  left: 40px;
+  top: -75%;
+  left: 75px;
   color: #707070;
   font-size: 1.225rem;
   font-weight: 460;
   z-index: 3;
 
+}
+
+/* The descrition das times */
+.time-descricao {
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #E46014 ;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+.time-descricao-left, .time-descricao-left2 {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  color: #E46014 ;
+  position: relative;
+  top: 30px;
+  left: 270px;
+}
+
+.time-descricao-left2 {
+  left: 280px;
 }
 
 /* The circles on the timeline */
@@ -450,7 +587,7 @@ a span {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #F98C28;
+  background-color: #cacaca;
   border: 4px solid #333333;
   top: 35px;
   border-radius: 50%;
@@ -459,7 +596,7 @@ a span {
 
 /* Place the container to the left */
 .left {
-  left: 1.5%;
+  left: 1.1%;
 }
 
 /* Place the container to the right */
@@ -468,7 +605,7 @@ a span {
 }
 
 /* Add arrows to the left container (pointing right) */
-.left::before {
+ .left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -476,23 +613,41 @@ a span {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #ffffff;
+  border: medium #ccc solid ;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ffffff;
+  border-color: transparent #ccc transparent transparent;
+  transition: 0.2s linear;
 }
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
+  display: none;
   content: " ";
   height: 0;
   position: absolute;
   top: 40px;
   width: 0;
-  z-index: 1;
+  z-index: 2;
   left: 30px;
-  border: medium solid #ffffff;
+  border: medium #ccc solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent  #F7F7F7 transparent transparent;
+  border-color: transparent #ccc transparent transparent;
+  transition: 0.4s linear;
+}
+.left::before {
+  display: none;
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 40px;
+  width: 0;
+  z-index: 2;
+  left: 400px;
+  transform: rotate(-180deg);
+  border: medium #ccc solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ccc transparent transparent;
+  transition: 0.1s linear;
 }
 
 /* Fix the circle for containers on the right side */
@@ -501,15 +656,206 @@ a span {
 }
 
 /* The actual content */
-.content {
+.content p {
   padding: 20px 30px;
-  background-color: #cccccc;
+  background-color: transparent;
+  color: transparent;
   position: relative;
   border-radius: 6px;
   z-index: 2;
-  transition: 0.2s linear;
+  transition: 0.1s linear;
 }
 
+/* The content hover state */
+.container .content p:hover a {
+    transition: translateX(42px);
+    z-index: 0;
+} 
+.container .content p:hover {
+  background: #ccc;
+  color: #121212 ;
+  font-size: 1rem;
+  cursor: pointer;
+} 
+ 
+a:hover:nth-child(n) {
+  color: #000000;
+}
+.right:hover::before, .left:hover::before{
+  display: block;
+  transition: 0.3s linear;
+}
+
+ .right:hover::after, .left:hover::after {
+  background: #E46014;
+}
+
+/* are the formations courses and languages */
+.formacao {
+  background: #141414;
+  color: #fff;
+  width: max(100%);
+  height: 1200px;
+  position: absolute;
+  bottom: -1930px;
+}
+.formacao-container{
+  padding: 2.3rem 3rem;
+  margin: 150px auto;
+  max-width: (1200px);
+  height: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 258px;
+  position: relative;
+}
+
+.formacao-subtitulo .title > h2 {
+ width: max(300px);
+ z-index: 2;
+ transform: rotateX(-90deg);
+}
+
+.title h2 {
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+  font-size: 8rem;
+  line-height: 1.125;
+  color: #000000;
+  z-index: 2;
+}
+
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  width: max(40ch);
+  margin: 0 0 60px;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong{
+  color: #fff;
+}
+
+/* college list */
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faculdade {
+  /*flex: 1*/
+  background: #000000;
+  padding: 1.3rem;
+  margin:  0 0 60px  ;
+  border-radius: .4rem;
+  width: 240px;
+  height: 200px;
+  display: flex;
+  /*flex-direction: column; */
+  flex-wrap: wrap ;
+  gap: 11px;
+}
+
+.faculdade-tipo {
+  font: .875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+
+}
+
+.faculdade-curso::before {/*detalhe da box de competencias */
+  content: '';
+  margin-top: 1.4rem;
+  width: 7px;
+  height: 24px;
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  background: linear-gradient(#F98C28, #E46014);
+  z-index: 2;
+  border-radius: 2px;
+}
+.faculdade-curso {
+  display: flex;
+  /* flex: 1; --usar quando for colocar mais items na lista */
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 2.6rem;
+  position: relative;
+}
+
+.faculdade-instituicao {
+  color: #a3a3a3;
+}
+
+.cursos, .idiomas {
+  margin: 0 0 60px;
+  line-height: 1.5;
+}
+
+.cursos-titulo, .idomas-titulo{
+  margin: 0 0 30px;
+  font-size: .875rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  position: relative;
+  color: #8f8f8f;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -4px;
+  left: -36px
+}
+
+.cursos-titulo::before {
+  background: url("/img/icones/curso.svg") no-repeat center center;
+}
+.idomas-titulo::before {
+  background: url("/img/icones/idioma.svg") no-repeat center center;
+}
+
+.formacao-extra li {
+  max-width: 350px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+.cursos span {
+  position: absolute;
+  right: 110px;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-formacao {
+  margin: 54% auto;
+  background: #000000;
+  display: grid;
+  width: max(100%);
+  height: minmax(1000px);
+  position: absolute;
+  left: 0%;
+}
 
 
 /* Area respnsible */
@@ -823,10 +1169,7 @@ a span {
    margin-top:  45%;
    margin-bottom: 0px;
   }
-  .footer  {
-    position: absolute;
-    margin-top: 80% ;
-  }
+
 }
 @media (max-width: 1700px) {
   .section-2-box .title-h2::after {
