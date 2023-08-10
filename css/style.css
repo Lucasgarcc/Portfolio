@@ -1137,8 +1137,9 @@ a:hover:nth-child(n) {
     grid-template-columns:1fr;
   }
   
-  .container-experiencia-descricao {
-    width: max(12ch);
+  .container-experiencia h2{
+    width: max(8ch);
+    margin: 0 0 0 0;
     font-size: 4rem;
   }
   /* The actual timeline (the vertical ruler) */
@@ -2289,45 +2290,55 @@ a:hover:nth-child(n) {
     padding: 6rem 0 0 0;
   }
   .footer-descricao {
-    width: max(335px);
+    width: max(18ch);
   }
   .icone {
     width: max(100px);
     margin-top: -140px;
+    position: relative;
+    left: -180px;
   }
   /* formation page */
   .intro .intro-formacao {
     background: transparent;
   }
   .container-fundo {
-    margin: 30px auto ;
+    margin: 0px;
     width: max(445px);
     height: 490px;
     border-radius: .4rem;
-    background: #141414;
     position: absolute;
-    left: -4rem;
+    left: -3rem;
     z-index: 3;
   }
   .container-formacao {
+    margin: 85px auto;
     width: max(345px);
     position: relative;
-    left: 3.1rem;
+    left: 38px;
   }
-  
   .laptop-svg {
     display: none;
   }
-  .container-experiencia {
+  .timeline, .container-timeline {
     width: max(90%);
-    gap: 190px;
+  }
+  .competencia-container-experiencia {
+    width: max(8ch);
+    font-size: 4rem;
   }
   .container-experiencia h2{
+    margin: 0 auto;
     width: max(8ch);
     font-size: 4rem;
     position: relative;
     top: -75%;
-    left: 10%;
+    left: 0;
+  }
+  .content-timeline p{ 
+    width: max(350px);
+    position: relative;
+    left: -0px;
   }
   .container-experiencia h2::before {
     top: -18%;
@@ -2339,8 +2350,8 @@ a:hover:nth-child(n) {
     height: 2800px;
   }
   .container-timeline {
-    width: max(78%);
-    left: -12.8%;
+    width: max(89.4%);
+    left: -.8%;
     bottom: -28%;
   }
    /* date timeline */
@@ -2371,17 +2382,17 @@ a:hover:nth-child(n) {
   }
   /* Place the container to the left */
   .left {
-    left: -17%;
+    left: -7%;
   }
   /* Place the container to the right */
   .right {
     left: 50%;
   }
   .left::before {
-    left: 199px;
+    left: 165px;
   }
   .right::before {
-    left: 31px;
+    left: 16px;
   }
   /* Fix the circle for containers on the right side */
   .right::after {
@@ -2396,46 +2407,43 @@ a:hover:nth-child(n) {
 }
   /* are the formations courses and languages */
   .formacao {
-    width: max(98%);
-    height: 100em;
-    top: 430%;
+    width: max(100%);
+    height: 101em;
+    margin: 0 auto;
+    top: 413%;
   }
   .formacao-container{
+    padding: 1rem;
+    grid-template-columns: 1fr;
     width: max(85%); 
-    margin: 120px 0 0 20px;
-    gap: 70px;
+    margin: 260px 0 0 30px;
   }
   .formacao-container .subtitulo {
     transform: rotate(0deg);
     font-size: 4.5rem;
     position: relative;
-    top: 20%;
-    left: -9%;
+    top: 30%;
+    left: -5%;
   }
   .formacao-container::before {
-    top: 2%;
+    top: 1%;
     left: -2%;
   }
   .formacao-texto {
-    width: max(25ch);
-  }
-  .footer-formacao {
-    width: (92.4%);
-    padding: 0px ;
-    top: 330%;
-  }
-  .footer-descricao {
     width: max(20ch);
   }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
+  .curso-span {
     position: relative;
-    left: -90px;
+    left: 60%;
+    bottom: -14%;
   }
-  .footer-copy {
-    width: max(20ch);
+
+  .footer-formacao {
+    width: max(101%);
+    top: 322%;
   }
+
+  
 }
 /* IOS Swift simple and pro/ androids */
 @media  (max-width: 414px){
