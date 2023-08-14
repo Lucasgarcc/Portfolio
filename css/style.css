@@ -3070,7 +3070,7 @@ a:hover:nth-child(n) {
 /* IOS Swift */
 @media (max-width: 376px){ 
   .intro {
-    width: min(326px);
+    width: min(330px);
   }
   .sobre {
     padding: 1.2rem ;
@@ -3088,8 +3088,8 @@ a:hover:nth-child(n) {
     font-weight:400
   }
   .fundo-section-2 {
-    margin: 280px auto;
-    height: max(1420px);
+    margin: 300px auto;
+    height: 1410px;
   }
   .section-2-box{
     padding: 50px 0 0 0;
