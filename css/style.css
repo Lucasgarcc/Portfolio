@@ -3097,7 +3097,6 @@ a:hover:nth-child(n) {
   }
   .section-2-box .title-h2{
     padding-top: -20px;
-    width: max(300px);
     top: 40px;
     font-size: 2.4rem;
   }
