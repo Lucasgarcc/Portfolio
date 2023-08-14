@@ -2461,7 +2461,7 @@ a:hover:nth-child(n) {
     }
   .sobre {
     padding: 1.5rem;
-    margin: -2px auto;
+    margin: 0 auto;
     min-width: 326.3px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2776,7 +2776,7 @@ a:hover:nth-child(n) {
     }
   .sobre {
     padding: 1.6rem;
-    margin: -2px auto;
+    margin: 0 auto;
     width: max(330px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -3068,9 +3068,9 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 376px){ 
+@media (max-width: 375px){ 
   .intro {
-    width: min(334px);
+    width: min(338px);
   }
   .sobre {
     padding: 1.2rem ;
