@@ -3089,8 +3089,7 @@ a:hover:nth-child(n) {
     font-weight:400
   }
   .fundo-section-2 {
-    height: min(1620px);
-    margin:  auto;
+    height: max(1520px);
   }
   .section-2-box{
     padding: 50px 0 0 0;
