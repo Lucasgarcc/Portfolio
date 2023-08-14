@@ -3070,17 +3070,16 @@ a:hover:nth-child(n) {
 /* IOS Swift */
 @media (max-width: 376px){ 
   .intro {
-    width: min(322px);
+    width: min(326px);
   }
   .sobre {
-    padding: 1rem ;
+    padding: 1.2rem ;
     margin: -2px auto 0 0 0;
     width: max(310px);
-    gap: 10px;
   }
   .sobre--descricao {
-    padding: 0px;
-    width: max(300px);
+    padding: .5rem;
+    width: max(320px);
     display: grid;
     justify-items: start;
     grid-column: 1 / 7;
