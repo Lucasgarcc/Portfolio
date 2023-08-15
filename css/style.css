@@ -3139,13 +3139,14 @@ a:hover:nth-child(n) {
   }
   .footer-descricao {
     padding: 0 0 0 0;
-    width: max(20ch);
+    width: max(22ch);
   }
+
   .icone {
     width: max(100px);
     margin-top: -140px;
     position: relative;
-    left: -260px;
+    left: -290px;
   }
   /* formation page */
   .intro-formacao {
@@ -3296,7 +3297,7 @@ a:hover:nth-child(n) {
   .footer-contatiner {
     max-width: 330px;
     padding: 0;
-    margin: 55px auto 3px 25px;
+    margin: 90px auto 3px 25px;
     gap: 80px;
   }
 }
