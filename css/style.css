@@ -2268,6 +2268,7 @@ a:hover:nth-child(n) {
    }
   .footer {
     width: (93.4%);
+    height: 400px;
     padding: 0px ;
     margin: 2400px auto;
   }
@@ -2524,7 +2525,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: -1%;
+    margin-left: 15%;
     position: relative;
     justify-content: space-around;
   }
@@ -2581,7 +2582,8 @@ a:hover:nth-child(n) {
      left: 20px;
    }
   .footer {
-    width: max(90%);
+    width: max(100%);
+    height: 410px;
     padding: 0px 0px ;
     margin: 2400px auto;
   }
@@ -3141,7 +3143,12 @@ a:hover:nth-child(n) {
     padding: 0 0 0 0;
     width: max(22ch);
   }
-
+  .footer-contatiner {
+    max-width: 330px;
+    padding: 0;
+    margin: 90px auto 3px 25px;
+    gap: 80px;
+  }
   .icone {
     width: max(100px);
     margin-top: -140px;
@@ -3294,12 +3301,7 @@ a:hover:nth-child(n) {
     height: max(30em);
     top: 325%;
   }
-  .footer-contatiner {
-    max-width: 330px;
-    padding: 0;
-    margin: 90px auto 3px 25px;
-    gap: 80px;
-  }
+  
 }
 /*androids */
 @media (max-width: 360px) {
