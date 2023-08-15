@@ -3089,7 +3089,7 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     margin: 287px auto;
-    height: 1410px;
+    height: 1420px;
   }
   .section-2-box{
     padding: 50px 0 0 0;
@@ -3116,7 +3116,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    left: -3px ;
+    left: 4px ;
     position: relative;
     justify-content: space-around;
   }
