@@ -6,22 +6,19 @@ body{
 }
 
 :root {
-  --laranja-p { background: #7C3207 };
-  --laranja-s { 
-    background: #E46014;
-    color: #E46014; 
-   };
-  --laranja-t { background: #F98C28 };
-  --preto-c9 { background: #000000 };
-  --preto-c8 { background: #010000 };
-  --preto-c7 { background: #0d0d0d};
-  --preto-c6 { background: #101010 };
-  --preto-c5 { background: #121212};
-  --preto-c4 { background: #141414};
-  --preto-c3 { background: #292929};
-  --cinza-c1 { background: #707070};
-  --cinza-c0 { background: #cccccc};
-  --branco  { background:#ffffff};
+  --laranja-p:#7C3207 ;
+  --laranja-s:#E46014; 
+  --laranja-t: #F98C28;
+  --preto-c9: #000000;
+  --preto-c8: #010000;
+  --preto-c7: #0d0d0d;
+  --preto-c6: #101010;
+  --preto-c5: #121212;
+  --preto-c4: #141414;
+  --preto-c3: #292929;
+  --cinza-c1: #707070;
+  --cinza-c0: #cccccc;
+  --branco:#ffffff;
 }
 h1,h2, h3, p{
   margin: 0px
@@ -176,7 +173,7 @@ ul {
 /* about me */
 .sobre {
   padding: 3rem 3rem;
-  margin: 0 auto;
+  margin: 0 auto 30px 550px;
   display: grid;
   max-width: 900px;
   gap: 20px;
@@ -191,7 +188,7 @@ ul {
   font-size: 2rem;
  display: grid;
  justify-items: start;
- grid-column: 1 / 2;
+ grid-column: 1 / 7;
 }
 
 .sobre--descricao {
@@ -303,7 +300,7 @@ ul {
 .hobbies--section {
   position: absolute;
   width: max(1200px);
-  margin: 80% auto;
+  margin: 80% auto 0 50px;
   padding: 2.3rem 1rem;
   display: grid; 
   grid-template-columns: repeat(1, auto )2fr;
@@ -324,7 +321,7 @@ ul {
   color: #292929;
 }
 .hobbies--descricao {
-  width: max(640px);
+  width: max(46ch);
   font-size: 1.2rem;
   line-height: 1.1;
 }
@@ -701,7 +698,7 @@ a:hover:nth-child(n) {
 }
 .formacao-container{
   padding: 2.3rem 3rem;
-  margin: 150px auto;
+  margin: 150px auto 0 360px;
   max-width: (1200px);
   height: 900px;
   display: grid;
@@ -711,14 +708,26 @@ a:hover:nth-child(n) {
 }
 
 .formacao-container .subtitulo {
-  width: max(12ch);
   text-transform: uppercase;
-  padding-top: 2.5rem;
-  font-size: 7.6rem;
+  padding-top: 5.5rem;
+  font-size: 10.6rem;
   line-height: 1.125;
+  transform: rotate(-90deg);
   color: #000000;
-  z-index: 1;
+  position: absolute;
+  top: 30%;
+  left: -30%;
+  z-index:1;
 }
+
+.formacao-container::after {
+  display: block;
+  content: url('/img/icones/det3.svg') ;
+  position: absolute;
+  left:-20%;
+  top: -10%;
+  z-index: 2;
+  }
 
 .formacao-texto {
   font-size: 1.5rem;
@@ -840,9 +849,8 @@ a:hover:nth-child(n) {
 .footer-formacao {
   margin: 50% auto;
   background: #000000;
-  display: grid;
+  display: grid; 
   width: max(100%);
-  height: minmax(1000px);
   position: absolute;
   left: 0%;
 }
@@ -3060,7 +3068,6 @@ a:hover:nth-child(n) {
     height: max(30em);
     top: 325%;
   }
-
 }
 /* IOS Swift */
 @media (max-width: 375px){ 
