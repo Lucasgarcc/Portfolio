@@ -2210,7 +2210,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 100px;
-    margin-left: -1%;
+    margin-left: 20%;
     position: relative;
     justify-content: space-around;
   }
@@ -2268,23 +2268,24 @@ a:hover:nth-child(n) {
    }
   .footer {
     width: (93.4%);
-    height: 400px;
+    height: 450px;
     padding: 0px ;
     margin: 2400px auto;
   }
-  .footer-contatiner{
-    gap: 50px;
+  .footer-contatiner {
     max-width: 330px;
-    padding: 6rem 0 0 0;
+    padding: 0;
+    margin: 90px auto 3px 65px;
+    gap: 20px;
   }
-  .footer-descricao {
-    width: max(18ch);
+  .footer-descricao{
+    width: max(25ch);
   }
   .icone {
     width: max(100px);
     margin-top: -140px;
     position: relative;
-    left: -180px;
+    left: -260px;
   }
   /* formation page */
   .intro .intro-formacao {
@@ -2525,7 +2526,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 15%;
+    margin-left: 20%;
     position: relative;
     justify-content: space-around;
   }
@@ -2534,7 +2535,8 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .fundo-section-2 {
-    height: 1490px;
+    margin: 0 auto;
+    height: 1560px;
   }
   .section-2-box {
     display: grid;
@@ -2583,12 +2585,18 @@ a:hover:nth-child(n) {
    }
   .footer {
     width: max(100%);
-    height: 410px;
+    height: 450px;
     padding: 0px 0px ;
     margin: 2400px auto;
   }
+  .footer-contatiner {
+    max-width: 330px;
+    padding: 0;
+    margin: 90px auto 3px 65px;
+    gap: 20px;
+  }
   .footer-descricao {
-    width: max(20ch);
+    width: max(25ch);
   }
   .icone {
     width: max(100px);
@@ -2733,24 +2741,17 @@ a:hover:nth-child(n) {
     left: 60%;
     bottom: -14%;
   }
-
   .footer-formacao {
     padding: 0px ;
     width: max(98%);
     height: max(30em);
     top: 335%;
   }
-  .footer-contatiner {
-    padding: 80px 0 0 20px;
-    margin: 0 auto 0px 0px;
-    width: max(70%);
-    height: max(200px);
-    gap: 100px;
-  }
+  
 }
 
 /* IOS Swift simple*/
-@media (max-width: 390px) and (min-width:393px){
+@media (max-width: 390px){
   .fundo {
     display: none;
   }
@@ -2809,16 +2810,12 @@ a:hover:nth-child(n) {
    font-size: 1.1rem;
    font-weight:400
   }
-  .section-2-box{
-    width: max(90%);
-   position: relative;
-   top: 90px;
-  }
-   figure {
+
+  figure {
     width: max(40%);
   }
   .section-2-box .title-h2 {
-    padding-top: -20px;
+    padding-top: 20px;
     width: max(330px);
     position: relative;
     top: 20px;
@@ -2828,7 +2825,7 @@ a:hover:nth-child(n) {
   }
   .section-2-box .title-h2::after {
     left: -9%;
-    top: -89%;
+    top: -40%;
     z-index: 2;
   }
   #perfil-2 {
@@ -2850,12 +2847,9 @@ a:hover:nth-child(n) {
   .box-competencia::before {
     left: 1px;
     z-index: 2;
-  } .box-competencia::before {
-    left: 1px;
-    z-index: 2;
-  }
+  } 
   .fundo-section-2 {
-    height: 1560px;
+    height: 1590px;
   }
   .section-2-box {
     display: grid;
@@ -2877,29 +2871,29 @@ a:hover:nth-child(n) {
    .hobbies--title {
     margin-left: 70px;
    }
-   .hobbies-title {
-     margin-left: 80px;
-    }
-   .hobbies--title::after {
-     display: block;
-     content: url('/img/icones/game-mobile.svg');
+  .hobbies-title {
+    margin-left: 80px;
+  }
+  .hobbies--title::after {
+    display: block;
+    content: url('/img/icones/game-mobile.svg');
     position: relative;
     left: -12px;
-   }
-   .hobbies-title::after {
-     display: block;
-     content: url('/img/icones/praia-mobile.svg');
+  }
+  .hobbies-title::after {
+    display: block;
+    content: url('/img/icones/praia-mobile.svg');
     position: relative;
     left: -20px;
-   }
-   .footer::after {
-     content: url('/img/icones/detalhe-mobile.svg');
-     display: block;
-     position: absolute;
-     top: -60px;
-     left: 20px;
-   }
-    .footer {
+  }
+  .footer::after {
+    content: url('/img/icones/detalhe-mobile.svg');
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+  }
+  .footer {
     width: 102%;
     left: -6px;
     margin: 2400px auto;
@@ -2909,8 +2903,14 @@ a:hover:nth-child(n) {
     max-width: 330px;
     padding: 6rem 0 0 0;
   }
+  .footer-contatiner {
+    max-width: 330px;
+    padding: 0;
+    margin: 90px auto 3px 35px;
+    gap: 20px;
+  }
   .footer-descricao {
-    width: max(20ch);
+    width: max(25ch);
   }
   .icone {
     width: max(100px);
@@ -2919,7 +2919,6 @@ a:hover:nth-child(n) {
     left: -260px;
   }
   /* formation page */
-
   .container-fundo {
     margin: 0px;
     width: max(415px);
@@ -3061,13 +3060,7 @@ a:hover:nth-child(n) {
     height: max(30em);
     top: 325%;
   }
-  .footer-contatiner {
-    padding: 80px 0 0 20px;
-    margin: 0 auto 0px 0px;
-    width: max(70%);
-    height: max(200px);
-    gap: 100px;
-  }
+
 }
 /* IOS Swift */
 @media (max-width: 375px){ 
@@ -3137,11 +3130,11 @@ a:hover:nth-child(n) {
   }
   .footer{
     width: max(100%);
-    height: 400px;
+    height: 450px;
   }
   .footer-descricao {
     padding: 0 0 0 0;
-    width: max(22ch);
+    width: max(25ch);
   }
   .footer-contatiner {
     max-width: 330px;
@@ -3328,10 +3321,10 @@ a:hover:nth-child(n) {
   font-weight: 400;
   }
   .fundo-section-2 {
-    height: 1530px;
+    margin: 0 auto;
+    height: 1620px;
   }
   .section-2-box{
-    padding-top: 40px;
     width: max(92%);
   }
   .section-2-box .title-h2 {
@@ -3344,7 +3337,7 @@ a:hover:nth-child(n) {
     font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
-    left: -6%;
+    left: -4%;
     top: -70px;
     z-index: 2;
   }
@@ -3411,6 +3404,7 @@ a:hover:nth-child(n) {
     left: 20px;
   }
   .footer {
+    height: 500px;
     left: 0px;
   }
   .footer-contatiner{
@@ -3423,10 +3417,6 @@ a:hover:nth-child(n) {
   .box-competencia::before {
     left: -1px;
     z-index: 2;
-  }
-  .footer-contatiner{
-    gap: 50px;
-    padding: 4rem 0 0 0;
   }
 }
 @media  ( max-width: 320px){
