@@ -3115,7 +3115,7 @@ a:hover:nth-child(n) {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -12px;
+    left: -11px;
     z-index: 2;
   }
   .hobbies--section{
