@@ -3074,7 +3074,7 @@ a:hover:nth-child(n) {
   }
   .sobre {
     padding: 1.2rem ;
-    margin: 2px auto 0 0 0;
+    margin: 0 auto;
     width: max(322px);
   }
   .sobre--descricao {
@@ -3088,7 +3088,7 @@ a:hover:nth-child(n) {
     font-weight:400
   }
   .fundo-section-2 {
-    margin: 290px auto;
+    margin: 287px auto;
     height: 1410px;
   }
   .section-2-box{
