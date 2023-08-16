@@ -3162,7 +3162,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0px;
-    width: max(374px);
+    width: max(375px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -3191,7 +3191,7 @@ a:hover:nth-child(n) {
   }
   .container-experiencia h2{
     margin: 0 auto;
-    width: max(8ch);
+    width: max(9ch);
     font-size: 3.5rem;
     position: relative;
     top: -20%;
