@@ -3278,10 +3278,11 @@ a:hover:nth-child(n) {
     right: 75px;
 }
    .right .content p{
+    left: 1%;
     width: max(18ch);
   }
   .left .content p{
-    left: 69%;
+    left: 67%;
     width: max(18ch);
   }
   
