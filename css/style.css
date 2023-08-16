@@ -3182,7 +3182,7 @@ a:hover:nth-child(n) {
   }
   .competencia-container-experiencia {
     width: max(8ch);
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .container-experiencia h2{
     margin: 0 auto;
@@ -3204,26 +3204,27 @@ a:hover:nth-child(n) {
   }
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    height: 2800px;
+    margin: -500px auto;
+    height: 1600px;
   }
   .container-timeline {
-    width: max(89.4%);
+    width: max(99%);
     left: -4%;
     bottom: -28%;
   }
    /* date timeline */
    .date-left{
-    top: -91%;
-    left: 70px;
+    top: -84%;
+    left: 20px;
   }
   .date-left2{
-    top: 9%;
-    left: -140px;
+    top: 16%;
+    left: -67px;
     
   }
   .date { /*right*/
-    top: -91%;
-    left: 70px;
+    top: -85%;
+    left: 200px;
   }
   /* The descrition das times */
   .time-descricao {
@@ -3232,21 +3233,21 @@ a:hover:nth-child(n) {
   }
   .time-descricao-left, .time-descricao-left2 {
     top: 30px;
-    left: 40px;
+    left: 140px;
   }
   .time-descricao-left2 {
-    left: 50px;
+    left: 130px;
   }
   /* Place the container to the left */
   .left {
-    left: -7%;
+    left: -9%;
   }
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 20%;
   }
   .left::before {
-    left: 165px;
+    left: 236px;
   }
   .right::before {
     left: 16px;
@@ -3254,6 +3255,7 @@ a:hover:nth-child(n) {
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
+
   }
   .container {
     padding: 9px 20px;
@@ -3261,13 +3263,23 @@ a:hover:nth-child(n) {
     background: transparent;
     width: 45%;
     transition: 0.2s linear;
+  }
+  .timeline::after {
+    display: none;
+  }
+  .container::after {
+    right: -95px;
 }
+  .content p{
+    width: max(18ch);
+  }
+
   /* are the formations courses and languages */
   .formacao {
-    width: max(97%);
+    width: max(99%);
     height: 101em;
     margin: 0 auto;
-    top: 428%;
+    top: 320%;
   }
   .formacao-container{
     padding: 1rem;
@@ -3277,7 +3289,7 @@ a:hover:nth-child(n) {
   }
   .formacao-container .subtitulo {
     transform: rotate(0deg);
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     top: 30%;
     left: -5%;
@@ -3298,9 +3310,8 @@ a:hover:nth-child(n) {
     padding: 0px ;
     width: max(98.7%);
     height: max(30em);
-    top: 325%;
+    top: 215%;
   }
-  
 }
 /*androids */
 @media (max-width: 360px) {
