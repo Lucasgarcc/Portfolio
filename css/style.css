@@ -3189,7 +3189,6 @@ a:hover:nth-child(n) {
     width: max(8ch);
     font-size: 3.5rem;
     position: relative;
-    top: -75%;
     left: 0;
   }
   .content-timeline p{ 
@@ -3209,7 +3208,6 @@ a:hover:nth-child(n) {
   }
   .container-timeline {
     width: max(99%);
-    left: -4%;
     bottom: -28%;
   }
    /* date timeline */
@@ -3279,7 +3277,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 101em;
     margin: 0 auto;
-    top: 320%;
+    top: 350%;
   }
   .formacao-container{
     padding: 1rem;
