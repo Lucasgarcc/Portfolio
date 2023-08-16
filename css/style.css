@@ -3246,7 +3246,7 @@ a:hover:nth-child(n) {
     left: 20%;
   }
   .left::before {
-    left: 109px;
+    left: 112px;
     transform: rotate(1deg);
   }
   .right::before {
