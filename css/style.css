@@ -3186,16 +3186,12 @@ a:hover:nth-child(n) {
   }
   .container-experiencia h2{
     margin: 0 auto;
-    width: max(8ch);
     font-size: 3.5rem;
     position: relative;
+    top: 10px;
     left: 0;
   }
-  .content-timeline p{ 
-    width: max(350px);
-    position: relative;
-    left: -0px;
-  }
+  
   .container-experiencia h2::before {
     top: -18%;
     left: 100%;
@@ -3306,9 +3302,9 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(98.7%);
+    width: max(100%);
     height: max(30em);
-    top: 215%;
+    top: 225%;
   }
 }
 /*androids */
