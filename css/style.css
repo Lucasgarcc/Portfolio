@@ -3156,7 +3156,9 @@ a:hover:nth-child(n) {
   }
   /* formation page */
   .intro-formacao {
-    width: max(315px);
+    padding: 0;
+    margin: -20px auto;
+    width: max(320px);
   }
   .container-fundo {
     margin: 0px;
@@ -3185,10 +3187,9 @@ a:hover:nth-child(n) {
     font-size: 3rem;
   }
   .container-experiencia h2{
-    margin: 0 auto;
+    margin: -30px auto;
     font-size: 3.5rem;
     position: relative;
-    top: 10px;
     left: 0;
   }
   
@@ -3204,7 +3205,7 @@ a:hover:nth-child(n) {
   }
   .container-timeline {
     width: max(99%);
-    bottom: -28%;
+    bottom: -38%;
   }
    /* date timeline */
    .date-left{
@@ -3273,7 +3274,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 101em;
     margin: 0 auto;
-    top: 350%;
+    top: 390%;
   }
   .formacao-container{
     padding: 1rem;
@@ -3304,7 +3305,7 @@ a:hover:nth-child(n) {
     padding: 0px ;
     width: max(100%);
     height: max(30em);
-    top: 225%;
+    top: 245%;
   }
 }
 /*androids */
