@@ -3158,11 +3158,11 @@ a:hover:nth-child(n) {
   .intro-formacao {
     padding: 0;
     margin: -20px auto;
-    width: max(359px);
+    width: max(300px);
   }
   .container-fundo {
     margin: 0px;
-    width: max(378px);
+    width: max(349px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -3191,12 +3191,8 @@ a:hover:nth-child(n) {
     width: max(8ch);
     font-size: 4rem;
     position: relative;
-    top: -75%;
+    top: -35%;
     left: 0;
-  }
-  .container-experiencia h2{
-    margin: -30px auto;
-    font-size: 3.5rem;
   }
   
   .container-experiencia h2::before {
