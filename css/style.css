@@ -3166,7 +3166,7 @@ a:hover:nth-child(n) {
     height: 490px;
     border-radius: .4rem;
     position: absolute;
-    left: -6rem;
+    left: -5.1rem;
     z-index: 3;
   }
   .container-formacao {
@@ -3194,7 +3194,7 @@ a:hover:nth-child(n) {
     width: max(8ch);
     font-size: 3.5rem;
     position: relative;
-    top: -45%;
+    top: -35%;
     left: 0;
   }
   
