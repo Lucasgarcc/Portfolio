@@ -3171,7 +3171,7 @@ a:hover:nth-child(n) {
   }
   .container-formacao {
     margin: 85px auto;
-    width: max(300px);
+    width: max(auto);
     height: 350px;
     position: relative;
     left: 56px;
@@ -3192,7 +3192,7 @@ a:hover:nth-child(n) {
   .container-experiencia h2{
     margin: 0 auto;
     width: max(8ch);
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: relative;
     top: -45%;
     left: 0;
