@@ -3277,7 +3277,7 @@ a:hover:nth-child(n) {
 
   /* are the formations courses and languages */
   .formacao {
-    width: max(99%);
+    width: max(100%);
     height: 101em;
     margin: 0 auto;
     top: 380%;
@@ -3309,9 +3309,9 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(100%);
+    width: max(101%);
     height: max(30em);
-    top: 260%;
+    top: 255%;
   }
 }
 /*androids */
