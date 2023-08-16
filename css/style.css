@@ -3158,11 +3158,11 @@ a:hover:nth-child(n) {
   .intro-formacao {
     padding: 0;
     margin: -20px auto;
-    width: max(315px);
+    width: max(359px);
   }
   .container-fundo {
     margin: 0px;
-    width: max(356px);
+    width: max(378px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -3187,6 +3187,14 @@ a:hover:nth-child(n) {
     font-size: 3rem;
   }
   .container-experiencia h2{
+    margin: 0 auto;
+    width: max(8ch);
+    font-size: 4rem;
+    position: relative;
+    top: -75%;
+    left: 0;
+  }
+  .container-experiencia h2{
     margin: -30px auto;
     font-size: 3.5rem;
   }
@@ -3202,7 +3210,7 @@ a:hover:nth-child(n) {
     height: 1600px;
   }
   .container-timeline {
-    width: max(99%);
+    width: max(97%);
     left: -20px;
     bottom: -38%;
   }
@@ -3273,7 +3281,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 101em;
     margin: 0 auto;
-    top: 370%;
+    top: 375%;
   }
   .formacao-container{
     padding: 1rem;
