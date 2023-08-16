@@ -3162,11 +3162,11 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0px;
-    width: max(auto);
+    width: max(370px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
-    left: -5.1rem;
+    left: -rem;
     z-index: 3;
   }
   .container-formacao {
@@ -3174,7 +3174,7 @@ a:hover:nth-child(n) {
     width: max(auto);
     height: 350px;
     position: relative;
-    left: 56px;
+    left: 26px;
   }
   .container-formacao h1 {
     font-size: 4rem;
