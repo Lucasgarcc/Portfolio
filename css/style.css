@@ -3158,11 +3158,11 @@ a:hover:nth-child(n) {
   .intro-formacao {
     padding: 0;
     margin: -20px auto;
-    width: max(300px);
+    width: max(auto);
   }
   .container-fundo {
     margin: 0px;
-    width: max(349px);
+    width: max(369px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -3191,7 +3191,7 @@ a:hover:nth-child(n) {
     width: max(8ch);
     font-size: 4rem;
     position: relative;
-    top: -35%;
+    top: -5%;
     left: 0;
   }
   
