@@ -3225,7 +3225,7 @@ a:hover:nth-child(n) {
   }
   .date { /*right*/
     top: -85%;
-    left: 200px;
+    left: -70px;
   }
   /* The descrition das times */
   .time-descricao {
@@ -3234,11 +3234,9 @@ a:hover:nth-child(n) {
   }
   .time-descricao-left, .time-descricao-left2 {
     top: 30px;
-    left: 140px;
+    left: 110px;
   }
-  .time-descricao-left2 {
-    left: 130px;
-  }
+ 
   /* Place the container to the left */
   .left {
     left: -9%;
@@ -3248,7 +3246,8 @@ a:hover:nth-child(n) {
     left: 20%;
   }
   .left::before {
-    left: 236px;
+    left: 109px;
+    transform: rotate(1deg);
   }
   .right::before {
     left: 16px;
@@ -3266,14 +3265,26 @@ a:hover:nth-child(n) {
     transition: 0.2s linear;
   }
   .timeline::after {
-    display: none;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
   }
   .container::after {
-    right: -95px;
+    right: 75px;
 }
-  .content p{
+   .right .content p{
     width: max(18ch);
   }
+  .left .content p{
+    left: 69%;
+    width: max(18ch);
+  }
+  
 
   /* are the formations courses and languages */
   .formacao {
