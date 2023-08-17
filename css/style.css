@@ -2466,7 +2466,7 @@ a:hover:nth-child(n) {
   
 }
 /* IOS Swift simple and pro/ androids */
-@media  (max-width: 414px){
+@media  (max-width: 414px) and (min-width: 412px) {
   .fundo {
     display: none;
   }
@@ -2522,7 +2522,8 @@ a:hover:nth-child(n) {
    font-weight:400
   }
   .fundo-section-2 {
-    top: 100%;
+    margin: 0 auto;
+    height: 1590px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -2564,10 +2565,6 @@ a:hover:nth-child(n) {
   .box-competencia::before {
     left: -7px;
     z-index: 2;
-  }
-  .fundo-section-2 {
-    margin: 0 auto;
-    height: 1560px;
   }
   .section-2-box {
     display: grid;
@@ -2639,7 +2636,7 @@ a:hover:nth-child(n) {
 
   .container-fundo {
     margin: 0px;
-    width: max(415px);
+    width: max(425px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -2689,7 +2686,7 @@ a:hover:nth-child(n) {
   .container-timeline {
     width: max(97%);
     left: -20px;
-    bottom: -24%;
+    bottom: -25%;
   }
    /* date timeline */
    .date-left{
@@ -2714,7 +2711,6 @@ a:hover:nth-child(n) {
     top: 30px;
     left: 110px;
   }
- 
   /* Place the container to the left */
   .left {
     left: -9%;
@@ -2733,7 +2729,6 @@ a:hover:nth-child(n) {
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
-
   }
   .container {
     padding: 9px 20px;
@@ -2743,10 +2738,6 @@ a:hover:nth-child(n) {
     transition: 0.2s linear;
   }
   .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
     top: 0;
     bottom: 0;
     left: 24%;
@@ -2763,13 +2754,12 @@ a:hover:nth-child(n) {
     left: 67%;
     width: max(18ch);
   }
-  
   /* are the formations courses and languages */
   .formacao {
-    width: max(97%);
-    height: 102em;
+    width: max(99%);
+    height: 103em;
     margin: 0 auto;
-    top: 305%;
+    top: 290%;
   }
   .formacao-container{
     padding: 1rem;
@@ -2798,11 +2788,15 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(98%);
+    width: max(100%);
     height: max(30em);
-    top: 208%;
+    top: 200%;
   }
-  
+}
+@media (max-width: 412px) {
+  .formacao {
+    top: 334%;
+  }
 }
 /* IOS Swift simple*/
 @media (max-width: 390px){
@@ -2856,7 +2850,8 @@ a:hover:nth-child(n) {
   }
   .sobre--descricao {
     padding: 0px;
-    margin-left: 8px;
+    width: max(30ch);
+    margin: 0 0 0 8px;
     display: grid;
     justify-items: start;
     grid-column: 1 / 7;
@@ -2878,32 +2873,32 @@ a:hover:nth-child(n) {
     font-size: 2.5rem;
   }
   .section-2-box .title-h2::after {
+    top: -20%;
     left: -9%;
-    top: -40%;
     z-index: 2;
   }
   #perfil-2 {
-    width: max(155%);
+    width: max(90%);
     height: 75%;
     position: relative;
     top: 12%;
-    left: -40px;
+    left: -20px;
   }
   .competencia {
     padding: 10px;
     width: max(80%);
     gap: 1.2rem;
-    margin-top: 1px;
-    margin-left: 19%;
+    margin: 1% 0 0 2%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: 1px;
+    left: 140px;
     z-index: 2;
   } 
   .fundo-section-2 {
-    height: 1590px;
+    margin: 170px auto;
+    height: 1450px;
   }
   .section-2-box {
     display: grid;
@@ -2916,7 +2911,9 @@ a:hover:nth-child(n) {
   }
   .hobbies--section h2, .hobbies--descricao {
     word-wrap: break-word;
-    max-width: 300px;
+  }
+  .hobbies--descricao {
+    color: var(--cinza-c1);
   }
   .hobbies--section h2 {
     color: #cacaca;
@@ -2975,7 +2972,7 @@ a:hover:nth-child(n) {
   /* formation page */
   .container-fundo {
     margin: 0px;
-    width: max(415px);
+    width: max(400px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -3098,10 +3095,9 @@ a:hover:nth-child(n) {
     left: 67%;
     width: max(18ch);
   }
-
   /* are the formations courses and languages */
   .formacao {
-    width: max(97%);
+    width: max(101%);
     height: 102em;
     margin: 0 auto;
     top: 318%;
@@ -3133,7 +3129,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(98.7%);
+    width: max(102-%);
     height: max(30em);
     top: 220%;
   }
@@ -3160,7 +3156,7 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     margin: 287px auto;
-    height: 1460px;
+    height: 1550px;
   }
   .section-2-box{
     padding: 50px 0 0 0;
@@ -3546,11 +3542,11 @@ a:hover:nth-child(n) {
     bottom: -28%;
   }
   .formacao {
-    top: 314%;
+    top: 324%;
   }
  
   .footer-formacao {
-    top: 209%;
+    top: 213%;
   }
 }
 @media  ( max-width: 320px){
