@@ -2326,67 +2326,67 @@ a:hover:nth-child(n) {
   }
   .container-experiencia h2{
     margin: 0 auto;
-    width: max(8ch);
+    width: max(10ch);
     font-size: 4rem;
     position: relative;
-    top: -75%;
-    left: 0;
+    top: -50%;
+    left: 20px;
   }
   .content-timeline p{ 
     width: max(350px);
     position: relative;
-    left: -0px;
+    left: 1px;
   }
   .container-experiencia h2::before {
-    top: -18%;
-    left: 100%;
+    top: -28%;
+    left: 85%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    height: 2800px;
+    margin: -500px auto;
+    height: 1600px;
   }
   .container-timeline {
-    width: max(89.4%);
-    left: -.8%;
-    bottom: -28%;
+    width: max(97%);
+    left: -20px;
+    bottom: -38%;
   }
    /* date timeline */
    .date-left{
-    top: -91%;
-    left: 90px;
+    top: -84%;
+    left: 20px;
   }
   .date-left2{
-    top: 9%;
-    left: -140px;
+    top: 16%;
+    left: -67px;
     
   }
   .date { /*right*/
-    top: -91%;
-    left: 100px;
+    top: -85%;
+    left: -70px;
   }
   /* The descrition das times */
   .time-descricao {
     top: 30px;
-    left: 40px;
+    left: 20px;
   }
   .time-descricao-left, .time-descricao-left2 {
     top: 30px;
-    left: 40px;
+    left: 130px;
   }
-  .time-descricao-left2 {
-    left: 50px;
-  }
+ 
   /* Place the container to the left */
   .left {
-    left: -7%;
+    left: -9%;
   }
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 20%;
   }
   .left::before {
-    left: 165px;
+    left: 122px;
+    transform: rotate(1deg);
   }
   .right::before {
     left: 16px;
@@ -2394,6 +2394,7 @@ a:hover:nth-child(n) {
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
+
   }
   .container {
     padding: 9px 20px;
@@ -2401,13 +2402,35 @@ a:hover:nth-child(n) {
     background: transparent;
     width: 45%;
     transition: 0.2s linear;
-}
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
+  }
+  .container::after {
+    right: 75px;
+  }
+  .right .content p{
+    left: 1%;
+    width: max(18ch);
+  }
+  .left .content p{
+    left: 67%;
+    width: max(18ch);
+  }
+  
   /* are the formations courses and languages */
   .formacao {
     width: max(100%);
     height: 101em;
     margin: 0 auto;
-    top: 413%;
+    top: 289%;
   }
   .formacao-container{
     padding: 1rem;
@@ -2437,7 +2460,7 @@ a:hover:nth-child(n) {
 
   .footer-formacao {
     width: max(101%);
-    top: 322%;
+    top: 199%;
   }
 
   
@@ -2658,50 +2681,51 @@ a:hover:nth-child(n) {
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
+  
   .timeline {
-    height: 2800px;
+    margin: -500px auto;
+    height: 1600px;
   }
   .container-timeline {
-    width: max(89.4%);
-    left: -3%;
-    bottom: -28%;
+    width: max(97%);
+    left: -20px;
+    bottom: -24%;
   }
    /* date timeline */
    .date-left{
-    top: -91%;
-    left: 90px;
+    top: -84%;
+    left: 20px;
   }
   .date-left2{
-    top: 9%;
-    left: -140px;
+    top: 16%;
+    left: -67px;
     
   }
   .date { /*right*/
-    top: -91%;
-    left: 100px;
+    top: -85%;
+    left: -70px;
   }
   /* The descrition das times */
   .time-descricao {
     top: 30px;
-    left: 40px;
+    left: 20px;
   }
   .time-descricao-left, .time-descricao-left2 {
     top: 30px;
-    left: 40px;
+    left: 110px;
   }
-  .time-descricao-left2 {
-    left: 50px;
-  }
+ 
   /* Place the container to the left */
   .left {
-    left: -7%;
+    left: -9%;
   }
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 20%;
   }
   .left::before {
-    left: 165px;
+    left: 114px;
+    transform: rotate(1deg);
   }
   .right::before {
     left: 16px;
@@ -2709,6 +2733,7 @@ a:hover:nth-child(n) {
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
+
   }
   .container {
     padding: 9px 20px;
@@ -2716,13 +2741,35 @@ a:hover:nth-child(n) {
     background: transparent;
     width: 45%;
     transition: 0.2s linear;
-}
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
+  }
+  .container::after {
+    right: 75px;
+  }
+  .right .content p{
+    left: 1%;
+    width: max(18ch);
+  }
+  .left .content p{
+    left: 67%;
+    width: max(18ch);
+  }
+  
   /* are the formations courses and languages */
   .formacao {
     width: max(97%);
-    height: 101em;
+    height: 102em;
     margin: 0 auto;
-    top: 428%;
+    top: 305%;
   }
   .formacao-container{
     padding: 1rem;
@@ -2747,17 +2794,16 @@ a:hover:nth-child(n) {
   .curso-span {
     position: relative;
     left: 60%;
-    bottom: -14%;
+    bottom: -16%;
   }
   .footer-formacao {
     padding: 0px ;
     width: max(98%);
     height: max(30em);
-    top: 335%;
+    top: 208%;
   }
   
 }
-
 /* IOS Swift simple*/
 @media (max-width: 390px){
   .fundo {
@@ -2972,26 +3018,27 @@ a:hover:nth-child(n) {
   }
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    height: 2800px;
+    margin: -500px auto;
+    height: 1600px;
   }
   .container-timeline {
-    width: max(89.4%);
-    left: -4%;
-    bottom: -28%;
+    width: max(97%);
+    left: -20px;
+    bottom: -38%;
   }
    /* date timeline */
    .date-left{
-    top: -91%;
-    left: 70px;
+    top: -84%;
+    left: 20px;
   }
   .date-left2{
-    top: 9%;
-    left: -140px;
+    top: 16%;
+    left: -67px;
     
   }
   .date { /*right*/
-    top: -91%;
-    left: 70px;
+    top: -85%;
+    left: -70px;
   }
   /* The descrition das times */
   .time-descricao {
@@ -3000,21 +3047,20 @@ a:hover:nth-child(n) {
   }
   .time-descricao-left, .time-descricao-left2 {
     top: 30px;
-    left: 40px;
+    left: 110px;
   }
-  .time-descricao-left2 {
-    left: 50px;
-  }
+ 
   /* Place the container to the left */
   .left {
-    left: -7%;
+    left: -9%;
   }
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 20%;
   }
   .left::before {
-    left: 165px;
+    left: 114px;
+    transform: rotate(1deg);
   }
   .right::before {
     left: 16px;
@@ -3022,6 +3068,7 @@ a:hover:nth-child(n) {
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
+
   }
   .container {
     padding: 9px 20px;
@@ -3029,13 +3076,35 @@ a:hover:nth-child(n) {
     background: transparent;
     width: 45%;
     transition: 0.2s linear;
-}
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
+  }
+  .container::after {
+    right: 75px;
+  }
+  .right .content p{
+    left: 1%;
+    width: max(18ch);
+  }
+  .left .content p{
+    left: 67%;
+    width: max(18ch);
+  }
+
   /* are the formations courses and languages */
   .formacao {
     width: max(97%);
-    height: 101em;
+    height: 102em;
     margin: 0 auto;
-    top: 428%;
+    top: 318%;
   }
   .formacao-container{
     padding: 1rem;
@@ -3060,13 +3129,13 @@ a:hover:nth-child(n) {
   .curso-span {
     position: relative;
     left: 60%;
-    bottom: -14%;
+    bottom: -16%;
   }
   .footer-formacao {
     padding: 0px ;
     width: max(98.7%);
     height: max(30em);
-    top: 325%;
+    top: 220%;
   }
 }
 /* IOS Swift */
@@ -3197,7 +3266,6 @@ a:hover:nth-child(n) {
     top: -20%;
     left: 0;
   }
-  
   .container-experiencia h2::before {
     top: -18%;
     left: 100%;
@@ -3255,7 +3323,6 @@ a:hover:nth-child(n) {
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
-
   }
   .container {
     padding: 9px 20px;
@@ -3276,8 +3343,8 @@ a:hover:nth-child(n) {
   }
   .container::after {
     right: 75px;
-}
-   .right .content p{
+  }
+  .right .content p{
     left: 1%;
     width: max(18ch);
   }
@@ -3285,8 +3352,6 @@ a:hover:nth-child(n) {
     left: 67%;
     width: max(18ch);
   }
-  
-
   /* are the formations courses and languages */
   .formacao {
     width: max(100%);
@@ -3441,12 +3506,51 @@ a:hover:nth-child(n) {
     gap: 50px;
     padding: 4rem 0 0 0;
   }
+  /* formation page */
+  .intro-formacao {
+    padding: 0;
+    margin: -20px auto;
+    width: max(350);
+  }
+   .container-fundo {
+    margin: 0px;
+    width: max(347px);
+    height: 490px;
+    border-radius: .5rem;
+    position: absolute;
+    left: -3rem;
+    z-index: 3;
+  }
+  .container-formacao p {
+    width: max(26ch);
+  }
   .competencia .decoracao {
     left: 52px;
   }
   .box-competencia::before {
     left: -1px;
     z-index: 2;
+  }
+  .container-experiencia h2{
+    top: -65%;
+  }
+  .container-experiencia h2::before {
+    left: 87%;
+  }
+  .timeline {
+    margin: -500px auto;
+    height: 1600px;
+  }
+  .container-timeline {
+    width: max(97%);
+    bottom: -28%;
+  }
+  .formacao {
+    top: 314%;
+  }
+ 
+  .footer-formacao {
+    top: 209%;
   }
 }
 @media  ( max-width: 320px){
