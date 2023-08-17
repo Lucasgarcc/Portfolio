@@ -3176,7 +3176,7 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   #perfil-2 {
-    width: 135%;
+    width: 160%;
     height: 75%;
     position: relative;
     top: 14%;
@@ -3191,7 +3191,7 @@ a:hover:nth-child(n) {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -11px;
+    left: -16px;
     z-index: 2;
   }
   .hobbies--section{
@@ -3201,7 +3201,7 @@ a:hover:nth-child(n) {
     margin-left: -25px ;
   }
   .hobbies--descricao {
-    width: max(240px);
+    width: max(25ch);
   }
   .footer{
     width: max(101%);
