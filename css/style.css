@@ -3160,7 +3160,7 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     margin: 287px auto;
-    height: 1420px;
+    height: 1460px;
   }
   .section-2-box{
     padding: 50px 0 0 0;
@@ -3191,7 +3191,7 @@ a:hover:nth-child(n) {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -16px;
+    left: -12px;
     z-index: 2;
   }
   .hobbies--section{
