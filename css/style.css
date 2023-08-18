@@ -3155,7 +3155,7 @@ a:hover:nth-child(n) {
     font-weight:400
   }
   .fundo-section-2 {
-    margin: 30px auto;
+    margin: 150px auto;
     height: 1690px;
   }
   .section-2-box{
@@ -3170,7 +3170,7 @@ a:hover:nth-child(n) {
   }
   .section-2-box .title-h2{
     padding: -20px 0 0 0;
-    width: max(12ch);
+    width: max(14ch);
     top: 40px;
     font-size: 2.8rem;
   }
