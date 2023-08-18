@@ -3198,7 +3198,7 @@ a:hover:nth-child(n) {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -1px;
+    left: 3px;
     z-index: 2;
   }
   .hobbies--section{
@@ -3208,7 +3208,7 @@ a:hover:nth-child(n) {
     margin-left: -25px ;
   }
   .hobbies--section h2, .hobbies--descricao {
-    width: max(40ch);
+    width: max(320px);
     word-wrap: break-word;
   }
   .hobbies--descricao {
