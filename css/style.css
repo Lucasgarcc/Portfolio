@@ -3170,7 +3170,7 @@ a:hover:nth-child(n) {
   }
   .section-2-box .title-h2{
     padding: -20px 0 0 0;
-    width: max(14ch);
+    width: max(320px);
     top: 40px;
     font-size: 2.8rem;
   }
@@ -3180,10 +3180,10 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   figure {
-    width: max(70%);
+    width: max(40%);
   }
   #perfil-2 {
-    width: 90%;
+    width: 150%;
     height: 75%;
     position: relative;
     top: 14%;
