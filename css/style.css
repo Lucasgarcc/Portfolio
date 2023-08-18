@@ -3209,6 +3209,7 @@ a:hover:nth-child(n) {
   }
   .hobbies--section h2 {
     width: max(50ch);
+    font-size: 3.5rem;
   }
   .hobbies--descricao {
     width: max(30ch);
