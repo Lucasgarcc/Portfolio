@@ -3129,7 +3129,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(102-%);
+    width: max(102%);
     height: max(30em);
     top: 220%;
   }
@@ -3137,7 +3137,7 @@ a:hover:nth-child(n) {
 /* IOS Swift */
 @media (max-width: 375px){ 
   .intro {
-    width: min(338.8px);
+    width: min(auto);
   }
   .sobre {
     padding: 1.2rem ;
@@ -3155,39 +3155,50 @@ a:hover:nth-child(n) {
     font-weight:400
   }
   .fundo-section-2 {
-    margin: 287px auto;
-    height: 1550px;
+    margin: 30px auto;
+    height: 1690px;
   }
   .section-2-box{
     padding: 50px 0 0 0;
+    padding-top: 20px;
+    width: max(330px);
+    position: relative;
+    top: 20px;
+    left: -20px;
+    word-wrap: break-word;
+    font-size: 2.5rem;
   }
   .section-2-box .title-h2{
-    padding-top: -20px;
+    padding: -20px 0 0 0;
+    width: max(12ch);
     top: 40px;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
   .section-2-box .title-h2::after {
-    left: -4%;
-    top: -65%;
+    left: -1%;
+    top: -60%;
     z-index: 2;
   }
+  figure {
+    width: max(70%);
+  }
   #perfil-2 {
-    width: 160%;
+    width: 90%;
     height: 75%;
     position: relative;
     top: 14%;
-    left: -40px;
+    left: -1%;
   }
   .competencia {
     padding: 10px;
     width: max(70%);
     gap: 1.2rem;
-    margin-top: 30px;
+    margin: 30px 0 0 105px;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -11px;
+    left: -1px;
     z-index: 2;
   }
   .hobbies--section{
@@ -3197,10 +3208,10 @@ a:hover:nth-child(n) {
     margin-left: -25px ;
   }
   .hobbies--descricao {
-    width: max(25ch);
+    width: max(29ch);
   }
   .footer{
-    width: max(101%);
+    width: max(9.2em);
     height: 450px;
   }
   .footer-descricao {
