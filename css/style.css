@@ -3207,9 +3207,8 @@ a:hover:nth-child(n) {
     margin: 1520px auto;
     margin-left: -25px ;
   }
-  .hobbies--section h2, .hobbies--descricao {
-    width: max(320px);
-    word-wrap: break-word;
+  .hobbies--section h2 {
+    width: max(50ch);
   }
   .hobbies--descricao {
     width: max(30ch);
