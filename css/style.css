@@ -3156,14 +3156,14 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     margin: 284px auto;
-    height: 1550px;
+    height: 1560px;
   }
   .section-2-box{
     padding: 50px 0 0 0;
     padding-top: 20px;
-    width: max(330px);
+    width: max(350px);
     position: relative;
-    top: 20px;
+    top: 40px;
     left: -20px;
     word-wrap: break-word;
     font-size: 2.5rem;
@@ -3208,7 +3208,7 @@ a:hover:nth-child(n) {
     margin-left: -25px ;
   }
   .hobbies--descricao {
-    width: max(40ch);
+    width: max(50ch);
   }
   .footer{
     width: max(9.2em);
