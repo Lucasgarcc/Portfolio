@@ -3170,7 +3170,7 @@ a:hover:nth-child(n) {
   }
   .section-2-box .title-h2{
     padding: -20px 0 0 0;
-    width: max(320px);
+    width: max(340px);
     top: 40px;
     font-size: 2.8rem;
   }
@@ -3208,7 +3208,7 @@ a:hover:nth-child(n) {
     margin-left: -25px ;
   }
   .hobbies--descricao {
-    width: max(29ch);
+    width: max(40ch);
   }
   .footer{
     width: max(9.2em);
