@@ -2799,7 +2799,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift simple*/
-@media (max-width: 390px){
+@media (max-width: 393px){
   .fundo {
     display: none;
   }
@@ -3428,7 +3428,7 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     margin: 0 auto;
-    height: 1620px;
+    height: 1660px;
   }
   .section-2-box{
     width: max(92%);
@@ -3521,7 +3521,6 @@ a:hover:nth-child(n) {
   .intro-formacao {
     padding: 0;
     margin: -20px auto;
-    width: max(350);
   }
    .container-fundo {
     margin: 0px;
@@ -3557,11 +3556,14 @@ a:hover:nth-child(n) {
     bottom: -28%;
   }
   .formacao {
+    height: max(104em);
     top: 324%;
   }
- 
+  .formacao-container::after {
+    display: none;
+  }
   .footer-formacao {
-    top: 213%;
+    top: 219%;
   }
 }
 @media  ( max-width: 320px){
