@@ -3146,7 +3146,7 @@ a:hover:nth-child(n) {
   }
   .sobre--descricao {
     padding: .5rem;
-    width: max(320px);
+    width: max(30ch);
     display: grid;
     justify-items: start;
     grid-column: 1 / 7;
