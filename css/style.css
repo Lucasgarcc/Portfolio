@@ -2128,7 +2128,7 @@ a:hover:nth-child(n) {
 }
 /* despositivos mobile */
 /* IOS Swift pro */
-@media  (max-width: 450px) and (min-width: 428px){
+@media  (max-width: 400px) and (min-width: 428px){
   .fundo {
     display: none;
   }
@@ -2523,7 +2523,7 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     margin: 0 auto;
-    height: 1590px;
+    height: 1620px;
   }
   .section-2-box{
     padding-top: 40px;
@@ -3410,7 +3410,7 @@ a:hover:nth-child(n) {
   .sobre {
     padding: 1rem;
     margin-left: 0px;
-    width: max(300px);
+    width: max(91%);
     gap: 2px;
   }
   .sobre > .subtitulo {
@@ -3459,16 +3459,18 @@ a:hover:nth-child(n) {
     width: max(280px);
     gap: 1.2rem;
     margin-top: -10px;
-    margin-left: 4%;
+    margin-left: 12%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia {
     width: max(256px);
+    margin-top: -10px;
+    margin-left: 15%;
   }
   .box-competencia::before {
-    left: 3px;
-    z-index: 4;
+    left: 42px;
+    z-index: 2;
   }
   figure {
     width: max(40%);
@@ -3514,6 +3516,7 @@ a:hover:nth-child(n) {
     left: 0px;
   }
   .footer-contatiner{
+    width: max(20ch);
     gap: 50px;
     padding: 4rem 0 0 0;
   }
@@ -3536,10 +3539,6 @@ a:hover:nth-child(n) {
   }
   .competencia .decoracao {
     left: 52px;
-  }
-  .box-competencia::before {
-    left: -1px;
-    z-index: 2;
   }
   .container-experiencia h2{
     top: -65%;
