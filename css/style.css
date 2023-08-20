@@ -2795,7 +2795,7 @@ a:hover:nth-child(n) {
 }
 @media (max-width: 412px) {
   .formacao {
-    top: 334%;
+    top: 294%;
   }
 }
 /* IOS Swift simple*/
@@ -3135,7 +3135,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 375px){ 
+@media (min-width: 370px) and (max-width:376px){ 
   .intro {
     width: min(auto);
   }
@@ -3403,7 +3403,7 @@ a:hover:nth-child(n) {
   }
 }
 /*androids */
-@media (max-width: 360px) {
+@media (max-width: 363px) {
   .intro {
     width: max(89.5%);
   }
@@ -3556,14 +3556,14 @@ a:hover:nth-child(n) {
     bottom: -28%;
   }
   .formacao {
-    height: max(104em);
-    top: 324%;
+    height: max(105em);
+    top: 349%;
   }
   .formacao-container::after {
     display: none;
   }
   .footer-formacao {
-    top: 219%;
+    top: 236%;
   }
 }
 @media  ( max-width: 320px){
