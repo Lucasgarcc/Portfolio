@@ -2897,8 +2897,8 @@ a:hover:nth-child(n) {
     z-index: 2;
   } 
   .fundo-section-2 {
-    margin: 150px auto;
-    height: 1450px;
+    margin: 120px auto;
+    height: 1490px;
   }
   .section-2-box {
     display: grid;
