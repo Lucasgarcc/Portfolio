@@ -3213,7 +3213,7 @@ a:hover:nth-child(n) {
   }
   .sobre {
     padding: 1.3rem;
-    margin: -1px auto;
+    margin: 1.5px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: max(88%);
