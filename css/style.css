@@ -3240,7 +3240,7 @@ a:hover:nth-child(n) {
   }
   
   .fundo-section-2 {
-    width: max(99%);
+    width: max(100%);
     margin: 0 auto;
     height: 1550px;
   }
