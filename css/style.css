@@ -3206,7 +3206,7 @@ a:hover:nth-child(n) {
     position: absolute
   }
   .intro-descricao {
-    margin: 120px auto;
+    margin: auto;
     width: max(95%);
     font-size: 1rem;
     position: absolute
