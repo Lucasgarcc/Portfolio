@@ -3213,7 +3213,7 @@ a:hover:nth-child(n) {
   }
   .sobre {
     padding: 1.3rem;
-   
+    margin: -1px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: max(88%);
@@ -3311,7 +3311,7 @@ a:hover:nth-child(n) {
     width: max(25ch);
   }
   .footer{
-    width: max(9.4em);
+    width: max(9.6em);
     height: 450px;
   }
   .footer-descricao {
