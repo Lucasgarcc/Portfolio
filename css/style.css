@@ -2211,17 +2211,17 @@ a:hover:nth-child(n) {
   }
   .sobre .subtitulo {
    display: grid;
-   margin-left: 15px;
    justify-items: start;
    grid-column: 1 / 2;
+   color: var(--preto-c6);
   }
   .sobre--descricao {
     padding: 0px;
-    width: max(350px);
+    width: max(100%);
     display: grid;
    justify-items: start;
    grid-column: 1 / 7;
-   color: #000000;
+   color: var(--preto-c9);
    font-size: 1.1rem;
    font-weight:400
   }
@@ -3188,7 +3188,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro {
-    width: max(89.1%);
+    width: max(89%);
     padding: 1.3rem;
     margin: -1px auto;
     position: relative;
@@ -3200,19 +3200,47 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 50px 20px;
+    margin: 50px auto 60px 20px;
     width: max(80%);
     position: absolute
   }
   
-  .intro h1 {
+  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
   color: var(--preto-c3);
-  font-size: 2.7rem;
+  font-size: 2.7rem;/**/
   text-indent: 1rem;
   line-height: 3.5rem;
   }
+  .sobre {
+    padding: 1.3rem;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max(88%);
+    height: 350px;
+    gap: 10px;
+    background: #F7F7F7;
+    position: relative;
+    left: 0px;
+  }
+  .sobre .subtitulo {
+    width: max(13ch);
+    margin: 0 auto 0 5px;
+    color: var(--preto-c6);
+  }
+  .sobre--descricao {
+    padding: 0px;
+    width: max(100%);
+    display: grid;
+   justify-items: start;
+   grid-column: 1 / 7;
+   color: var(--preto-c9);
+   font-size: 1.1rem;
+   font-weight:400
+  }
+  
   .fundo-section-2 {
-    margin: 29px auto;
+    margin: 0 auto;
     height: 1550px;
   }
   .section-2-box{
@@ -3250,7 +3278,7 @@ a:hover:nth-child(n) {
     padding: 10px;
     width: max(70%);
     gap: 1.2rem;
-    margin: 30px 0 0 120px;
+    margin: 30px 0 0 114px;
     position: relative;
     justify-content: space-around;
   }
@@ -3275,25 +3303,25 @@ a:hover:nth-child(n) {
     padding: 5px;
   }
   .hobbies--section h2 {
-    width: max(50ch);
+    width: max(80%);
     margin: 0 0 0 20px;
     font-size: 3.5rem;
   }
   .hobbies--descricao {
-    width: max(30ch);
+    width: max(25ch);
   }
   .footer{
-    width: max(9.8em);
+    width: max(9.4em);
     height: 450px;
   }
   .footer-descricao {
+    margin: 0;
     padding: 0 0 0 0;
     width: max(25ch);
   }
   .footer-contatiner {
     max-width: 330px;
-    padding: 0;
-    margin: 90px auto 3px 25px;
+    padding: 5px;
     gap: 80px;
   }
   .icone {
