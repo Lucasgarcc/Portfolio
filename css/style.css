@@ -2187,6 +2187,7 @@ a:hover:nth-child(n) {
     position: absolute
   }
   .intro h1 {
+  color: var(--preto-c3);
   font-size: 3rem;
   text-indent: 1rem;
   line-height: 4rem;
@@ -3182,8 +3183,40 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 390px) and (min-width:350px){ 
-
+@media (max-width: 390px) and (min-width:370px){ 
+  .fundo {
+    display: none;
+  }
+  .intro {
+    width: max(90%);
+    padding: 1.3rem;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    background: #010000;
+    z-index: -1;
+  } 
+  .intro img{
+    display: none;
+  }
+  .intro-descricao {
+    margin: 100px auto;
+    width: max(95%);
+    font-size: 1rem;
+    position: absolute
+  }
+  .intro-descricao {
+    margin: 120px auto;
+    width: max(95%);
+    font-size: 1rem;
+    position: absolute
+  }
+  .intro h1 {
+  color: var(--preto-c3);
+  font-size: 3rem;
+  text-indent: 1rem;
+  line-height: 4rem;
+  }
   .fundo-section-2 {
     margin: 29px auto;
     height: 1550px;
@@ -3233,12 +3266,23 @@ a:hover:nth-child(n) {
   }
   .hobbies--section{
     width: max(80%);
-    padding: 0 0 0 1rem;
-    margin: 1520px auto;
-    margin-left: -9px ;
+    grid-template-columns: 1fr;
+    margin: 1600px auto;
+    gap: 20px;
+  }
+  .hobbies--section h2, .hobbies--descricao {
+    word-wrap: break-word;
+    max-width: 320px;
+  }
+  .hobbies--descricao {
+    color: var(--cinza-c1)
+  }
+  .hobbies--title {
+    padding: 5px;
   }
   .hobbies--section h2 {
     width: max(50ch);
+    margin: 0 0 0 20px;
     font-size: 3.5rem;
   }
   .hobbies--descricao {
