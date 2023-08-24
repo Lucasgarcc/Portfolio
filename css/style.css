@@ -3190,7 +3190,7 @@ a:hover:nth-child(n) {
   .intro {
     width: max(90%);
     padding: 1.3rem;
-    margin: 0 auto;
+    margin: -1px auto;
     position: relative;
     left: 0;
     background: #010000;
@@ -3200,7 +3200,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 100px auto;
+    margin: 120px auto;
     width: max(95%);
     font-size: 1rem;
     position: absolute
@@ -3215,7 +3215,7 @@ a:hover:nth-child(n) {
   color: var(--preto-c3);
   font-size: 3rem;
   text-indent: 1rem;
-  line-height: 4rem;
+  line-height: 3.5rem;
   }
   .fundo-section-2 {
     margin: 29px auto;
