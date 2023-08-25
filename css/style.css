@@ -3211,7 +3211,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 50px 20px;
+    margin: 50px auto 85px 20px;
     width: max(80%);
     position: absolute
   }
