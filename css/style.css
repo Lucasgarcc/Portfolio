@@ -2841,7 +2841,7 @@ a:hover:nth-child(n) {
     top: 200%;
   }
 }
-@media (max-width: 450px)and (min-device-width: 412px) {
+@media (max-width: 450px)and (min-width: 412px) {
   .competencia {
     margin-top: 90px;
     justify-content: space-around;
@@ -2851,7 +2851,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 393px) and (min-width:370px){ 
+@media (max-width: 393px) and (min-width:375px){ 
   .fundo {
     display: none;
   }
