@@ -2851,7 +2851,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift simple*/
-@media (max-width:393px) {
+@media (max-width:390px) {
   .fundo {
     display: none;
   }
@@ -3193,13 +3193,14 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 393px) and (min-width:370px){ 
+@media (max-width: 395px) and (min-width:370px){ 
   .fundo {
     display: none;
   }
   .intro {
     width: max(89%);
     padding: 1.3rem;
+    height: 450px;
     margin: -1px auto;
     position: relative;
     left: 0;
@@ -3210,7 +3211,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 60px 20px;
+    margin: 50px auto 50px 20px;
     width: max(80%);
     position: absolute
   }
