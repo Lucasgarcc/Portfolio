@@ -3324,6 +3324,7 @@ a:hover:nth-child(n) {
   }
   .footer{
     width: max(9.7em);
+    left: 1%;
     height: 450px;
   }
   .footer-descricao {
