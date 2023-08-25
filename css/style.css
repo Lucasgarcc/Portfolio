@@ -3216,10 +3216,13 @@ a:hover:nth-child(n) {
     position: absolute
   }
   .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-  color: var(--preto-c3);
-  font-size: 2.7rem;/**/
-  text-indent: 1rem;
-  line-height: 3.5rem;
+    color: var(--preto-c3);
+    font-size: 2.7rem;/**/
+    text-indent: 1rem;
+    line-height: 3.5rem;
+  }
+  .intro h1::before {
+    left: 50px;
   }
   .sobre {
     padding: 1.3rem;
@@ -3310,6 +3313,7 @@ a:hover:nth-child(n) {
     width: max(50%);
   }
   .hobbies--descricao {
+    margin: 0 0 0 20px;
     color: var(--cinza-c1)
   }
   .hobbies--title {
