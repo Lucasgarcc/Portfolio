@@ -2505,7 +2505,7 @@ a:hover:nth-child(n) {
   
 }
 /* IOS Swift simple and pro/ androids */
-@media  (max-width: 480px) and (min-device-width: 410px) {
+@media  (max-width: 480px) and (min-width: 410px) {
   .fundo {
     display: none;
   }
@@ -2850,8 +2850,350 @@ a:hover:nth-child(n) {
     top: 294%;
   }
 }
+/* IOS Swift simple*/
+@media (max-width:393px) {
+  .fundo {
+    display: none;
+  }
+  .intro {
+    width: max(89%);
+    padding: 1.3rem;
+    margin: -1px auto;
+    position: relative;
+    left: -2px;
+    background: #010000;
+    z-index: -1;
+  }
+  .intro h1 {
+  font-size: 2.5rem;
+  text-indent: 1rem;
+  line-height: 4rem;
+  }
+  .intro h1::before {
+    left: 4px;
+  }
+  .intro p::before {
+    background: url("/img/icones/det3.svg") no-repeat center;
+    left: -17px;
+    top: 25rem;
+    }
+  .sobre {
+    padding: 1.6rem;
+    margin: 0 auto;
+    width: max(330px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max(86%);
+    height: 350px;
+    gap: 0px;
+    background: #F7F7F7;
+    position: relative;
+    left: -0px;
+  }
+  .sobre {
+    width: max(300px);
+    gap: 10px;
+  }
+  .sobre>.subtitulo {
+   display: grid;
+   margin-left: 15px;
+   justify-items: start;
+   grid-column: 1 / 1;
+  }
+  .sobre--descricao {
+    padding: 0px;
+    width: max(30ch);
+    margin: 0 0 0 8px;
+    display: grid;
+    justify-items: start;
+    grid-column: 1 / 7;
+    color: #000000;
+   font-size: 1.1rem;
+   font-weight:400
+  }
+  .fundo-section-2 {
+    width: max(100%);
+    margin: 0 auto;
+    height: 1530px;
+  }
+  .section-2-box{
+    padding: 50px 0 0 0;
+    padding-top: 20px;
+    width: max(350px);
+    position: relative;
+    top: -20px;
+    left: 20px;
+    word-wrap: break-word;
+    font-size: 2.5rem;
+  }
+  .section-2-box .title-h2{
+    padding: -20px 0 0 0;
+    width: max(340px);
+    top: 10px;
+    font-size: 2.5rem;
+  }
+  .section-2-box .title-h2::after {
+    left: -5%;
+    top: -10%;
+    z-index: 2;
+  }
+  figure {
+    width: max(40%);
+  }
+  #perfil-2 {
+    width: 140%;
+    height: 75%;
+    position: relative;
+    top: 12%;
+    left: -9%;
+  }
+  .competencia {
+    padding: 10px;
+    width: max(70%);
+    gap: 1.2rem;
+    margin: 30px 0 0 80px;
+    position: relative;
+    justify-content: space-around;
+  }
+  .box-competencia::before {
+    left: -9px;
+    z-index: 2;
+  }
+  .section-2-box {
+    display: grid;
+    grId-template-columns: 2fr;
+  }
+  .hobbies--section{
+    padding: 0px;
+    left: 10px;
+    gap: 30px;
+    margin: 1510px auto;
+  }
+  .hobbies--section h2, .hobbies--descricao {
+    word-wrap: break-word;
+  }
+  .hobbies--descricao {
+    color: var(--cinza-c1);
+  }
+  .hobbies--section h2 {
+      width: max(80%);
+      margin: 0 0 0 20px;
+      font-size: 3.5rem;
+   }
+   .hobbies--title {
+    padding: 5px;
+    margin-left: 70px;
+   }
+  .hobbies-title {
+    margin-left: 80px;
+  }
+  .hobbies--title::after {
+    display: block;
+    content: url('/img/icones/game-mobile.svg');
+    position: relative;
+    left: -12px;
+  }
+  .hobbies-title::after {
+    display: block;
+    content: url('/img/icones/praia-mobile.svg');
+    position: relative;
+    left: -20px;
+  }
+  .footer::after {
+    content: url('/img/icones/detalhe-mobile.svg');
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+  }
+  .footer {
+    width: max(9.7em);
+    left: -40px;
+    margin: 2400px auto;
+  }
+
+  .footer-contatiner {
+    max-width: 330px;
+    padding: 0;
+    margin: 90px auto 3px 35px;
+    gap: 20px;
+  }
+  .footer-descricao {
+    width: max(25ch);
+  }
+  .icone {
+    width: max(100px);
+    margin-top: -140px;
+    position: relative;
+    left: -260px;
+  }
+  /* formation page */
+  .container-fundo {
+    margin: 0px;
+    width: max(400px);
+    height: 490px;
+    border-radius: .4rem;
+    position: absolute;
+    left: -3rem;
+    z-index: 3;
+  }
+  .container-formacao {
+    margin: 85px auto;
+    width: max(330px);
+    position: relative;
+    left: 38px;
+  }
+  .laptop-svg {
+    display: none;
+  }
+  .timeline, .container-timeline {
+    width: max(90%);
+  }
+  .competencia-container-experiencia {
+    width: max(8ch);
+    font-size: 4rem;
+  }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(8ch);
+    font-size: 4rem;
+    position: relative;
+    top: -75%;
+    left: 0;
+  }
+  .content-timeline p{ 
+    width: max(350px);
+    position: relative;
+    left: -0px;
+  }
+  .container-experiencia h2::before {
+    top: -18%;
+    left: 100%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    margin: -500px auto;
+    height: 1600px;
+  }
+  .container-timeline {
+    width: max(97%);
+    left: -20px;
+    bottom: -38%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -84%;
+    left: 20px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -67px;
+    
+  }
+  .date { /*right*/
+    top: -85%;
+    left: -70px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 20px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 110px;
+  }
+ 
+  /* Place the container to the left */
+  .left {
+    left: -9%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 20%;
+  }
+  .left::before {
+    left: 114px;
+    transform: rotate(1deg);
+  }
+  .right::before {
+    left: 16px;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+
+  }
+  .container {
+    padding: 9px 20px;
+    position: relative;
+    background: transparent;
+    width: 45%;
+    transition: 0.2s linear;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
+  }
+  .container::after {
+    right: 75px;
+  }
+  .right .content p{
+    left: 1%;
+    width: max(18ch);
+  }
+  .left .content p{
+    left: 67%;
+    width: max(18ch);
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(101%);
+    height: 102em;
+    margin: 0 auto;
+    top: 318%;
+  }
+  .formacao-container{
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    width: max(90%); 
+    margin: 250px 0 0 30px;
+  }
+  .formacao-container .subtitulo {
+    transform: rotate(0deg);
+    font-size: 4rem;
+    position: relative;
+    top: 30%;
+    left: -5%;
+  }
+  .formacao-container::before {
+    top: 1%;
+    left: -2%;
+  }
+  .formacao-texto  {
+    width: max(20ch);
+  }
+  .curso-span {
+    position: relative;
+    left: 60%;
+    bottom: -16%;
+  }
+  .footer-formacao {
+    padding: 0px ;
+    width: max(102%);
+    height: max(30em);
+    top: 220%;
+  }
+}
 /* IOS Swift */
-@media (max-width: 393px){ 
+@media (max-width: 390px) and (min-width:370px){ 
   .fundo {
     display: none;
   }
@@ -2958,7 +3300,6 @@ a:hover:nth-child(n) {
     width: max(80%);
     grid-template-columns: 1fr;
     margin: 1600px auto;
-    left: 50px;
     gap: 20px;
   }
   .hobbies--section h2, .hobbies--descricao {
@@ -2980,329 +3321,11 @@ a:hover:nth-child(n) {
     width: max(25ch);
   }
   .footer{
-    width: max(9.6em);
+    width: max(9.7em);
     height: 450px;
-    left: 0;
   }
   .footer-descricao {
-    margin: 90px auto 0 15px;
-    padding: 0 0 0 0;
-    width: max(25ch);
-  }
-  .footer-contatiner {
-    max-width: 330px;
-    padding: 5px;
-    gap: 80px;
-  }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
-    position: relative;
-    left: -290px;
-  }
-  /* formation page */
-  .intro-formacao {
-    padding: 0;
-    margin: -20px auto;
-    width: max(auto);
-  }
-  .container-fundo {
-    margin: 0px;
-    width: max(375px);
-    height: 490px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto;
-    width: max(auto);
-    height: 350px;
-    position: relative;
-    left: 26px;
-  }
-  .container-formacao h1 {
-    font-size: 4rem;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .timeline, .container-timeline {
-    width: max(90%);
-  }
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 3rem;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -20%;
-    left: 0;
-  }
-  .container-experiencia h2::before {
-    top: -18%;
-    left: 100%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    margin: -500px auto;
-    height: 1600px;
-  }
-  .container-timeline {
-    width: max(97%);
-    left: -20px;
-    bottom: -38%;
-  }
-   /* date timeline */
-   .date-left{
-    top: -84%;
-    left: 20px;
-  }
-  .date-left2{
-    top: 16%;
-    left: -67px;
-    
-  }
-  .date { /*right*/
-    top: -85%;
-    left: -70px;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 20px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 110px;
-  }
- 
-  /* Place the container to the left */
-  .left {
-    left: -9%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 20%;
-  }
-  .left::before {
-    left: 114px;
-    transform: rotate(1deg);
-  }
-  .right::before {
-    left: 16px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  .container {
-    padding: 9px 20px;
-    position: relative;
-    background: transparent;
-    width: 45%;
-    transition: 0.2s linear;
-  }
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
-    top: 0;
-    bottom: 0;
-    left: 24%;
-    margin-left: -3px;
-  }
-  .container::after {
-    right: 75px;
-  }
-  .right .content p{
-    left: 1%;
-    width: max(18ch);
-  }
-  .left .content p{
-    left: 67%;
-    width: max(18ch);
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(100%);
-    height: 101em;
-    margin: 0 auto;
-    top: 380%;
-  }
-  .formacao-container{
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    width: max(80%); 
-    margin: 250px 0 0 30px;
-  }
-  .formacao-container .subtitulo {
-    transform: rotate(0deg);
-    font-size: 3rem;
-    position: relative;
-    top: 30%;
-    left: -5%;
-  }
-  .formacao-container::before {
-    top: 1%;
-    left: -2%;
-  }
-  .formacao-texto  {
-    width: max(20ch);
-  }
-  .curso-span {
-    position: relative;
-    left: 60%;
-    bottom: -14%;
-  }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(102%);
-    height: max(30em);
-    top: 255%;
-  }
-}
-@media (max-width: 380px) and (min-width:370px){ 
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(89%);
-    padding: 1.3rem;
-    margin: -1px auto;
-    position: relative;
-    left: 0;
-    background: var(--preto-c9);
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
-  .intro-descricao {
-    margin: 50px auto 60px 20px;
-    width: max(80%);
-    position: absolute
-  }
-  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-  color: var(--preto-c3);
-  font-size: 2.7rem;/**/
-  text-indent: 1rem;
-  line-height: 3.5rem;
-  }
-  .sobre {
-    padding: 1.3rem;
-    margin: 1.5px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(88%);
-    height: 350px;
-    gap: 10px;
-    background: #F7F7F7;
-    position: relative;
-    left: 0px;
-  }
-  .sobre .subtitulo {
-    width: max(13ch);
-    margin: 0 auto 0 5px;
-    color: var(--preto-c6);
-  }
-  .sobre--descricao {
-    padding: 0px;
-    width: max(100%);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c9);
-   font-size: 1.1rem;
-   font-weight:400
-  }
-  .fundo-section-2 {
-    width: max(100%);
-    margin: 0 auto;
-    height: 1530px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(350px);
-    position: relative;
-    top: -40px;
-    left: -20px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(340px);
-    top: 40px;
-    left: 1px;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -4%;
-    top: -15%;
-    z-index: 2;
-  }
-  figure {
-    width: max(40%);
-  }
-  #perfil-2 {
-    width: 140%;
-    height: 75%;
-    position: relative;
-    top: 14%;
-    left: -1%;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(70%);
-    gap: 1.2rem;
-    margin: 30px 0 0 105px;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: -3px;
-    z-index: 2;
-  }
-  .hobbies--section{
-    width: max(80%);
-    grid-template-columns: 1fr;
-    margin: 1600px auto;
-    left: 50px;
-    gap: 20px;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    word-wrap: break-word;
-    max-width: 320px;
-  }
-  .hobbies--descricao {
-    color: var(--cinza-c1)
-  }
-  .hobbies--title {
-    padding: 5px;
-  }
-  .hobbies--section h2 {
-    width: max(80%);
-    margin: 0 0 0 20px;
-    font-size: 3.5rem;
-  }
-  .hobbies--descricao {
-    width: max(25ch);
-  }
-  .footer{
-    width: max(9.6em);
-    height: 450px;
-    left: 0;
-  }
-  .footer-descricao {
-    margin: 90px auto 0 15px;
+    margin: 0;
     padding: 0 0 0 0;
     width: max(25ch);
   }
@@ -3503,7 +3526,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 130px 20px;
+    margin: 50px auto 60px 20px;
     width: max(80%);
     position: absolute
   }
@@ -3515,7 +3538,7 @@ a:hover:nth-child(n) {
   line-height: 3.5rem;
   }
   .sobre {
-    padding: .0rem;
+    padding: 1.3rem;
     margin: 1.5px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -3582,12 +3605,12 @@ a:hover:nth-child(n) {
     padding: 10px;
     width: max(70%);
     gap: 1.2rem;
-    margin: 30px 0 0 93px;
+    margin: 30px 0 0 100px;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -3px;
+    left: 3px;
     z-index: 2;
   }
   .hobbies--section{
@@ -3638,15 +3661,10 @@ a:hover:nth-child(n) {
     left: 0px;
   }
   .footer-contatiner{
-    width: max(25ch);
-    margin: 90px auto 0 15px;
+    width: max(20ch);
+    margin: 90px auto;
     padding: 5px;
     gap: 80px;
-  }
-  .icone {
-    margin-top: -170px;
-    position: relative;
-    left: -314px;
   }
   /* formation page */
   .intro-formacao {
