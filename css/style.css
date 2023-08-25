@@ -3168,7 +3168,7 @@ a:hover:nth-child(n) {
     top: 255%;
   }
 }
-@media (max-width: 380px) and (min-width:375px){ 
+@media (max-width: 375px) and (min-width:370px){ 
   .fundo {
     display: none;
   }
