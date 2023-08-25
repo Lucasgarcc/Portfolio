@@ -3313,7 +3313,7 @@ a:hover:nth-child(n) {
     width: max(50%);
   }
   .hobbies--descricao {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 40px;
     color: var(--cinza-c1)
   }
   .hobbies--title {
