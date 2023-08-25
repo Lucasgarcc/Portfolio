@@ -3193,7 +3193,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 390px) and (min-width:370px){ 
+@media (max-width: 393px) and (min-width:370px){ 
   .fundo {
     display: none;
   }
@@ -3300,9 +3300,11 @@ a:hover:nth-child(n) {
     width: max(80%);
     grid-template-columns: 1fr;
     margin: 1600px auto;
+    left: 50px;
     gap: 20px;
   }
   .hobbies--section h2, .hobbies--descricao {
+    color: var(--cinza-c0);
     word-wrap: break-word;
     max-width: 320px;
   }
