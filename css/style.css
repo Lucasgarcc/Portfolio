@@ -1252,7 +1252,7 @@ a:hover:nth-child(n) {
   }
 
 }
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1600px) {
   .fundo{
     width: max(90%);
     margin: 0 0 0 -90px ;
