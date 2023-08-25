@@ -2851,7 +2851,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 393px) and (min-width:380px){ 
+@media (max-width: 393px) and (min-width:385px){ 
   .fundo {
     display: none;
   }
@@ -3168,7 +3168,7 @@ a:hover:nth-child(n) {
     top: 255%;
   }
 }
-@media (max-width: 390px) and (min-width:370px){ 
+@media (max-width: 380px) and (min-width:375px){ 
   .fundo {
     display: none;
   }
