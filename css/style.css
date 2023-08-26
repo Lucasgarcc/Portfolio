@@ -2911,9 +2911,14 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .formacao {
-    top: 280%;
+    top: 350%;
     height: 108em;
   }
+  .footer-formacao {
+    top: 250%
+  }
+
+  
 }
 /* IOS Swift simple*/
 @media (max-width:393px) {
