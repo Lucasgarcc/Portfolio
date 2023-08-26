@@ -1238,11 +1238,9 @@ a:hover:nth-child(n) {
     width: max(60%) ;
     word-wrap: break-word;
   }
-  
   .hobbies--descricao {
     width: max(40ch);
   }
-
   .footer {
     position: absolute;
     width: max(99.2%);
@@ -1270,7 +1268,6 @@ a:hover:nth-child(n) {
     width: max(95%);
     grid-template-columns:1fr;
   }
-  
   .container-experiencia h2{
     width: max(8ch);
     margin: 0 0 0 0;
@@ -1289,11 +1286,9 @@ a:hover:nth-child(n) {
     top: -83%;
     left: 180px;
   }
-
   .date-left2{
     top: 16%;
     left: -140px;
-    
   }
   .date { /*right*/
     top: -86%;
@@ -2258,7 +2253,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 10%;
     position: relative;
     justify-content: space-around;
   }
@@ -2605,7 +2600,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 1%;
     position: relative;
     justify-content: space-around;
   }
@@ -2950,12 +2945,13 @@ a:hover:nth-child(n) {
     padding: 10px;
     width: max(70%);
     gap: 1.2rem;
-    margin: 30px 0 0 80px;
+    margin-top: 30px;
+    margin-left: 1%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -9px;
+    left: -13px;
     z-index: 2;
   }
   .section-2-box {
@@ -3291,12 +3287,13 @@ a:hover:nth-child(n) {
     padding: 10px;
     width: max(70%);
     gap: 1.2rem;
-    margin: 30px 0 0 114px;
+    margin-top: 30px;
+    margin-left: 10%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: 3px;
+    left: -13px;
     z-index: 2;
   }
   .hobbies--section{
@@ -3610,14 +3607,15 @@ a:hover:nth-child(n) {
   }
   .competencia {
     padding: 10px;
-    width: max(70%);
+    width: max(64%);
+    margin-top: 30px;
+    margin-left: 10%;
     gap: 1.2rem;
-    margin: 30px 0 0 100px;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -3px;
+    left: -36px;
     z-index: 2;
   }
   .hobbies--section{
