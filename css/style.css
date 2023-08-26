@@ -2851,6 +2851,12 @@ a:hover:nth-child(n) {
     margin-top: 90px;
     justify-content: space-around;
   }
+  .hobbies--section{
+    width: max(90%);
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin: 1600px auto;
+  }
   .formacao {
     top: 294%;
   }
