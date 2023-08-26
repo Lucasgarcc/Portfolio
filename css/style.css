@@ -2867,10 +2867,11 @@ a:hover:nth-child(n) {
     margin-top: 90px;
     justify-content: space-around;
   }
-  .hobbies--section{
+  .hobbies--section{ 
+    padding: 0px;
     width: max(90%);
     grid-template-columns: 1fr;
-    padding: 0px;
+    left: 15px;
     margin: 1600px auto;
   }
   .footer-descricao {
