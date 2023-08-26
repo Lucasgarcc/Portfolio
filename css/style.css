@@ -2328,17 +2328,17 @@ a:hover:nth-child(n) {
   }
   .footer-contatiner {
     width: max(350px);
-    margin: 0 auto;
+    margin: 90px auto 3px 25px;
     gap: 20px;
   }
   .footer-descricao{
-    width: max(25ch);
+    width: max(27ch);
   }
   .icone {
     width: max(100px);
     margin-top: -140px;
     position: relative;
-    left: -260px;
+    left: -320px;
   }
   /* formation page */
   .intro .intro-formacao {
@@ -2673,7 +2673,7 @@ a:hover:nth-child(n) {
   .footer-contatiner {
     max-width: 330px;
     padding: 0;
-    margin: 90px auto 3px 65px;
+    margin: 90px auto 3px 25px;
     gap: 20px;
   }
   .footer-descricao {
@@ -2683,7 +2683,7 @@ a:hover:nth-child(n) {
     width: max(100px);
     margin-top: -140px;
     position: relative;
-    left: -260px;
+    left: -320px;
   }
   /* formation page */
 
@@ -2847,6 +2847,16 @@ a:hover:nth-child(n) {
   }
 }
 @media (max-width: 450px)and (min-width: 412px) {
+  .intro {
+    width: max(89%);
+    padding: 1.3rem;
+    height: 450px;
+    margin: -1px auto;
+    position: relative;
+    left: 0;
+    background: var(--preto-c9);
+    z-index: -1;
+  } 
   .competencia {
     margin-top: 90px;
     justify-content: space-around;
@@ -2856,6 +2866,15 @@ a:hover:nth-child(n) {
     grid-template-columns: 1fr;
     padding: 0px;
     margin: 1600px auto;
+  }
+  .footer-descricao {
+    width: max(27ch);
+  }
+  .icone {
+    width: max(100px);
+    margin-top: -140px;
+    position: relative;
+    left: -270px;
   }
   .formacao {
     top: 294%;
@@ -2989,14 +3008,14 @@ a:hover:nth-child(n) {
     color: var(--cinza-c1);
   }
   .hobbies--section h2 {
-      width: max(80%);
-      margin: 0 0 0 20px;
-      font-size: 3.5rem;
-   }
+    width: max(80%);
+    margin: 0 0 0 20px;
+    font-size: 3.5rem;
+  }
    .hobbies--title {
     padding: 5px;
     margin-left: 70px;
-   }
+  }
   .hobbies-title {
     margin-left: 80px;
   }
@@ -3027,17 +3046,17 @@ a:hover:nth-child(n) {
   .footer-contatiner {
     max-width: 330px;
     padding: 0;
-    margin: 90px auto 3px 35px;
+    margin: 90px auto 3px 30px;
     gap: 20px;
   }
   .footer-descricao {
-    width: max(25ch);
+    width: max(27ch);
   }
   .icone {
     width: max(100px);
     margin-top: -140px;
     position: relative;
-    left: -260px;
+    left: -320px;
   }
   /* formation page */
   .container-fundo {
@@ -3348,10 +3367,11 @@ a:hover:nth-child(n) {
   .footer-descricao {
     margin: 0;
     padding: 0 0 0 0;
-    width: max(25ch);
+    width: max(27ch);
   }
   .footer-contatiner {
     max-width: 330px;
+    margin: 90px auto 3px 20px;
     padding: 5px;
     gap: 80px;
   }
@@ -3359,7 +3379,7 @@ a:hover:nth-child(n) {
     width: max(100px);
     margin-top: -140px;
     position: relative;
-    left: -290px;
+    left: -320px;
   }
   /* formation page */
   .intro-formacao {
@@ -3701,7 +3721,7 @@ a:hover:nth-child(n) {
   }
   .footer-contatiner{
     width: max(20ch);
-    margin: 90px auto;
+    margin: 90px auto 3px 1px;
     padding: 5px;
     gap: 80px;
   }
