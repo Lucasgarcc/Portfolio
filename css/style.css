@@ -2570,7 +2570,7 @@ a:hover:nth-child(n) {
     display: grid;
    justify-items: start;
    grid-column: 1 / 7;
-   color: #000000;
+   color: var(--preto-c6);
    font-size: 1.1rem;
    font-weight:400
   }
@@ -2862,7 +2862,13 @@ a:hover:nth-child(n) {
     font-size: 3rem;
     text-indent: 1rem;
     line-height: 4rem;
-    }
+  }
+  .sobre>.subtitulo {
+   color: var(--preto-c8);
+   }
+  .sobre--descricao {
+    color: var(--preto-c6);
+  }
   .competencia {
     margin-top: 90px;
     justify-content: space-around;
@@ -2944,7 +2950,7 @@ a:hover:nth-child(n) {
     display: grid;
     justify-items: start;
     grid-column: 1 / 7;
-    color: #000000;
+    color: var(--preto-c6);
    font-size: 1.1rem;
    font-weight:400
   }
