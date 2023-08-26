@@ -1377,7 +1377,7 @@ a:hover:nth-child(n) {
   }
 
 }
-@media (max-width: 1024px) and (min-width: 900px) {
+@media (max-width: 1024px) and (min-width: 600px) {
   .fundo{
     width: max(91%);
     
@@ -1475,7 +1475,7 @@ a:hover:nth-child(n) {
     padding: 2rem;
     gap: 1.2rem;
     margin-top: -60%;
-    margin-left: 95%;
+    margin-left: 101%;
     position: relative;
     justify-content: space-around;
   }
@@ -2600,7 +2600,7 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   #perfil-2 {
-    width: max(140%);
+    width: max(145%);
     height: 75%;
     position: relative;
     top: 22%;
@@ -2946,7 +2946,7 @@ a:hover:nth-child(n) {
     width: max(40%);
   }
   #perfil-2 {
-    width: 140%;
+    width: 145%;
     height: 75%;
     position: relative;
     top: 12%;
@@ -2970,6 +2970,7 @@ a:hover:nth-child(n) {
     grId-template-columns: 2fr;
   }
   .hobbies--section{
+    width: max(80%);
     padding: 0px;
     left: 10px;
     gap: 30px;
@@ -3287,7 +3288,7 @@ a:hover:nth-child(n) {
     width: max(40%);
   }
   #perfil-2 {
-    width: 140%;
+    width: 145%;
     height: 75%;
     position: relative;
     top: 14%;
@@ -3626,7 +3627,7 @@ a:hover:nth-child(n) {
     width: max(40%);
   }
   #perfil-2 {
-    width: 140%;
+    width: 145%;
     height: 75%;
     position: relative;
     top: 14%;
