@@ -2955,7 +2955,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 16%;
+    margin-left: 10%;
     position: relative;
     justify-content: space-around;
   }
@@ -3296,12 +3296,11 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 27%;
+    margin-left: 30%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -13px;
     z-index: 2;
   }
   .hobbies--section{
@@ -3521,7 +3520,7 @@ a:hover:nth-child(n) {
   }
 }
 /*androids */
-@media (max-width: 360px) and (min-width:330px){
+@media (max-width: 363px) and (min-width:330px){
   .fundo {
     display: none;
   }
