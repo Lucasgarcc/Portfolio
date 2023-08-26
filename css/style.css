@@ -1131,128 +1131,8 @@ a:hover:nth-child(n) {
   }
 
 }
-@media (max-width: 1700px) {
-  .laptop-svg {
-    display: none;
-  }
-  .container-experiencia{
-    padding: 1rem;
-    width: max(95%);
-    grid-template-columns:1fr;
-  }
-  
-  .container-experiencia h2{
-    width: max(8ch);
-    margin: 0 0 0 0;
-    font-size: 4rem;
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    margin: -900px 0 0 auto ;
-    width: max(600px);
-    height: 1500px;
-    position: relative;
-    left: -4%;
-  }
-  /* date timeline */
-  .date-left{
-    top: -83%;
-    left: 180px;
-  }
 
-  .date-left2{
-    top: 16%;
-    left: -140px;
-    
-  }
-  .date { /*right*/
-    top: -86%;
-    left: 100px;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 50px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .time-descricao-left2 {
-    left: 140px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -3.5%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  .left::before {
-    left: 279px;
-   
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-    /* are the formations courses and languages */
-  .formacao {
-    background: #141414;
-    color: #fff;
-    width: max(100%);
-    height: 1200px;
-    position: absolute;
-    top: 2200px;
-  }
-  .formacao-container{
-    padding: 2.3rem 3rem;
-    margin: 150px auto;
-    max-width: (100%);
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px;
-    position: relative;
-    
-  }
-  .formacao .subtitulo{
-    margin: 0;
-    width: max(9ch);
-    font-size: 6rem;
-  }
-  .formacao-texto {
-    width: max(40ch);
-  }
-  .footer-formacao {
-    position: absolute;
-    top: 1750px;
-    left: -1%;
-  }
-
-  /* content about me */
-  .section-2-box .title-h2::after {
-    display: block;
-    content: url('/img/icones/det3.svg') ;
-    width: 100px;
-    height: 200px;
-    position: absolute;
-    left: -7%;
-    top: -2%;
-    z-index: 2;
-  }
-  .hobbies--section {
-   margin-top:  68%;
-   margin-bottom: 0px;
-  }
-  .footer  {
-    position: absolute;
-    margin-top: 120% ;
-  }
-
-}
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) and (min-width: 1100px) {
   .fundo{
     width: max(90%);
     margin: 0 0 0 -90px ;
@@ -1382,6 +1262,125 @@ a:hover:nth-child(n) {
   grid-template-columns: repeat(2, auto) 1fr;
   gap: 30px;
   }
+  .laptop-svg {
+    display: none;
+  }
+  .container-experiencia{
+    padding: 1rem;
+    width: max(95%);
+    grid-template-columns:1fr;
+  }
+  
+  .container-experiencia h2{
+    width: max(8ch);
+    margin: 0 0 0 0;
+    font-size: 4rem;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    margin: -900px 0 0 auto ;
+    width: max(600px);
+    height: 1500px;
+    position: relative;
+    left: -4%;
+  }
+  /* date timeline */
+  .date-left{
+    top: -83%;
+    left: 180px;
+  }
+
+  .date-left2{
+    top: 16%;
+    left: -140px;
+    
+  }
+  .date { /*right*/
+    top: -86%;
+    left: 100px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -3.5%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 279px;
+   
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+    /* are the formations courses and languages */
+  .formacao {
+    background: #141414;
+    color: #fff;
+    width: max(100%);
+    height: 1200px;
+    position: absolute;
+    top: 2200px;
+  }
+  .formacao-container{
+    padding: 2.3rem 3rem;
+    margin: 150px auto;
+    max-width: (100%);
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    position: relative;
+    
+  }
+  .formacao .subtitulo{
+    margin: 0;
+    width: max(9ch);
+    font-size: 6rem;
+  }
+  .formacao-texto {
+    width: max(40ch);
+  }
+  .footer-formacao {
+    position: absolute;
+    top: 1750px;
+    left: -1%;
+  }
+
+  /* content about me */
+  .section-2-box .title-h2::after {
+    display: block;
+    content: url('/img/icones/det3.svg') ;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: -7%;
+    top: -2%;
+    z-index: 2;
+  }
+  .hobbies--section {
+   margin-top:  68%;
+   margin-bottom: 0px;
+  }
+  .footer  {
+    position: absolute;
+    margin-top: 120% ;
+  }
+
 }
 @media (max-width: 1024px) and (min-width: 900px) {
   .fundo{
@@ -1931,7 +1930,7 @@ a:hover:nth-child(n) {
     top: 164%;
   }
 }
-@media  (max-width: 768px) and (min-width: 600px) {
+@media  (max-width: 800px) and (min-width: 600px) {
   .fundo{
     width: max(90%);
   }
@@ -2158,7 +2157,7 @@ a:hover:nth-child(n) {
 }
 /* despositivos mobile */
 /* IOS Swift pro */
-@media  (max-width: 500px) and (min-device-width: 428px) {
+@media  (max-width: 500px) and (min-device-width: 470px) {
   .fundo {
     display: none;
   }
@@ -3193,7 +3192,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 395px) and (min-width:370px){ 
+@media (max-width: 395px) and (min-width:376px){ 
   .fundo {
     display: none;
   }
@@ -3618,7 +3617,7 @@ a:hover:nth-child(n) {
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: 3px;
+    left: -3px;
     z-index: 2;
   }
   .hobbies--section{
