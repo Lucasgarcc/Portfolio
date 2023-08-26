@@ -2181,6 +2181,7 @@ a:hover:nth-child(n) {
     margin: 100px auto;
     width: max(95%);
     font-size: 1rem;
+    margin: 50px auto 85px 30px;
     position: absolute
   }
   .intro-descricao {
@@ -2527,6 +2528,7 @@ a:hover:nth-child(n) {
   .intro-descricao {
     margin: 120px auto;
     width: max(95%);
+    margin: 50px auto 105px 12px;
     font-size: 1rem;
     position: absolute
   }
@@ -2854,7 +2856,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift simple*/
-@media (max-width:390px) {
+@media (max-width:393px) {
   .fundo {
     display: none;
   }
@@ -3196,7 +3198,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 395px) and (min-width:375px){ 
+@media (max-width: 394px) and (min-width:375px){ 
   .fundo {
     display: none;
   }
@@ -3214,7 +3216,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 85px 20px;
+    margin: 50px auto 85px 35px;
     width: max(80%);
     position: absolute
   }
@@ -3225,7 +3227,7 @@ a:hover:nth-child(n) {
     line-height: 3.5rem;
   }
   .intro h1::before {
-    left: 50px;
+    left: 1px;
   }
   .sobre {
     padding: 1.3rem;
@@ -3538,11 +3540,13 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 60px 20px;
+    margin: 50px auto 120px 32px;
     width: max(80%);
     position: absolute
   }
-  
+  .intro h1::before {
+    left: 1px;
+  }
   .intro h1 { /* usar como refencia e mudar os outros breakpointes */
   color: var(--preto-c3);
   font-size: 2.7rem;/**/
