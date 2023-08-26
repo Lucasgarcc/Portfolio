@@ -3296,11 +3296,12 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 30%;
+    margin-left: 29%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
+    left: -12px;
     z-index: 2;
   }
   .hobbies--section{
