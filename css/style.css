@@ -2161,7 +2161,7 @@ a:hover:nth-child(n) {
 }
 /* despositivos mobile */
 /* IOS Swift pro */
-@media  (max-width: 500px) and (min-device-width: 470px) {
+@media  (max-width: 500px) and (min-device-width: 428px) {
   .fundo {
     display: none;
   }
@@ -2262,7 +2262,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 100px;
-    margin-left: 10%;
+    margin-left: 20%;
     position: relative;
     justify-content: space-around;
   }
@@ -2609,7 +2609,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 1%;
+    margin-left: 20%;
     position: relative;
     justify-content: space-around;
   }
@@ -2955,7 +2955,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 1%;
+    margin-left: 20%;
     position: relative;
     justify-content: space-around;
   }
@@ -3296,7 +3296,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 27%;
     position: relative;
     justify-content: space-around;
   }
@@ -3617,7 +3617,7 @@ a:hover:nth-child(n) {
     padding: 10px;
     width: max(64%);
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 30%;
     gap: 1.2rem;
     position: relative;
     justify-content: space-around;
