@@ -1065,7 +1065,7 @@ a:hover:nth-child(n) {
     top: -8px;
   }
 }
-@media  (max-width: 412px) {
+@media  (max-width: 500px)and (min-width: 412px) {
   .garcia2 {
     min-width: 24%;
     left: 80px;
@@ -1111,7 +1111,18 @@ a:hover:nth-child(n) {
   }  
 }
 /* responsive tela big desktops */
-@media (min-width:3000px) and (max-width: 10000px){
+@media (max-width: 10000px) {
+  .hobbies--section {
+   margin-top:  45%;
+   margin-bottom: 0px;
+  }
+
+}
+@media (min-width:2000px) and (max-width: 10000px){
+  .sobre {
+    position: static;
+    margin: 0 auto;
+  }
   .hobbies--section {
     margin-top:  45%;
     margin-bottom: 0px;
@@ -1124,13 +1135,7 @@ a:hover:nth-child(n) {
   height: max(25vh);
 }
 }
-@media (max-width: 10000px) {
-  .hobbies--section {
-   margin-top:  45%;
-   margin-bottom: 0px;
-  }
 
-}
 
 @media screen and (max-width: 1800px) {
   .fundo{
