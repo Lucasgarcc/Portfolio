@@ -2105,7 +2105,7 @@ a:hover:nth-child(n) {
     top: 202%;
   }
 }
-@media (max-width:656px) and (min-width:600px){
+@media (max-width:696px) and (min-width:600px){
   .fundo-section-2 {
     width: max(99%);
     height: 1100px;
@@ -3196,7 +3196,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 395px) and (min-width:376px){ 
+@media (max-width: 395px) and (min-width:370px){ 
   .fundo {
     display: none;
   }
