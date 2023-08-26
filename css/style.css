@@ -1087,7 +1087,6 @@ a:hover:nth-child(n) {
       overflow-y: auto;
     }  
 }
-
 @media (max-width: 375px){
   .garcia2 {
     min-width: 24.5%;
@@ -1135,8 +1134,6 @@ a:hover:nth-child(n) {
   height: max(25vh);
 }
 }
-
-
 @media screen and (max-width: 1800px) {
   .fundo{
     width: max(90%);
@@ -2387,9 +2384,9 @@ a:hover:nth-child(n) {
     position: relative;
     left: 1px;
   }
-  .container-experiencia h2::before {
-    top: -28%;
-    left: 85%;
+  .container-experiencia::before {
+    top: 28%;
+    left: 45%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
@@ -2480,7 +2477,7 @@ a:hover:nth-child(n) {
     width: max(100%);
     height: 101em;
     margin: 0 auto;
-    top: 289%;
+    top: 209%;
   }
   .formacao-container{
     padding: 1rem;
@@ -2497,7 +2494,7 @@ a:hover:nth-child(n) {
   }
   .formacao-container::before {
     top: 1%;
-    left: -2%;
+    left: 0%;
   }
   .formacao-texto {
     width: max(20ch);
@@ -2722,7 +2719,7 @@ a:hover:nth-child(n) {
     width: max(8ch);
     font-size: 4rem;
     position: relative;
-    top: -75%;
+    top: -100%;
     left: 0;
   }
   .content-timeline p{ 
@@ -2732,7 +2729,7 @@ a:hover:nth-child(n) {
   }
   .container-experiencia h2::before {
     top: -18%;
-    left: 100%;
+    left: 20%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
@@ -2817,7 +2814,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 103em;
     margin: 0 auto;
-    top: 290%;
+    top: 250%;
   }
   .formacao-container{
     padding: 1rem;
@@ -2894,8 +2891,28 @@ a:hover:nth-child(n) {
     position: relative;
     left: -270px;
   }
+  .container-fundo {
+    margin: -2px;
+    width: max(420px);
+    height: 490px;
+    border-radius: 0.4rem;
+    position: absolute;
+    left: -3rem;
+    z-index: 3;
+}
+  .container-formacao {
+    margin: 75px auto;
+    height: 340px;
+  }
+  .formacao-container::after {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 2;
+  }
   .formacao {
-    top: 294%;
+    top: 280%;
+    height: 108em;
   }
 }
 /* IOS Swift simple*/
@@ -2921,7 +2938,6 @@ a:hover:nth-child(n) {
     left: 4px;
   }
   .intro p::before {
-    background: url("/img/icones/det3.svg") no-repeat center;
     left: -17px;
     top: 25rem;
     }
@@ -3203,12 +3219,7 @@ a:hover:nth-child(n) {
     width: max(18ch);
   }
   /* are the formations courses and languages */
-  .formacao {
-    width: max(101%);
-    height: 102em;
-    margin: 0 auto;
-    top: 318%;
-  }
+
   .formacao-container{
     padding: 1rem;
     grid-template-columns: 1fr;
@@ -3439,11 +3450,11 @@ a:hover:nth-child(n) {
     width: max(9ch);
     font-size: 3.5rem;
     position: relative;
-    top: -20%;
+    top: -75%;
     left: 0;
   }
   .container-experiencia h2::before {
-    top: -18%;
+    top: -78%;
     left: 100%;
     transform: rotate(90.1deg);
   }
@@ -3531,9 +3542,9 @@ a:hover:nth-child(n) {
   /* are the formations courses and languages */
   .formacao {
     width: max(100%);
-    height: 101em;
+    height: 104em;
     margin: 0 auto;
-    top: 380%;
+    top: 295%;
   }
   .formacao-container{
     padding: 1rem;
@@ -3548,9 +3559,9 @@ a:hover:nth-child(n) {
     top: 30%;
     left: -5%;
   }
-  .formacao-container::before {
-    top: 1%;
-    left: -2%;
+  .formacao-container::after {
+    top: 3%;
+    left: 3%;
   }
   .formacao-texto  {
     width: max(20ch);
@@ -3564,7 +3575,8 @@ a:hover:nth-child(n) {
     padding: 0px ;
     width: max(102%);
     height: max(30em);
-    top: 255%;
+    left: -2px;
+    top: 199%;
   }
 }
 @media (max-width: 375px) {
