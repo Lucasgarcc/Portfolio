@@ -2871,7 +2871,7 @@ a:hover:nth-child(n) {
     padding: 0px;
     width: max(90%);
     grid-template-columns: 1fr;
-    left: 15px;
+    left: 30px;
     margin: 1600px auto;
   }
   .footer-descricao {
