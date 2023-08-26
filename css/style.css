@@ -2853,10 +2853,15 @@ a:hover:nth-child(n) {
     height: 450px;
     margin: -1px auto;
     position: relative;
-    left: 0;
     background: var(--preto-c9);
     z-index: -1;
   } 
+  .intro h1 {
+    color: var(--preto-c3);
+    font-size: 3rem;
+    text-indent: 1rem;
+    line-height: 4rem;
+    }
   .competencia {
     margin-top: 90px;
     justify-content: space-around;
