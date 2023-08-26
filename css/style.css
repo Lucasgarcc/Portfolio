@@ -2853,6 +2853,7 @@ a:hover:nth-child(n) {
     height: 450px;
     margin: -1px auto;
     position: relative;
+    left: -2px;
     background: var(--preto-c9);
     z-index: -1;
   } 
