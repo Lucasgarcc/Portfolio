@@ -3196,7 +3196,7 @@ a:hover:nth-child(n) {
   }
 }
 /* IOS Swift */
-@media (max-width: 395px) and (min-width:370px){ 
+@media (max-width: 395px) and (min-width:375px){ 
   .fundo {
     display: none;
   }
