@@ -2018,7 +2018,7 @@ a:hover:nth-child(n) {
   }
   
 }
-@media screen and (max-width: 800px) and (min-width:700px){
+@media screen and (max-width: 800px) and (min-width:790px){
   .fundo{
     width: max(90%);
     left: 9%;
@@ -2060,7 +2060,7 @@ a:hover:nth-child(n) {
   }
   .sobre {
     padding: 1rem;
-    margin: -120px auto;
+    margin: -30px auto;
     width: max(750px);
     gap: 10px;
     z-index: 2;
@@ -2864,7 +2864,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 10%;
     position: relative;
     justify-content: space-around;
   }
@@ -3212,7 +3212,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 10%;
     position: relative;
     justify-content: space-around;
   }
@@ -3472,6 +3472,7 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin-top: 90px;
+    margin-left: 0%;
     justify-content: space-around;
   }
   .hobbies--section{ 
@@ -3620,7 +3621,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 0%;
     position: relative;
     justify-content: space-around;
   }
@@ -3957,7 +3958,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 29%;
+    margin-left: 9%;
     position: relative;
     justify-content: space-around;
   }
@@ -4189,7 +4190,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 29%;
+    margin-left: 9%;
     position: relative;
     justify-content: space-around;
   }
@@ -4297,7 +4298,7 @@ a:hover:nth-child(n) {
     padding: 10px;
     width: max(64%);
     margin-top: 30px;
-    margin-left: 30%;
+    margin-left: 10%;
     gap: 1.2rem;
     position: relative;
     justify-content: space-around;
