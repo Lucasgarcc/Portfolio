@@ -2324,7 +2324,6 @@ a:hover:nth-child(n) {
   }
   .intro {
     width: max(100%);
-    margin: 0 auto 0 -170px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
