@@ -107,10 +107,10 @@ ul {
   margin: 0px;
   background: #101010;
   width: 83%;
-  height: 450px;
+  height: 470px;
   position: absolute;
   left: 16%;
-  top: 160px;
+  top: 140px;
   z-index: 0;
 } 
 
@@ -133,7 +133,7 @@ ul {
 
 .intro-descricao {
   position: relative;
-  bottom: 8rem;
+  bottom: 6rem;
   color: #ffffff;
   text-align: center;
   width: 578.04px;
@@ -165,8 +165,7 @@ ul {
 .decoracao2{
   position: relative;
   right: 30rem;
-  bottom: -29.5rem;
-  rotate: (X 50deg);
+  bottom: -28rem;
   z-index: -1;
 }
 
@@ -1134,7 +1133,7 @@ a:hover:nth-child(n) {
   height: max(25vh);
 }
 }
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1800px) and (min-width:1100px){
   .fundo{
     width: max(90%);
     margin: 0 0 0 -90px ;
@@ -1147,7 +1146,6 @@ a:hover:nth-child(n) {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
-   
     gap: 250px;
   } .intro img {
     width: max(80%);
@@ -1158,7 +1156,6 @@ a:hover:nth-child(n) {
     font-size: rem;
     position: static;
   }
-  
   .intro h1::before {
     content: " ";
     display: block;
@@ -1273,7 +1270,7 @@ a:hover:nth-child(n) {
   .container-experiencia h2{
     width: max(8ch);
     margin: 0 0 0 0;
-    font-size: 4rem;
+    font-size: 6rem;
   }
   /* The actual timeline (the vertical ruler) */
   .container-timeline {
@@ -1340,7 +1337,7 @@ a:hover:nth-child(n) {
     height: 900px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 100px;
+    gap: 210px;
     position: relative;
     
   }
@@ -1348,6 +1345,18 @@ a:hover:nth-child(n) {
     margin: 0;
     width: max(9ch);
     font-size: 6rem;
+  }
+  .formacao-container .subtitulo {
+    text-transform: uppercase;
+    padding-top: 5.5rem;
+    font-size: 10.6rem;
+    line-height: 1.125;
+    transform: rotate(-90deg);
+    color: #000000;
+    position: absolute;
+    top: 395%;
+    left: -25%;
+    z-index: 1;
   }
   .formacao-texto {
     width: max(40ch);
@@ -1375,16 +1384,114 @@ a:hover:nth-child(n) {
   }
   .footer  {
     position: absolute;
-    margin-top: 120% ;
+    margin-top: 100% ;
   }
-
+}
+@media screen and (max-width:1120px) {
+  .icone { 
+    position: relative;
+    left: 0%;
+  }
+  .container-experiencia h2 {
+    font-size: 7rem;
+    margin: auto auto auto 20px ;
+  }
+  .container-experiencia h2::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: -2%;
+    left: 210%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    top: 125%;
+    left: -16%;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 300%;
+  }
+  .formacao-container{
+    padding: 2.3rem 3rem;
+    margin: 150px auto;
+    max-width: (100%);
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+  }
+  .footer-contatiner {
+    width: max(900px);
+    gap: 140px;
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 291%;
+  }
+}
+@media screen and (max-width:1114px) {
+  .icone { 
+    position: relative;
+    left: 0%;
+  }
+  .container-experiencia h2 {
+    font-size: 5.5rem;
+    margin: auto auto auto 20px ;
+  }
+  .container-experiencia h2::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: -2%;
+    left: 230%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    width: max(34em) ;
+    height: auto;
+    top: 140%;
+    left: -16%;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 360%;
+  }
+  .formacao-container{
+    padding: 2.3rem 3rem;
+    margin: 150px auto;
+    max-width: (100%);
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+  }
+  .footer-contatiner {
+    width: max(900px);
+    gap: 140px;
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 361%;
+  }
 }
 @media (max-width: 1024px) and (min-width: 600px) {
   .fundo{
     width: max(91%);
-    
+    left: 50px;
   }
   .intro {
+    margin: auto auto auto -90px;
     width: max(100%);
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -1397,7 +1504,7 @@ a:hover:nth-child(n) {
   .intro-descricao {
     width: 90%;
     font-size: 1rem;
-    margin: -50px auto;
+    margin: 40px auto;
   }
   .intro h1::before {
     content: " ";
@@ -1412,7 +1519,7 @@ a:hover:nth-child(n) {
   .decoracao{
     display: block;
     position: relative;
-    right: 9rem;
+    right: 5.3rem;
     bottom: -27rem;
     z-index: 2;
   }
@@ -1435,7 +1542,6 @@ a:hover:nth-child(n) {
     margin: 0 0 40px 0;
     grid-column: 1 /4;
   }
-  
   .fundo-section-2 {
     width: max(99%);
     height: 1090px;
@@ -1476,22 +1582,22 @@ a:hover:nth-child(n) {
     grid-template-columns: repeat(1, auto );
     padding: 2rem;
     gap: 1.2rem;
-    margin-top: -60%;
-    margin-left: 101%;
+    margin-top: -65%;
+    margin-left: 67%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -217%;
+    left: -7%;
     z-index: 2;
   }
   .hobbies--section{
     padding: 0;
     width: max(60%) ;
-    margin: 1200px auto;
+    margin: 1150px auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: 100px;
     justify-items:self-end;
     position: absolute;
   }
@@ -1520,19 +1626,43 @@ a:hover:nth-child(n) {
   display: none;
   }
   .container-experiencia{
-    width: max(95%);
+    width: max(80%);
+  }
+  .container-experiencia h2{
+    width: max(12ch);
+    position: relative;
+    top: -12%;
+    left: 14%;
+  }
+  .container-experiencia h2::before {
+    position: absolute;
+    top: -50%;
+    left: 100%;
+    transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
   .container-timeline {
     width: max(560px);
-    left: 0%;
+    top: 40%;
+    left: -92%;
   }
   /* are the formations courses and languages */
   .formacao {
-    width: max(97%);
+    width: max(100%);
+    top: 204%;
   }
   .formacao-container{
     max-width: (90%); 
+  }
+  .formacao-container::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: 4%;
+    left: 4%;
   }
   .formacao .subtitulo{
     width: max(9ch);
@@ -1541,7 +1671,8 @@ a:hover:nth-child(n) {
     width: max(30ch);
   }
   .footer-formacao {
-    width: max(98%);
+    width: max(100%);
+    top: 147%;
   }
 
 }
@@ -1627,7 +1758,7 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin-top: -55%;
-    margin-left: 90.5%;
+    margin-left: 90%;
     position: relative;
     justify-content: space-around;
   }
@@ -1672,49 +1803,87 @@ a:hover:nth-child(n) {
     display: none;
   }
   .container-experiencia {
+    padding: 0;
     width: max(90%);
   }
   .container-experiencia h2{
-    width: max(9ch);
+    width: max(12ch);
     position: relative;
-    top: -80%;
+    top: -12%;
     left: 14%;
   }
   .container-experiencia h2::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
     position: absolute;
-    top: -9%;
-    left: 130%;
+    top: -20%;
+    left: 100%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
   .container-timeline {
     width: max(600px);
-    left: -10%;
-    bottom: -80%;
+    height: auto;
+    left: -98%;
+    top: 40%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -83%;
+    left: 180px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -86%;
+    left: 100px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -3.5%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 279px;
+   
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
   }
   /* are the formations courses and languages */
   .formacao {
     width: max(99%);
-    top: 254%;
+    top: 235%;
   }
   .formacao-container{
+    margin: 120px auto;
     max-width: (90%); 
-    
+    gap: 30px;
   }
   .formacao-container .subtitulo {
     width: max(4ch);
     transform: rotate(90.1deg);
     font-size: 7.5rem;
     position: relative;
-    top: -28%;
-    left: -160%;
+    top: 20%;
+    left: 0%;
   }
-
   .formacao-container::before {
     display: block;
     content: '';
@@ -1725,17 +1894,16 @@ a:hover:nth-child(n) {
     top: 5%;
     left: 4%;
   }
-
   .formacao-texto {
     width: max(30ch);
   }
   .footer-formacao {
     width: max(100%);
-    top: 181%;
+    top: 165%;
   }
   
 }
-@media (max-width: 834px) and (min-width: 830px) {
+@media (max-width: 834px) and (min-width: 820px) {
   .fundo-section-2 {
     height: 1150px;
   }
@@ -1749,14 +1917,115 @@ a:hover:nth-child(n) {
     left: -98%;
     z-index: 2;
   }
+
+   /* formation page */
+   .intro-formacao {
+    grid-template-columns: 1fr;
+    width: max(90%);
+  }
+  .laptop-svg {
+    display: none;
+  }
+  .container-experiencia {
+    padding: 0;
+    width: max(90%);
+  }
+  .container-experiencia h2{
+    width: max(12ch);
+    position: relative;
+    top: -12%;
+    left: 14%;
+  }
+  .container-experiencia h2::before {
+    position: absolute;
+    top: -20%;
+    left: 100%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    width: max(600px);
+    height: auto;
+    left: -98%;
+    top: 40%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -83%;
+    left: 180px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -86%;
+    left: 100px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -3.5%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 279px;
+   
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 235%;
+  }
+  .formacao-container{
+    margin: 120px auto;
+    max-width: (90%); 
+    gap: 30px;
+  }
+  .formacao-container .subtitulo {
+    width: max(4ch);
+    transform: rotate(90.1deg);
+    font-size: 6.5rem;
+    position: relative;
+    top: 20%;
+    left: 0%;
+  }
+
+  .formacao-texto {
+    width: max(30ch);
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 165%;
+  }
+  
 }
 @media screen and (max-width: 800px) and (min-width:700px){
   .fundo{
     width: max(90%);
+    left: 9%;
   }
   .intro {
     width: max(100%);
-    margin: 0 auto 0 -170px;
+    margin: 90px auto 0 -100px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
@@ -1827,16 +2096,16 @@ a:hover:nth-child(n) {
   #perfil-2 {
     width: 50%;
     top: 65%;
-    left: -3%;
+    left: -8%;
   }
   .competencia {
-    margin-top: -55%;
-    margin-left: 90.5%;
+    margin-top: -65%;
+    margin-left: 45%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -199%;
+    left: 7%;
     z-index: 2;
   }
   .hobbies--section{
@@ -1872,6 +2141,7 @@ a:hover:nth-child(n) {
     grid-template-columns: 1fr;
     width: max(88%);
     position: relative;
+    left: 20%;
   }
   .laptop-svg {
     display: none;
@@ -1884,8 +2154,8 @@ a:hover:nth-child(n) {
     width: max(12ch);
     font-size: 6rem;
     position: relative;
-    top: -80%;
-    left: 14%;
+    top: -30%;
+    left: 5%;
   }
   .container-experiencia h2::before {
     left: 0%;
@@ -1893,18 +2163,17 @@ a:hover:nth-child(n) {
   }
   /* The actual timeline (the vertical ruler) */
   .container-timeline {
-    width: max(90%);
-    left: 2%;
-    bottom: -83%;
+    width: max(100%);
+    left: -20%;
+    bottom: -23%;
   }
   /* are the formations courses and languages */
   .formacao {
     width: max(99%);
-    top: 235%;
+    top: 252%;
   }
   .formacao-container{
     max-width: (90%); 
-    
   }
   .formacao-container .subtitulo {
     width: max(3ch);
@@ -1926,17 +2195,130 @@ a:hover:nth-child(n) {
     top: 164%;
   }
 }
-@media (max-width: 800px) and (min-width: 790px) {
+@media (max-width: 800px) and (min-width: 700px) {
+  .intro-formacao {
+    grid-template-columns: 1fr;
+    width: max(88%);
+    position: relative;
+    left: 10%;
+  }
   .fundo-section-2 {
     width: max(99%);
     height: 1170px;
   }
   .box-competencia::before {
-    left: -190%;
+    left: 8%;
     z-index: 2;
   }
+   /* formation page */
+   .intro-formacao {
+    grid-template-columns: 1fr;
+    width: max(90%);
+  }
+  .laptop-svg {
+    display: none;
+  }
+  .container-experiencia {
+    padding: 0;
+    width: max(90%);
+  }
+  .container-experiencia h2{
+    width: max(12ch);
+    position: relative;
+    top: -12%;
+    left: 10%;
+  }
+  .container-experiencia h2::before {
+    position: absolute;
+    top: -40%;
+    left: 85%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    width: max(600px);
+    height: auto;
+    left: -124%;
+    top: 38%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -83%;
+    left: 180px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -86%;
+    left: 100px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -3.5%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 279px;
+   
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 225%;
+  }
+  .formacao-container{
+    margin: 120px auto;
+    max-width: (90%); 
+    gap: 30px;
+  }
+  .formacao-container .subtitulo {
+    width: max(4ch);
+    transform: rotate(90.1deg);
+    font-size: 7.5rem;
+    position: relative;
+    top: 20%;
+    left: 0%;
+  }
+  .formacao-container::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+  }
+  .formacao-texto {
+    width: max(30ch);
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 164%;
+  }
 }
-@media  (max-width: 700px) and (min-width: 660px) {
+@media  (max-width: 797px) and (min-width: 660px) {
   .fundo{
     width: max(90%);
   }
@@ -2014,7 +2396,6 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin-top: -65%;
-    margin-left: 90.5%;
     position: relative;
     justify-content: space-around;
   }
@@ -2050,45 +2431,92 @@ a:hover:nth-child(n) {
     grid-template-columns: 1fr;
     gap: 50px;
   }
+  .icone{
+    left: -30px;
+  }
   /* formation page */
   .intro-formacao {
-    top: 20px
+    top: 20px;
+    left: 120px;
   }
   .container-experiencia h2{
     width: max(12ch);
     font-size: 6rem;
     position: relative;
-    top: -70%;
-    left: 14%;
+    top: -12%;
+    left: 10%;
   }
   .container-experiencia h2::before {
     top: -18%;
-    left: 92%;
+    left: 85%;
     transform: rotate(90.1deg);
   }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    width: max(90%);
-    left: 2%;
-    bottom: -83%;
+   /* The actual timeline (the vertical ruler) */
+   .container-timeline {
+    width: max(600px);
+    height: auto;
+    left: -124%;
+    top: 38%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -83%;
+    left: 180px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -86%;
+    left: 100px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -3.5%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 279px;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
   }
   /* are the formations courses and languages */
   .formacao {
     width: max(99%);
-    height: 87em;
-    top: 260%;
+    top: 283%;
   }
   .formacao-container{
-    max-width: (99%); 
-    margin: 120px 0 0 60px;
-    gap: 70px;
+    max-width: (80%); 
+    margin: 120px 0 0 0 -30px;
+    gap: px;
   }
+  .formacao-texto {
+    width: max(30ch);
+}
   .formacao-container .subtitulo {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     font-size: 6.5rem;
     position: relative;
     top: 20%;
-    left: 1%;
+    left: -1%;
   }
   .formacao-container::before {
     display: block;
@@ -2098,16 +2526,71 @@ a:hover:nth-child(n) {
     background: url('/img/icones/det3.svg')no-repeat center center;
     position: absolute;
     top: 4%;
-    left: -4%;
-  }
-  .formacao-texto {
-    width: max(40ch);
+    left: 4%;
   }
   .footer-formacao {
-    top: 202%;
+    top: 204%;
   }
 }
-@media (max-width:696px) and (min-width:600px){
+@media (max-width:798px)and (min-width: 769px) {
+  .formacao {
+    width: max(99%);
+    top: 275%;
+  }
+  .footer-formacao {
+    top: 200%;
+  }
+}
+@media (max-width:696px) and (min-width:656px){
+  .fundo{
+    width: max(90%);
+    left: 2%;
+  }
+  .intro {
+    width: max(100%);
+    margin: 80px auto 0 -90px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+    gap: 0px;
+  }
+  .intro img {
+    display: none;
+  }
+  .intro-descricao {
+    margin: 0;
+    width: max(90%);
+    font-size: 1rem;
+  }
+  .intro h1::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 10px;
+    background: url("../img/icones/det1-topo.svg") no-repeat center;
+    position: relative;
+    left: 5px;
+    ;
+  }
+  .decoracao, .decoracao2{
+    display: none;
+  }
+  .intro-descricao {
+    gap: -1rem;
+  }
+  .sobre .subtitulo{
+    color: #010000;
+  }
+  .sobre {
+    padding: 0rem;
+    width: max(80%);
+    grid-template-columns: 1fr;
+    margin: -120px auto auto ;
+  }
+  .sobre--descricao {
+    width: max(45ch);
+    grid-column: 1 /4;
+  }
   .fundo-section-2 {
     width: max(99%);
     height: 1100px;
@@ -2142,17 +2625,20 @@ a:hover:nth-child(n) {
     left: -12%;
   }
   .competencia {
-    margin-top: -55%;
-    margin-left: 70.5%;
+    width: max(350px);
+    padding: 0 0 0 0;
+    margin-top: -45%;
+    margin-left: 40%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -40%;
+    left: 1%;
     z-index: 2;
   }
   .hobbies--section h2 {
     font-size: 4rem ;
+    left: -20px;
   }
   .hobbies--descricao {
     width: max(260px);
@@ -2160,7 +2646,121 @@ a:hover:nth-child(n) {
   .footer-contatiner {
     width: max(560px) ;
   }
+   /* formation page */
+  .container-formacao {
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    margin: 70px auto;
+    width: max(450px);
+    height: 350px;
+    background-color: #ededed;
+    position: relative;
+    left: 4rem;
+  }
+  .container-experiencia {
+    padding: 2.3rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto)1fr;
+    gap: 100px;
+    position: static;
+  }
+  .container-experiencia h2{
+    width: max(12ch);
+    font-size: 5rem;
+    position: relative;
+    top: -12%;
+    left: 2%;
+  }
+  .container-experiencia h2::before {
+    top: -48%;
+    left: 85%;
+    transform: rotate(90.1deg);
+  }
+   /* The actual timeline (the vertical ruler) */
+   .container-timeline {
+    width: max(550px);
+    height: auto;
+    left: -112%;
+    top: 38%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -83%;
+    left: 180px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -86%;
+    left: 100px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -3.5%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 279px;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 280%;
+  }
+  .formacao-container{
+    max-width: (80%); 
+    margin: 120px 0 0 0 -60px;
+    gap: 10px;
+  }
+  .formacao-texto {
+    width: max(30ch);
+  }
+  .formacao-container>div:nth-child(even) {
+    margin: 0 auto 0 -80%;
+  }
+  .formacao-container .subtitulo {
+    transform: rotate(90deg);
+    font-size: 5.5rem;
+    position: relative;
+    top: 40%;
+    left: -40%;
+  }
+  .formacao-container::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+  }
+  .footer-formacao {
+    top: 207%;
+  }
 }
+
 /* despositivos mobile */
 /* IOS Swift pro */
 @media  (max-width: 500px) and (min-device-width: 428px) {
@@ -2848,7 +3448,7 @@ a:hover:nth-child(n) {
     top: 200%;
   }
 }
-@media (max-width: 450px)and (min-width: 412px) {
+@media (max-width: 450px)and (min-width: 411px) {
   .intro {
     width: max(89%);
     padding: 1.3rem;
