@@ -1142,19 +1142,22 @@ a:hover:nth-child(n) {
   .intro {
     width: max(100%);
     padding: 4rem 2rem; 
-    margin: 0 auto auto -200px;
+    margin: -120px auto auto -200px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
     gap: 250px;
-  } .intro img {
-    width: max(80%);
+  } 
+  .intro img {
+    width: max(120%);
+    top: 5%;
     left: 40%;
   }
   .intro-descricao {
     width: 100%;
     font-size: rem;
     position: static;
+    gap: -1rem;
   }
   .intro h1::before {
     content: " ";
@@ -1166,16 +1169,13 @@ a:hover:nth-child(n) {
     left: 65px;
     ;
   }
-  .intro-descricao {
-    gap: -1rem;
-  }
   .decoracao {
     display: none
   }
   .decoracao2{
     position: relative;
-    right: 31.5rem;
-    bottom: -21.5rem;
+    right: 25.5rem;
+    bottom: -27.5rem;
     z-index: -1;
   }
   .subtitulo{
@@ -1187,18 +1187,20 @@ a:hover:nth-child(n) {
     width: max(70%);
     z-index: 2;
   }
+  .sobre--descricao {
+    margin: 0 0 40px 0;
+    grid-column: 1 /4;
+  }
   .sobre--descricao h1 {
     margin: 0 auto;
     display: grid;
-    grid-area: 2 / -1 / -2;
     width: 280px;
-    color: #707070;
     z-index: 2;
   }
   .subtitulo  {
     margin: 0 auto;
     width: -0px;
-    color: #ffffff;
+    color: var(--preto-c5);
     grid-area: -4 / 1 / 1;
     display: grid;
     z-index: 2;
@@ -1207,9 +1209,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 840px;
   }
-  .section-2-box {
-    width: max(60%);
-  }
+
   #perfil-2 {
     width: max(70%);
     top: 20%;
@@ -1243,7 +1243,7 @@ a:hover:nth-child(n) {
   .footer {
     position: absolute;
     width: max(99.2%);
-    margin-top: 1650px ;
+    margin-top: 1750px ;
   }
   .footer-formacao {
     position: absolute;
@@ -1435,7 +1435,26 @@ a:hover:nth-child(n) {
     top: 291%;
   }
 }
-@media screen and (max-width:1114px) {
+@media screen and (max-width:1284px) {
+  .sobre {
+    width: max(70%);
+  }
+  .section-2-box {
+    width: max(75%);
+    margin: 0;
+  }
+  .hobbies--section{
+    margin: 85% auto 0 20%;
+    width: max(70%) ;
+    word-wrap: break-word;
+  }
+  .hobbies--descricao {
+    width: max(44ch);
+  }
+  .footer {
+    width: max(99.2%);
+    margin-top: 1750px ;
+  }
   .icone { 
     position: relative;
     left: 0%;
@@ -1683,7 +1702,7 @@ a:hover:nth-child(n) {
   }
   .intro {
     width: max(100%);
-    margin: 0 auto 0 -170px;
+    margin: 200px auto 0 -150px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
@@ -1712,9 +1731,6 @@ a:hover:nth-child(n) {
   }
   .intro-descricao {
     gap: -1rem;
-  }
-  .sobre .subtitulo{
-    color: #010000;
   }
   .sobre {
     padding: 1rem;
@@ -1758,12 +1774,12 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin-top: -55%;
-    margin-left: 90%;
+    margin-left: 54%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -165%;
+    left: 5%;
     z-index: 2;
   }
   .hobbies--section{
@@ -1903,21 +1919,76 @@ a:hover:nth-child(n) {
   }
   
 }
-@media (max-width: 834px) and (min-width: 820px) {
+@media (min-width: 834px) and (max-width: 834px) {
+  .box-competencia::before {
+    left: 3%;
+    z-index: 2;
+  }
+}
+@media (max-width: 830px) and (min-width: 820px) {
+  .fundo{
+    width: max(90%);
+    height: 43%;
+  }
+  .intro {
+    width: max(100%);
+    margin: 145px auto 0 -150px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+    gap: 0px;
+  }
+  .intro img {
+    display: none;
+  }
+  .decoracao2, .decoracao {
+    display: none;
+  }
+  .sobre {
+    padding: 1rem;
+    margin: -150px auto 30px;
+    width: max(720px);
+    gap: 10px;
+    z-index: 2;
+  }
   .fundo-section-2 {
-    height: 1150px;
+    height: 1170px;
+  }
+  .section-2-box h2 {
+    top: 106px;
+    left: -20px;
+  }
+  .section-2-box .title-h2::after {
+    left: -2%;
+    top: -42%;
+  }
+  #perfil-2 {
+    width: 50%;
+    top: 60%;
+    left: -6%;
   }
   .competencia {
-    margin-top: -60%;
-    margin-left: 85%;
+    margin-top: -70%;
+    margin-left: 54%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -98%;
+    left: -1%;
     z-index: 2;
   }
-
+  .hobbies--section {
+    width: max(70%);
+    margin: 1240px auto 0 10px;  
+  }
+  .hobbies--descricao {
+    width: max(330px);
+  }
+  .footer {
+    width: max(99%);
+    position: absolute;
+    margin-top: 2050px;
+}
    /* formation page */
    .intro-formacao {
     grid-template-columns: 1fr;
@@ -2059,9 +2130,9 @@ a:hover:nth-child(n) {
     color: #010000;
   }
   .sobre {
-    padding: 1rem;
-    margin: -30px auto;
-    width: max(750px);
+    padding: .5rem;
+    margin: -170px auto -110px 40px;
+    width: max(715px);
     gap: 10px;
     z-index: 2;
   }
@@ -2206,6 +2277,10 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 1170px;
   }
+  .hobbies--section{
+    width: max(84%);
+    margin: 1200px auto 0 60px;
+  }
   .box-competencia::before {
     left: 8%;
     z-index: 2;
@@ -2324,6 +2399,7 @@ a:hover:nth-child(n) {
   }
   .intro {
     width: max(100%);
+    margin: 70px auto 0 -110px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-self: center;
@@ -2359,6 +2435,8 @@ a:hover:nth-child(n) {
   .sobre {
     padding: 0rem;
     margin: -120px auto auto;
+    width: max(80%);
+    grid-template-columns: 1fr;
   }
   .sobre--descricao {
     width: max(50ch);
@@ -2366,10 +2444,10 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     width: max(99%);
-    height: 1150px;
+    height: 1180px;
   }
   .section-2-box {
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 rem;
     width: max(95%);
     display: grid;
     grid-template-columns: 2fr;
@@ -2395,21 +2473,25 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin-top: -65%;
+    margin-left: 50%;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -199%;
+    left: 2%;
     z-index: 2;
   }
   .hobbies--section{
-    width: max(90%);
+    width: max(95%);
     margin: 1200px auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     justify-items:self-end;
     position: absolute;
+  }
+  .hobbies--section h2 {
+    left: 25px ;
   }
   .hobbies--title, .hobbies-title {
     color: #2E2E2E; 
@@ -2540,7 +2622,7 @@ a:hover:nth-child(n) {
     top: 200%;
   }
 }
-@media (max-width:696px) and (min-width:656px){
+@media (max-width:696px) and (min-width:600px){
   .fundo{
     width: max(90%);
     left: 2%;
@@ -2782,7 +2864,7 @@ a:hover:nth-child(n) {
     margin: 100px auto;
     width: max(95%);
     font-size: 1rem;
-    margin: 50px auto 85px 30px;
+    margin: 50px auto 85px 0px;
     position: absolute
   }
   .intro-descricao {
@@ -2797,11 +2879,16 @@ a:hover:nth-child(n) {
   text-indent: 1rem;
   line-height: 4rem;
   }
-  .intro p::before {
-    background: url("/img/icones/det3.svg") no-repeat center;
-    left: -17px;
-    top: 25rem;
-    }
+  .intro h1::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 10px;
+    background: url("../img/icones/det1-topo.svg") no-repeat center;
+    position: relative;
+    left: 65px;
+    ;
+  }
   .sobre {
     padding: 1.5rem;
     margin: -2px auto;
@@ -3129,7 +3216,7 @@ a:hover:nth-child(n) {
   .intro-descricao {
     margin: 120px auto;
     width: max(95%);
-    margin: 50px auto 105px 12px;
+    margin: 50px auto 105px 0;
     font-size: 1rem;
     position: absolute
   }
@@ -3266,7 +3353,7 @@ a:hover:nth-child(n) {
      left: 20px;
    }
   .footer {
-    width: max(100%);
+    width: max(99%);
     height: 450px;
     padding: 0px 0px ;
     margin: 2400px auto;
@@ -3477,9 +3564,9 @@ a:hover:nth-child(n) {
   }
   .hobbies--section{ 
     padding: 0px;
-    width: max(90%);
+    width: max(50%);
     grid-template-columns: 1fr;
-    left: 55px;
+    left: 50px;
     margin: 1600px auto;
   }
   .footer-descricao {
@@ -3678,7 +3765,7 @@ a:hover:nth-child(n) {
     left: 20px;
   }
   .footer {
-    width: max(9.7em);
+    width: max(9.5em);
     left: -40px;
     margin: 2400px auto;
   }
@@ -3863,12 +3950,12 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro {
-    width: max(89%);
+    width: max(89.1%);
     padding: 1.3rem;
     height: 450px;
     margin: -1px auto;
     position: relative;
-    left: 0;
+    left: 1;
     background: var(--preto-c9);
     z-index: -1;
   } 
@@ -3958,7 +4045,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 9%;
+    margin-left: 8%;
     position: relative;
     justify-content: space-around;
   }
@@ -3994,7 +4081,7 @@ a:hover:nth-child(n) {
     width: max(25ch);
   }
   .footer{
-    width: max(9.5em);
+    width: max(9.4em);
     left: 1%;
     height: 450px;
   }
@@ -4185,12 +4272,17 @@ a:hover:nth-child(n) {
   }
 }
 @media (max-width: 375px) {
+  .intro-descricao {
+    margin: 50px auto 120px 30px;
+    width: max(80%);
+    position: absolute
+  }
   .competencia {
     padding: 10px;
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 9%;
+    margin-left: 8%;
     position: relative;
     justify-content: space-around;
   }
@@ -4217,7 +4309,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 120px 32px;
+    margin: 50px auto 160px 32px;
     width: max(80%);
     position: absolute
   }
@@ -4308,8 +4400,8 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .hobbies--section{
-    width: max(80%);
-    left: 30px;
+    width: max(50%);
+    left: 20px;
     margin: 1600px auto;
     gap: 20px;
   }
@@ -4355,8 +4447,8 @@ a:hover:nth-child(n) {
     left: 0px;
   }
   .footer-contatiner{
-    width: max(20ch);
-    margin: 90px auto 3px 1px;
+    width: max(12ch);
+    margin: 90px auto 3px -2px;
     padding: 5px;
     gap: 80px;
   }
