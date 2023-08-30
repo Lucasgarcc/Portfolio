@@ -4081,9 +4081,7 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .footer{
-    width: max(9.4em);
     left: 0%;
-    height: 450px;
   }
   .container-experiencia h2::before {
     top: -22%;
