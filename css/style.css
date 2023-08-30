@@ -3866,7 +3866,7 @@ a:hover:nth-child(n) {
   }
   .footer-contatiner {
     max-width: 330px;
-    margin: 90px auto 3px 20px;
+    margin: 90px auto 3px 10px;
     padding: 5px;
     gap: 80px;
   }
@@ -4080,9 +4080,14 @@ a:hover:nth-child(n) {
     left: -12px;
     z-index: 2;
   }
+  .container-experiencia h2::before {
+    top: -22%;
+    left: 80%;
+    transform: rotate(90.1deg);
+  }
   .container-fundo {
     margin: 0px;
-    width: max(359px);
+    width: max(367px);
     height: 490px;
     border-radius: 0.4rem;
     position: absolute;
@@ -4095,18 +4100,17 @@ a:hover:nth-child(n) {
     height: 1600px;
   }
   .container-timeline {
-    left: -116%;
+    left: -111%;
   }
   .formacao{
     top: 304%;
   }
   .footer-formacao{
-    width: max(auto);
-    top: 201%;
+    top: 190%;
   }
   .footer-contatiner {
     max-width: 330px;
-    margin: 90px auto 3px 15px;
+    margin: 90px auto 3px 30px;
     padding: 1px;
     gap: 80px;
   }
