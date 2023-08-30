@@ -4058,7 +4058,7 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .footer{
-    width: max(9.8em);
+    width: max(10em);
   }
 }
 /*androids */
