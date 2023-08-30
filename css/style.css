@@ -4082,12 +4082,12 @@ a:hover:nth-child(n) {
   }
   .container-experiencia h2::before {
     top: -22%;
-    left: 80%;
+    left: 90%;
     transform: rotate(90.1deg);
   }
   .container-fundo {
     margin: 0px;
-    width: max(367px);
+    width: max(370px);
     height: 490px;
     border-radius: 0.4rem;
     position: absolute;
@@ -4103,10 +4103,10 @@ a:hover:nth-child(n) {
     left: -111%;
   }
   .formacao{
-    top: 304%;
+    top: 324%;
   }
   .footer-formacao{
-    top: 190%;
+    top: 200%;
   }
   .footer-contatiner {
     max-width: 330px;
