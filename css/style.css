@@ -3877,7 +3877,7 @@ a:hover:nth-child(n) {
     width: max(25ch);
   }
   .footer{
-    width: max(100%);
+    width: max(101%);
     left: 1%;
     height: 450px;
   }
