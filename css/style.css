@@ -3089,11 +3089,11 @@ a:hover:nth-child(n) {
     font-size: 3.5rem;
     position: relative;
     top: -13%;
-    left: 0;
+    left: 3%;
   }
   .container-experiencia h2::before {
     top: -32%;
-    left: 80%;
+    left: 95%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
@@ -3106,7 +3106,7 @@ a:hover:nth-child(n) {
     padding: 0;
     margin: 0 auto;
      top: 28%;
-    left: -109%;
+    left: -111%;
    
   }
  /* date timeline */
@@ -3185,7 +3185,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 103em;
     margin: 0 auto;
-    top: 260%;
+    top: 266%;
   }
   .formacao-container{
     padding: 1rem;
