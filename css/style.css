@@ -3329,12 +3329,12 @@ a:hover:nth-child(n) {
   }
   .formacao {
     width: max(98%);
-    top: 300%;
+    top: 320%;
     height: 108em;
   }
   .footer-formacao {
     width: max(98%);
-    top: 224%
+    top: 214%
   } 
 }
 @media (max-width: 428px) and (min-width: 420px) {
