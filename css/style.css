@@ -4083,9 +4083,17 @@ a:hover:nth-child(n) {
   .footer{
     left: 0%;
   }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(9ch);
+    font-size: 3.5rem;
+    position: relative;
+    top: -10%;
+    left: 0;
+  }
   .container-experiencia h2::before {
-    top: -22%;
-    left: 90%;
+    top: -23%;
+    left: 94%;
     transform: rotate(90.1deg);
   }
   .container-fundo {
