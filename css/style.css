@@ -3324,7 +3324,7 @@ a:hover:nth-child(n) {
     height: 490px;
     border-radius: 0.4rem;
     position: absolute;
-    left: -.9rem;
+    left: -1.1rem;
     z-index: 3;
   }
   .container-timeline {
