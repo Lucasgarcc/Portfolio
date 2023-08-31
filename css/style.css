@@ -3345,12 +3345,12 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .formacao {
-    width: max(98%);
+    width: max(100%);
     top: 310%;
     height: 108em;
   }
   .footer-formacao {
-    width: max(98%);
+    width: max(100%);
     top: 214%
   } 
 }
