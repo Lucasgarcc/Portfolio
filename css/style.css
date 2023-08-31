@@ -3142,7 +3142,7 @@ a:hover:nth-child(n) {
     left: 24%;
   }
   .left::before {
-    left: 125px;
+    left: 135px;
     transform: rotate(1deg);
   }
   .right::before {
@@ -3314,6 +3314,10 @@ a:hover:nth-child(n) {
     left: 105%;
     transform: rotate(90.1deg);
   }  
+  .left::before {
+    left: 135px;
+    transform: rotate(1deg);
+  }
   .container-fundo {
     margin: -2px;
     width: max(404px);
@@ -3329,6 +3333,7 @@ a:hover:nth-child(n) {
     top: 28%;
     left: -103%;
   }
+ 
   .container-formacao {
     margin: 75px auto;
     height: 340px;
