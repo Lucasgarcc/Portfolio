@@ -4089,11 +4089,11 @@ a:hover:nth-child(n) {
     font-size: 3.5rem;
     position: relative;
     top: -12%;
-    left: 0;
+    left: 3%;
   }
   .container-experiencia h2::before {
     top: -23%;
-    left: 98%;
+    left: 95%;
     transform: rotate(90.1deg);
   }
   .container-fundo {
