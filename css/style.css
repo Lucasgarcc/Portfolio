@@ -4093,7 +4093,7 @@ a:hover:nth-child(n) {
   }
   .container-experiencia h2::before {
     top: -23%;
-    left: 95%;
+    left: 99%;
     transform: rotate(90.1deg);
   }
   .container-fundo {
