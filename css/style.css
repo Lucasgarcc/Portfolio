@@ -3306,7 +3306,7 @@ a:hover:nth-child(n) {
     width: max(9ch);
     font-size: 3.5rem;
     position: relative;
-    top: -9%;
+    top: -15%;
     left: 3%;
   }
   .container-experiencia h2::before {
@@ -3327,7 +3327,7 @@ a:hover:nth-child(n) {
     padding: 0;
     margin: 0 auto;
     top: 28%;
-    left: -107%;
+    left: -100%;
   }
   .container-formacao {
     margin: 75px auto;
