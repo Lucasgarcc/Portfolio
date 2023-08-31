@@ -3275,7 +3275,6 @@ a:hover:nth-child(n) {
     text-indent: 1rem;
     line-height: 4rem;
   }
-  
   .sobre>.subtitulo {
    color: var(--preto-c8);
    }
@@ -3309,8 +3308,14 @@ a:hover:nth-child(n) {
     height: 490px;
     border-radius: 0.4rem;
     position: absolute;
-    left: -2.4rem;
+    left: -2rem;
     z-index: 3;
+  }
+  .container-timeline {
+    padding: 0;
+    margin: 0 auto;
+    top: 28%;
+    left: -104%;
   }
   .container-formacao {
     margin: 75px auto;
@@ -3324,12 +3329,12 @@ a:hover:nth-child(n) {
   }
   .formacao {
     width: max(98%);
-    top: 330%;
+    top: 300%;
     height: 108em;
   }
   .footer-formacao {
     width: max(98%);
-    top: 224%
+    top: 214%
   } 
 }
 @media (max-width: 428px) and (min-width: 420px) {
