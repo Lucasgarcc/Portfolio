@@ -4088,12 +4088,12 @@ a:hover:nth-child(n) {
     width: max(9ch);
     font-size: 3.5rem;
     position: relative;
-    top: -10%;
+    top: -12%;
     left: 0;
   }
   .container-experiencia h2::before {
     top: -23%;
-    left: 94%;
+    left: 98%;
     transform: rotate(90.1deg);
   }
   .container-fundo {
