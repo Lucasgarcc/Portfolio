@@ -3089,11 +3089,11 @@ a:hover:nth-child(n) {
     font-size: 3.5rem;
     position: relative;
     top: -13%;
-    left: 3%;
+    left: 0;
   }
   .container-experiencia h2::before {
     top: -32%;
-    left: 95%;
+    left: 80%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
@@ -3106,7 +3106,7 @@ a:hover:nth-child(n) {
     padding: 0;
     margin: 0 auto;
      top: 28%;
-    left: -111%;
+    left: -106%;
    
   }
  /* date timeline */
@@ -3185,7 +3185,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 103em;
     margin: 0 auto;
-    top: 283%;
+    top: 270%;
   }
   .formacao-container{
     padding: 1rem;
@@ -3217,7 +3217,7 @@ a:hover:nth-child(n) {
     padding: 0px ;
     width: max(100%);
     height: max(30em);
-    top: 198%;
+    top: 200%;
   }
 }
 @media (max-width: 410px){
@@ -3255,7 +3255,7 @@ a:hover:nth-child(n) {
     top: 310%;
   }
   .footer-formacao{
-    top: 200%;
+    top: 205%;
   }
 }
 @media (max-width: 450px)and (min-width: 411px) {
@@ -3334,7 +3334,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     width: max(98%);
-    top: 214%
+    top: 224%
   } 
 }
 @media (max-width: 428px) and (min-width: 420px) {
