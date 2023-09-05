@@ -4336,6 +4336,9 @@ a:hover:nth-child(n) {
     left: 136px;
     transform: rotate(1deg);
   }
+  .formacao-container::before {
+    display: none;
+  }
   .formacao {
     top: 369%;
   }
@@ -4360,6 +4363,9 @@ a:hover:nth-child(n) {
     margin-left: 10%;
     position: relative;
     justify-content: space-around;
+  }
+  .formacao-container::before {
+    display: none;
   }
   .box-competencia::before {
     left: -12px;
@@ -4737,13 +4743,16 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 106em;
     margin: 0 auto;
-    top: 324%;
+    top: 334%;
   }
   .formacao-container{
     padding: 1rem;
     grid-template-columns: 1fr;
     width: max(80%); 
     margin: 250px 0 0 30px;
+  }
+  .formacao-container::before {
+    display: none;
   }
   .formacao-container .subtitulo {
     transform: rotate(0deg);
