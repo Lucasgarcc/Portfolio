@@ -3553,11 +3553,11 @@ a:hover:nth-child(n) {
   }  
     /* date timeline */
  .date-left{
-  top: -80%;
+  top: -77%;
     left: 38px;
   }
   .date-left1{
-    top: -155%;
+    top: -149%;
     left: 37px;
     
   }
@@ -3567,11 +3567,11 @@ a:hover:nth-child(n) {
     
   }
   .date { /*right*/
-    top: -41%;
+    top: -38%;
     left: -75px;
   }
   .date-right { /*right*/
-    top: -54%;
+    top: -53%;
   }
   .left::before {
     left: 135px;
