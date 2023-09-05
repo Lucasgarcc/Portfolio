@@ -3426,6 +3426,14 @@ a:hover:nth-child(n) {
     left: -rem;
     z-index: 3;
   }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(9ch);
+    font-size: 3.5rem;
+    position: relative;
+    top: -13%;
+    left: 10%;
+  }
   .container-experiencia h2::before {
     top: -20%;
     left: 99%;
@@ -3435,22 +3443,44 @@ a:hover:nth-child(n) {
     padding: 0;
     margin: 0 auto;
     top: 28%;
-    left: -106%;
+    left: -104%;
   }
   .timeline {
     padding: 0;
     width: max(24.3em);
     height: 1600px;
   }
+   /* date timeline */
+ .date-left{
+  top: -70%;
+    left: 38px;
+  }
+  .date-left1{
+    top: -151%;
+    left: 37px;
+    
+  }
+  .date-left2{
+    top: 12%;
+    left: -77px;
+    
+  }
+  .date { /*right*/
+    top: -40%;
+    left: -75px;
+  }
+  .date-right { /*right*/
+    top: -52%;
+  }
   .formacao-container::after {
     top: 8%;
     left: 0%;
   }
   .formacao {
-    top: 310%;
+    top: 320%;
   }
   .footer-formacao{
-    top: 205%;
+    top: 214%;
   }
 }
 @media (max-width: 450px)and (min-width: 411px) {
@@ -4332,6 +4362,14 @@ a:hover:nth-child(n) {
     left: 5px;
     z-index: 2;
   }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(9ch);
+    font-size: 3.5rem;
+    position: relative;
+    top: -13%;
+    left: 10%;
+  }
   .left::before {
     left: 136px;
     transform: rotate(1deg);
@@ -4743,7 +4781,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 106em;
     margin: 0 auto;
-    top: 334%;
+    top: 324%;
   }
   .formacao-container{
     padding: 1rem;
@@ -4789,12 +4827,20 @@ a:hover:nth-child(n) {
     left: -320px;
   }
 }
-@media (max-width: 360px) and (min-width:350px) and (max-heigth: 750px) and (min-heigth:700px) {
+@media (max-width: 360px) and (min-width:350px) {
   .formacao {
-    top: 240%;
+    top: 360%;
   }
   .footer-formacao {
-    top: 229%;
+    top: 239%;
+  }
+}
+@media (max-width: 360px) and (min-width:350px) and (min-height:700px){
+  .formacao {
+    top: 320%;
+  }
+  .footer-formacao {
+    top: 219%;
   }
 }
 @media (max-width: 362px) and (min-width:361px){
