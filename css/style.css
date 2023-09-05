@@ -3553,7 +3553,7 @@ a:hover:nth-child(n) {
   }  
     /* date timeline */
  .date-left{
-  top: -70%;
+  top: -80%;
     left: 38px;
   }
   .date-left1{
@@ -3609,7 +3609,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     width: max(100%);
-    top: 224%
+    top: 230%
   } 
 }
 @media (max-width: 428px) and (min-width: 420px) {
