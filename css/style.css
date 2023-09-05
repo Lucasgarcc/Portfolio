@@ -3567,11 +3567,11 @@ a:hover:nth-child(n) {
     
   }
   .date { /*right*/
-    top: -38%;
+    top: -39%;
     left: -75px;
   }
   .date-right { /*right*/
-    top: -57%;
+    top: -56%;
   }
   .left::before {
     left: 135px;
