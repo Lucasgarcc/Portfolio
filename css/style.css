@@ -3549,6 +3549,28 @@ a:hover:nth-child(n) {
     left: 105%;
     transform: rotate(90.1deg);
   }  
+    /* date timeline */
+ .date-left{
+  top: -70%;
+    left: 38px;
+  }
+  .date-left1{
+    top: -151%;
+    left: 37px;
+    
+  }
+  .date-left2{
+    top: 12%;
+    left: -77px;
+    
+  }
+  .date { /*right*/
+    top: -40%;
+    left: -75px;
+  }
+  .date-right { /*right*/
+    top: -52%;
+  }
   .left::before {
     left: 135px;
     transform: rotate(1deg);
