@@ -3283,11 +3283,11 @@ a:hover:nth-child(n) {
   }
     /* date timeline */
  .date-left{
-  top: -70%;
+  top: -80%;
     left: 38px;
   }
   .date-left1{
-    top: -151%;
+    top: -150%;
     left: 37px;
     
   }
@@ -3301,7 +3301,7 @@ a:hover:nth-child(n) {
     left: -75px;
   }
   .date-right { /*right*/
-    top: -52%;
+    top: -54%;
   }
   /* The descrition das times */
   .time-descricao {
