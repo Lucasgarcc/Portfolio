@@ -481,7 +481,7 @@ a span {
 .timeline { /* The actual timeline (the vertical ruler) */
   display: grid;
   grid-column: 2 / 4;
-  width: max(900px);
+  width: max(800px);
   position: relative;
   z-index: 3;
 }
@@ -490,16 +490,16 @@ a span {
 .container-timeline {
   padding: 1.6rem 1.6rem;
   margin: 3% 0 0 auto ;
-  width: max(900px);
+  width: max(850px);
   height: 1000px;
-  background-color: #010000;
+  background-color: var(--preto-c8);
   border-radius: .9rem;
 }
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #101010;
+  background-color: var(--preto-c6);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -519,61 +519,66 @@ a span {
 .date-left{
   margin: -10px 0 0 0;
   position: absolute;
-  top: -73%;
-  left: 315px;
-  color: #707070;
+  top: -54%;
+  left: 245px;
+  color: var(--cinza-c1);
   font-weight: 460;
   font-size: 1.225rem;
   z-index: 3;
-  
+}
+.date-left1{
+  top: -113%;
 }
 .date-left2{
   margin: -10px 0 0 0;
   position: absolute;
-  top: 25%;
-  left: -120px;
-  color: #707070;
+  top: 22%;
+  left: -170px;
+  color: var(--cinza-c1);
   font-weight: 460;
-  font-size: 1.225rem;
+  font-size: 1.325rem;
   z-index: 3;
-  
 }
+
 .date { /*right*/
   margin: -10px 0 0 0;
   position: absolute;
-  top: -75%;
-  left: 75px;
-  color: #707070;
-  font-size: 1.225rem;
+  top: -45%;
+  left: 105px;
+  color: var(--cinza-c1);
+  font-size: 1.3228rem;
   font-weight: 460;
   z-index: 3;
+}
 
+.date-right { /*right*/
+  top: -55%;
 }
 
 /* The descrition das times */
 .time-descricao {
   display: block;
   text-decoration: none;
-  font-size: 1.3rem;
-  color: #E46014 ;
+  font-size: 1.4rem;
+  color: var(--laranja-s) ;
   position: relative;
   top: 30px;
-  left: 20px;
+  left: 70px;
 }
 
 .time-descricao-left, .time-descricao-left2 {
   display: block;
   text-decoration: none;
   margin: 0 auto;
-  font-size: 1.3rem;
-  color: #E46014 ;
+  font-size: 1.4rem;
+  color: var(--laranja-s) ;
   position: relative;
   top: 30px;
-  left: 270px;
+  left: 170px;
 }
 
 .time-descricao-left2 {
-  left: 280px;
+  left: 180px;
 }
 
 /* The circles on the timeline */
@@ -584,7 +589,7 @@ a span {
   height: 25px;
   right: -17px;
   background-color: #cacaca;
-  border: 4px solid #333333;
+  border: 4px solid var(--preto-c3);
   top: 35px;
   border-radius: 50%;
   z-index: 1;
@@ -592,27 +597,12 @@ a span {
 
 /* Place the container to the left */
 .left {
-  left: 1.1%;
+  left: 0.5%;
 }
 
 /* Place the container to the right */
 .right {
   left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
- .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 45px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium #ccc solid ;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent #ccc transparent transparent;
-  transition: 0.2s linear;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -625,9 +615,9 @@ a span {
   width: 0;
   z-index: 2;
   left: 30px;
-  border: medium #ccc solid;
+  border: medium var(--cinza-c0) solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ccc transparent transparent;
+  border-color: transparent var(--cinza-c0) transparent transparent;
   transition: 0.4s linear;
 }
 .left::before {
@@ -638,11 +628,11 @@ a span {
   top: 40px;
   width: 0;
   z-index: 2;
-  left: 400px;
+  left: 379px;
   transform: rotate(-180deg);
-  border: medium #ccc solid;
+  border: medium var(--cinza-c0) solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ccc transparent transparent;
+  border-color: transparent var(--cinza-c0) transparent transparent;
   transition: 0.1s linear;
 }
 
@@ -1282,26 +1272,33 @@ a:hover:nth-child(n) {
     margin: 0 0 0 0;
     font-size: 6rem;
   }
+  
   /* The actual timeline (the vertical ruler) */
   .container-timeline {
-    margin: -900px 0 0 auto ;
+    margin: -800px 0 0 auto ;
     width: max(600px);
-    height: 1500px;
+    height: 1600px;
     position: relative;
     left: -4%;
   }
   /* date timeline */
   .date-left{
-    top: -83%;
+    top: -63%;
     left: 180px;
+  } 
+  .date-left1{
+    top: -153%;
   }
   .date-left2{
     top: 16%;
     left: -140px;
   }
   .date { /*right*/
-    top: -86%;
+    top: -43%;
     left: 100px;
+  }
+  .date-right { /*right*/
+    top: -51%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -1324,7 +1321,7 @@ a:hover:nth-child(n) {
     left: 50%;
   }
   .left::before {
-    left: 279px;
+    left: 257px;
    
   }
   /* Fix the circle for containers on the right side */
@@ -1397,55 +1394,7 @@ a:hover:nth-child(n) {
     margin-top: 100% ;
   }
 }
-@media screen and (max-width:1120px) {
-  .icone { 
-    position: relative;
-    left: 0%;
-  }
-  .container-experiencia h2 {
-    font-size: 7rem;
-    margin: auto auto auto 20px ;
-  }
-  .container-experiencia h2::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: -2%;
-    left: 210%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    top: 125%;
-    left: -16%;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 300%;
-  }
-  .formacao-container{
-    padding: 2.3rem 3rem;
-    margin: 150px auto;
-    max-width: (100%);
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: relative;
-  }
-  .footer-contatiner {
-    width: max(900px);
-    gap: 140px;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 291%;
-  }
-}
-@media screen and (max-width:1284px) {
+@media screen and (max-width:1684px) and (min-width: 1300px){
   .intro img{
     width: max(90%);
   }
@@ -1490,7 +1439,7 @@ a:hover:nth-child(n) {
     background: url('/img/icones/det3.svg')no-repeat center center;
     position: absolute;
     top: -2%;
-    left: 230%;
+    left: 220%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
@@ -1514,6 +1463,16 @@ a:hover:nth-child(n) {
     grid-template-columns: 1fr 2fr;
     position: relative;
   }
+  .formacao-container::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+  }
   .footer-contatiner {
     width: max(900px);
     gap: 140px;
@@ -1523,6 +1482,180 @@ a:hover:nth-child(n) {
     top: 361%;
   }
 }
+@media screen and (max-width:1294px) and (min-width: 1150px){
+  .intro img{
+    width: max(90%);
+  }
+  .intro h1::before {
+    left: 10px;
+  }
+  .decoracao2{
+    left: -28.4rem;
+  }
+  .sobre {
+    width: max(70%);
+  }
+  .section-2-box {
+    width: max(75%);
+    margin: 0;
+  }
+  .hobbies--section{
+    margin: 85% auto 0 20%;
+    width: max(70%) ;
+    word-wrap: break-word;
+  }
+  .hobbies--descricao {
+    width: max(44ch);
+  }
+  .footer {
+    width: max(99.2%);
+    margin-top: 1750px ;
+  }
+  .icone { 
+    position: relative;
+    left: 0%;
+  }
+  .container-experiencia h2 {
+    font-size: 5.5rem;
+    margin: auto auto auto 20px ;
+  }
+  .container-experiencia h2::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: -2%;
+    left: 220%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    width: max(34em) ;
+    height: auto;
+    top: 140%;
+    left: -16%;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 310%;
+  }
+  .formacao-container{
+    padding: 2.3rem 3rem;
+    margin: 150px auto;
+    max-width: (100%);
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+  }
+  .formacao-container::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: -12%;
+    left: 4%;
+  }
+  .footer-contatiner {
+    width: max(900px);
+    gap: 140px;
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 241%;
+  }
+}
+@media screen and (max-width:1120px) {
+  .icone { 
+    position: relative;
+    left: 0%;
+  }
+  .container-experiencia h2 {
+    font-size: 5.5rem;
+    margin: auto auto auto 20px ;
+  }
+  .container-experiencia h2::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: -2%;
+    left: 210%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .container-timeline {
+    top: 90%;
+    left: -17%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -78%;
+    left: 180px;
+  } 
+  .date-left1{
+    top: -138%;
+  }
+  .date-left2{
+    top: 13%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -48%;
+    left: 100px;
+  }
+  .date-right { /*right*/
+    top: -55%;
+  }
+  .left::before {
+    left: 278px;
+   
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(99%);
+    top: 330%;
+  }
+  .formacao-container{
+    padding: 2.3rem 3rem;
+    margin: 150px auto;
+    max-width: (100%);
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+  }
+  .formacao-container::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('/img/icones/det3.svg')no-repeat center center;
+    position: absolute;
+    top: -12%;
+    left: 4%;
+  }
+  .footer-contatiner {
+    width: max(900px);
+    gap: 140px;
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 331%;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 600px) {
   .fundo{
     width: max(91%);
@@ -1852,29 +1985,40 @@ a:hover:nth-child(n) {
   .container-experiencia h2::before {
     position: absolute;
     top: -20%;
-    left: 100%;
+    left: 80%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
   .container-timeline {
     width: max(600px);
     height: auto;
-    left: -98%;
-    top: 40%;
+    left: -95%;
+    top: 45%;
   }
-   /* date timeline */
-   .date-left{
-    top: -83%;
-    left: 180px;
-  }
-  .date-left2{
-    top: 16%;
-    left: -140px;
-  }
-  .date { /*right*/
-    top: -86%;
-    left: 100px;
-  }
+  
+  /* date timeline */
+    .date-left{
+      top: -78%;
+      left: 180px;
+    } 
+    .date-left1{
+      top: -138%;
+    }
+    .date-left2{
+      top: 13%;
+      left: -140px;
+    }
+    .date { /*right*/
+      top: -42%;
+      left: 100px;
+    }
+    .date-right { /*right*/
+      top: -49%;
+    }
+    /* Fix the circle for containers on the right side */
+    .right::after {
+      left: -13px;
+    }
   /* The descrition das times */
   .time-descricao {
     top: 30px;
@@ -1897,7 +2041,9 @@ a:hover:nth-child(n) {
   }
   .left::before {
     left: 279px;
-   
+  }
+  .right::before {
+    left: 31px;
   }
   /* Fix the circle for containers on the right side */
   .right::after {
@@ -1906,7 +2052,7 @@ a:hover:nth-child(n) {
   /* are the formations courses and languages */
   .formacao {
     width: max(99%);
-    top: 235%;
+    top: 245%;
   }
   .formacao-container{
     margin: 120px auto;
@@ -1936,7 +2082,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     width: max(100%);
-    top: 165%;
+    top: 178%;
   }
   
 }
@@ -2043,16 +2189,26 @@ a:hover:nth-child(n) {
   }
    /* date timeline */
    .date-left{
-    top: -83%;
+    top: -73%;
     left: 180px;
   }
   .date-left2{
     top: 16%;
     left: -140px;
   }
+  .date-left1{
+    top: -153%;
+  }
+  .date-left2{
+    top: 16%;
+    left: -140px;
+  }
   .date { /*right*/
-    top: -86%;
+    top: -40%;
     left: 100px;
+  } 
+  .date-right { /*right*/
+    top: -51%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -2076,7 +2232,9 @@ a:hover:nth-child(n) {
   }
   .left::before {
     left: 279px;
-   
+  }
+  .right::before {
+    left: 31px;
   }
   /* Fix the circle for containers on the right side */
   .right::after {
@@ -2100,15 +2258,13 @@ a:hover:nth-child(n) {
     top: 20%;
     left: 0%;
   }
-
   .formacao-texto {
     width: max(30ch);
   }
   .footer-formacao {
     width: max(100%);
-    top: 165%;
+    top: 160%;
   }
-  
 }
 @media screen and (max-width: 800px) and (min-width:790px){
   .fundo{
@@ -2557,21 +2713,27 @@ a:hover:nth-child(n) {
    .container-timeline {
     width: max(600px);
     height: auto;
-    left: -124%;
-    top: 38%;
+    left: -114%;
+    top: 48%;
   }
    /* date timeline */
    .date-left{
-    top: -83%;
+    top: -73%;
     left: 180px;
+  }
+  .date-left1{
+    top: -145%;
   }
   .date-left2{
     top: 16%;
     left: -140px;
   }
   .date { /*right*/
-    top: -86%;
+    top: -43%;
     left: 100px;
+  }
+  .date-right { /*right*/
+    top: -51%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -3121,17 +3283,23 @@ a:hover:nth-child(n) {
   }
  /* date timeline */
  .date-left{
-  top: -84%;
-    left: 34px;
+  top: -67%;
+    left: 46px;
+  }
+  .date-left1{
+    top: -150%;
   }
   .date-left2{
-    top: 16%;
+    top: 12%;
     left: -77px;
     
   }
   .date { /*right*/
-    top: -84%;
+    top: -40%;
     left: -75px;
+  }
+  .date-right { /*right*/
+    top: -52%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -3203,7 +3371,9 @@ a:hover:nth-child(n) {
     width: max(80%); 
     margin: 250px 0 0 30px;
   }
- 
+  .formacao-container::before {
+    display: none;
+  }
   .formacao-container .subtitulo {
     transform: rotate(0deg);
     font-size: 4rem;
@@ -3368,7 +3538,6 @@ a:hover:nth-child(n) {
     top: 28%;
     left: -103%;
   }
- 
   .container-formacao {
     margin: 75px auto;
     height: 340px;
@@ -3436,7 +3605,7 @@ a:hover:nth-child(n) {
     top: 230%
   }
 }
-@media (max-width:412px) and (min-width:412px) and (max-height: 850px) and (min-height:790px){
+@media (max-width:412px) and (min-width:412px) and (max-height: 950px) and (min-height:790px){
   .left::before {
     left: 135px;
     transform: rotate(1deg);
@@ -3654,7 +3823,7 @@ a:hover:nth-child(n) {
     height: 490px;
     border-radius: .4rem;
     position: absolute;
-    left: -3rem;
+    left: -1.9rem;
     z-index: 3;
   }
   .container-formacao {
@@ -4029,18 +4198,25 @@ a:hover:nth-child(n) {
      top: 28%;
     left: -110%;
   }
-   /* date timeline */
-   .date-left{
-    top: -84%;
-    left: 34px;
+  /* date timeline */
+ .date-left{
+  top: -67%;
+    left: 46px;
+  }
+  .date-left1{
+    top: -150%;
   }
   .date-left2{
-    top: 16%;
+    top: 12%;
     left: -77px;
+    
   }
   .date { /*right*/
-    top: -84%;
+    top: -40%;
     left: -75px;
+  }
+  .date-right { /*right*/
+    top: -52%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -4479,18 +4655,24 @@ a:hover:nth-child(n) {
     left: -127%;
   }
    /* date timeline */
-   .date-left{
-    top: -84%;
-    left: 34px;
+ .date-left{
+  top: -67%;
+    left: 40px;
+  }
+  .date-left1{
+    top: -150%;
   }
   .date-left2{
-    top: 16%;
-    left: -77px;
+    top: 12%;
+    left: -70px;
     
   }
   .date { /*right*/
-    top: -84%;
-    left: -75px;
+    top: -40%;
+    left: -70px;
+  }
+  .date-right { /*right*/
+    top: -52%;
   }
   /* The descrition das times */
   .time-descricao {
