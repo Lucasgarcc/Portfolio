@@ -3978,7 +3978,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro {
-    width: max(89.4%);
+    width: max(89.1%);
     padding: 1.3rem;
     height: 450px;
     margin: -1px auto;
@@ -4109,7 +4109,7 @@ a:hover:nth-child(n) {
     width: max(25ch);
   }
   .footer{
-    width: max(10em);
+    width: max(9.4em);
     left: 1%;
     height: 450px;
   }
