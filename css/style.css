@@ -3283,11 +3283,11 @@ a:hover:nth-child(n) {
   }
     /* date timeline */
  .date-left{
-  top: -80%;
+  top: -90%;
     left: 38px;
   }
   .date-left1{
-    top: -150%;
+    top: -145%;
     left: 37px;
     
   }
