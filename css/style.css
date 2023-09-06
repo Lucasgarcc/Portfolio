@@ -3652,6 +3652,7 @@ a:hover:nth-child(n) {
     left: 135px;
     transform: rotate(1deg);
   }
+  
   .formacao {
     top: 334%;
   }
@@ -3664,6 +3665,27 @@ a:hover:nth-child(n) {
     left: 135px;
     transform: rotate(1deg);
   }
+  .date-left{
+    top: -70%;
+      left: 38px;
+    }
+    .date-left1{
+      top: -151%;
+      left: 37px;
+      
+    }
+    .date-left2{
+      top: 12%;
+      left: -77px;
+      
+    }
+    .date { /*right*/
+      top: -40%;
+      left: -75px;
+    }
+    .date-right { /*right*/
+      top: -52%;
+    }
   .formacao {
     top: 294%;
   }
@@ -3676,6 +3698,27 @@ a:hover:nth-child(n) {
     left: 136px;
     transform: rotate(1deg);
   }
+  .date-left{
+    top: -70%;
+      left: 38px;
+    }
+    .date-left1{
+      top: -151%;
+      left: 37px;
+      
+    }
+    .date-left2{
+      top: 12%;
+      left: -77px;
+      
+    }
+    .date { /*right*/
+      top: -40%;
+      left: -75px;
+    }
+    .date-right { /*right*/
+      top: -52%;
+    }
   .formacao {
     top: 300%;
   }
