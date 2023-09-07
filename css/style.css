@@ -3489,7 +3489,7 @@ a:hover:nth-child(n) {
 }
 @media (max-width: 410px){
   .load-wrapp { 
-    margin: 250px auto 0 140px;
+    margin: 250px auto 0 120px;
   }
   .line {
     display: inline-block;
