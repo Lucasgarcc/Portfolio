@@ -3711,7 +3711,7 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .formacao {
-    top: 280%;
+    top: 270%;
   }
   .footer-formacao{
     top: 190%;
@@ -3923,7 +3923,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 0%;
+    margin-left: -10%;
     position: relative;
     justify-content: space-around;
   }
