@@ -27,6 +27,7 @@ h1,h2, h3, p{
 /* =Elements style
 ---------------------- */
 #loading {
+  background-color: var(--preto-c4);
   height: 100px;
   animation: loading 3.5s 0s ease-in-out infinite;
 }
@@ -74,6 +75,7 @@ h1,h2, h3, p{
 @keyframes loading {
   0% {
     transform: translate(0, 0);
+
   }
   50% {
     transform: translate(0, 15px);
