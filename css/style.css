@@ -4533,8 +4533,8 @@ a:hover:nth-child(n) {
   }
   .line {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
   }
   .intro {
     width: max(89.5%);
