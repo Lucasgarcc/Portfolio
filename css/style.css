@@ -3107,14 +3107,7 @@ a:hover:nth-child(n) {
 
 /* IOS Swift simple and pro/ androids */
 @media  (max-width: 480px) and (min-width: 400px) {
-  .load-wrapp { 
-    margin: 250px auto 0 140px;
-  }
-  .line {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-  }
+ 
   .fundo {
     display: none;
   }
@@ -3781,7 +3774,7 @@ a:hover:nth-child(n) {
       top: -52%;
     }
   .formacao {
-    top: 334%;
+    top: 294%;
   }
   .footer-formacao {
     top: 205%
