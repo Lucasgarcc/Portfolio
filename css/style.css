@@ -3487,6 +3487,97 @@ a:hover:nth-child(n) {
     top: 200%;
   }
 }
+@media (max-width: 414px){
+  .load-wrapp { 
+    margin: 250px auto 0 130px;
+  }
+  .line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+  }
+  .intro-formacao h1::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 10px;
+    background: url(../img/icones/det1-topo.svg) no-repeat center;
+    position: relative;
+    left: 5px;
+    z-index: 2;
+  }
+  .intro-formacao {
+    padding: 0 auto 0 0 ;
+    margin: -20px auto 0 -70px;
+    width: max(auto);
+    height: max(400px);
+  }
+  .container-fundo {
+    margin: 0;
+    width: max(367px);
+    height: 490px;
+    border-radius: 0.4rem;
+    position: absolute;
+    left: -rem;
+    z-index: 3;
+  }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(9ch);
+    font-size: 3.5rem;
+    position: relative;
+    top: -13%;
+    left: 20%;
+  }
+  .container-experiencia h2::before {
+    top: -20%;
+    left: 99%;
+    transform: rotate(90.1deg);
+  }
+  .container-timeline {
+    padding: 0;
+    margin: 0 auto;
+    top: 28%;
+    left: -104%;
+  }
+  .timeline {
+    padding: 0;
+    width: max(24.3em);
+    height: 1600px;
+  }
+   /* date timeline */
+ .date-left{
+  top: -80%;
+    left: 38px;
+  }
+  .date-left1{
+    top: -151%;
+    left: 37px;
+    
+  }
+  .date-left2{
+    top: 12%;
+    left: -77px;
+    
+  }
+  .date { /*right*/
+    top: -40%;
+    left: -75px;
+  }
+  .date-right { /*right*/
+    top: -52%;
+  }
+  .formacao-container::after {
+    top: 8%;
+    left: 0%;
+  }
+  .formacao {
+    top: 320%;
+  }
+  .footer-formacao{
+    top: 214%;
+  }
+}
 @media (max-width: 410px){
   .load-wrapp { 
     margin: 250px auto 0 130px;
