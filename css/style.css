@@ -3561,7 +3561,7 @@ a:hover:nth-child(n) {
     
   }
   .date { /*right*/
-    top: -38%;
+    top: -40%;
     left: -75px;
   }
   .date-right { /*right*/
@@ -3572,10 +3572,10 @@ a:hover:nth-child(n) {
     left: 0%;
   }
   .formacao {
-    top: 360%;
+    top: 320%;
   }
   .footer-formacao{
-    top: 204%;
+    top: 214%;
   }
 }
 @media (max-width: 450px)and (min-width: 411px) {
