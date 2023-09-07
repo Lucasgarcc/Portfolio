@@ -74,15 +74,14 @@ h1,h2, h3, p{
 @keyframes loading {
   0% {
     transform: translate(0, 0);
-    background-color: var(--preto-c4);
   }
   50% {
     transform: translate(0, 15px);
-    background-color: var(--branco);
+
   }
   100% {
     transform: translate(0, 0);
-    background-color: var(--preto-c4);
+
   }
 }
 
