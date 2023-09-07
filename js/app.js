@@ -1,3 +1,4 @@
+
 /*selecionar o botão */
 const btnMobile = document.getElementById('btn-mobile');
 /* função do botão */

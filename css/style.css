@@ -24,6 +24,82 @@ h1,h2, h3, p{
   margin: 0px
 }
 
+/* =Elements style
+---------------------- */
+#loading {
+  height: 100px;
+  animation: loading 3.5s 0s ease-in-out infinite;
+}
+
+.load-wrapp { 
+  margin: 350px auto 0 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.load-wrapp p {
+  padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+  margin-right: 0;
+}
+
+.line {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: var(--laranja-s);
+}
+
+.load-3 .line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+  background-color: var(--laranja-t);
+}
+.load-3 .line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+.l-3 {
+  animation-delay: 0.72s;
+}
+@keyframes loading {
+  0% {
+    transform: translate(0, 0);
+    background-color: var(--preto-c4);
+  }
+  50% {
+    transform: translate(0, 15px);
+    background-color: var(--branco);
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: var(--preto-c4);
+  }
+}
+
+@keyframes loadingC {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+    background-color: var(--laranja-t);
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: var(--laranja-s);
+  }
+}
+
 /* Page inicial about me */
 ul {
  margin: 0px;
