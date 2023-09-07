@@ -4531,6 +4531,11 @@ a:hover:nth-child(n) {
   .load-wrapp { 
     margin: 250px auto 0 140px;
   }
+  .line {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
   .intro {
     width: max(89.5%);
   } 
