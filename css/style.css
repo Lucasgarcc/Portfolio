@@ -3691,7 +3691,7 @@ a:hover:nth-child(n) {
   }
   .formacao {
     width: max(100%);
-    top: 370%;
+    top: 330%;
     height: 108em;
   }
   .footer-formacao {
@@ -3807,7 +3807,7 @@ a:hover:nth-child(n) {
       top: -52%;
     }
   .formacao {
-    top: 300%;
+    top: 350%;
   }
   .footer-formacao {
     top: 209%
