@@ -4943,7 +4943,7 @@ a:hover:nth-child(n) {
     width: max(99%);
     height: 106em;
     margin: 0 auto;
-    top: 354%;
+    top: 324%;
   }
   .formacao-container{
     padding: 1rem;
@@ -4991,7 +4991,7 @@ a:hover:nth-child(n) {
 }
 @media (max-width: 360px) and (min-width:350px) {
   .formacao {
-    top: 360%;
+    top: 390%;
   }
   .footer-formacao {
     top: 239%;
