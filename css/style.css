@@ -4528,6 +4528,9 @@ a:hover:nth-child(n) {
   }
 }
 @media (max-width: 375px) {
+  .load-wrapp { 
+    margin: 150px auto 0 140px;
+  }
   .intro {
     width: max(89.5%);
   } 
