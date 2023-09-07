@@ -4535,7 +4535,7 @@ a:hover:nth-child(n) {
     top: 369%;
   }
   .footer-formacao {
-    top: 225%
+    top: 245%
   }
 }
 @media (max-width: 375px) {
@@ -5015,7 +5015,7 @@ a:hover:nth-child(n) {
 }
 @media (max-width: 363px) and (min-width:362px){
   .formacao {
-    top: 350%;
+    top: 390%;
   }
   .footer-formacao {
     top: 229%;
