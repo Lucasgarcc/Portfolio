@@ -4156,7 +4156,7 @@ a:hover:nth-child(n) {
     top: 220%;
   }
 }
-/* IOS Swift */
+/* IOS Swift (celulares motorolas e samsung (pai) */
 @media (max-width: 394px) and (min-width:375px){ 
   .load-wrapp { 
     margin: 250px auto 0 130px;
@@ -4390,16 +4390,16 @@ a:hover:nth-child(n) {
   .container-timeline {
     padding: 0;
     margin: 0 auto;
-     top: 28%;
+    top: 28%;
     left: -109%;
   }
-  /* date timeline */
+   /* date timeline */
  .date-left{
-  top: -70%;
+  top: -77%;
     left: 38px;
   }
   .date-left1{
-    top: -155%;
+    top: -150%;
     left: 37px;
     
   }
@@ -4409,29 +4409,11 @@ a:hover:nth-child(n) {
     
   }
   .date { /*right*/
-    top: -39%;
-    left: -75px;
+    top: -37%;
+    left: -81px;
   }
   .date-right { /*right*/
-    top: -54%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 40px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 170px;
-  }
- 
-  /* Place the container to the left */
-  .left {
-    left: -7%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 24%;
+    top: -56%;
   }
   .left::before {
     left: 125px;
@@ -4574,6 +4556,46 @@ a:hover:nth-child(n) {
     margin-left: 10%;
     position: relative;
     justify-content: space-around;
+  }
+   /* date timeline */
+ .date-left{
+  top: -70%;
+    left: 38px;
+  }
+  .date-left1{
+    top: -155%;
+    left: 37px;
+    
+  }
+  .date-left2{
+    top: 12%;
+    left: -77px;
+    
+  }
+  .date { /*right*/
+    top: -39%;
+    left: -75px;
+  }
+  .date-right { /*right*/
+    top: -54%;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 40px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 170px;
+  }
+ 
+  /* Place the container to the left */
+  .left {
+    left: -7%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 24%;
   }
   .formacao-container::before {
     display: none;
