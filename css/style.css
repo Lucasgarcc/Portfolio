@@ -4416,7 +4416,7 @@ a:hover:nth-child(n) {
     top: -56%;
   }
   .left::before {
-    left: 125px;
+    left: 120px;
     transform: rotate(1deg);
   }
   .right::before {
