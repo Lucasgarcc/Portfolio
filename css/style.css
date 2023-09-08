@@ -4302,6 +4302,9 @@ a:hover:nth-child(n) {
     padding: 0 0 0 0;
     width: max(25ch);
   }
+  .formacao-container::before {
+    display: none;
+  }
   .footer-contatiner {
     max-width: 330px;
     margin: 90px auto 3px 10px;
@@ -4498,7 +4501,7 @@ a:hover:nth-child(n) {
     width: max(100%);
     height: max(30em);
     left: -2px;
-    top: 220%;
+    top: 230%;
   }
   .footer-copy {
     width:  max(29ch);
