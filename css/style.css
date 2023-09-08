@@ -4363,11 +4363,11 @@ a:hover:nth-child(n) {
     font-size: 3.5rem;
     position: relative;
     top: -13%;
-    left: 0;
+    left: 5%;
   }
   .container-experiencia h2::before {
     top: -32%;
-    left: 80%;
+    left: 90%;
     transform: rotate(90.1deg);
   }
   /* The actual timeline (the vertical ruler) */
