@@ -4396,21 +4396,21 @@ a:hover:nth-child(n) {
    /* date timeline */
  .date-left{
   top: -77%;
-    left: 32px;
+    left: 43px;
   }
   .date-left1{
     top: -150%;
-    left: 32px;
+    left: 40px;
     
   }
   .date-left2{
     top: 12%;
-    left: -72px;
+    left: -80px;
     
   }
   .date { /*right*/
     top: -37%;
-    left: -78px;
+    left: -86px;
   }
   .date-right { /*right*/
     top: -56%;
