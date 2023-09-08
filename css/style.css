@@ -4513,7 +4513,7 @@ a:hover:nth-child(n) {
   }
   .footer-copy {
     width:  max(29ch);
-    margin:  auto auto auto -10px;
+    margin:  auto auto auto -5px;
   }
 }
 @media (max-width:384px) and (min-width:381px){
