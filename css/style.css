@@ -4415,16 +4415,25 @@ a:hover:nth-child(n) {
   .date-right { /*right*/
     top: -56%;
   }
-  .left::before {
-    left: 120px;
+  .left::before {/* set the left */
+    left: 130px;
     transform: rotate(1deg);
   }
-  .right::before {
-    left: 16px;
+  .right::before {/* set the rigth */
+    left: 25px;
   }
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -16px;
+    left: -1.8px;
+  }
+   /* The descrition das times */
+   .time-descricao {
+    top: 30px;
+    left: 25px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
   }
   .container {
     padding: 9px 20px;
@@ -4444,10 +4453,10 @@ a:hover:nth-child(n) {
     margin-left: -3px;
   }
   .container::after {
-    right: 75px;
+    right: 70px;
   }
-  .right .content p{
-    left: 1%;
+  .right .content p{ /*box of content*/
+    left: 7%;
     width: max(18ch);
   }
   .left .content p{
