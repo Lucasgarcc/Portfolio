@@ -3212,7 +3212,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 90px;
-    margin-left: -10%;
+    margin-left: 10%;
     position: relative;
     justify-content: space-around;
   }
@@ -3597,7 +3597,7 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin-top: 90px;
-    margin-left: 5%;
+    margin-left: 1%;
     justify-content: space-around;
   }
   .hobbies--section{ 
