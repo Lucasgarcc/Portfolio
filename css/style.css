@@ -4257,7 +4257,7 @@ a:hover:nth-child(n) {
     width: max(70%);
     gap: 1.2rem;
     margin-top: 30px;
-    margin-left: 7%;
+    margin-left: 9%;
     position: relative;
     justify-content: space-around;
   }
