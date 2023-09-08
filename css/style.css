@@ -4158,6 +4158,14 @@ a:hover:nth-child(n) {
 }
 /* IOS Swift */
 @media (max-width: 394px) and (min-width:375px){ 
+  .load-wrapp { 
+    margin: 250px auto 0 130px;
+  }
+  .line {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
   .fundo {
     display: none;
   }
