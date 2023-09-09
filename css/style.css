@@ -3139,7 +3139,7 @@ a:hover:nth-child(n) {
 /* IOS Swift pro */
 
 /* IOS Swift simple and pro/ androids */
-@media  (max-width: 480px) and (min-width: 400px) {
+@media  (max-width: 500px) and (min-width: 400px) {
  
   .fundo {
     display: none;
@@ -4883,6 +4883,7 @@ a:hover:nth-child(n) {
     margin:  auto auto auto -5px;
   }
 }
+/* IOS Swift 12 / 13 */
 @media (max-width: 390px) and (min-width: 380px) {
   .formacao{
     top: 304%;
@@ -4927,6 +4928,7 @@ a:hover:nth-child(n) {
     top: 245%
   }
 }
+/* IOS 11 / 11 pro */
 @media (max-width: 375px) {
 
   .intro {
