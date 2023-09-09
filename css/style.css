@@ -3182,7 +3182,7 @@ a:hover:nth-child(n) {
   .sobre {
     padding: 1.5rem;
     margin: 0 auto;
-    min-width: 326.3px;
+    width: max(326.3px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: max(88%);
