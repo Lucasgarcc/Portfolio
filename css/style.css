@@ -3167,6 +3167,7 @@ a:hover:nth-child(n) {
   font-size: 3rem;
   text-indent: 1rem;
   line-height: 4rem;
+  color: var(--preto-c3);
   }
   .intro h1::before {
     content: " ";
@@ -3245,7 +3246,7 @@ a:hover:nth-child(n) {
     width: max(75%);
     gap: 1.2rem;
     margin-top: 90px;
-    margin-left: 10%;
+    margin-left: -1%;
     position: relative;
     justify-content: space-around;
   }
@@ -3258,14 +3259,18 @@ a:hover:nth-child(n) {
     grId-template-columns: 2fr;
   }
   .hobbies--section{
+    width: max(80%);
     padding: 0px;
-    margin: 1550px auto;
+    grid-template-columns: 1fr;
+    margin: 1550px auto 0 10px;
   }
   .hobbies--section h2, .hobbies--descricao {
     word-wrap: break-word;
     max-width: 320px;
   }
   .hobbies--descricao {
+    width: max(80%);
+    margin: 0 0 0 30px;
     color: #707070;
   }
   .hobbies--section h2 {
