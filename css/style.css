@@ -33,14 +33,12 @@ h1,h2, h3, p{
 }
 
 .load-wrapp { 
-  margin: 350px auto 0 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  text-align: center;
+width: 95vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 
 .load-wrapp p {
@@ -52,7 +50,7 @@ h1,h2, h3, p{
 
 .line {
   display: inline-block;
-  width: 20px;
+  width: 15px;
   height: 20px;
   border-radius: 15px;
   background-color: var(--laranja-s);
@@ -1164,13 +1162,48 @@ a:hover:nth-child(n) {
     overflow-y: auto;
   }  
 }
-@media  (max-width: 300px) and (min-width: 275px){
+@media  (max-width: 300px){
   .garcia2 {
     min-width: 32%;
     left: 80px;
   }
   #nav.active #header--menu {
     height: calc(35vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }  
+}
+@media screen and (max-width: 170px){
+  .garcia2 {
+    min-width: 32%;
+    left: 80px;
+  }
+  #hamburger {
+    border-top: 3.5px solid;
+    position: relative;
+    left: 50%;
+    bottom: 45px;
+    visibility: visible;
+    width: 25px;
+    height: 5px;
+    border-radius: 2.5px;
+  }
+  #btn-mobile {
+    position: relative;
+    left: -4%;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 4px;
+    color: linear-gradient(#E8651A,#F98C28,#E8651A );
+    background: none;
+    gap: 1rem;
+    border-radius: 4px;
+}
+  #nav.active #header--menu {
+    height: calc(34vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }  
@@ -3482,9 +3515,7 @@ a:hover:nth-child(n) {
 }
 
 @media (max-width: 410px){
-  .load-wrapp { 
-    margin: 250px auto 0 130px;
-  }
+
   .line {
     display: inline-block;
     width: 15px;
@@ -3813,7 +3844,14 @@ a:hover:nth-child(n) {
     top: 209%
   }
 }
-@media (max-width:394px) and (min-width: 370px) and (max-height: 851px){
+@media (max-width:394px) and (min-width: 370px){
+  .line {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: var(--laranja-s);
+  }
   .fundo {
     display: none;
   }
@@ -4157,15 +4195,9 @@ a:hover:nth-child(n) {
     top: 220%;
   }
 }
-@media (max-width: 393px) and (min-heigth:844px){ 
-  .load-wrapp { 
-    margin: 250px auto 0 130px;
-  }
-  .line {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-  }
+@media screen and (max-width: 393px) and (max-heigth: 900px){ 
+
+
   .fundo {
     display: none;
   }
@@ -4509,14 +4541,8 @@ a:hover:nth-child(n) {
 }
 /* IOS Swift (celulares motorolas e samsung (pai) */
 @media (max-width: 392px) and (min-width:375px){ 
-  .load-wrapp { 
-    margin: 250px auto 0 130px;
-  }
-  .line {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-  }
+  
+ 
   .fundo {
     display: none;
   }
@@ -4893,14 +4919,7 @@ a:hover:nth-child(n) {
   }
 }
 @media (max-width: 375px) {
-  .load-wrapp { 
-    margin: 250px auto 0 140px;
-  }
-  .line {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-  }
+
   .intro {
     width: max(89.5%);
   } 
@@ -5013,6 +5032,13 @@ a:hover:nth-child(n) {
 }
 /*androids */
 @media (max-width: 363px) and (min-width:300px){
+  .line {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: var(--laranja-s);
+  }
   .fundo {
     display: none;
   }
@@ -5097,7 +5123,7 @@ a:hover:nth-child(n) {
     padding: -20px 0 0 0;
     width: max(14ch);
     top: 40px;
-    left: -3px;
+    left: -6px;
     font-size: 2.4rem;
   }
   .section-2-box .title-h2::after {
@@ -5109,7 +5135,7 @@ a:hover:nth-child(n) {
     width: max(40%);
   }
   #perfil-2 {
-    width: max(140%);
+    width: max(150%);
     height: 50%;
     position: relative;
     top: 10%;
@@ -5138,14 +5164,17 @@ a:hover:nth-child(n) {
   .hobbies--section h2, .hobbies--descricao {
     word-wrap: break-word;
     max-width: 320px;
+    margin: 0 auto 0 10px;
   }
   .hobbies--descricao {
     width: max(27ch);
-    margin: 0 auto 0 5px;
+    margin: 0 auto 0 1px;
     color: var(--cinza-c1)
   }
-  .hobbies--title {
+  .hobbies--title, .hobbies-title {
     padding: 5px;
+    position: relative;
+    left: 50px;
   }
   .hobbies--section h2 {
     width: max(80%);
@@ -5156,7 +5185,7 @@ a:hover:nth-child(n) {
     display: block;
     content: url('/img/icones/game-mobile.svg');
    position: relative;
-   left: -10px;
+   left: -16px;
   }
   .hobbies-title::after {
     display: block;
@@ -5172,13 +5201,14 @@ a:hover:nth-child(n) {
     left: 20px;
   }
   .footer {
-    width: max(8.7em);
-    margin: 2400px auto;
+    width: max(9em);
+    margin: 2420px auto;
     height: 500px;
-    left: 0px;
+    left: -2px;
   }
   .footer-descricao {
-    width: max(25ch);
+    margin: 0 0 0 13px;
+    width: max(25ch)
   }
   .footer-contatiner{
     width: max(12ch);
@@ -5470,14 +5500,14 @@ a:hover:nth-child(n) {
    font-weight:400
   }
   .fundo-section-2 {
-    width: max(100%);
+    width: max(102%);
     margin: 0 auto;
     height: 1550px;
   }
   .section-2-box{
     padding: 0 0 0 0;
     padding-top: 20px;
-    width: max(350px);
+    width: max(250px);
     position: relative;
     top: -40px;
     left: -2px;
@@ -5486,9 +5516,9 @@ a:hover:nth-child(n) {
   }
   .section-2-box .title-h2{
     padding: -20px 0 0 0;
-    width: max(14ch);
+    width: max(12ch);
     top: 40px;
-    left: -3px;
+    left: -50px;
     font-size: 2.4rem;
   }
   .section-2-box .title-h2::after {
@@ -5500,69 +5530,59 @@ a:hover:nth-child(n) {
     width: max(40%);
   }
   #perfil-2 {
-    width: 140%;
-    height: 75%;
+    width: 155%;
+    height: 45%;
     position: relative;
     top: 14%;
-    left: -1%;
+    left: -10%;
   }
   .competencia {
     padding: 10px;
-    width: max(70%);
+    width: max(60%);
     gap: 1.2rem;
-    margin: 30px 0 0 100px;
+    margin-top: 230%;
+    margin-left: -137%;
     position: relative;
     justify-content: space-around;
   }
+  .box-competencia {
+    width: min(250px);
+  }
   .box-competencia::before {
-    left: 3px;
     z-index: 2;
   }
   .hobbies--section{
-    width: max(80%);
+    width: max(70%);
+    grid-template-columns: 1fr;
+    margin: 1560px auto;
     left: 30px;
-    margin: 1600px auto;
     gap: 20px;
   }
-  .hobbies--section h2, .hobbies--descricao {
-    word-wrap: break-word;
-    max-width: 320px;
-  }
+ 
   .hobbies--descricao {
-    width: max(27ch);
-    margin: 0 auto 0 5px;
+    width: max(22ch);
+    margin: 0 auto 0 -40px;
     color: var(--cinza-c1)
   }
-  .hobbies--title {
+  .hobbies--game, .hobbies--viagem{
+    width: max(200px);
+    margin: 0 auto 0 0;
+  }
+  .hobbies--title, .hobbies-title {
+    width: max(200px);
     padding: 5px;
+    position: relative;
+    left: 0;
   }
   .hobbies--section h2 {
-    width: max(80%);
-    margin: 0 0 0 20px;
-    font-size: 3.5rem;
+    width: max(200px);
+    margin: 0 auto 0 -20px;
+    font-size: 3rem;
   }
-  .hobbies--title::after {
-    display: block;
-    content: url('/img/icones/game-mobile.svg');
-   position: relative;
-   left: -10px;
-  }
-  .hobbies-title::after {
-    display: block;
-    content: url('/img/icones/praia-mobile.svg');
-   position: relative;
-   left: -20px;
-  }
-  .footer::after {
-    content: url('/img/icones/detalhe-mobile.svg');
-    display: block;
-    position: absolute;
-    top: -60px;
-    left: 20px;
-  }
+  
   .footer {
-    width: max(8.7em);;
-    left: 0px;
+    width: max(8em);;
+    left: -29px;
   }
   .footer-contatiner{
     width: max(30%);
@@ -5571,9 +5591,9 @@ a:hover:nth-child(n) {
     gap: 80px;
   }
   .footer-descricao {
-    width: max(23ch);
+    width: max(22ch);
     line-height: 1.33;
-    color: #cccccc;
+    margin: 0 0 0 16px;
 }
  /* formation page */
  .intro-formacao {
@@ -5775,11 +5795,415 @@ a:hover:nth-child(n) {
   top: 274%;
 }
 .footer-copy {
-  width:  max(24ch);
-  margin:  auto auto auto -2px;
+  width:  max(20ch);
+  margin: 0 auto 0 50px;
 }
 .icone {
 top: -80px;
-left: -300px;
+left: -330px;
 }
 }
+@media screen and (max-width: 190px) {
+  .fundo {
+    display: none;
+  }
+  .intro {
+    width: max(75%);
+    padding: 1.3rem;
+    margin: -1px auto;
+    position: relative;
+    left: 0;
+    background: #010000;
+    z-index: -1;
+  } 
+  .intro img{
+    display: none;
+  }
+  .intro-descricao {
+    margin: 50px auto 270px -3px;
+    width: max(155px);
+    position: absolute
+  }
+  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
+  color: var(--preto-c3);
+  font-size: 1.5rem;/**/
+  text-indent: 1rem;
+  line-height: 2.5rem;
+  }
+  .intro h1::before {
+    content: " ";
+    display: block;
+    width: 25px;
+    height: 5px;
+    background: url("../img/icones/det1-topo.svg") no-repeat center;
+    position: relative;
+    left:0px;
+    z-index: 2;
+    ;
+  }
+  .sobre {
+    padding: 1.3rem;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max(90%);
+    height: 350px;
+    gap: 10px;
+    background: #F7F7F7;
+    position: relative;
+    left: 0px;
+  }
+  .sobre .subtitulo {
+    width: max(150px);
+    font-size: 1rem;
+    margin: 40px auto 0 5px;
+    color: var(--preto-c6);
+  }
+  .sobre--descricao {
+    padding: 0px;
+    width: max(85%);
+    display: grid;
+   justify-items: start;
+   grid-column: 1 / 7;
+   color: var(--preto-c9);
+   font-size: .8rem;
+   font-weight:400
+  }
+  .fundo-section-2 {
+    width: max(100%);
+    margin: 50px auto;
+    height: 1150px;
+  }
+  .section-2-box{
+    padding: 0 0 0 0;
+    padding-top: 20px;
+    width: max(250px);
+    position: relative;
+    top: -40px;
+    left: -2px;
+    word-wrap: break-word;
+    font-size: .5rem;
+  }
+  .section-2-box .title-h2{
+    padding: -20px 0 0 0;
+    width: max(12ch);
+    top: 60px;
+    left: -30px;
+    font-size: 1.2rem;
+  }
+  .section-2-box .title-h2::after {
+    content: url(/img/icones/det3-watch.svg);
+    top: 15%;
+    left: -1%;
+    z-index: 2;
+  }
+  figure {
+    width: max(30%);
+  }
+  #perfil-2 {
+    width: 165%;
+    height: 35%;
+    position: relative;
+    top: 17%;
+    left: -20%;
+  }
+  .competencia {
+    padding: 10px;
+    width: max(50%);
+    gap: 1.2rem;
+    margin-top: 250%;
+    margin-left: -173%;
+    font-size: .6rem;
+    position: relative;
+    justify-content: space-around;
+  }
+  .box-competencia {
+    width: min(110px);
+    font-size: .5rem;
+  }
+  .title {
+  font-size: .8rem;
+  }
+  .descricao {
+  font-size: .6rem;
+  }
+  .box-competencia::before {
+    width: 5px;
+    height: 17px;
+    left: -26%;
+    z-index: 2;
+  }
+  .hobbies--section{
+    width: max(70%);
+    grid-template-columns: 1fr;
+    margin: 1150px auto;
+    left: 30px;
+    gap: 20px;
+  }
+ 
+  .hobbies-title::after {
+    content: url(/img/icones/praia-watch.svg);
+    position: relative;
+    left: -12px;
+  }
+  .hobbies--title::after {
+    content: url(/img/icones/game-watch.svg);
+    position: relative;
+    left: -12px;
+  }
+  .hobbies--descricao {
+    width: max(20ch);
+    margin: -50px auto 0 -30px;
+    color: var(--cinza-c1);
+    font-size: .8rem;
+  }
+  .hobbies--game, .hobbies--viagem{
+    width: max(200px);
+    margin: 0 auto 0 0;
+  }
+  .hobbies--title, .hobbies-title {
+    width: max(200px);
+    padding: 0;
+    position: relative;
+    left: 0;
+    font-size: 1.3rem;
+  }
+  .hobbies--section h2 {
+    width: max(200px);
+    margin: 0 auto 0 -14px;
+    font-size: 1.5rem;
+  }  
+  .footer {
+    margin-top: 1750px;
+    width: max(20em);;
+    left: 1px;
+  }
+  .footer-contatiner{
+    width: max(30%);
+    margin: 90px auto 0 0;
+    padding: 5px;
+    gap: 80px;
+  }
+  .footer::after {
+    content: url(/img/icones/detalhe-watch.svg);
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 2px;
+  }
+  .footer-descricao {
+    width: max(22ch);
+    line-height: 1.33;
+    font-size: .8rem;
+    margin: 0 0 0 16px;
+  }
+   /* formation page */
+   .intro-formacao {
+    padding: 0;
+    margin: -20px 0 0 0;
+    width: max(auto);
+    height: max(400px);
+  }
+  .container-fundo {
+    margin: 0 auto 0 -100px;
+    width: max(344px);
+    height: 490px;
+    border-radius: .4rem;
+    position: absolute;
+    left: 1.9rem;
+    z-index: 3;
+  }
+  .container-formacao {
+    margin: 85px auto 0 0 ;
+    width: max(270px);
+    height: 350px;
+    position: relative;
+    left: 66px;
+  }
+  .container-formacao h1 {
+    font-size: 4rem;
+  }
+  .laptop-svg {
+    display: none;
+  }
+  .timeline, .container-timeline {
+    width: max(100%);
+  }
+  .container-experiencia {
+    padding: .9rem;
+    width: max(80%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 100px;
+    position: static;
+  }
+  .competencia-container-experiencia {
+    width: max(8ch);
+    font-size: 3rem;
+  }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(9ch);
+    font-size: 3.5rem;
+    position: relative;
+    top: -13%;
+    left: 0;
+  }
+  .container-experiencia h2::before {
+    top: -20%;
+    left: 80%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    padding: 0;
+    width: max(20em);
+    height: 1600px;
+  }
+  .container-timeline {
+    padding: 0;
+    margin: 0 auto;
+     top: 28%;
+    left: -134%;
+  }
+   /* date timeline */
+   .date-left{
+    top: -84%;
+    left: 34px;
+  }
+  .date-left2{
+    top: 16%;
+    left: -77px;
+    
+  }
+  .date { /*right*/
+    top: -84%;
+    left: -75px;
+  }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 40px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 170px;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -7%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 24%;
+  }
+  .left::before {
+    left: 125px;
+    transform: rotate(1deg);
+  }
+  .right::before {
+    left: 16px;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  .container {
+    padding: 9px 20px;
+    position: relative;
+    background: transparent;
+    width: 45%;
+    transition: 0.2s linear;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
+  }
+  .container::after {
+    right: 75px;
+  }
+  .right .content p{
+    left: 1%;
+    width: max(18ch);
+  }
+  .left .content p{
+    left: 70%;
+    width: max(18ch);
+  }
+  .formacao {
+    width: max(99%);
+    height: 104em;
+    margin: 0 auto;
+    top: 420%;
+  }
+  .formacao-container{
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    width: max(80%); 
+    margin: 250px 0 0 20px;
+  }
+  .faculdade {
+    /* flex: 1; */
+    background: #000000;
+    padding: 1.3rem;
+    margin: 0 0 60px 0;
+    border-radius: 0.4rem;
+    width: 230px;
+    height: 200px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 11px;
+  }
+  .faculdade-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    left: -10%;
+  }
+  .formacao-container .subtitulo {
+    transform: rotate(0deg);
+    font-size: 3rem;
+    position: relative;
+    top: 30%;
+    left: -5%;
+  }
+  .formacao-container::after {
+    top: 7%;
+    left: 3%;
+  }
+  .formacao-texto  {
+    width: max(20ch);
+  }
+  .curso-span {
+    position: relative;
+    left: 67%;
+    bottom: -17.4%;
+  }
+  .footer-formacao {
+    padding: 0px ;
+    width: max(100%);
+    height: max(30em);
+    left: 0;
+    top: 274%;
+  }
+  .footer-copy {
+    width:  max(17ch);
+    margin: 0 auto 0 0px;
+    font-size: 1rem;
+  }
+  .icone {
+  top: -80px;
+  left: -240px;
+  }
+  }
+  
