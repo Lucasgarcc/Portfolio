@@ -3822,9 +3822,9 @@ a:hover:nth-child(n) {
     left: 5px;
     z-index: 2;
   }
-    .intro-formacao {
-      width: max(90%);
-    }
+  .intro-formacao {
+    width: max(90%);
+  }
   .container-fundo {
     margin: -2px;
     width: max(404px);
@@ -4006,7 +4006,7 @@ a:hover:nth-child(n) {
     line-height: 4rem;
   }
   .intro-descricao {
-    margin: 50px auto 85px 35px;
+    margin: 50px auto -60px 0;
     width: max(80%);
     position: absolute
   }
@@ -4363,7 +4363,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 85px 35px;
+    margin: 50px auto -60px 0;
     width: max(80%);
     position: absolute
   }
@@ -4709,7 +4709,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 85px 35px;
+    margin: 50px auto -60px 35px;
     width: max(80%);
     position: absolute
   }
@@ -4928,12 +4928,10 @@ a:hover:nth-child(n) {
   .date-left1{
     top: -150%;
     left: 40px;
-    
   }
   .date-left2{
     top: 12%;
     left: -70px;
-    
   }
   .date { /*right*/
     top: -37%;
@@ -5244,15 +5242,15 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 160px 30px;
+    margin: 50px auto -10px 25px;
     width: max(85%);
     position: absolute
   }
   .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-  color: var(--preto-c3);
-  font-size: 2.7rem;/**/
-  text-indent: 1rem;
-  line-height: 3.5rem;
+    color: var(--preto-c3);
+    font-size: 2.7rem;/**/
+    text-indent: 1rem;
+    line-height: 3.5rem;
   }
   .intro h1::before {
     content: " ";
@@ -5310,54 +5308,48 @@ a:hover:nth-child(n) {
   .section-2-box .title-h2{
     padding: -20px 0 0 0;
     width: max(14ch);
-    top: 40px;
+    top: 140px;
     left: -6px;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
   .section-2-box .title-h2::after {
     left: -4%;
-    top: -15%;
+    top: -75%;
     z-index: 2;
   }
   figure {
     width: max(40%);
   }
   #perfil-2 {
-    width: max(150%);
-    height: 50%;
+    width: max(140%);
+    height: 80%;
     position: relative;
-    top: 10%;
+    top: 40%;
     left: -1%;
   }
   .competencia {
     padding: 10px;
     width: max(64%);
-    margin-top: 230%;
-    margin-left: -123%;
+    margin-top: 30%;
+    margin-left: 7%;
     gap: 1.2rem;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia::before {
-    left: -46px;
+    left: -24px;
     z-index: 2;
   }
   .hobbies--section{
-    width: max(60%);
+    width: max(80%);
     grid-template-columns: 1fr;
-    margin: 1600px auto;
+    margin: 1500px auto;
     left: 30px;
-    gap: 20px;
+    gap: 160px;
   }
   .hobbies--section h2, .hobbies--descricao {
     word-wrap: break-word;
     max-width: 320px;
-    margin: 0 auto 0 10px;
-  }
-  .hobbies--descricao {
-    width: max(27ch);
-    margin: 0 auto 0 1px;
-    color: var(--cinza-c1)
   }
   .hobbies--title, .hobbies-title {
     padding: 5px;
@@ -5365,9 +5357,17 @@ a:hover:nth-child(n) {
     left: 50px;
   }
   .hobbies--section h2 {
+    margin: 0 0 0 30px;
     width: max(80%);
-    margin: 0 0 0 20px;
+    color: var(--cinza-c0);
     font-size: 3.5rem;
+  }
+  .hobbies--viagem {
+    margin: -100px 0 0 10px;
+  }
+  .hobbies--descricao {
+    margin: 0 0 0 10px;
+    color: var(--cinza-c1);
   }
   .hobbies--title::after {
     display: block;
@@ -5390,7 +5390,7 @@ a:hover:nth-child(n) {
   }
   .footer {
     width: max(9em);
-    margin: 2420px auto;
+    margin: 2450px auto;
     height: 500px;
     left: -2px;
   }
@@ -5617,7 +5617,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0 auto 0 -100px;
-    width: max(336px);
+    width: max(356px);
     height: 490px;
     border-radius: 0.5rem;
     position: absolute;
@@ -5629,7 +5629,7 @@ a:hover:nth-child(n) {
     width: max(270px);
     height: 350px;
     position: relative;
-    left: 50px;
+    left: 64px;
 }
   .formacao {
     width: max(101%);
@@ -5687,7 +5687,7 @@ a:hover:nth-child(n) {
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 60px 20px;
+    margin: 50px auto 60px 5px;
     width: max(80%);
     position: absolute
   }
@@ -5699,7 +5699,7 @@ a:hover:nth-child(n) {
   }
   .sobre {
     padding: 1.3rem;
-    margin: 1.5px auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: max(88%);
@@ -5726,15 +5726,15 @@ a:hover:nth-child(n) {
   }
   .fundo-section-2 {
     width: max(102%);
-    margin: 0 auto;
-    height: 1550px;
+    margin: 50px auto;
+    height: 1400px;
   }
   .section-2-box{
     padding: 0 0 0 0;
     padding-top: 20px;
     width: max(250px);
     position: relative;
-    top: -40px;
+    top: 40px;
     left: -2px;
     word-wrap: break-word;
     font-size: 2.5rem;
@@ -5747,8 +5747,8 @@ a:hover:nth-child(n) {
     font-size: 2.4rem;
   }
   .section-2-box .title-h2::after {
+    top: -50%;
     left: -4%;
-    top: -15%;
     z-index: 2;
   }
   figure {
@@ -5756,17 +5756,17 @@ a:hover:nth-child(n) {
   }
   #perfil-2 {
     width: 155%;
-    height: 45%;
+    height: 65%;
     position: relative;
-    top: 14%;
+    top: 24%;
     left: -10%;
   }
   .competencia {
     padding: 10px;
     width: max(60%);
     gap: 1.2rem;
-    margin-top: 230%;
-    margin-left: -137%;
+    margin-top: -9%;
+    margin-left: 4%;
     position: relative;
     justify-content: space-around;
   }
@@ -5774,14 +5774,15 @@ a:hover:nth-child(n) {
     width: min(250px);
   }
   .box-competencia::before {
+    left: -32px;
     z-index: 2;
   }
   .hobbies--section{
     width: max(70%);
     grid-template-columns: 1fr;
-    margin: 1560px auto;
+    margin: 1470px auto;
     left: 30px;
-    gap: 20px;
+    gap: 100px;
   }
  
   .hobbies--descricao {
@@ -5801,13 +5802,12 @@ a:hover:nth-child(n) {
   }
   .hobbies--section h2 {
     width: max(200px);
-    margin: 0 auto 0 -20px;
+    margin: -100px auto 0 -1px;
     font-size: 3rem;
   }
-  
   .footer {
-    width: max(8em);;
-    left: -29px;
+    width: max(8.2em);;
+    left: -34px;
   }
   .footer-contatiner{
     width: max(30%);
@@ -6045,7 +6045,7 @@ left: -330px;
     display: none;
   }
   .intro-descricao {
-    margin: 50px auto 270px -3px;
+    margin: 50px auto 70px -3px;
     width: max(155px);
     position: absolute
   }
@@ -6112,13 +6112,13 @@ left: -330px;
   .section-2-box .title-h2{
     padding: -20px 0 0 0;
     width: max(12ch);
-    top: 60px;
+    top: 150px;
     left: -30px;
     font-size: 1.2rem;
   }
   .section-2-box .title-h2::after {
     content: url(/img/icones/det3-watch.svg);
-    top: 15%;
+    top: -55%;
     left: -1%;
     z-index: 2;
   }
@@ -6127,23 +6127,23 @@ left: -330px;
   }
   #perfil-2 {
     width: 165%;
-    height: 35%;
+    height: 65%;
     position: relative;
-    top: 17%;
+    top: 70%;
     left: -20%;
   }
   .competencia {
     padding: 10px;
     width: max(50%);
     gap: 1.2rem;
-    margin-top: 250%;
-    margin-left: -173%;
+    margin-top: 20%;
+    margin-left: 6px;
     font-size: .6rem;
     position: relative;
     justify-content: space-around;
   }
   .box-competencia {
-    width: min(110px);
+    width: min(100px);
     font-size: .5rem;
   }
   .title {
@@ -6155,15 +6155,15 @@ left: -330px;
   .box-competencia::before {
     width: 5px;
     height: 17px;
-    left: -26%;
+    left: 2%;
     z-index: 2;
   }
   .hobbies--section{
     width: max(70%);
     grid-template-columns: 1fr;
-    margin: 1150px auto;
+    margin: 1090px auto;
     left: 30px;
-    gap: 20px;
+    gap: 50px;
   }
  
   .hobbies-title::after {
@@ -6181,10 +6181,11 @@ left: -330px;
     margin: -50px auto 0 -30px;
     color: var(--cinza-c1);
     font-size: .8rem;
+    gap: 50px;
   }
-  .hobbies--game, .hobbies--viagem{
+  .hobbies--game{
     width: max(200px);
-    margin: 0 auto 0 0;
+    margin: 120px auto 0 0;
   }
   .hobbies--title, .hobbies-title {
     width: max(200px);
@@ -6195,17 +6196,18 @@ left: -330px;
   }
   .hobbies--section h2 {
     width: max(200px);
-    margin: 0 auto 0 -14px;
+    margin: 0 auto 0 1px;
+    color: var(--cinza-c0);
     font-size: 1.5rem;
   }  
   .footer {
-    margin-top: 1750px;
-    width: max(20em);;
-    left: 1px;
+    margin-top: 1790px;
+    width: max(20.4em);
+    left: 2px;
   }
   .footer-contatiner{
     width: max(30%);
-    margin: 90px auto 0 0;
+    margin: 20px auto 0 0;
     padding: 5px;
     gap: 80px;
   }
@@ -6417,18 +6419,18 @@ left: -330px;
   .footer-formacao {
     padding: 0px ;
     width: max(100%);
-    height: max(30em);
+    height: max(20em);
     left: 0;
     top: 274%;
   }
   .footer-copy {
     width:  max(17ch);
-    margin: 0 auto 0 0px;
+    margin: -120px auto 0 0px;
     font-size: 1rem;
   }
   .icone {
-  top: -80px;
-  left: -240px;
+  top: -120px;
+  left: -230px;
   }
   }
   
