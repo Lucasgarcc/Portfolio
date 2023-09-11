@@ -3874,7 +3874,7 @@ a:hover:nth-child(n) {
     left: -5%;
   }
   .footer-descricao {
-    margin: auto auto auto 10px;
+    margin: auto auto auto 3px;
     width: max(27ch);
   }
   .icone {
