@@ -5183,8 +5183,12 @@ a:hover:nth-child(n) {
     height: 450px;
   }
   .container-fundo {
-    width: max(347px);
-    left: 1rem;
+    width: max(346px);
+    left: -1.3rem;
+  }
+  .container-formacao {
+    width: max(300px);
+    left: 36px;
   }
   .container-formacao {
     left: 46px;
