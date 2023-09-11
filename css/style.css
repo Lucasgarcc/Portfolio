@@ -3872,7 +3872,7 @@ a:hover:nth-child(n) {
     margin-left: 0;
     width: max(25em);
     height: 450px;
-    left: -1%;
+    left: -3%;
   }
   .footer-descricao {
     margin: auto auto auto 3px;
