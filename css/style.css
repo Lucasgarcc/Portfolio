@@ -3869,10 +3869,10 @@ a:hover:nth-child(n) {
   }
   .footer {
     padding: 0px 0px;
-    margin-left: 0;
+    margin-left: -10px;
     width: max(25em);
     height: 450px;
-    left: -3%;
+    left: 0;
   }
   .footer-descricao {
     margin: auto auto auto 3px;
@@ -3975,10 +3975,12 @@ a:hover:nth-child(n) {
 }
 @media (max-width: 428px) and (min-width: 420px) {
   .footer {
+    margin-left: 0;
     width: max(27em);
-    height: 450px;
-    padding: 0px 0px ;
     left: -10%;
+  }
+  .footer-descricao {
+    margin: auto auto auto 20px;
   }
   .intro-formacao h1::before {
     content: " ";
