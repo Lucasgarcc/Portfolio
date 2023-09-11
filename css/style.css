@@ -3909,7 +3909,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: -2px;
-    width: max(387px);
+    width: max(405px);
     height: 490px;
     border-radius: 0.4rem;
     position: absolute;
@@ -3991,7 +3991,9 @@ a:hover:nth-child(n) {
     top: 195%;
   }
 }
+
 @media (max-width:414px) and (min-width:414px) and (max-height: 900px) and (min-height:820px){
+  
    /* date timeline */
  .date-left{
   top: -70%;
@@ -4084,7 +4086,7 @@ a:hover:nth-child(n) {
     width: max(295px);
     height: 350px;
     position: relative;
-    left: 73px;
+    left: 62px;
   }
   .container-fundo {
     margin: 0px;
@@ -4101,16 +4103,16 @@ a:hover:nth-child(n) {
   }
   .date-left{
   top: -70%;
-    left: 38px;
+    left: 45px;
   }
   .date-left1{
     top: -151%;
-    left: 37px;
+    left: 46px;
     
   }
   .date-left2{
     top: 12%;
-    left: -77px;
+    left: -70px;
     
   }
   .date { /*right*/
@@ -4530,6 +4532,355 @@ a:hover:nth-child(n) {
     top: 220%;
   }
 }
+
+/* IOS Swift (celulares motorolas e samsung (pai) */
+@media (max-width: 397px) and (min-width:375px){ 
+  .fundo {
+    display: none;
+  }
+  .intro {
+    width: max(89.66%);
+    padding: 1.3rem;
+    height: 450px;
+    margin: -1px auto;
+    position: relative;
+    left: 0;
+    background: var(--preto-c9);
+    z-index: -1;
+  } 
+  .intro img{
+    display: none;
+  }
+  .intro-descricao {
+    margin: 50px auto -60px 35px;
+    width: max(80%);
+    position: absolute
+  }
+  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
+    color: var(--preto-c3);
+    font-size: 2.7rem;/**/
+    text-indent: 1rem;
+    line-height: 3.5rem;
+  }
+  .intro h1::before {
+    left: 1px;
+  }
+  .sobre {
+    padding: 1.3rem;
+    margin: 1.5px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max(88%);
+    height: 350px;
+    gap: 10px;
+    background: #F7F7F7;
+    position: relative;
+    left: 0px;
+  }
+  .sobre .subtitulo {
+    width: max(13ch);
+    margin: 0 auto 0 5px;
+    color: var(--preto-c6);
+  }
+  .sobre--descricao {
+    padding: 0px;
+    width: max(100%);
+    display: grid;
+   justify-items: start;
+   grid-column: 1 / 7;
+   color: var(--preto-c9);
+   font-size: 1.1rem;
+   font-weight:400
+  }
+  .fundo-section-2 {
+    width: max(100%);
+    margin: 0 auto;
+    height: 1530px;
+  }
+  .section-2-box{
+    padding: 0 0 0 0;
+    padding-top: 20px;
+    width: max(350px);
+    position: relative;
+    top: -40px;
+    left: -20px;
+    word-wrap: break-word;
+    font-size: 2.5rem;
+  }
+  .section-2-box .title-h2{
+    padding: -20px 0 0 0;
+    width: max(340px);
+    top: 80px;
+    left: 1px;
+    font-size: 2.5rem;
+  }
+  .section-2-box .title-h2::after {
+    left: -4%;
+    top: -55%;
+    z-index: 2;
+  }
+  figure {
+    width: max(40%);
+  }
+  #perfil-2 {
+    width: 155%;
+    height: 85%;
+    position: relative;
+    top: 23%;
+    left: -1%;
+  }
+  .competencia {
+    padding: 10px;
+    width: max(70%);
+    gap: 1.2rem;
+    margin-top: 20%;
+    margin-left: 13%;
+    position: relative;
+    justify-content: space-around;
+  }
+  .box-competencia::before {
+    left: -12px;
+    z-index: 2;
+  }
+  .hobbies--section{
+    width: max(90%);
+    grid-template-columns: 1fr;
+    margin: 1530px auto;
+    left: 50px;
+    gap: 160px;
+  }
+  .hobbies--section h2, .hobbies--descricao {
+    color: var(--cinza-c0);
+    word-wrap: break-word;
+    width: max(50%);
+  }
+  .hobbies--descricao {
+    margin: 0 0 0 20px;
+    color: var(--cinza-c1)
+  }
+  .hobbies--title {
+    padding: 5px;
+  }
+  .hobbies--viagem {
+    margin: -100px 0 0 0;
+  }
+  .hobbies--section h2 { 
+    margin: 0 0 0 50px;
+    width: max(90%);
+    font-size: 3.5rem;
+  }
+  .hobbies--descricao {
+    width: max(25ch);
+  }
+  .footer{
+    width: max(10em);
+    left: 4%;
+    height: 450px;
+  }
+  .footer-descricao {
+    margin: 0 0 0 5px;
+    padding: 0 0 0 0;
+    width: max(25ch);
+  }
+  .formacao-container::before {
+    display: none;
+  }
+  .footer-contatiner {
+    max-width: 330px;
+    margin: 90px auto 3px 10px;
+    padding: 5px;
+    gap: 80px;
+  }
+  .icone {
+    width: max(100px);
+    margin-top: -140px;
+    position: relative;
+    left: -320px;
+  }
+  /* formation page */
+  .intro-formacao {
+    padding: 0;
+    margin: -20px auto;
+    width: max(auto);
+  }
+  .container-fundo {
+    margin: 0px;
+    width: max(361px);
+    height: 490px;
+    border-radius: .4rem;
+    position: absolute;
+    left: -1.3rem;
+    z-index: 3;
+  }
+  .container-formacao {
+    margin: 85px auto 0 0 ;
+    width: max(290px);
+    height: 350px;
+    position: relative;
+    left: 52px;
+  }
+  .container-formacao h1 {
+    font-size: 4rem;
+  }
+  .laptop-svg {
+    display: none;
+  }
+  .timeline, .container-timeline {
+    width: max(100%);
+  }
+  .container-experiencia {
+    padding: 1rem;
+    width: max(80%);
+    margin: 0;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 100px;
+    position: static;
+}
+  .competencia-container-experiencia {
+    width: max(8ch);
+    font-size: 3rem;
+  }
+  .container-experiencia h2{
+    margin: 0 auto;
+    width: max(9ch);
+    font-size: 3.5rem;
+    position: relative;
+    top: -13%;
+    left: 5%;
+  }
+  .container-experiencia h2::before {
+    top: -32%;
+    left: 90%;
+    transform: rotate(90.1deg);
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    padding: 0;
+    width: max(23.2em);
+    height: 1600px;
+  }
+  .container-timeline {
+    padding: 0;
+    margin: 0 auto;
+    top: 28%;
+    left: -109%;
+  }
+   /* date timeline */
+ .date-left{
+    top: -77%;
+    left: 43px;
+  }
+  .date-left1{
+    top: -150%;
+    left: 40px;
+  }
+  .date-left2{
+    top: 12%;
+    left: -70px;
+  }
+  .date { /*right*/
+    top: -37%;
+    left: -70px;
+  }
+  .date-right { /*right*/
+    top: -56%;
+  }
+  .left::before {/* set the left */
+    left: 125px;
+    transform: rotate(1deg);
+  }
+  .right::before {/* set the rigth */
+    left: 25px;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -1.8px;
+  }
+   /* The descrition das times */
+   .time-descricao {
+    top: 30px;
+    left: 25px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .container {
+    padding: 9px 20px;
+    position: relative;
+    background: transparent;
+    width: 45%;
+    transition: 0.2s linear;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #101010;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    margin-left: -3px;
+  }
+  .container::after {
+    right: 70px;
+  }
+  .right .content p{ /*box of content*/
+    left: 7%;
+    width: max(18ch);
+  }
+  .left .content p{
+    left: 70%;
+    width: max(18ch);
+  }
+  /* are the formations courses and languages */
+  .formacao {
+    width: max(100%);
+    height: 104em;
+    margin: 0 auto;
+    top: 335%;
+  }
+  .formacao-container{
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    width: max(80%); 
+    margin: 250px 0 0 30px;
+  }
+  .formacao-container .subtitulo {
+    transform: rotate(0deg);
+    font-size: 3rem;
+    position: relative;
+    top: 30%;
+    left: -5%;
+  }
+  .formacao-container>div:nth-child(even) {
+    margin: 60px auto 0 0%;
+  }
+  .formacao-container::after {
+    top: 7%;
+    left: 3%;
+  }
+  .formacao-texto  {
+    width: max(20ch);
+  }
+  .curso-span {
+    position: relative;
+    left: 67%;
+    bottom: -14%;
+  }
+  .footer-formacao {
+    padding: 0px ;
+    width: max(23.8em);
+    height: max(30em);
+    left: -2px;
+    top: 212%;
+  }
+  .footer-copy {
+    width:  max(29ch);
+    margin:  auto auto auto -5px;
+  }
+}
 @media screen and (max-width: 393px) and (max-heigth: 900px){ 
   .fundo {
     display: none;
@@ -4610,7 +4961,6 @@ a:hover:nth-child(n) {
     left: 1px;
     font-size: 2.5rem;
   }
-  
   .competencia {
     padding: 10px;
     width: max(70%);
@@ -4684,7 +5034,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0px;
-    width: max(373px);
+    width: max(383px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -4861,355 +5211,6 @@ a:hover:nth-child(n) {
     margin:  auto auto auto -5px;
   }
 }
-/* IOS Swift (celulares motorolas e samsung (pai) */
-@media (max-width: 397px) and (min-width:375px){ 
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(89.66%);
-    padding: 1.3rem;
-    height: 450px;
-    margin: -1px auto;
-    position: relative;
-    left: 0;
-    background: var(--preto-c9);
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
-  .intro-descricao {
-    margin: 50px auto -60px 35px;
-    width: max(80%);
-    position: absolute
-  }
-  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-    color: var(--preto-c3);
-    font-size: 2.7rem;/**/
-    text-indent: 1rem;
-    line-height: 3.5rem;
-  }
-  .intro h1::before {
-    left: 1px;
-  }
-  .sobre {
-    padding: 1.3rem;
-    margin: 1.5px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(88%);
-    height: 350px;
-    gap: 10px;
-    background: #F7F7F7;
-    position: relative;
-    left: 0px;
-  }
-  .sobre .subtitulo {
-    width: max(13ch);
-    margin: 0 auto 0 5px;
-    color: var(--preto-c6);
-  }
-  .sobre--descricao {
-    padding: 0px;
-    width: max(100%);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c9);
-   font-size: 1.1rem;
-   font-weight:400
-  }
-  .fundo-section-2 {
-    width: max(100%);
-    margin: 0 auto;
-    height: 1530px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(350px);
-    position: relative;
-    top: -40px;
-    left: -20px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(340px);
-    top: 80px;
-    left: 1px;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -4%;
-    top: -55%;
-    z-index: 2;
-  }
-  figure {
-    width: max(40%);
-  }
-  #perfil-2 {
-    width: 155%;
-    height: 85%;
-    position: relative;
-    top: 23%;
-    left: -1%;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(70%);
-    gap: 1.2rem;
-    margin-top: 20%;
-    margin-left: 13%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: -12px;
-    z-index: 2;
-  }
-  .hobbies--section{
-    width: max(90%);
-    grid-template-columns: 1fr;
-    margin: 1530px auto;
-    left: 50px;
-    gap: 160px;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    color: var(--cinza-c0);
-    word-wrap: break-word;
-    width: max(50%);
-  }
-  .hobbies--descricao {
-    margin: 0 0 0 20px;
-    color: var(--cinza-c1)
-  }
-  .hobbies--title {
-    padding: 5px;
-  }
-  .hobbies--viagem {
-    margin: -100px 0 0 0;
-  }
-  .hobbies--section h2 { 
-    margin: 0 0 0 50px;
-    width: max(90%);
-    font-size: 3.5rem;
-  }
-  .hobbies--descricao {
-    width: max(25ch);
-  }
-  .footer{
-    width: max(10em);
-    left: 4%;
-    height: 450px;
-  }
-  .footer-descricao {
-    margin: 0 0 0 5px;
-    padding: 0 0 0 0;
-    width: max(25ch);
-  }
-  .formacao-container::before {
-    display: none;
-  }
-  .footer-contatiner {
-    max-width: 330px;
-    margin: 90px auto 3px 10px;
-    padding: 5px;
-    gap: 80px;
-  }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
-    position: relative;
-    left: -320px;
-  }
-  /* formation page */
-  .intro-formacao {
-    padding: 0;
-    margin: -20px auto;
-    width: max(auto);
-  }
-  .container-fundo {
-    margin: 0px;
-    width: max(350px);
-    height: 490px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -1.3rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(290px);
-    height: 350px;
-    position: relative;
-    left: 36px;
-  }
-  .container-formacao h1 {
-    font-size: 4rem;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .timeline, .container-timeline {
-    width: max(100%);
-  }
-  .container-experiencia {
-    padding: 1rem;
-    width: max(80%);
-    margin: 0;
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 100px;
-    position: static;
-}
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 3rem;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 5%;
-  }
-  .container-experiencia h2::before {
-    top: -32%;
-    left: 90%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    padding: 0;
-    width: max(23.2em);
-    height: 1600px;
-  }
-  .container-timeline {
-    padding: 0;
-    margin: 0 auto;
-    top: 28%;
-    left: -109%;
-  }
-   /* date timeline */
- .date-left{
-    top: -77%;
-    left: 43px;
-  }
-  .date-left1{
-    top: -150%;
-    left: 40px;
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-  }
-  .date { /*right*/
-    top: -37%;
-    left: -70px;
-  }
-  .date-right { /*right*/
-    top: -56%;
-  }
-  .left::before {/* set the left */
-    left: 125px;
-    transform: rotate(1deg);
-  }
-  .right::before {/* set the rigth */
-    left: 25px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -1.8px;
-  }
-   /* The descrition das times */
-   .time-descricao {
-    top: 30px;
-    left: 25px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .container {
-    padding: 9px 20px;
-    position: relative;
-    background: transparent;
-    width: 45%;
-    transition: 0.2s linear;
-  }
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
-    top: 0;
-    bottom: 0;
-    left: 24%;
-    margin-left: -3px;
-  }
-  .container::after {
-    right: 70px;
-  }
-  .right .content p{ /*box of content*/
-    left: 7%;
-    width: max(18ch);
-  }
-  .left .content p{
-    left: 70%;
-    width: max(18ch);
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(100%);
-    height: 104em;
-    margin: 0 auto;
-    top: 335%;
-  }
-  .formacao-container{
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    width: max(80%); 
-    margin: 250px 0 0 30px;
-  }
-  .formacao-container .subtitulo {
-    transform: rotate(0deg);
-    font-size: 3rem;
-    position: relative;
-    top: 30%;
-    left: -5%;
-  }
-  .formacao-container>div:nth-child(even) {
-    margin: 60px auto 0 0%;
-  }
-  .formacao-container::after {
-    top: 7%;
-    left: 3%;
-  }
-  .formacao-texto  {
-    width: max(20ch);
-  }
-  .curso-span {
-    position: relative;
-    left: 67%;
-    bottom: -14%;
-  }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(23.8em);
-    height: max(30em);
-    left: -2px;
-    top: 212%;
-  }
-  .footer-copy {
-    width:  max(29ch);
-    margin:  auto auto auto -5px;
-  }
-}
-
 /* IOS Swift 12 / 13 */
 @media (max-width: 390px) and (min-width: 380px) {
   .fundo-section-2 {
@@ -5280,8 +5281,28 @@ a:hover:nth-child(n) {
     padding: 0;
     margin: 0 auto;
     top: 28%;
-    left: -112%;
+    left: -108%;
   }
+    /* date timeline */
+ .date-left{
+  top: -70%;
+  left: 48px;
+}
+.date-left1{
+  top: -152%;
+  left: 48px;
+}
+.date-left2{
+  top: 12%;
+  left: -60px;
+}
+.date { /*right*/
+  top: -40%;
+  left: -61px;
+}
+.date-right { /*right*/
+  top: -52%;
+}
   .formacao{
     top: 310%;
   }
@@ -5293,6 +5314,12 @@ a:hover:nth-child(n) {
 }
 /* IOS Swift simple*/
 @media (max-width:384px) and (min-width:380px){
+  .container-fundo {
+    width: max(337px);
+  }
+  .container-formacao {
+    left: 31px;
+}
   .intro-formacao h1::before {
     content: " ";
     display: block;
@@ -5742,7 +5769,7 @@ a:hover:nth-child(n) {
   }
   .date-left2{
     top: 12%;
-    left: -70px;
+    left: -67px;
     
   }
   .date { /*right*/
@@ -5865,8 +5892,7 @@ a:hover:nth-child(n) {
     top: -80px;
     left: -320px;
   }
-}
-@media (max-width: 360px) and (min-width:350px) {
+}@media (max-width: 360px) and (min-width:350px)and (max-height: 690px){
   .intro-formacao {
     padding: 0;
     margin: -20px 0 0 0;
@@ -5875,7 +5901,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0 auto 0 -100px;
-    width: max(337px);
+    width: max(336px);
     height: 490px;
     border-radius: 0.5rem;
     position: absolute;
@@ -5889,26 +5915,87 @@ a:hover:nth-child(n) {
     position: relative;
     left: 63px;
   }
+ 
+}
+@media (max-width: 360px) and (min-width:350px) and (max-height: 740px) {
+  .intro-formacao {
+    padding: 0;
+    margin: -20px 0 0 0;
+    width: max(auto);
+    height: max(400px);
+  }
+  .container-fundo {
+    margin: 0 auto 0 -100px;
+    width: max(336px);
+    height: 490px;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 4.6rem;
+    z-index: 3;
+  }
+  .container-formacao {
+    margin: 85px auto 0 0;
+    width: max(260px);
+    height: 350px;
+    position: relative;
+    left: 60px;
+  }
   .container-timeline {
     top: 28%;
-    left: -128%;
+    left: -125%;
   }
   .formacao {
     width: max(100%);
-    top: 370%;
+    top: 330%;
   }
   .footer-formacao {
     width: max(100%);
-    top: 235%;
+    top: 223%;
   }
 }
-@media (max-width: 360px) and (min-width:350px) and (min-height:700px){
+@media (max-width: 360px) and (min-width:350px) and (max-height: 890px){
+  .intro-formacao {
+    padding: 0;
+    margin: -20px 0 0 0;
+    width: max(auto);
+    height: max(400px);
+  }
+  .container-fundo {
+    margin: 0 auto 0 -100px;
+    width: max(354px);
+    height: 490px;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 4.6rem;
+    z-index: 3;
+  }
+  .container-formacao {
+    margin: 85px auto 0 0;
+    width: max(260px);
+    height: 350px;
+    position: relative;
+    left: 69px;
+  }
+  .container-timeline {
+    top: 28%;
+    left: -125%;
+  }
+  .formacao {
+    width: max(100%);
+    top: 330%;
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 223%;
+  }
+}
+@media (max-width: 360px) and (min-width:350px) and (max-height:1200px) and (min-heigth:880px){
   .intro-formacao {
     width: max(90%);
   }
   .container-fundo {
     margin: -2px;
-    width: max(337px);
+    width: max(377px);
     height: 490px;
     border-radius: 0.4rem;
     position: absolute;
