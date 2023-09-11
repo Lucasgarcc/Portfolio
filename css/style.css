@@ -5247,12 +5247,12 @@ a:hover:nth-child(n) {
     top: 355%;
   }
   .footer-formacao{
-    width: max(23em);
+    width: max(25em);
     top: 230%;
   }
   .footer-contatiner {
     max-width: 330px;
-    margin: 90px auto 3px 30px;
+    margin: 90px auto 3px 20px;
     padding: 1px;
     gap: 80px;
   }
