@@ -4777,7 +4777,7 @@ a:hover:nth-child(n) {
     left: 43px;
   }
   .date-left1{
-    top: -150%;
+    top: -146%;
     left: 40px;
   }
   .date-left2{
@@ -4792,7 +4792,7 @@ a:hover:nth-child(n) {
     top: -56%;
   }
   .left::before {/* set the left */
-    left: 128px;
+    left: 130px;
     transform: rotate(1deg);
   }
   .right::before {/* set the rigth */
