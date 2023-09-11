@@ -4874,7 +4874,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0px;
-    width: max(360px);
+    width: max(350px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -5040,7 +5040,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(24em);
+    width: max(23.8em);
     height: max(30em);
     left: -2px;
     top: 195%;
