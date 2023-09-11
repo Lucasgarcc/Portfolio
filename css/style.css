@@ -5169,6 +5169,9 @@ a:hover:nth-child(n) {
 }
 /* IOS 11 / 11 pro */
 @media (max-width: 375px) and (min-width:370px) {
+.header {
+  width: 100%;
+}
   .intro {
     width: max(89.5%);
   } 
