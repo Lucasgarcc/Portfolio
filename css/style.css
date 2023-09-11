@@ -3868,13 +3868,13 @@ a:hover:nth-child(n) {
     margin-left: 80px;
   }
   .footer {
-    width: max(27em);
+    width: max(24em);
     height: 450px;
     padding: 0px 0px ;
-    margin: 2460px auto;
     left: -10%;
   }
   .footer-descricao {
+    margin: auto auto auto 20px;
     width: max(27ch);
   }
   .icone {
@@ -3973,6 +3973,12 @@ a:hover:nth-child(n) {
   } 
 }
 @media (max-width: 428px) and (min-width: 420px) {
+  .footer {
+    width: max(27em);
+    height: 450px;
+    padding: 0px 0px ;
+    left: -10%;
+  }
   .intro-formacao h1::before {
     content: " ";
     display: block;
