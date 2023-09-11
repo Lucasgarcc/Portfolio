@@ -1151,6 +1151,7 @@ a:hover:nth-child(n) {
   [data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0, 0 );
+    transform: translateX(0px, 0, 0 );
   }
 }
 @media  (max-width: 500px)and (min-width: 412px) {
@@ -1185,6 +1186,19 @@ a:hover:nth-child(n) {
     visibility: visible;
     overflow-y: auto;
   }  
+  [data-anime="left"] {
+    transform: translate3d(-20px, 0, 0 );
+    transform: translateX(0px, 0, 0 );
+  }
+  [data-anime="right"] {
+    transform: translate3d(20px, 0, 0 );
+    transform: translateX(0px, 0, 0 );
+  }
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0 );
+    transform: translateX(0px, 0, 0 );
+  }
 }
 @media  (max-width: 300px){
   .garcia2 {
@@ -5208,11 +5222,6 @@ a:hover:nth-child(n) {
   .right {
     left: 20%;
   }
-  .curso-span {
-    position: relative;
-    left: 67%;
-    bottom: -14%;
-  }
   .formacao-container::before {
     display: none;
   }
@@ -5255,6 +5264,11 @@ a:hover:nth-child(n) {
   }
   .formacao{
     top: 355%;
+  }
+  .curso-span {
+    position: relative;
+    left: 67%;
+    bottom: -14%;
   }
   .footer-formacao{
     width: max(23.5em);
