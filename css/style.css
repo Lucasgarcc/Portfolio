@@ -5016,7 +5016,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     padding: 0px ;
-    width: max(100%);
+    width: max(22.6em);
     height: max(30em);
     left: -2px;
     top: 229%;
