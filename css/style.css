@@ -4758,7 +4758,7 @@ a:hover:nth-child(n) {
   .footer{
     margin: 2450px auto 0 0;
     width: max(10em);
-    left: 5%;
+    left: 0;
     height: 450px;
   }
   .footer-descricao {
@@ -4772,7 +4772,7 @@ a:hover:nth-child(n) {
   .footer-contatiner {
     max-width: 330px;
     margin: 90px auto 3px 10px;
-    padding: 5px;
+    padding: 4px;
     gap: 80px;
   }
   .icone {
@@ -5142,7 +5142,7 @@ a:hover:nth-child(n) {
     position: absolute
   }
   .footer {
-    margin: 2470px auto 0 3%;
+    margin: 2470px auto 0 0%;
     left: 0;
     height: 450px;
   }
