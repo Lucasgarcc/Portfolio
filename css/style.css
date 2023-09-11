@@ -5244,9 +5244,10 @@ a:hover:nth-child(n) {
     left: -110%;
   }
   .formacao{
-    top: 354%;
+    top: 355%;
   }
   .footer-formacao{
+    width: max(22.6em);
     top: 235%;
   }
   .footer-contatiner {
