@@ -3868,7 +3868,7 @@ a:hover:nth-child(n) {
     margin-left: 80px;
   }
   .footer {
-    width: max(24em);
+    width: max(25em);
     height: 450px;
     padding: 0px 0px ;
     left: 0;
