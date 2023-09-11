@@ -5208,6 +5208,11 @@ a:hover:nth-child(n) {
   .right {
     left: 20%;
   }
+  .curso-span {
+    position: relative;
+    left: 67%;
+    bottom: -14%;
+  }
   .formacao-container::before {
     display: none;
   }
@@ -5253,7 +5258,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao{
     width: max(23.5em);
-    top: 231%;
+    top: 228%;
   }
   .footer-contatiner {
     max-width: 330px;
