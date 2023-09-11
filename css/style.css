@@ -1141,10 +1141,10 @@ a:hover:nth-child(n) {
     top: -8px;
   }
   [data-anime="left"] {
-    transform: translate3d(-10px, 0, 0 );
+    transform: translate3d(0, 0, 0 );
   }
   [data-anime="right"] {
-    transform: translate3d(10px, 0, 0 );
+    transform: translate3d(0, 0, 0 );
   }
   [data-anime].animate {
     opacity: 1;
