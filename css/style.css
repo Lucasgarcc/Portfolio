@@ -3868,10 +3868,11 @@ a:hover:nth-child(n) {
     margin-left: 80px;
   }
   .footer {
+    padding: 0px 0px;
+    margin-left: 0;
     width: max(25em);
     height: 450px;
-    padding: 0px 0px ;
-    left: 0;
+    left: -1%;
   }
   .footer-descricao {
     margin: auto auto auto 3px;
