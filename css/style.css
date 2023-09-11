@@ -1214,9 +1214,9 @@ a:hover:nth-child(n) {
    margin-top:  45%;
    margin-bottom: 0px;
   }
-
+  
 }
-@media (min-width:1990px) and (max-width: 10000px){
+@media (min-width:3000px) and (max-width: 10000px){
   .sobre {
     position: static;
     margin: 0 auto;
@@ -1229,12 +1229,21 @@ a:hover:nth-child(n) {
   position: absolute;
   margin-top: 80% ;
 }
+.container-timeline {
+  left: 90%;
+}
 .footer-contatiner {
   height: max(25vh);
 }
 .formacao{
-  margin: -55% auto;
+  margin: -50% auto;
+  position: absolute;
   height: 100vw;
+}
+.formacao-container{
+  width: max(3000px);
+  top: 25%;
+  left: 9%;
 }
 .formacao-container::after {
   left: -12%;
