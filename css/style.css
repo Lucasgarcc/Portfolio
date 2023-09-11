@@ -1666,7 +1666,7 @@ a:hover:nth-child(n) {
   /* are the formations courses and languages */
   .formacao {
     width: max(99%);
-    top: 310%;
+    top: 250%;
   }
   .formacao-container{
     padding: 2.3rem 3rem;
@@ -1693,7 +1693,7 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     width: max(100%);
-    top: 241%;
+    top: 188%;
   }
 }
 @media screen and (max-width:1120px) {
@@ -1827,7 +1827,6 @@ a:hover:nth-child(n) {
   .intro-descricao {
     gap: -1rem;
   }
-  
   .sobre .subtitulo{
     color: #010000;
   }
@@ -1946,10 +1945,63 @@ a:hover:nth-child(n) {
     top: 21%;
     left: -92%;
   }
+/* date timeline */
+  .date-left{
+    top: -80%;
+    left: 180px;
+  } 
+  .date-left1{
+    top: -137%;
+  }
+  .date-left2{
+    top: 11%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -42%;
+    left: 100px;
+  }
+  .date-right { /*right*/
+    top: -60%;
+  }
+    /* Fix the circle for containers on the right side */
+    .right::after {
+      left: -13px;
+    }
+  /* The descrition das times */
+  .time-descricao {
+    top: 30px;
+    left: 50px;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    top: 30px;
+    left: 130px;
+  }
+  .time-descricao-left2 {
+    left: 140px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -4%;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    left: 267px;
+  }
+  .right::before {
+    left: 31px;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
   /* are the formations courses and languages */
   .formacao {
     width: max(100%);
-    top: 354%;
+    top: 204%;
   }
   .formacao-container{
     max-width: (90%); 
@@ -1972,9 +2024,18 @@ a:hover:nth-child(n) {
   }
   .footer-formacao {
     width: max(100%);
-    top: 257%;
+    top: 147%;
   }
-
+}
+@media (min-width: 990px) and (max-width: 1024px) and (max-height: 800px){
+  .formacao {
+    width: max(100%);
+    top: 344%;
+  }
+  .footer-formacao {
+    width: max(100%);
+    top: 247%;
+  }
 }
 @media screen and (max-width: 884px) and (min-width:830px){
   .fundo{
@@ -2122,17 +2183,16 @@ a:hover:nth-child(n) {
     left: -95%;
     top: 38%;
   }
-  
   /* date timeline */
     .date-left{
       top: -78%;
       left: 180px;
     } 
     .date-left1{
-      top: -138%;
+      top: -145%;
     }
     .date-left2{
-      top: 13%;
+      top: 14%;
       left: -140px;
     }
     .date { /*right*/
@@ -2140,7 +2200,7 @@ a:hover:nth-child(n) {
       left: 100px;
     }
     .date-right { /*right*/
-      top: -49%;
+      top: -48%;
     }
     /* Fix the circle for containers on the right side */
     .right::after {
