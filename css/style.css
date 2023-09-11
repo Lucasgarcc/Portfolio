@@ -4858,7 +4858,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0px;
-    width: max(361px);
+    width: max(360px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
@@ -4992,7 +4992,7 @@ a:hover:nth-child(n) {
     width: max(100%);
     height: 104em;
     margin: 0 auto;
-    top: 295%;
+    top: 315%;
   }
   .formacao-container{
     padding: 1rem;
