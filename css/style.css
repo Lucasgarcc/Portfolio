@@ -187,7 +187,7 @@ ul {
 }
 [data-anime].animate {
   opacity: 1;
-  transform: translate3d(0px, 0, 0 );
+  transform: translate3d(0, 0, 0 );
 }
 
 .fundo{/* background da introdução */
@@ -1139,6 +1139,16 @@ a:hover:nth-child(n) {
   #nav.active #hamburger::after {
     transform:  rotate(-129deg);
     top: -8px;
+  }
+  [data-anime="left"] {
+    transform: translate3d(-10px, 0, 0 );
+  }
+  [data-anime="right"] {
+    transform: translate3d(10px, 0, 0 );
+  }
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0 );
   }
 }
 @media  (max-width: 500px)and (min-width: 412px) {
