@@ -5159,7 +5159,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     width: max(353px);
-    left: -1.1rem;
+    left: 1rem;
   }
   .container-formacao {
     left: 46px;
