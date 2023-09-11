@@ -3872,6 +3872,7 @@ a:hover:nth-child(n) {
     height: 450px;
     padding: 0px 0px ;
     margin: 2460px auto;
+    left: 0%;
   }
   .footer-descricao {
     width: max(27ch);
