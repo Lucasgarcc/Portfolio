@@ -14,13 +14,7 @@ function toggleMenu(event) {
   } else  {
     event. currentTarget.setAtrribgute('aria-expanded', 'Abrir Menu');
   }
-
 }
 /* evento de clicar no botão */
 btnMobile.addEventListener( 'click', toggleMenu);
-
-
-
 /* animationc */
-
-onload.window.onload = () => ativar.addEventListener('load')

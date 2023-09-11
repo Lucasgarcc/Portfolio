@@ -174,9 +174,21 @@ ul {
   -webkit-transform: scaleX(1);
   transform: ScaleX(1);
 }
-
-
-/* Introduction - Introdução */
+/* animation - site */
+[data-anime] {
+  opacity: 0;
+  transition: .5s ease;
+}
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0 );
+}
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0 );
+}
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0 );
+}
 
 .fundo{/* background da introdução */
   margin: 0px;
@@ -188,7 +200,6 @@ ul {
   top: 140px;
   z-index: 0;
 } 
-
 .intro {
   width: max(75rem);
   height: 540px;
@@ -196,6 +207,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 6.5rem;
+  transform: translateX();
 }
 
 .intro img {
@@ -374,7 +386,7 @@ ul {
 .hobbies--section {
   position: absolute;
   width: max(1200px);
-  margin: 80% auto 0 50px;
+  margin: -90% auto 0 50px;
   padding: 2.3rem 1rem;
   display: grid; 
   grid-template-columns: repeat(1, auto )2fr;
@@ -419,13 +431,13 @@ ul {
 }
 
 .footer {
-  margin-top: 80%;
+  margin-top: 140%;
   background: #000000;
   display: grid; 
-  width: max(100%);
+  width: max(119em);
   height: minmax(1000px);
   position: absolute;
-  left: 0%;
+  left: -28%;
 }
 
 .footer::after {
@@ -1211,7 +1223,7 @@ a:hover:nth-child(n) {
 /* responsive tela big desktops */
 @media (max-width: 10000px) {
   .hobbies--section {
-   margin-top:  45%;
+   margin-top:  75%;
    margin-bottom: 0px;
   }
   
@@ -1222,7 +1234,7 @@ a:hover:nth-child(n) {
     margin: 0 auto;
   }
   .hobbies--section {
-    margin-top:  45%;
+    margin-top:  55%;
     margin-bottom: 0px;
 }
 .footer  {
@@ -3141,6 +3153,9 @@ a:hover:nth-child(n) {
   .hobbies--descricao {
     width: max(260px);
   }
+  .footer{
+    width: max(50em);
+  }
   .footer-contatiner {
     width: max(560px) ;
   }
@@ -3460,7 +3475,7 @@ a:hover:nth-child(n) {
      left: 20px;
   }
   .footer {
-    width: max(99%);
+    width: max(28em);
     height: 450px;
     padding: 0px 0px ;
     margin: 2510px auto;
@@ -3700,6 +3715,9 @@ a:hover:nth-child(n) {
     left: 5px;
     z-index: 2;
   }
+  .footer{
+    width: max(28em);
+  }
   .intro-formacao {
     padding: 0 auto 0 0 ;
     margin: -20px auto 0 -70px;
@@ -3850,7 +3868,7 @@ a:hover:nth-child(n) {
     margin-left: 80px;
   }
   .footer {
-    width: max(100%);
+    width: max(28em);
     height: 450px;
     padding: 0px 0px ;
     margin: 2460px auto;
