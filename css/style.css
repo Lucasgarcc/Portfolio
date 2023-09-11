@@ -4792,7 +4792,7 @@ a:hover:nth-child(n) {
     top: -56%;
   }
   .left::before {/* set the left */
-    left: 135px;
+    left: 128px;
     transform: rotate(1deg);
   }
   .right::before {/* set the rigth */
