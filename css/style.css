@@ -4710,7 +4710,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0px;
-    width: max(348px);
+    width: max(347px);
     height: 490px;
     border-radius: .4rem;
     position: absolute;
