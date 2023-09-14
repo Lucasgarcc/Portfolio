@@ -3506,9 +3506,9 @@ a:hover:nth-child(n) {
      left: 20px;
   }
   .footer {
-    margin: 2550px auto 0 -2%;
+    margin: 2550px auto 0 0;
     width: max(28em);
-    left: 0;
+    left: 0%;
   }
   .footer-contatiner {
     max-width: 330px;
@@ -3533,8 +3533,8 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: 0;
-    width: max(350px);
-    height: 490px;
+    width: max(650px);
+    height: 540px;
     border-radius: .4rem;
     position: absolute;
     left: -rem;
@@ -3542,10 +3542,10 @@ a:hover:nth-child(n) {
   }
   .container-formacao {
     margin: 85px auto 0 0 ;
-    width: max(300px);
-    height: 350px;
+    width: max(60%);
+    height: 370px;
     position: relative;
-    left: 44px;
+    left: 250px;
   }
   .container-formacao h1 {
     font-size: 4rem;
@@ -3746,8 +3746,9 @@ a:hover:nth-child(n) {
     z-index: 2;
   }
   .footer{
-    width: max(26.2em);
-    left: 0;
+    width: max(25.8em);
+    margin: 2550px auto;
+    left: -10%;
   }
   .footer-contatiner {
     max-width: 330px;
@@ -3910,7 +3911,7 @@ a:hover:nth-child(n) {
     padding: 0px 0px;
     width: max(25em);
     height: 450px;
-    left: 20%;
+    left: 0%;
   }
   .footer-descricao {
     margin: auto auto auto 3px;
@@ -5288,7 +5289,7 @@ a:hover:nth-child(n) {
   }
 }
 /*androids */
-@media (max-width: 370px) and (min-width:300px){
+@media (max-width: 379px) and (min-width:300px){
   .line {
     display: inline-block;
     width: 15px;
