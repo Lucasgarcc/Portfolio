@@ -184,6 +184,7 @@ ul {
 }
 [data-anime="right"] {
   transform: translate3d(50px, 0, 0 );
+  transform: rotateX(1000px);
 }
 [data-anime].animate {
   opacity: 1;
@@ -386,7 +387,7 @@ ul {
 .hobbies--section {
   position: absolute;
   width: max(1200px);
-  margin: -90% auto 0 50px;
+  margin: 80% auto 0 50px;
   padding: 2.3rem 1rem;
   display: grid; 
   grid-template-columns: repeat(1, auto )2fr;
@@ -399,6 +400,10 @@ ul {
   color: #292929;
 }
 
+.hobbies--game {
+  position: relative;
+  left: 30%;
+}
 .hobbies-title { /* title - viajar */
   padding-top: -10px;
   margin: 0px;
