@@ -108,7 +108,10 @@ ul {
 
 /* Header - Cabeçalho */
 .header{
-  max-width: 100%;
+  box-sizing: border-box; 
+  margin: 0 auto 0 auto; 
+  padding: 0 1.25rem 0 1.25rem; 
+  max-width: 1200px;
   padding: 2.6rem 1.3rem;
   display: flex;
   justify-content: space-between;
@@ -202,7 +205,10 @@ ul {
   z-index: 0;
 } 
 .intro {
-  width: max(75rem);
+  box-sizing: border-box; 
+  margin: 0 auto 0 auto; 
+  padding: 0 1.25rem 0 1.25rem; 
+  max-width: 1200px;
   height: 540px;
   margin: 0 auto;
   display: grid;
@@ -212,7 +218,7 @@ ul {
 }
 
 .intro img {
-  width: max(25em);
+  max-width: 120%;;
   height: 572px;
   position: relative;
   top: -70px;
@@ -224,8 +230,6 @@ ul {
   bottom: 6rem;
   color: #ffffff;
   text-align: center;
-  width: 578.04px;
-  height: 343.08px;
   z-index: 1;
 }
 
@@ -244,23 +248,23 @@ ul {
 /* decoration top */
 .decoracao {
   position: absolute;
-  right: 29.5rem;
-  bottom: 7.4rem;
+  right: 33.5rem;
+  bottom: 24rem;
   z-index: -1;
 }
 
 /* decoration down */
 .decoracao2{
   position: relative;
-  right: 30rem;
+  right: 31rem;
   bottom: -28rem;
   z-index: -1;
 }
 
 /* about me */
 .sobre {
-  padding: 3rem 3rem;
-  margin: 0 auto 30px 550px;
+  padding: 4.5rem 3rem;
+  margin: 0 auto 0 auto;
   display: grid;
   max-width: 900px;
   gap: 20px;
@@ -289,45 +293,42 @@ ul {
   margin-top: 30px;
   background: #101010;
   width: 100%;
-  height: 850px;
+  height: 790px;
   position: absolute;
   z-index: -1;
 }
 
 .section-2-box {
-  width: max(1200px);
-  padding: 2.3rem 1rem;
-  margin:  0 auto;
+  box-sizing: border-box; 
+  margin: 0 auto 0 auto; 
+  max-width: 1200px;
+  height: max-content;
   display: grid; 
-  grid-template-columns: repeat(2, auto )1fr;
-  gap: 100px;
-  position: static;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
 }
 
 .section-2-box h2 {
   position: relative;
   text-transform: uppercase;
-  word-wrap: break-word;
+  max-width: max-content;
   padding-top: 4.5rem;
   font-size: 72px;
-  font-size: 5rem;
+  font-size: 5em;
   line-height: 1.125;
   color: #292929;
   z-index: -1;
 
 }
 
-.competencia {
-  width: minmax(400px,300px);
+.competencia {  
+  margin-top: 3rem;
+  margin-left: 5rem;
+  width: max-content;
   height: 90px;
   display:  grid;
-  grid-template-columns: repeat(1, auto );
   padding: 2rem;
   gap: 1.2rem;
-  margin-top: 70px;
-  margin-left: 100px;
-  position: relative;
-  
 }
 
 .section-2-box .title-h2::after {
@@ -336,7 +337,7 @@ ul {
   width: 100px;
   height: 200px;
   position: absolute;
-  left:-60%;
+  left: -10%;
   top: 5%;
   z-index: 2;
   }
@@ -345,13 +346,13 @@ ul {
   display: block;
   position: relative;
   top: 10% ;
-  width: min(70%);
+  width: 65%;
   height: 500px ;
   filter: grayscale(4)
 }
 
 .box-competencia {
-  width: min(300px);
+  width: 300px;
   padding: 1rem;
   background: #eeeeeee2;
   border-radius: 4px;
@@ -385,12 +386,24 @@ ul {
 /* Section Hobbies */
 
 .hobbies--section {
-  position: absolute;
-  width: max(1200px);
-  margin: 80% auto 0 50px;
-  padding: 2.3rem 1rem;
-  display: grid; 
-  grid-template-columns: repeat(1, auto )2fr;
+  box-sizing: border-box; 
+  margin: 20.5rem auto 0 auto; 
+  padding: 0 1.25rem 7.5rem 1.25rem; 
+  max-width: 1200px;
+  height: 600px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies--section h2 {
+  margin-right: 5.75rem; 
+  padding-top: 4.5rem;    
+  font-size: 4.5rem;
+  line-height: 1.125;
+  text-transform: uppercase;      
+  font-size: 5rem;    
+  color: #292929;
 }
 
 .hobbies--title { /* title - games */
@@ -401,18 +414,39 @@ ul {
 }
 
 .hobbies--game {
+  width: 500px;
   position: relative;
-  left: 30%;
+  left: 70%;
 }
+
 .hobbies-title { /* title - viajar */
   padding-top: -10px;
-  margin: 0px;
+  margin: 0 0 0 1.5rem;
   font-size: 2.5rem;
   line-height: 1.125;
   color: #292929;
 }
+
 .hobbies--descricao {
+  display: block;
   width: max(46ch);
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.hobbies--viagem{
+  margin: 2.5rem 2.5rem 0 2rem;
+  padding-bottom: 7.5rem;
+  width: 500px;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.hobbies-descricao-viagem {
+  display: flex; 
   font-size: 1.2rem;
   line-height: 1.1;
 }
@@ -436,26 +470,27 @@ ul {
 }
 
 .footer {
-  margin: 140% auto;
-  background: #000000;
-  display: grid; 
-  width: 99.9vw;
-  height: minmax(1000px);
-  position: absolute;
-  left: -28.9%;
+  margin: 7.5rem 0 0 0 ;
+  padding: 4.5rem 3rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  z-index: -1;
+   background: linear-gradient( #000000 300px, #000000 30px);  
+
 }
 
 .footer::after {
   content: url('/img/icones/detalhe.svg');
   display: block;
   position: absolute;
-  top: -75px;
+  top: 182em;
   left: 30px;
 
 }
 
 .footer-contatiner {
-  width: max(1200px);
+  max-width: 1200px;
   height: 350px;
   padding: 120px 20px 60px 20px;
   margin: 0 auto;
@@ -491,21 +526,30 @@ a span {
 /* Area Formation and Experience */
 
 /* The area introdution */
+.intro-formacao{
+  box-sizing: border-box; 
+  margin: 1.5rem auto 0 auto; 
+  padding: 0 1.25rem 7.5rem 1.25rem; 
+  max-width: 1200px;
+  height: 600px;
+}
+
 .container-fundo {
   padding: .4rem 1rem;
   margin: 30px auto ;
-  width: max(350px);
+  max-width: 350px;
   height: 490px;
   border-radius: .4rem;
-  background: #141414;
+  box-shadow: inset 1900px 0 0 #141414;
   position: absolute;
   left: -14rem;
 }
+
 .container-formacao {
   padding: .4rem 1rem;
   border-radius: .2rem;
   margin: 70px auto;
-  width: max(600px);
+  min-width: 600px;
   height: 300px;
   background-color: #ededed;
   position: relative;
@@ -538,12 +582,14 @@ a span {
 
 /* Experience */
   .container-experiencia{
-    padding: 2.3rem 3rem;
-    width: max(1200px);
-    display: grid;
-    grid-template-columns: repeat(2, auto)1fr;
-    gap: 100px;
-    position: static;
+    padding-top: 2.3rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 1600px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .container-experiencia-descricao {
@@ -558,36 +604,39 @@ a span {
     z-index: -1;
   }
 
-  .competencia-.container-experiencia h2::after {
-    display: block;
-    content: url('/img/icones/det3.svg') ;
-    width: 100px;
-    height: 200px;
-    position: absolute;
-    top: 5%;
-    z-index: 2;
-    }
-
+.competencia-.container-experiencia h2::after {
+  display: block;
+  content: url('/img/icones/det3.svg') ;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 5%;
+  z-index: 2;
+}
 
 /* Timeline*/
 .timeline { /* The actual timeline (the vertical ruler) */
-  display: grid;
-  grid-column: 2 / 4;
-  width: max(800px);
+  margin:  0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 700px;
   position: relative;
-  z-index: 3;
+  margin-top: 1000px;
+  z-index: 1;
 }
 
 /* The actual timeline (the vertical ruler) */
 .container-timeline {
   padding: 1.6rem 1.6rem;
-  margin: 3% 0 0 auto ;
-  width: max(850px);
-  height: 1000px;
+  margin: 0 auto 0 auto ;
+  display: grid;
+  width: 1200px;
+  height: 1700px;
   background-color: var(--preto-c8);
   border-radius: .9rem;
 }
-.timeline::after {
+
+.margin-timeline::after {
   content: '';
   position: absolute;
   width: 6px;
@@ -611,20 +660,21 @@ a span {
 .date-left{
   margin: -10px 0 0 0;
   position: absolute;
-  top: -54%;
-  left: 245px;
+  top: -74%;
+  left: 165px;
   color: var(--cinza-c1);
   font-weight: 460;
   font-size: 1.225rem;
   z-index: 3;
 }
 .date-left1{
-  top: -113%;
+  top: -133%;
+  left: 50%;
 }
 .date-left2{
-  margin: -10px 0 0 0;
+  margin: -35px 0 0 0;
   position: absolute;
-  top: 22%;
+  top: 18%;
   left: -170px;
   color: var(--cinza-c1);
   font-weight: 460;
@@ -633,10 +683,10 @@ a span {
 }
 
 .date { /*right*/
-  margin: -10px 0 0 0;
+  margin: -25px 0 0 0;
   position: absolute;
   top: -45%;
-  left: 105px;
+  left: 145px;
   color: var(--cinza-c1);
   font-size: 1.3228rem;
   font-weight: 460;
@@ -644,7 +694,7 @@ a span {
 }
 
 .date-right { /*right*/
-  top: -55%;
+  top: -60%;
 }
 
 /* The descrition das times */
@@ -689,7 +739,7 @@ a span {
 
 /* Place the container to the left */
 .left {
-  left: 0.5%;
+  left: -2.5%;
 }
 
 /* Place the container to the right */
@@ -720,7 +770,7 @@ a span {
   top: 40px;
   width: 0;
   z-index: 2;
-  left: 379px;
+  left: 300px;
   transform: rotate(-180deg);
   border: medium var(--cinza-c0) solid;
   border-width: 10px 10px 10px 0;
@@ -772,20 +822,24 @@ a:hover:nth-child(n) {
 .formacao {
   background: #141414;
   color: #fff;
-  width: max(100%);
-  height: 1200px;
-  position: absolute;
-  bottom: -1850px;
+  box-sizing: border-box; 
+  margin: 20.5rem auto 0 auto; 
+  padding: 0 1.25rem 7.5rem 1.25rem; 
+  max-width: 100%;
+  height: 100em;
+  position: relative;
 }
+
 .formacao-container{
   padding: 2.3rem 3rem;
   margin: 150px auto 0 360px;
-  max-width: (1200px);
+  max-width: 1200px;
   height: 900px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 100px;
-  position: relative;
+  position: absolute;
+  top: 450px;
 }
 
 .formacao-container .subtitulo {
@@ -797,7 +851,7 @@ a:hover:nth-child(n) {
   color: #000000;
   position: absolute;
   top: 30%;
-  left: -30%;
+  left: -40%;
   z-index:1;
 }
 
@@ -928,12 +982,15 @@ a:hover:nth-child(n) {
 }
 
 .footer-formacao {
-  margin: 53% auto;
-  background: #000000;
-  display: grid; 
-  width: max(100%);
+  margin: 0 0 0 0;
+}
+
+.footer-formacao::after {
+  content: url(/img/icones/detalhe.svg);
+  display: block;
   position: absolute;
-  left: 0%;
+  top: 227em;
+  left: 30px;
 }
 
 /* Area respnsible menu */
@@ -1251,534 +1308,39 @@ a:hover:nth-child(n) {
     overflow-y: auto;
   }  
 }
-/* responsive tela big desktops */
-@media (min-width:2000px) and (max-width: 10000px){
-  .sobre {
-    position: static;
-    margin: 0 auto;
-  }
-  #perfil-2 {
-    top: 2%;
-  }
-  .hobbies--section {
-    margin-top:  85%;
-    width: max(1000px);
-    margin-bottom: 0px;
-  }
-  .hobbies--game {
-    position: relative;
-    left: 70%;
-  }
-  .footer {
-    display: flex;
-    margin: 140% auto 0 0;
-    padding: 0px 0px;
-    width: calc(200vh - 153%);
-    background: #101010;
-    position: absolute;
-    top: 0;
-    left: -111%;
-    right: 0;
-    z-index: -1;
-  }
-  .container-timeline {
-  left: 90%;
-  }
-  .footer-contatiner {
-  height: max(25vh);
-  }
-  .formacao{
-  margin: -50% auto;
-  position: absolute;
-  height: 100vw;
-  }
-  .formacao-container{
-  width: max(3000px);
-  top: 25%;
-  left: 9%;
-  }
-  .formacao-container::after {
-  left: -12%;
-  }
-  .footer-formacao {
-  margin: 65% auto;
-  background: #000000;
-  display: grid; 
-  width: max(100%);
-  height: 100vw;
-  position: sticky;
-  left: 0%;
-  }
-}
-@media screen and (max-width: 1700px) and (min-width:1100px){
-  .fundo{
-    width: max(90%);
-    margin: 0 0 0 -90px ;
-    height: 550px;
-  }
-  .intro {
-    width: max(100%);
-    padding: 4rem 2rem; 
-    margin: -120px auto auto -200px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 250px;
-  } 
-  .intro img {
-    width: max(120%);
-    top: 5%;
-    left: 40%;
-  }
-  .intro-descricao {
-    width: 100%;
-    font-size: rem;
-    position: static;
-    gap: -1rem;
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 65px;
-    ;
-  }
-  .decoracao {
-    display: none
-  }
-  .decoracao2{
-    position: relative;
-    right: 25.5rem;
-    bottom: -27.5rem;
-    z-index: -1;
-  }
-  .subtitulo{
-    color: #ffffff;
-  }
-  .sobre {
-    margin: 0 auto;
-    display: grid;
-    width: max(70%);
-    z-index: 2;
-  }
-  .sobre--descricao {
-    margin: 0 0 40px 0;
-    grid-column: 1 /4;
-  }
-  .sobre--descricao h1 {
-    margin: 0 auto;
-    display: grid;
-    width: 280px;
-    z-index: 2;
-  }
-  .subtitulo  {
-    margin: 0 auto;
-    width: -0px;
-    color: var(--preto-c5);
-    grid-area: -4 / 1 / 1;
-    display: grid;
-    z-index: 2;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 840px;
-  }
 
-  #perfil-2 {
-    width: max(70%);
-    top: 20%;
-  }
-  .section-2-box .title-h2{
-    font-size: 4.6rem;  
-  }
-  .competencia {
-    margin: 70px 0 0 0;
+/* responsive tela big desktops */
+
+@media (max-width:1280px){
+  .decoracao2 {
     position: relative;
-    left: -20%;
+    right: 29rem;
+    bottom: -28rem;
+    z-index: -1;
   }
-  .section-2-box .title-h2::after {
-    display: block;
-    content: url('/img/icones/det3.svg') ;
-    width: 100px;
-    height: 200px;
-    position: absolute;
-    left: -50%;
-    top: -2%;
-    z-index: 2;
-    }
-  .hobbies--section{
-    margin: 75% auto;
-    width: max(60%) ;
-    word-wrap: break-word;
-  }
-  .hobbies--descricao {
-    width: max(40ch);
-  }
-  .footer {
-    margin: 1780px 0 0 30px;
-    width: max(220%);
-    left: 0;
-  }
-  .footer-formacao {
-    position: absolute;
-    width: max(101%);
-    margin-top: 1650px ;
-  }
-  .footer-contatiner {
-    padding: 0 auto;
-  }
-  .icone {
-  display: grid;
-  width: max(50%);
-  grid-template-columns: repeat(2, auto) 1fr;
-  gap: 30px;
+  .container-fundo{
+    left: 5rem;
   }
   .laptop-svg {
     display: none;
   }
-  .container-formacao {
-    padding: 0.4rem 1rem;
-    border-radius: 0.2rem;
-    margin: 70px auto;
-    width: max(600px);
-    height: 350px;
-    background-color: #ededed;
-    position: relative;
-    left: 4rem;
-}
-  .container-experiencia{
-    padding: 1rem;
-    width: max(95%);
-    grid-template-columns:1fr;
-  }
-  .container-experiencia h2{
-    width: max(8ch);
-    margin: 0 0 0 0;
-    font-size: 6rem;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    margin: -850px 0 0 auto ;
-    width: max(600px);
-    height: 1600px;
-    position: relative;
-    left: -4%;
-  }
-  /* date timeline */
-  .date-left{
-    top: -63%;
-    left: 180px;
-  } 
-  .date-left1{
-    top: -153%;
-  }
-  .date-left2{
-    top: 16%;
-    left: -140px;
-  }
-  .date { /*right*/
-    top: -43%;
-    left: 100px;
-  }
-  .date-right { /*right*/
-    top: -51%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 50px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .time-descricao-left2 {
-    left: 140px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -3.5%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  .left::before {
-    left: 257px;
-   
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-    /* are the formations courses and languages */
-  .formacao {
-    background: #141414;
-    color: #fff;
-    width: max(100%);
-    height: 1200px;
-    position: absolute;
-    top: 2200px;
-  }
-  .formacao-container{
-    padding: 2.3rem 3rem;
-    margin: 150px auto;
-    max-width: (100%);
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 210px;
-    position: relative;
-    
-  }
-  .formacao .subtitulo{
-    margin: 0;
-    width: max(9ch);
-    font-size: 6rem;
-  }
-  .formacao-container .subtitulo {
-    text-transform: uppercase;
-    padding-top: 5.5rem;
-    font-size: 10.6rem;
-    line-height: 1.125;
-    transform: rotate(-90deg);
-    color: #000000;
-    position: absolute;
-    top: 395%;
-    left: -25%;
-    z-index: 1;
-  }
-  .formacao-texto {
-    width: max(40ch);
-  }
-  .footer-formacao {
-    position: absolute;
-    top: 1750px;
-    left: -1%;
-  }
+  .container-experiencia {
+    max-width: 600px;
+    gap: 50px;
 
-  /* content about me */
-  .section-2-box .title-h2::after {
-    display: block;
-    content: url('/img/icones/det3.svg') ;
-    width: 100px;
-    height: 200px;
-    position: absolute;
-    left: -7%;
-    top: -2%;
-    z-index: 2;
   }
-  .hobbies--section {
-   margin-top:  68%;
-   margin-bottom: 0px;
-  }
-  .footer  {
-    position: absolute;
-    margin-top: 100% ;
-  }
-}
-@media screen and (max-width:1684px) and (min-width: 1300px){
-  .intro img{
-    width: max(90%);
-  }
-  .intro h1::before {
-    left: 10px;
-  }
-  .decoracao2{
-    left: -28.4rem;
-  }
-  .sobre {
-    width: max(70%);
-  }
-  .section-2-box {
-    width: max(75%);
-    margin: 0;
-  }
-  .hobbies--section{
-    margin: 85% auto 0 20%;
-    width: max(70%) ;
-    word-wrap: break-word;
-  }
-  .hobbies--descricao {
-    width: max(44ch);
-  }
-  .footer {
-    width: max(99.2%);
-    margin-top: 1750px ;
-  }
-  .icone { 
-    position: relative;
-    left: 0%;
-  }
-  .container-experiencia h2 {
-    font-size: 5.5rem;
-    margin: auto auto auto 20px ;
-  }
-  .container-experiencia h2::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: -2%;
-    left: 220%;
-    transform: rotate(90.1deg);
+  .container-experiencia-descricao {
+    padding: 1.25rem;
+    width: 15ch;
+    font-size: 3.5rem;
   }
   /* The actual timeline (the vertical ruler) */
+  .timeline {
+    margin-top: 15rem auto;
+    width: 600px;
+  }
   .container-timeline {
-    width: max(34em) ;
-    height: auto;
-    top: 140%;
-    left: -16%;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 360%;
-  }
-  .formacao-container{
-    padding: 2.3rem 3rem;
-    margin: 150px auto;
-    max-width: (100%);
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: relative;
-  }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: 5%;
-    left: 4%;
-  }
-  .footer-contatiner {
-    width: max(900px);
-    gap: 140px;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 361%;
-  }
-}
-@media screen and (max-width:1294px) and (min-width: 1150px){
-  .intro img{
-    width: max(90%);
-  }
-  .intro h1::before {
-    left: 10px;
-  }
-  .decoracao2{
-    left: -28.4rem;
-  }
-  .sobre {
-    width: max(70%);
-  }
-  .section-2-box {
-    width: max(75%);
-    margin: 0;
-  }
-  .hobbies--section{
-    margin: 105% auto 0 20%;
-    width: max(70%) ;
-    word-wrap: break-word;
-  }
-  .hobbies--descricao {
-    width: max(44ch);
-  }
-  .footer {
-    width: max(129%);
-    margin: 1750px 0 0 ;
-  }
-  .icone { 
-    position: relative;
-    left: 0%;
-  }
-  .container-experiencia h2 {
-    font-size: 5.5rem;
-    margin: auto auto auto 20px ;
-  }
-  .container-experiencia h2::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: -2%;
-    left: 220%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    width: max(34em) ;
-    height: auto;
-    top: 140%;
-    left: -16%;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 250%;
-  }
-  .formacao-container{
-    padding: 2.3rem 3rem;
-    margin: 150px auto;
-    max-width: (100%);
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: relative;
-  }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: -12%;
-    left: 4%;
-  }
-  .footer-contatiner {
-    width: max(900px);
-    gap: 140px;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 188%;
-  }
-}
-@media screen and (max-width:1120px) {
-  .icone { 
-    position: relative;
-    left: 0%;
-  }
-  .container-experiencia h2 {
-    font-size: 5.5rem;
-    margin: auto auto auto 20px ;
-  }
-  .container-experiencia h2::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: -2%;
-    left: 210%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
+    width: 900px;
     top: 100%;
     left: -17%;
   }
@@ -1809,202 +1371,47 @@ a:hover:nth-child(n) {
   .right::after {
     left: -16px;
   }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 330%;
-  }
-  .formacao-container{
-    padding: 2.3rem 3rem;
-    margin: 150px auto;
-    max-width: (100%);
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: relative;
-  }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: -12%;
-    left: 4%;
-  }
-  .footer-contatiner {
-    width: max(900px);
-    gap: 140px;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 331%;
+  .formacao-container .subtitulo {
+    top: 30%;
+    left: -65%;
   }
 }
-@media (max-width: 1024px) and (min-width: 600px) {
-  .fundo{
-    width: max(91%);
-    left: 50px;
-  }
-  .intro {
-    margin: -70px auto auto -90px;
-    width: max(100%);
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 10px;
-  }
-  .intro img {
-    top: 1%;
-    left: 11%;
-  }
+@media (max-width: 1024px) { 
+  .fundo {
+    margin: 0px;
+    background: #101010;
+    width: 83%;
+    height: 550px;
+    position: absolute;
+    left: 16%;
+    top: 140px;
+    z-index: 0;
+}
   .intro-descricao {
-    width: 90%;
-    font-size: 1rem;
-    margin: 40px auto;
+    box-sizing: border-box;
+    margin: 75px 140px auto auto;
+    padding: 0 1.25rem 0 1.25rem;
+    max-width: 500px;
+    top: 0;
+    bottom: 0;
   }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 5px;
-    ;
+  .decoracao {
+    right: 26rem;
+    bottom: 20rem;
   }
-  .decoracao{
+ .decoracao2, .intro img {
     display: none;
   }
-  .decoracao2{
-    display: block;
-    position: relative;
-    left: -11.3rem;
-    bottom: -29.4rem;
-    z-index: 2;
+  .fundo-section-2{
+    height: 750px;
   }
-  .intro-descricao {
-    gap: -1rem;
-  }
-  .sobre .subtitulo{
-    color: #010000;
-  }
-  .sobre {
-    margin: 0 auto;
-    width: max(800px);
-    gap: 10px;
-    z-index: 2;
-  }
-  .sobre--descricao {
-    margin: 0 0 40px 0;
-    grid-column: 1 /4;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 1090px;
-  }
-  .section-2-box {
-    width: max(90%);
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-  .section-2-box h2{
-    padding: 0px;
-    position: relative;
-    top: 200px;
-    left: -40px;
-    padding-top: 0;
-  }
-  .title-h2 {
-    width: max(600px);
-  }
-   .section-2-box .title-h2::after {
-    display: block;
-    content: url(/img/icones/det3.svg);
-    width: 100px;
-    height: 200px;
-    position: absolute;
-    left: -2%;
-    top: -72%;
-    z-index: 2;
-}
-  #perfil-2 {
-    width: 40%;
-    position: relative;
-    top: 55%;
-  }
+
   .competencia {
-    width: minmax(400px,300px);  height: 90px;
-    display: grid;
-    grid-template-columns: repeat(1, auto );
-    padding: 2rem;
-    gap: 1.2rem;
-    margin-top: -65%;
-    margin-left: 67%;
-    position: relative;
-    justify-content: space-around;
+    margin: 3rem auto 0 -2rem;
+    padding: 1rem  1rem;
   }
   .box-competencia::before {
-    left: -7%;
-    z-index: 2;
-  }
-  .hobbies--section{
-    padding: 0;
-    width: max(60%) ;
-    margin: 1150px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px;
-    justify-items:self-end;
-    position: absolute;
-  }
-  .hobbies--title, .hobbies-title {
-    color: #2E2E2E; 
-    padding-top: 3rem;
-  }
-  .hobbies--descricao {
-    width: max(350px);
-  }
-  .footer {
-    margin: 1950px 0 0 -36px;
-    width: max(107.5%) ;
-    position: absolute;
-    left: 0;
-  }
-  .footer-contatiner {
-    width: max(700px) ;
-    padding: 90px 0 120px 16px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
-    align-items: center;
-  }
-  .laptop-svg {
-  display: none;
-  }
-  .container-experiencia{
-    width: max(80%);
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    position: relative;
-    top: -18%;
-    left: 14%;
-  }
-  .container-experiencia h2::before {
-    position: absolute;
-    top: -50%;
-    left: 100%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    width: max(570px);
-    height: 1800px;
-    top: 21%;
-    left: -92%;
+    left: 10px;
   }
 /* date timeline */
   .date-left{
@@ -2060,186 +1467,59 @@ a:hover:nth-child(n) {
     left: -16px;
   }
   /* are the formations courses and languages */
-  .formacao {
-    width: max(100%);
-    top: 204%;
+ .container-experiencia {
+    gap: 0;
   }
-  .formacao-container{
-    max-width: (90%); 
+  .container-experiencia-descricao{
+    width: 10ch; 
   }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: 4%;
-    left: 4%;
+  .container-timeline {
+    width: 560px;
   }
-  .formacao .subtitulo{
-    width: max(9ch);
+  .timeline {
+    width: 600px;  
+    left: 1%;
   }
   .formacao-texto {
-    width: max(30ch);
+    width: 20ch;
   }
-  .footer-formacao {
-    width: max(100%);
-    top: 147%;
-  }
-}
-@media (min-width: 990px) and (max-width: 1024px) and (max-height: 800px){
-  .formacao {
-    width: max(100%);
-    top: 344%;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 247%;
+  .formacao-container .subtitulo {
+    top: 30%;
+    left: -95%;
   }
 }
-@media screen and (max-width: 884px) and (min-width:830px){
-  .fundo{
-    width: max(90%);
-    height: 57%;
-  }
-  .intro {
-    width: max(100%);
-    margin: 200px auto 0 -150px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 0px;
-  }
-  .intro img {
-    display: none;
-  }
-  .intro-descricao {
-    width: max(95%);
-    font-size: 1rem;
-    margin: 0;
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 5px;
-    ;
-  }
-  .decoracao{
-    display: none;
-  }
-  .intro-descricao {
-    gap: -1rem;
-  }
-  .sobre {
-    padding: 1rem;
-    margin: 30px auto;
-    width: max(750px);
-    gap: 10px;
-    z-index: 2;
-  }
-  .sobre--descricao {
-    margin: 0 0 -20px 0;
-    grid-column: 1 /4;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 1170px;
-  }
-  .section-2-box {
-    padding: 0 0 0 1rem;
-    width: max(95%);
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-  .section-2-box h2{
-    padding: 0px;
-    position: relative;
-    top: 140px;
-    left: -40px;
-    padding-top: 0;
-  }
-  .title-h2 {
-    width: max(600px);
-  }
-  .section-2-box .title-h2::after {
-    left: -2%;
-    top: -52%;
-  }
+@media screen and (max-width: 900px){
   #perfil-2 {
-    width: 50%;
-    top: 65%;
-    left: -6%;
+    width: 60%;
   }
   .competencia {
-    margin-top: -55%;
-    margin-left: 54%;
-    position: relative;
-    justify-content: space-around;
+    margin: 3rem auto 0 -7rem;
+    padding: 1rem  1rem;
   }
-  .box-competencia::before {
-    left: 5%;
-    z-index: 2;
+  .hobbies--section h2 {
+    margin: 3rem auto 0 7rem;
   }
-  .hobbies--section{
-    width: max(90%);
-    margin: 1200px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    justify-items:self-end;
-    position: absolute;
+  .hobbies--viagem {
+    margin: 2.5rem 2.5rem 0 18rem;
+    padding-bottom: 7.5rem;
+    width: 450px;
   }
-  .hobbies--title, .hobbies-title {
-    color: #2E2E2E; 
-    padding-top: 3rem;
-  }
-  .hobbies--descricao {
-    width: max(350px);
-  }
-  .footer {
-    width: max(auto);
-    position: absolute;
-    margin-top: 1950px ;
-  }
-  .footer-contatiner {
-    width: max(700px) ;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-  /* formation page */
-  .intro-formacao {
-    grid-template-columns: 1fr;
-    width: max(90%);
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .container-experiencia {
-    padding: 0;
-    width: max(90%);
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    position: relative;
-    top: -12%;
-    left: 14%;
-  }
-  .container-experiencia h2::before {
-    position: absolute;
-    top: -20%;
-    left: 80%;
-    transform: rotate(90.1deg);
-  }
+  
+.container-experiencia-descricao {
+  top: -30%;
+  left: 40%;
+  font-size: 4rem;
+  width: 30ch;
+}
   /* The actual timeline (the vertical ruler) */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left: -55%;
+  }
   .container-timeline {
-    width: max(600px);
+    width: 600px;
     height: auto;
     left: -95%;
     top: 38%;
@@ -2299,12 +1579,12 @@ a:hover:nth-child(n) {
   }
   /* are the formations courses and languages */
   .formacao {
-    width: max(99%);
+    width: 100%;
     top: 245%;
   }
   .formacao-container{
     margin: 120px auto;
-    max-width: (90%); 
+    max-width: 95%; 
     gap: 30px;
   }
   .formacao-container .subtitulo {
@@ -2329,910 +1609,136 @@ a:hover:nth-child(n) {
     width: max(30ch);
   }
   .footer-formacao {
-    width: max(100%);
     top: 178%;
+  }
+}
+@media (max-width: 800px){
+  #perfil-2 {
+    width: 65%;
+    left: 2rem;
+  }
+  .section-2-box h2 {
+    font-size: 3.5rem;
+  }
+  .competencia {
+    margin: 3rem auto 0 -4rem;
+  }
+  .container-fundo{
+    left: 1rem;
+  }
+  .timeline {
+    left: -59%;
+  }
+  .formacao-container{
+    padding: 1rem;
+  }
+}
+@media (max-width: 700px){
+  #perfil-2 {
+    margin: 2rem 0;
+    width: 75%;
+  }
+  .section-2-box h2 {
+    margin: 2rem 0 0 0;
+    font-size: 2.9rem;
+  }
+  .hobbies--viagem {
+    width: 400px;
+  }
+  .container-fundo{
+    left: 2rem;
   }
   
 }
-@media (min-width: 834px) and (max-width: 834px) {
-  .box-competencia::before {
-    left: 3%;
-    z-index: 2;
-  }
+@media (max-width:690px){/* concluido */
+  .fundo {
+    margin: 1.25rem auto;
 }
-@media (max-width: 830px) and (min-width: 820px) {
-  .fundo{
-    width: max(90%);
-    height: 43%;
+  .intro-descricao {
+    right:5rem;
   }
-  .intro {
-    width: max(100%);
-    margin: 145px auto 0 -150px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 0px;
+  .intro h1 {
+    font-size: 3.7rem;
   }
-  .intro img {
-    display: none;
-  }
-  .decoracao2, .decoracao {
-    display: none;
+  .decoracao {
+    right: 22em;
+    bottom: 16rem;
   }
   .sobre {
-    padding: 1rem;
-    margin: -150px auto 30px;
-    width: max(720px);
-    gap: 10px;
-    z-index: 2;
+    justify-content: initial;
   }
-  .fundo-section-2 {
-    height: 1170px;
+ .sobre--descricao {
+    margin: 0 auto;
+    padding-right: 0 ;
+    width: 42ch;  
+  }
+  .fundo-section-2{
+    height: 1350px;
+    gap: 0;
+  }
+  #perfil-2 {
+    width: 60%;
+    height: auto;
+    left: 5rem;
+  }
+  .section-2-box {
+    grid-template-columns: 1fr;
+    height: 1000px;
+    gap: 300px;
   }
   .section-2-box h2 {
-    top: 106px;
-    left: -20px;
-  }
-  .section-2-box .title-h2::after {
-    left: -2%;
-    top: -42%;
-  }
-  #perfil-2 {
-    width: 50%;
-    top: 60%;
-    left: -6%;
+    font-size: 3rem;
   }
   .competencia {
-    margin-top: -70%;
-    margin-left: 54%;
-    position: relative;
-    justify-content: space-around;
+    margin: -3rem 0 0 -1rem;
+    align-content: center;
   }
-  .box-competencia::before {
-    left: -1%;
-    z-index: 2;
+  figure {
+    height: 5%;
+    grid-row-end: 1;
   }
-  .hobbies--section {
-    width: max(70%);
-    margin: 1240px auto 0 10px;  
-  }
-  .hobbies--descricao {
-    width: max(330px);
-  }
-  .footer {
-    width: max(99%);
-    position: absolute;
-    margin-top: 2050px;
-}
-   /* formation page */
-   .intro-formacao {
-    grid-template-columns: 1fr;
-    width: max(90%);
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .container-experiencia {
-    padding: 0;
-    width: max(90%);
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    position: relative;
-    top: -22%;
-    left: 14%;
-  }
-  .container-experiencia h2::before {
-    position: absolute;
-    top: -20%;
-    left: 100%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    width: max(600px);
-    height: auto;
-    top: 30%;
-    left: -98%;
-  }
-   /* date timeline */
-   .date-left{
-    top: -73%;
-    left: 180px;
-  }
-  .date-left2{
-    top: 16%;
-    left: -140px;
-  }
-  .date-left1{
-    top: -153%;
-  }
-  .date-left2{
-    top: 16%;
-    left: -140px;
-  }
-  .date { /*right*/
-    top: -40%;
-    left: 100px;
-  } 
-  .date-right { /*right*/
-    top: -51%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 50px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .time-descricao-left2 {
-    left: 140px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -3.5%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  .left::before {
-    left: 279px;
-  }
-  .right::before {
-    left: 31px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(100%);
-    top: 235%;
-  }
-  .formacao-container{
-    margin: 120px auto;
-    max-width: (90%); 
-    gap: 30px;
-  }
-  .formacao-container .subtitulo {
-    width: max(4ch);
-    transform: rotate(90.1deg);
-    font-size: 6.5rem;
-    position: relative;
-    top: 20%;
-    left: 0%;
-  }
-  .formacao-texto {
-    width: max(30ch);
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 155%;
-  }
-}
-@media screen and (max-width: 800px) and (min-width:790px){
-  .fundo{
-    width: max(90%);
-    left: 9%;
-  }
-  .intro {
-    width: max(100%);
-    margin: 90px auto 0 -100px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 0px;
-  }
-  .intro img {
-    display: none;
-  }
-  .intro-descricao {
-    width: max(95%);
-    font-size: 1rem;
-    margin: 0;
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 5px;
-    ;
-  }
-  .decoracao, .decoracao2{
-    display: none;
-  }
-  .intro-descricao {
-    gap: -1rem;
-  }
-  .sobre .subtitulo{
-    color: #010000;
-  }
-  .sobre {
-    padding: .5rem;
-    margin: -170px auto -110px 40px;
-    width: max(715px);
-    gap: 10px;
-    z-index: 2;
-  }
-  .sobre--descricao {
-    margin: 0 0 120px 0;
-    grid-column: 1 /4;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 1190px;
-  }
-  .section-2-box {
-    padding: 0 0 0 1rem;
-    width: max(95%);
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-  .section-2-box h2{
-    padding: 0px;
-    position: relative;
-    top: 140px;
-    left: -40px;
-    padding-top: 0;
-  }
-  .title-h2 {
-    width: max(600px);
-  }
-  .section-2-box .title-h2::after {
-    left: -2%;
-    top: -52%;
-  }
-  #perfil-2 {
-    width: 50%;
-    top: 65%;
-    left: -8%;
-  }
-  .competencia {
-    margin-top: -65%;
-    margin-left: 45%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: 7%;
-    z-index: 2;
-  }
-  .hobbies--section{
-    width: max(90%);
-    margin: 1200px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    justify-items:self-end;
-    position: absolute;
-  }
-  .hobbies--title, .hobbies-title {
-    color: #2E2E2E; 
-    padding-top: 3rem;
-  }
-  .hobbies--descricao {
-    width: max(300px);
-  }
-  .footer {
-    width: max(99%);
-    position: absolute;
-    margin-top: 1950px ;
-  }
-  .footer-contatiner {
-    width: max(700px) ;
+ .competencia {
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
+    grid-row: 1 / 2;
+    padding: 1rem  1rem;
   }
-  /* formation page */
-  .intro-formacao {
-    grid-template-columns: 1fr;
-    width: max(88%);
-    position: relative;
-    left: 20%;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .container-experiencia {
-    width: max(90%);
-    gap: 190px;
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    font-size: 6rem;
-    position: relative;
-    top: -30%;
-    left: 5%;
-  }
-  .container-experiencia h2::before {
-    left: 0%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    width: max(100%);
-    left: -20%;
-    bottom: -23%;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 252%;
-  }
-  .formacao-container{
-    max-width: (90%); 
-  }
-  .formacao-container .subtitulo {
-    width: max(3ch);
-    transform: rotate(90.1deg);
-    font-size: 7.5rem;
-    position: relative;
-    top: -28%;
-    left: -220%;
-  }
-  .formacao-container::before {
-    position: absolute;
-    top: 5%;
-    left: 4%;
-  }
-  .formacao-texto {
-    width: max(30ch);
-  }
-  .footer-formacao {
-    top: 164%;
-  }
-}
-@media (max-width: 800px) and (min-width: 700px) {
-  .intro-formacao {
-    grid-template-columns: 1fr;
-    width: max(88%);
-    position: relative;
-    left: 10%;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 1170px;
-  }
-  .hobbies--section{
-    width: max(84%);
-    margin: 1200px auto 0 60px;
-  }
-  .box-competencia::before {
-    left: 8%;
-    z-index: 2;
-  }
-   /* formation page */
-   .intro-formacao {
-    grid-template-columns: 1fr;
-    width: max(90%);
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .container-experiencia {
-    padding: 0;
-    width: max(90%);
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    position: relative;
-    top: -12%;
-    left: 10%;
-  }
-  .container-experiencia h2::before {
-    position: absolute;
-    top: -40%;
-    left: 85%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .container-timeline {
-    width: max(600px);
-    height: auto;
-    left: -124%;
-    top: 48%;
-  }
-  /* date timeline */
-  .date-left{
-    top: -78%;
-    left: 180px;
-  } 
-  .date-left1{
-    top: -145%;
-  }
-  .date-left2{
-    top: 14%;
-    left: -140px;
-  }
-  .date { /*right*/
-    top: -42%;
-    left: 100px;
-  }
-  .date-right { /*right*/
-    top: -48%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 50px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .time-descricao-left2 {
-    left: 140px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -3.5%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  .left::before {
-    left: 279px;
-   
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 225%;
-  }
-  .formacao-container{
-    margin: 120px auto;
-    max-width: (90%); 
-    gap: 30px;
-  }
-  .formacao-container .subtitulo {
-    width: max(4ch);
-    transform: rotate(90.1deg);
-    font-size: 7.5rem;
-    position: relative;
-    top: 20%;
-    left: 0%;
-  }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: 5%;
-    left: 4%;
-  }
-  .formacao-texto {
-    width: max(30ch);
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 164%;
-  }
-}
-@media  (max-width: 797px) and (min-width: 660px) {
-  .fundo{
-    width: max(90%);
-  }
-  .intro {
-    width: max(100%);
-    margin: 70px auto 0 -110px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
-    gap: 0px;
-  }
-  .intro img {
-    display: none;
-  }
-  .intro-descricao {
-    width: max(95%);
-    font-size: 1rem;
-    margin: 0;
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 5px;
-    ;
-  }
-  .decoracao, .decoracao2{
-    display: none;
-  }
-  .intro-descricao {
-    gap: -1rem;
-  }
-  .sobre .subtitulo{
-    color: #010000;
-  }
-  .sobre {
-    padding: 0rem;
-    margin: -120px auto auto;
-    width: max(80%);
-    grid-template-columns: 1fr;
-  }
-  .sobre--descricao {
-    width: max(50ch);
-    grid-column: 1 /4;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 1180px;
-  }
-  .section-2-box {
-    padding: 0 0 0 rem;
-    width: max(95%);
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-  .section-2-box h2{
-    padding: 0px;
-    position: relative;
-    top: 140px;
-    left: -40px;
-    padding-top: 0;
-  }
-  .title-h2 {
-    width: max(600px);
-  }
-  .section-2-box .title-h2::after {
-    left: -2%;
-    top: -52%;
-  }
-  #perfil-2 {
-    width: 48%;
-    top: 65%;
-    left: -3%;
-  }
-  .competencia {
-    margin-top: -65%;
-    margin-left: 50%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: 2%;
-    z-index: 2;
-  }
-  .hobbies--section{
-    width: max(95%);
-    margin: 1200px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    justify-items:self-end;
-    position: absolute;
+ .hobbies--section {
+    margin: 22.5rem auto 0 auto;
+    padding: 0 1.25rem 1.25rem;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    height: max-content;
   }
   .hobbies--section h2 {
-    left: 25px ;
+    margin: 5rem auto 0 7rem;
   }
-  .hobbies--title, .hobbies-title {
-    color: #2E2E2E; 
-    padding-top: 1rem;
-  }
-  .hobbies--descricao {
-    width: max(290px);
+  .hobbies--descricao, .hobbies-descricao-viagem{
+    width: 30ch;
   }
   .footer {
-    width: max(99%);
-    position: absolute;
-    margin-top: 1950px ;
+    margin: 0 0;
   }
   .footer-contatiner {
-    width: max(700px) ;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-  .icone{
-    left: -30px;
-  }
-  /* formation page */
-  .intro-formacao {
-    top: 20px;
-    left: 120px;
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    font-size: 6rem;
-    position: relative;
-    top: -12%;
-    left: 10%;
-  }
-  .container-experiencia h2::before {
-    top: -18%;
-    left: 85%;
-    transform: rotate(90.1deg);
-  }
-   /* The actual timeline (the vertical ruler) */
-   .container-timeline {
-    width: max(600px);
-    height: auto;
-    left: -114%;
-    top: 38%;
-  }
-   /* date timeline */
-   .date-left{
-    top: -73%;
-    left: 180px;
-  }
-  .date-left1{
-    top: -145%;
-  }
-  .date-left2{
-    top: 16%;
-    left: -140px;
-  }
-  .date { /*right*/
-    top: -43%;
-    left: 100px;
-  }
-  .date-right { /*right*/
-    top: -51%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 50px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .time-descricao-left2 {
-    left: 140px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -3.5%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  .left::before {
-    left: 279px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 283%;
-  }
-  .formacao-container{
-    max-width: (80%); 
-    margin: 120px 0 0 0 -30px;
-    gap: px;
-  }
-  .formacao-texto {
-    width: max(30ch);
-}
-  .formacao-container .subtitulo {
-    transform: rotate(90deg);
-    font-size: 6.5rem;
-    position: relative;
-    top: 20%;
-    left: -1%;
-  }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: 4%;
-    left: 4%;
-  }
-  .footer-formacao {
-    top: 204%;
-  }
-}
-@media (max-width:798px)and (min-width: 769px) {
-
-  .date-left{
-    top: -74%;
-    left: 180px;
-  } 
-  .date-left1{
-    top: -145%;
-  }
-  .date-left2{
-    top: 14%;
-    left: -140px;
-  }
-  .date { /*right*/
-    top: -42%;
-    left: 100px;
-  }
-  .date-right { /*right*/
-    top: -48%;
-  }
-  .formacao {
-    width: max(99%);
-    top: 275%;
-  }
-  .footer-formacao {
-    top: 200%;
-  }
-}
-@media (max-width:768px) and (min-width:760px) and (max-height:1009px){
-  .intro-formacao {
-    top: 20px;
-    left: 90px;
-  }
-  .formacao {
-    width: max(100%);
-    top: 270%;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 190%;
-  }
-}
-@media (max-width:696px){
-  .fundo{
-    width: max(90%);
-    left: 2%;
-  }
-  .intro {
-    width: max(100%);
-    margin: 80px auto 0 -70px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-self: center;
     gap: 0px;
   }
-  .intro img {
-    display: none;
+  .footer-descricao {
+    grid-column: 1 / -1 ;
+    width: 38ch;
   }
-  .intro-descricao {
-    margin: 0;
-    width: max(90%);
-    font-size: 1rem;
+  .footer-copy {
+    width: 22ch;
   }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 5px;
-    ;
+  .container-experiencia-descricao {
+    font-size: 3rem;
+    left: 45%;
   }
-  .decoracao, .decoracao2{
-    display: none;
+  .timeline {
+    left: -42.1%;
   }
-  .intro-descricao {
-    gap: -1rem;
-  }
-  .sobre .subtitulo{
-    color: #010000;
-  }
-  .sobre {
-    padding: 0rem;
-    width: max(80%);
-    grid-template-columns: 1fr;
-    margin: -120px auto auto ;
-  }
-  .sobre--descricao {
-    width: max(45ch);
-    grid-column: 1 /4;
-  }
-  .fundo-section-2 {
-    width: max(99%);
-    height: 1100px;
-  }
-  .section-2-box {
-    padding: 0 0 0 1rem;
-    width: max(95%);
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-  .section-2-box h2{
-    padding: 0px;
-    position: relative;
-    top: 140px;
-    left: -40px;
-    padding-top: 0;
-  }
-  .title-h2 {
-    width: max(570px);
-  }
-  .section-2-box .title-h2 {
-    font-size: 4rem;
-}
-  .section-2-box .title-h2::after {
-    left: -2%;
-    top: -52%;
-  }
-  #perfil-2 {
-    width: 46%;
-    height: 80%;
-    top: 85%;
-    left: -12%;
-  }
-  .competencia {
-    width: max(350px);
-    padding: 0 0 0 0;
-    margin-top: -45%;
-    margin-left: 40%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: 1%;
-    z-index: 2;
-  }
-  .hobbies--section h2 {
-    font-size: 4rem ;
-    left: -15px;
-  }
-  .hobbies--descricao {
-    width: max(260px);
-  }
-  .footer{
-    width: max(42em);
-  }
-  .footer-contatiner {
-    width: max(560px) ;
-  }
-   /* formation page */
-  .container-formacao {
-    padding: 0.4rem 1rem;
-    border-radius: 0.2rem;
-    margin: 70px auto;
-    width: max(450px);
-    height: 350px;
-    background-color: #ededed;
-    position: relative;
-    left: 4rem;
-  }
-  .container-experiencia {
-    padding: 2.3rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, auto)1fr;
-    gap: 100px;
-    position: static;
-  }
-  .container-experiencia h2{
-    width: max(12ch);
-    font-size: 5rem;
-    position: relative;
-    top: -12%;
-    left: 2%;
-  }
-  .container-experiencia h2::before {
-    top: -48%;
-    left: 85%;
-    transform: rotate(90.1deg);
-  }
-   /* The actual timeline (the vertical ruler) */
+  /* The actual timeline (the vertical ruler) */
    .container-timeline {
-    width: max(550px);
+    width: 550px;
     height: auto;
     left: -116%;
     top: 38%;
@@ -3282,1339 +1788,13 @@ a:hover:nth-child(n) {
   .right::after {
     left: -16px;
   }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    top: 285%;
-  }
-  .formacao-container{
-    max-width: (80%); 
-    margin: 120px 0 0 0 -60px;
-    gap: 10px;
-  }
-  .formacao-texto {
-    width: max(30ch);
-  }
-  .formacao-container>div:nth-child(even) {
-    margin: 0 auto 0 -80%;
-  }
-  .formacao-container .subtitulo {
-    transform: rotate(90deg);
-    font-size: 5.5rem;
-    position: relative;
-    top: 40%;
-    left: -40%;
-  }
-  .formacao-container::before {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url('/img/icones/det3.svg')no-repeat center center;
-    position: absolute;
-    top: 4%;
-    left: 4%;
-  }
-  .footer-formacao {
-    top: 207%;
-  }
-}
-@media (max-width: 650px) and (min-width:600px) and (max-height:990px){
-  .container-fundo{
-    left: -2rem;
-  }
-  .container-experiencia h2 {
-    width: max(12ch);
-    font-size: 4.78rem;
-    position: relative;
-    top: -7%;
-    left: 2%;
-}
-  .formacao-container>div:nth-child(even) {
-    margin: 0 auto 0 -90%;
-  }
-  .container-timeline {
-    width: max(550px);
-    height: auto;
-    left: -118%;
-    top: 38%;
-  }
-  .formacao {
-    height: 1400px;
-    top: 323%;
-  }
-  .footer-formacao {
-    top: 244%;
-  }
-  .icone {
-    left: -20%;
-  }
-}
-/* IOS Swift simple and pro/ androids */
-@media  (max-width: 490px) and (min-width: 400px) {
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(90%);
-    padding: 1.3rem;
-    margin: 0 auto;
-    position: relative;
-    left: 0;
-    background: #010000;
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
-  .intro-descricao {
-    margin: 120px auto;
-    width: max(95%);
-    margin: 50px auto 105px 0;
-    font-size: 1rem;
-    position: absolute
-  }
-  .intro h1 {
-  font-size: 3rem;
-  text-indent: 1rem;
-  line-height: 4rem;
-  color: var(--preto-c3);
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 35px;
-    z-index: 2;
-    ;
-  }
-  .sobre {
-    padding: 1.5rem;
-    margin: 0 auto;
-    width: max(326.3px);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(88%);
+  .container-formacao {
+    min-width: 450px;
     height: 350px;
-    gap: 0px;
-    background: #F7F7F7;
-    position: relative;
-    left: -0px;
-  }
-  .sobre .subtitulo {
-   display: grid;
-   margin-left: 15px;
-   justify-items: start;
-   grid-column: 1 / 2;
-  }
-  .sobre--descricao {
-    padding: 0px;
-    width: max(350px);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c6);
-   font-size: 1.1rem;
-   font-weight:400
-  }
-  .fundo-section-2 {
-    margin: 0 auto;
-    height: 1620px;
-  }
-  .section-2-box{
-    padding-top: 40px;
-    width: max(81%);
-  }
-   figure {
-    width: max(50%);
-  }
-  .section-2-box .title-h2 {
-    padding-top: -20px;
-    width: min(330px);
-    position: relative;
-    top: 100px;
-    left: -35px;
-    word-wrap: break-word;
-    font-size: 2.7rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -5%;
-    top: -39%;
-    z-index: 2;
-  }
-  #perfil-2 {
-    width: max(145%);
-    height: 75%;
-    position: relative;
-    top: 22%;
-    left: -45px;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(75%);
-    gap: 1.2rem;
-    margin-top: 90px;
-    margin-left: -4%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: -7px;
-    z-index: 2;
-  }
-  .section-2-box {
-    display: grid;
-    grId-template-columns: 2fr;
-  }
-  .hobbies--section{
-    width: max(80%);
-    padding: 0px;
-    grid-template-columns: 1fr;
-    margin: 1550px auto 0 10px;
-    gap: 100px;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    word-wrap: break-word;
-    max-width: 320px;
-  }
-  .hobbies--descricao {
-    width: max(80%);
-    margin: 0 0 0 30px;
-    color: #707070;
-  }
-  .hobbies--section h2 {
-    color: #cacaca;
-    font-size: 3.7rem;
-    margin-left: 25px ;
-   }
-   .hobbies--title {
-    margin-left: 70px;
-   }
-   .hobbies-title {
-    margin-left: 80px;
-  }
-   .hobbies--title::after {
-     display: block;
-     content: url('/img/icones/game-mobile.svg');
-    position: relative;
-    left: -18px;
-  }
-   .hobbies-title::after {
-     display: block;
-     content: url('/img/icones/praia-mobile.svg');
-    position: relative;
-    left: -20px;
-  }
-   .footer::after {
-     content: url('/img/icones/detalhe-mobile.svg');
-     display: block;
-     position: absolute;
-     top: -60px;
-     left: 20px;
-  }
-  .footer {
-    margin: 2550px auto 0 0;
-    width: max(28em);
-    left: 0%;
-  }
-  .footer-contatiner {
-    max-width: 330px;
-    padding: 0;
-    margin: 90px auto 3px 25px;
-    gap: 20px;
-  }
-  .footer-descricao {
-    width: max(25ch);
-  }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
-    position: relative;
-    left: -320px;
-  }
-/* formation page */
-  .intro-formacao {
-    padding: 0;
-    margin: -20px auto;
-    width: max(auto);
-  }
-  .container-fundo {
-    margin: 0;
-    width: max(650px);
-    height: 540px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(60%);
-    height: 370px;
-    position: relative;
-    left: 250px;
-  }
-  .container-formacao h1 {
-    font-size: 4rem;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .container-timeline {
-    width: max(100%);
-  }
-  .timeline{
-    width: max(22.4em);
-  }
-  .container-experiencia {
-    padding: 1rem;
-    width: max(80%);
-    margin: 0;
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 100px;
-    position: static;
-}
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 3rem;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 0;
-  }
-  .container-experiencia h2::before {
-    top: -32%;
-    left: 80%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    padding: 0;
-    width: max(24.2em);
-    height: 1600px;
-  }
-  .container-timeline {
-    padding: 0;
-    margin: 0 auto;
-     top: 28%;
-    left: -106%;
-   
-  }
-    /* date timeline */
- .date-left{
-  top: -90%;
-    left: 38px;
-  }
-  .date-left1{
-    top: -145%;
-    left: 37px;
-    
-  }
-  .date-left2{
-    top: 12%;
-    left: -77px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -75px;
-  }
-  .date-right { /*right*/
-    top: -54%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 40px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 170px;
-  }
- 
-  /* Place the container to the left */
-  .left {
-    left: -7%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 24%;
-  }
-  .left::before {
-    left: 135px;
-    transform: rotate(1deg);
-  }
-  .right::before {
-    left: 16px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  .container {
-    padding: 9px 20px;
-    position: relative;
-    background: transparent;
-    width: 45%;
-    transition: 0.2s linear;
-  }
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
-    top: 0;
-    bottom: 0;
-    left: 24%;
-    margin-left: -3px;
-  }
-  .container::after {
-    right: 75px;
-  }
-  .right .content p{
-    left: 1%;
-    width: max(18ch);
-  }
-  .left .content p{
-    left: 70%;
-    width: max(18ch);
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(99%);
-    height: 103em;
-    margin: 0 auto;
-    top: 310%;
-  }
-  .formacao-container{
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    width: max(80%); 
-    margin: 250px 0 0 30px;
-  }
-  .formacao-container>div:nth-child(even) {
-    margin: 60px auto 0 0%;
-  }
-  .formacao-container::before {
-    display: none;
-  }
-  .formacao-container .subtitulo {
-    transform: rotate(0deg);
-    font-size: 4rem;
-    position: relative;
-    top: 30%;
-    left: -5%;
-  }
-  .formacao-container::before {
-    top: 1%;
-    left: -2%;
-  }
-  .formacao-texto  {
-    width: max(20ch);
-  }
-  .curso-span {
-    position: relative;
-    left: 70%;
-    bottom: -16%;
-  }
-  .formacao-extra span {
-    color: #8f8f8f; 
-    position: relative;
-    left: 0%;
-  }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(100%);
-    height: max(30em);
-    top: 200%;
-  }
-}
-@media (max-width: 410px){
-  .intro-descricao {
-    margin: 120px auto;
-    width: max(95%);
-    margin: 50px auto -25px 0;
-    font-size: 1rem;
-    position: absolute
-  }
-  .intro-formacao h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url(../img/icones/det1-topo.svg) no-repeat center;
-    position: relative;
-    left: 5px;
-    z-index: 2;
-  }
-  .footer{
-    width: max(25em);
-    margin: 2550px auto;
-    left: -10%;
-  }
-  .footer-contatiner {
-    max-width: 330px;
-    padding: 0;
-    margin: 90px auto 3px 55px;
-    gap: 20px;
-  }
-  .intro-formacao {
-    padding: 0 auto 0 0 ;
-    margin: -20px auto 0 -70px;
-    width: max(auto);
-    height: max(400px);
-  }
-  .container-fundo {
-    margin: 0;
-    width: max(384px);
-    height: 490px;
-    border-radius: 0.4rem;
-    position: absolute;
-    z-index: 3;
-  }
-  .intro-formacao {
-    width: max(90%);
-  }
-  .container-formacao {
-    left: 64px;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 10%;
-  }
-  .container-experiencia h2::before {
-    top: -20%;
-    left: 99%;
-    transform: rotate(90.1deg);
-  }
-  .container-timeline {
-    padding: 0;
-    margin: 0 auto;
-    top: 28%;
-    left: -104%;
-  }
-  .timeline {
-    padding: 0;
-    width: max(24.3em);
-    height: 1600px;
-  }
-   /* date timeline */
- .date-left{
-  top: -70%;
-    left: 45px;
-  }
-  .date-left1{
-    top: -151%;
-    left: 45px;
-    
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -76px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  .formacao-container::after {
-    top: 8%;
-    left: 0%;
   }
   .formacao {
     width: max(100%);
-    top: 260%;
-  }
-  .footer-formacao{
-    top: 160%;
-    left: 0;
-  }
-}
-/* despositivos mobile */
-/* IOS Swift pro */
-@media (max-width: 480px)and (min-width: 411px) {
-  .intro {
-    width: max(91%);
-    padding: 1.3rem;
-    height: 450px;
-    margin: -1px auto;
-    position: relative;
-    left: -2px;
-    background: var(--preto-c9);
-    z-index: -1;
-  } 
-  .intro h1 {
-    color: var(--preto-c3);
-    font-size: 3rem;
-    text-indent: 1rem;
-    line-height: 4rem;
-  }
-  .intro-descricao {
-    margin: 50px auto -60px 0;
-  }
-  .sobre>.subtitulo {
-   color: var(--preto-c8);
-   }
-  .sobre--descricao {
-    color: var(--preto-c6);
-  }
-  .fundo-section-2 {
-    width: max(100%);
-    margin: 0 auto;
-    height: 1620px;
-  }
-  .competencia {
-    margin-top: 90px;
-    margin-left: -4.0%;
-    justify-content: space-around;
-  }
-  .hobbies--section{ 
-    padding: 0px;
-    width: max(50%);
-    grid-template-columns: 1fr;
-    left: 50px;
-    margin: 1600px auto;
-  }
-  .hobbies--section{
-    width: max(80%);
-    padding: 0px;
-    grid-template-columns: 1fr;
-    margin: 1500px auto 0 -10px;
-    gap: 100px;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    word-wrap: break-word;
-    max-width: 320px;
-  }
-  .hobbies--descricao {
-    width: max(80%);
-    margin: 0 0 0 30px;
-    color: #707070;
-  }
-  .hobbies--section h2 {
-    color: #cacaca;
-    font-size: 3.7rem;
-    margin-left: 25px ;
-   }
-   .hobbies--title {
-    margin-left: 70px;
-   }
-   .hobbies-title {
-    margin-left: 80px;
-  }
-  .footer {
-    margin: 2480px 0 0 -30px;
-    padding: 0px 0px;
-    width: max(24.7em);
-    height: 450px;
-  }
-  .footer-descricao {
-    margin: auto auto auto 3px;
-    width: max(27ch);
-  }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
-    position: relative;
-    left: -270px;
-  }  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -15%;
-    left: 4%;
-  }
-  .intro-formacao h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url(../img/icones/det1-topo.svg) no-repeat center;
-    position: relative;
-    left: 5px;
-    z-index: 2;
-  }
-  .container-experiencia h2::before {
-    top: -32%;
-    left: 105%;
-    transform: rotate(90.1deg);
-  }  
-/* date timeline */
-  .date-left{
-    top: -70%;
-    left: 45px;
-  }
-  .date-left1{
-    top: -151%;
-    left: 45px;
-    
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -76px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  .left::before {
-    left: 135px;
-    transform: rotate(1deg);
-  }
-  .intro-formacao {
-    width: max(90%);
-  }
-  .container-fundo {
-    margin: -2px;
-    width: max(405px);
-    height: 490px;
-    border-radius: 0.4rem;
-    position: absolute;
-    left: -1.2rem;
-    z-index: 3;
-  }
-  .container-timeline {
-    padding: 0;
-    margin: 0 auto;
-    top: 28%;
-    left: -103%;
-  }
-  .container-formacao {
-    margin: 75px auto;
-    height: 340px;
-  }
-  .formacao-container::after {
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    z-index: 2;
-  }
-  .formacao {
-    width: max(100%);
-    top: 330%;
-    height: 108em;
-  }
-  .formacao-container>div:nth-child(even) {
-    margin: 60px auto 0 0%;
-  }
-  .footer-formacao {
-    width: max(27em);
-    top: 228%
-  } 
-}
-@media (max-width: 428px) and (min-width: 416px) {
-  .hobbies--game, .hobbies--viagem {
-    margin: 1px auto 0 -6%;
-  }
-  .footer {
-    width: max(26.5em);
-    height: 500px;
-    left: -7%;
-  }
-
-  .footer-descricao {
-    margin: auto auto auto 20px;
-  }
-  .intro-formacao h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url(../img/icones/det1-topo.svg) no-repeat center;
-    position: relative;
-    left: 5px;
-    z-index: 2;
-  }
-  .intro-formacao {
-    width: max(90%);
-  }
-  .container-fundo {
-    margin: -2px;
-    width: max(415px);
-    height: 490px;
-    border-radius: 0.4rem;
-    position: absolute;
-    left: -1rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0;
-    width: max(300px);
-    height: 350px;
-    position: relative;
-    top: -25px;
-    left: 97px;
-  }
-  .curso-span {
-    position: relative;
-    left: 70%;
-    bottom: 26%;
-  }
-  .formacao {
-    top: 285%;
-  }
-  .formacao-container>div:nth-child(even) {
-    margin: 60px auto 0 6%;
-  }
-  .footer-formacao{
-    top: 195%;
-  }
-}
-@media (max-width:414px) and (min-width:414px) and (max-height: 900px) and (min-height:820px){
-  .hobbies--game, .hobbies--viagem {
-    margin: 1px auto 0 -6%;
-  }
-  .footer {
-    width: max(24.7em);
-    height: 500px;
-    left: 0%;
-  }
-
-   /* date timeline */
- .date-left{
-  top: -70%;
-    left: 45px;
-  }
-  .date-left1{
-    top: -151%;
-    left: 45px;
-    
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -76px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  .formacao {
-    top: 285%;
-  }
-  .footer-formacao {
-    top: 194%
-  }
-}
-@media (max-width:414px) and (min-width:414px) and (max-height: 750px) and (min-width: 740px){
-  .hobbies--game, .hobbies--viagem {
-    margin: 1px auto 0 -6%;
-  }
-  .footer {
-    width: max(27em);
-    height: 500px;
-    left: 0%;
-  }
-
-   /* date timeline */
- .date-left{
-  top: -70%;
-    left: 45px;
-  }
-  .date-left1{
-    top: -151%;
-    left: 45px;
-    
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -76px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  .formacao {
-    top: 250%;
-  }
-  .footer-formacao {
-    top: 175%
-  }
-}
-@media (max-width:412px) and (min-width:412px) and (max-height: 733px) and (min-height:620px){
-  .hobbies--game, .hobbies--viagem {
-    margin: 1px auto 0 -6%;
-  }
-  .footer {
-    width: max(27em);
-    height: 500px;
-    left: 0%;
-  }
-
-  .left::before {
-    left: 135px;
-    transform: rotate(1deg);
-  }
-  
-  .formacao {
-    top: 274%;
-  }
-  .footer-formacao {
-    top: 230%
-  }
-}
-@media (max-width:412px) and (min-width:412px) and (max-height: 950px) and (min-height:790px){
-  .intro {
-    width: max(89.68%);
-    padding: 1.3rem;
-    height: 450px;
-    margin: -3px auto;
-    position: relative;
-    left: 0;
-    background: var(--preto-c9);
-    z-index: -1;
-  }
-  .hobbies--game, .hobbies--viagem {
-    margin: 1px auto 0 -6%;
-  }
-  .footer {
-    width: max(27em);
-    height: 500px;
-    left: 0%;
-  }
-
-  .intro-formacao {
-    width: max(80%)
-  }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(295px);
-    height: 350px;
-    position: relative;
-    left: 62px;
-  }
-  .container-fundo {
-    margin: 0px;
-    width: max(385px);
-    height: 490px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -1.6rem;
-    z-index: 3;
-  }
-  .left::before {
-    left: 135px;
-    transform: rotate(1deg);
-  }
-  .date-left{
-  top: -70%;
-    left: 45px;
-  }
-  .date-left1{
-    top: -151%;
-    left: 46px;
-    
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -75px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  .formacao {
-    top: 265%;
-  }
-  .footer-formacao {
-    top: 175%
-  }
-}
-@media (max-width:411px) and (min-width:411px) and (max-height: 820px) and (min-height:780px){
-  .left::before {
-    left: 136px;
-    transform: rotate(1deg);
-  }
-  .date-left{
-    top: -70%;
-      left: 38px;
-    }
-    .date-left1{
-      top: -151%;
-      left: 37px;
-      
-    }
-    .date-left2{
-      top: 12%;
-      left: -77px;
-      
-    }
-    .date { /*right*/
-      top: -40%;
-      left: -75px;
-    }
-    .date-right { /*right*/
-      top: -52%;
-    }
-  .formacao {
-    top: 310%;
-  }
-  .footer-formacao {
-    top: 213%
-  }
-}
-@media(max-width:397px) and (min-width: 370px){
-  .line {
-    display: inline-block;
-    width: 15px;
-    height: 20px;
-    border-radius: 15px;
-    background-color: var(--laranja-s);
-  }
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(89%);
-    padding: 1.3rem;
-    height: 450px;
-    margin: -1px auto;
-    position: relative;
-    left: -2px;
-    background: var(--preto-c9);
-    z-index: -1;
-  } 
-  .intro h1 {
-    color: var(--preto-c3);
-    font-size: 3rem;
-    text-indent: 1rem;
-    line-height: 4rem;
-  }
-  .intro-descricao {
-    margin: 50px auto -30px 25px;
-    width: max(80%);
-    position: absolute
-  }
-  .intro img, .decoracao {
-    display: none;
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left: 6px;
-    z-index: 2;
-    ;
-  }
-  .intro p::before {
-    left: -17px;
-    top: 25rem;
-    }
-  .sobre {
-    padding: 1.6rem;
-    margin: 0 auto;
-    width: max(330px);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(86%);
-    height: 350px;
-    gap: 0px;
-    background: #F7F7F7;
-    position: relative;
-    left: -0px;
-  }
-  .sobre {
-    width: max(350px);
-    gap: 10px;
-  }
-  .sobre>.subtitulo {
-   display: grid;
-   margin-left: 15px;
-   justify-items: start;
-   grid-column: 1 / 1;
-  }
-  .sobre--descricao {
-    padding: 0px;
-    width: max(30ch);
-    margin: 0 0 0 8px;
-    display: grid;
-    justify-items: start;
-    grid-column: 1 / 7;
-    color: var(--preto-c6);
-   font-size: 1.1rem;
-   font-weight:400
-  }
-  .fundo-section-2 {
-    width: max(100%);
-    margin: 0 auto;
-    height: 1530px;
-  }
-  .section-2-box{
-    padding: 50px 0 0 0;
-    margin: 0 auto 0 0 ;
-    width: max(350px);
-    position: relative;
-    top: -20px;
-    left: 20px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(290px);
-    top: 10px;
-    font-size: 2.6rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -5%;
-    top: -50%;
-    z-index: 2;
-  }
-  figure {
-    width: max(40%);
-  }
-  #perfil-2 {
-    width: 155%;
-    height: 85%;
-    position: relative;
-    top: 12%;
-    left: -9%;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(70%);
-    gap: 1.2rem;
-    margin-top: 30px;
-    margin-left: 9%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: -30px;
-    z-index: 2;
-  }
-  .section-2-box {
-    display: grid;
-    grId-template-columns: 2fr;
-  }
-  .hobbies--section{
-    width: max(70%);
-    padding: 0px;
-    grid-template-columns: 1fr;
-    left: 10px;
-    gap: 140px;
-    margin: 1510px auto;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    word-wrap: break-word;
-  }
-  .hobbies--descricao {
-    margin: 0 0 0 20px;
-    width: max(27ch);
-    color: var(--cinza-c1);
-  }
-  .hobbies--section h2 {
-    margin: 0 0 0 50px;
-    width: max(80%);
-    font-size: 3.5rem;
-    color: var(--cinza-c0);
-  }
-   .hobbies--title {
-    padding: 5px;
-    margin-left: 70px;
-  }
-  .hobbies-title {
-    margin-left: 80px;
-  }
-  .hobbies--title::after {
-    display: block;
-    content: url('/img/icones/game-mobile.svg');
-    position: relative;
-    left: -12px;
-  }
-  .hobbies-title::after {
-    display: block;
-    content: url('/img/icones/praia-mobile.svg');
-    position: relative;
-    left: -20px;
-  }
-  .footer::after {
-    content: url('/img/icones/detalhe-mobile.svg');
-    display: block;
-    position: absolute;
-    top: -60px;
-    left: 20px;
-  }
- 
-  .footer-contatiner {
-    max-width: 330px;
-    padding: 0;
-    margin: 90px auto 3px 30px;
-    gap: 20px;
-  }
-  .footer-descricao {
-    width: max(27ch);
-  }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
-    position: relative;
-    left: -320px;
-  }
-  /* formation page */
-  .container-fundo {
-    margin: 0px;
-    width: max(400px);
-    height: 490px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -1.9rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto;
-    width: max(330px);
-    position: relative;
-    left: 38px;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .timeline, .container-timeline {
-    width: max(90%);
-  }
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 4rem;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(8ch);
-    font-size: 4rem;
-    position: relative;
-    top: -75%;
-    left: 0;
-  }
-  .content-timeline p{ 
-    width: max(350px);
-    position: relative;
-    left: -0px;
-  }
-  .container-experiencia h2::before {
-    top: -18%;
-    left: 100%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    margin: -500px auto;
-    height: 1600px;
-  }
-  .container-timeline {
-    width: max(97%);
-    left: -20px;
-    bottom: -38%;
-  }
-   /* date timeline */
-   .date-left{
-    top: -74%;
-    left: 20px;
-  }
-  .date-left2{
-    top: 16%;
-    left: -67px;
-  }
-  .date { /*right*/
-    top: -85%;
-    left: -70px;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 20px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 110px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -9%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 20%;
-  }
-  .left::before {
-    left: 114px;
-    transform: rotate(1deg);
-  }
-  .right::before {
-    left: 16px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  .container {
-    padding: 9px 20px;
-    position: relative;
-    background: transparent;
-    width: 45%;
-    transition: 0.2s linear;
-  }
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
-    top: 0;
-    bottom: 0;
-    left: 24%;
-    margin-left: -3px;
-  }
-  .container::after {
-    right: 75px;
-  }
-  .right .content p{
-    left: 1%;
-    width: max(18ch);
-  }
-  .left .content p{
-    left: 67%;
-    width: max(18ch);
-  }
-  /* are the formations courses and languages */
-  .formacao{
-    top: 314%;
-  }
-  .cursos span {
-    position: absolute;
-    right: 70px;
+    height: 128em;
   }
   .formacao-container{
     padding: 1rem;
@@ -4622,937 +1802,225 @@ a:hover:nth-child(n) {
     width: max(90%); 
     margin: 250px 0 0 30px;
   }
-  .formacao-container .subtitulo {
-    transform: rotate(0deg);
-    font-size: 4rem;
-    position: relative;
-    top: 30%;
-    left: -5%;
-  }
-  .formacao-container::before {
-    top: 1%;
-    left: -2%;
-  }
-  .formacao-texto  {
-    width: max(20ch);
-  }
-  .curso-span {
-    position: relative;
-    left: 80%;
-    bottom: -16%;
-  }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(102%);
-    height: max(30em);
-    top: 220%;
-  }
-}
-/* IOS Swift (celulares motorolas e samsung (pai) */
-@media (max-width: 399px) and (min-width:375px){ 
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(89.66%);
-    padding: 1.3rem;
-    height: 450px;
-    margin: -1px auto;
-    position: relative;
-    left: 0;
-    background: var(--preto-c9);
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
-  .intro-descricao {
-    margin: 50px auto -60px 35px;
-    width: max(80%);
-    position: absolute
-  }
-  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-    color: var(--preto-c3);
-    font-size: 2.7rem;/**/
-    text-indent: 1rem;
-    line-height: 3.5rem;
-  }
-  .intro h1::before {
-    left: 1px;
-  }
-  .sobre {
-    padding: 1.3rem;
-    margin: 1.5px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(88%);
-    height: 350px;
-    gap: 10px;
-    background: #F7F7F7;
-    position: relative;
-    left: 0px;
-  }
-  .sobre .subtitulo {
-    width: max(13ch);
-    margin: 0 auto 0 5px;
-    color: var(--preto-c6);
-  }
-  .sobre--descricao {
-    padding: 0px;
-    width: max(100%);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c9);
-   font-size: 1.1rem;
-   font-weight:400
-  }
-  .fundo-section-2 {
-    width: max(100%);
-    margin: 0 auto;
-    height: 1530px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(350px);
-    position: relative;
-    top: -40px;
-    left: -20px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(340px);
-    top: 80px;
-    left: 1px;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -4%;
-    top: -55%;
-    z-index: 2;
-  }
-  figure {
-    width: max(40%);
-  }
-  #perfil-2 {
-    width: 155%;
-    height: 85%;
-    position: relative;
-    top: 23%;
-    left: -1%;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(70%);
-    gap: 1.2rem;
-    margin-top: 20%;
-    margin-left: 13%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia::before {
-    left: -12px;
-    z-index: 2;
-  }
-  .hobbies--section{
-    width: max(90%);
-    grid-template-columns: 1fr;
-    margin: 1530px auto;
-    left: 50px;
-    gap: 160px;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    color: var(--cinza-c0);
-    word-wrap: break-word;
-    width: max(50%);
-  }
-  .hobbies--descricao {
-    margin: 0 0 0 20px;
-    color: var(--cinza-c1)
-  }
-  .hobbies--title {
-    padding: 5px;
-  }
-  .hobbies--viagem {
-    margin: -100px 0 0 0;
-  }
-  .hobbies--section h2 { 
-    margin: 0 0 0 50px;
-    width: max(90%);
-    font-size: 3.5rem;
-  }
-  .hobbies--descricao {
-    width: max(25ch);
-  }
-  .footer{
-    margin: 2450px auto 0 0;
-    width: max(10em);
-    left: 0;
-    height: 450px;
-  }
-  .footer-descricao {
-    margin: 0 0 0 15px;
-    padding: 0 0 0 0;
-    width: max(25ch);
-  }
-  .formacao-container::before {
-    display: none;
-  }
-  .footer-contatiner {
-    max-width: 330px;
-    margin: 90px auto 3px 10px;
-    padding: 4px;
-    gap: 80px;
-  }
-  .icone {
-    width: max(100px);
-    margin-top: -140px;
-    position: relative;
-    left: -320px;
-  }
-  /* formation page */
-  .intro-formacao {
-    padding: 0;
-    margin: -20px auto;
-    width: max(auto);
-  }
-  .container-fundo {
-    margin: 0px;
-    width: max(347px);
-    height: 490px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -1.3rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(290px);
-    height: 350px;
-    position: relative;
-    left: 38px;
-  }
-  .container-formacao h1 {
-    font-size: 4rem;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .timeline, .container-timeline {
-    width: max(100%);
-  }
-  .container-experiencia {
-    padding: 1rem;
-    width: max(80%);
-    margin: 0;
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 100px;
-    position: static;
-}
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 3rem;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 5%;
-  }
-  .container-experiencia h2::before {
-    top: -32%;
-    left: 90%;
-    transform: rotate(90.1deg);
-  }
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    padding: 0;
-    width: max(23.2em);
-    height: 1600px;
-  }
-  .container-timeline {
-    padding: 0;
-    margin: 0 auto;
-    top: 28%;
-    left: -109%;
-  }
-   /* date timeline */
- .date-left{
-    top: -77%;
-    left: 43px;
-  }
-  .date-left1{
-    top: -146%;
-    left: 42px;
-  }
-  .date-left2{
-    top: 12%;
-    left: -70px;
-  }
-  .date { /*right*/
-    top: -37%;
-    left: -70px;
-  }
-  .date-right { /*right*/
-    top: -56%;
-  }
-  .left::before {/* set the left */
-    left: 130px;
-    transform: rotate(1deg);
-  }
-  .right::before {/* set the rigth */
-    left: 25px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -1.8px;
-  }
-   /* The descrition das times */
-   .time-descricao {
-    top: 30px;
-    left: 25px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 130px;
-  }
-  .container {
-    padding: 9px 20px;
-    position: relative;
-    background: transparent;
-    width: 45%;
-    transition: 0.2s linear;
-  }
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
-    top: 0;
-    bottom: 0;
-    left: 24%;
-    margin-left: -3px;
-  }
-  .container::after {
-    right: 70px;
-  }
-  .right .content p{ /*box of content*/
-    left: 7%;
-    width: max(18ch);
-  }
-  .left .content p{
-    left: 70%;
-    width: max(18ch);
-  }
-  /* are the formations courses and languages */
-  .formacao {
-    width: max(100%);
-    height: 104em;
-    margin: 0 auto;
-    top: 265%;
-  }
-  .formacao-container{
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    width: max(80%); 
-    margin: 250px 0 0 30px;
-  }
-  .formacao-container .subtitulo {
-    transform: rotate(0deg);
-    font-size: 3rem;
-    position: relative;
-    top: 30%;
-    left: -5%;
-  }
   .formacao-container>div:nth-child(even) {
     margin: 60px auto 0 0%;
   }
+  .cursos span {
+    position: absolute;
+    right: 70px;
+  }
+  .formacao-container::before {
+    display: none;
+  }
+  .formacao-container .subtitulo {
+    transform: rotate(0deg);
+    font-size: 3rem;
+    position: relative;
+    top: 30%;
+    left: -5%;
+  }
   .formacao-container::after {
-    top: 7%;
+    top: 8%;
     left: 3%;
   }
   .formacao-texto  {
-    width: max(20ch);
+    width: max(35ch);
   }
   .curso-span {
     position: relative;
-    left: 67%;
+    left: 60%;
     bottom: -14%;
   }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(23.6em);
-    height: max(30em);
-    left: 0px;
-    top: 177%;
-  }
-  .footer-copy {
-    width:  max(29ch);
-    margin:  auto auto auto -5px;
+  .footer-formacao::after {
+    top: 259em;
   }
 }
 
-/* IOS Swift 12 / 13 */
-@media (max-width: 390px) and (min-width: 380px) {
-  .fundo-section-2 {
-    width: max(100%);
+
+
+/* IOS Swift simple and pro/ androids */
+@media  (max-width: 500px){
+  .fundo {
+    display: none;
+    left: 2%;
+  }
+  .intro {
+    padding: 1.3rem;
     margin: 0 auto;
-    height: 1530px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(350px);
     position: relative;
-    top: -40px;
-    left: -20px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(340px);
-    top: 60px;
-    left: 1px;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -4%;
-    top: -45%;
-    z-index: 2;
-  }
-  #perfil-2 {
-    width: 165%;
-    height: 85%;
-    position: relative;
-    top: 14%;
-    left: -1%;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(70%);
-    gap: 1.2rem;
-    margin-top: 30px;
-    margin-left: 10%;
-    position: relative;
-    justify-content: space-around;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(290px);
-    height: 350px;
-    position: relative;
-    left: 50px;
-  }
-  .container-fundo {
-    margin: 0px;
-    width: max(359px);
-    height: 490px;
-    border-radius: .4rem;
-    position: absolute;
-    left: -1.3rem;
-    z-index: 3;
-  }
-  .timeline {
-    padding: 0;
-    width: max(23em);
-    height: 1600px;
-  }
-  .container-timeline {
-    padding: 0;
-    margin: 0 auto;
-    top: 28%;
-    left: -108%;
-  }
-    /* date timeline */
- .date-left{
-  top: -70%;
-  left: 48px;
-}
-.date-left1{
-  top: -152%;
-  left: 48px;
-}
-.date-left2{
-  top: 12%;
-  left: -60px;
-}
-.date { /*right*/
-  top: -40%;
-  left: -61px;
-}
-.date-right { /*right*/
-  top: -52%;
-}
-  .formacao{
-    top: 257%;
-  }
-  .footer-formacao{
-    width: max(100%);
-    top: 169%;
     left: 0;
+    background: #010000;
+    z-index: -1;
   }
-}
-/* IOS Swift simple*/
-@media (max-width:384px) and (min-width:380px){
-  .container-fundo {
-    width: max(337px);
+  .decoracao, .decoracao2 {
+    display: none;
   }
-  .container-formacao {
-    left: 31px;
-}
-  .intro-formacao h1::before {
+  .intro h1::before {
     content: " ";
     display: block;
     width: 30px;
     height: 10px;
     background: url(../img/icones/det1-topo.svg) no-repeat center;
     position: relative;
-    left: 5px;
+    left: 2px;
     z-index: 2;
   }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 10%;
-  }
-   /* date timeline */
-   .date-left{
-    top: -69%;
-    left: 47px;
-  }
-  .date-left1{
-    top: -150%;
-  }
-  .date-left2{
-    top: 12%;
-    left: -60px;
-    
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -60px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  .left::before {
-    left: 136px;
-    transform: rotate(1deg);
-  }
-  .formacao-container::before {
-    display: none;
-  }
-  .formacao {
-    top: 369%;
-  }
-  .footer-formacao {
-    width: max(22.6em);
-    top: 235%
-  }
-}
-/* IOS 11 / 11 pro */
-@media (max-width: 375px) and (min-width:370px) {
-.header {
-  width: 92%;
-}
-  .intro {
-    width: max(89.5%);
-  } 
   .intro-descricao {
-    margin: 50px auto -30 0px;
-    width: max(80%);
-    position: absolute
-  }
-  .footer {
-    margin: 2470px auto 0 0%;
-    left: 0;
-    height: 450px;
-  }
-  .footer-descricao {
-    margin: 0 0 0 15px;
-  }
-  .container-fundo {
-    width: max(339px);
-    left: 1rem;
-  }
-  .container-formacao {
-    width: max(304px);
-    left: 36px;
-  }
-  .container-formacao {
-    left: 46px;
-  }
-  .competencia {
-    padding: 10px;
-    width: max(70%);
-    gap: 1.2rem;
-    margin-top: 70px;
-    margin-left: 12%;
-    position: relative;
-    justify-content: space-around;
-  }
-   /* date timeline */
- .date-left{
-    top: -70%;
-    left: 38px;
-  }
-  .date-left1{
-    top: -152%;
-    left: 37px;
-  }
-  .date-left2{
-    top: 12%;
-    left: -60px;
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -61px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 40px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 170px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -7%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 20%;
-  }
-  .formacao-container::before {
-    display: none;
-  }
-  .box-competencia::before {
-    left: -12px;
-    z-index: 2;
-  }
-  .footer, .footer-formacao{
-    left: 0%;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -12%;
-    left: 3%;
-  }
-  .container-experiencia h2::before {
-    top: -23%;
-    left: 99%;
-    transform: rotate(90.1deg);
-  }
-  .container-fundo {
-    margin: 0px;
-    width: max(371.8px);
-    height: 490px;
-    border-radius: 0.4rem;
+    margin: 120px 0px;
+    padding: 1.25rem;
+    font-size: 1rem;
     position: absolute;
-    left: -2.9rem;
-    z-index: 3;
   }
-  .timeline {
-    padding: 0;
-    width: max(22.1em);
-    height: 1600px;
-  }
-  .container-timeline {
-    left: -110%;
-  }
-  .formacao{
-    top: 355%;
-  }
-  .curso-span {
-    position: relative;
-    left: 67%;
-    bottom: -14%;
-  }
-  .footer-formacao{
-    width: max(23.5em);
-    top: 228%;
-  }
-  .footer-contatiner {
-    max-width: 330px;
-    margin: 90px auto 3px 20px;
-    padding: 1px;
-    gap: 80px;
-  }
-}
-/*androids */
-@media (max-width: 379px) and (min-width:300px){
-  .line {
-    display: inline-block;
-    width: 15px;
-    height: 20px;
-    border-radius: 15px;
-    background-color: var(--laranja-s);
-  }
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(88%);
-    padding: 1.3rem;
-    margin: -1px auto;
-    position: relative;
-    left: 0;
-    background: #010000;
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
-  .intro-descricao {
-    margin: 50px auto -10px 25px;
-    width: max(85%);
-    position: absolute
-  }
-  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-    color: var(--preto-c3);
-    font-size: 2.7rem;/**/
+  .intro h1 {
+    font-size: 3rem;
     text-indent: 1rem;
-    line-height: 3.5rem;
+    line-height: 4rem;
+    color: var(--preto-c3);
   }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 10px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left:0px;
-    z-index: 2;
-    ;
-  }
-  .sobre {
-    padding: 1.3rem;
-    margin: 1.5px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(88%);
-    height: 350px;
-    gap: 10px;
-    background: #F7F7F7;
-    position: relative;
-    left: 0px;
-  }
-  .sobre .subtitulo {
-    width: max(13ch);
-    margin: 0 auto 0 5px;
-    color: var(--preto-c6);
-  }
+ 
   .sobre--descricao {
-    padding: 0px;
-    width: max(100%);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c9);
-   font-size: 1.1rem;
-   font-weight:400
+    width: 26ch;
   }
   .fundo-section-2 {
-    width: max(100%);
-    margin: 0 auto;
-    height: 1550px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(350px);
-    position: relative;
-    top: -40px;
-    left: -2px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(290px);
-    top: 140px;
-    left: -6px;
-    font-size: 2.6rem;
-  }
-  .section-2-box .title-h2::after {
-    left: -4%;
-    top: -75%;
-    z-index: 2;
-  }
-  figure {
-    width: max(40%);
+    margin-bottom:10.5rem;
+    height: 95.8em;
   }
   #perfil-2 {
-    width: max(165%);
-    height: 80%;
-    position: relative;
-    top: 40%;
-    left: -1%;
+    width: 70%;
+    height: 400px;
+    left: 3rem; 
   }
   .competencia {
-    padding: 10px;
-    width: max(64%);
-    margin-top: 30%;
-    margin-left: 12%;
-    gap: 1.2rem;
-    position: relative;
-    justify-content: space-around;
+    margin: 0 1rem 0 0;
+    justify-self: center;
   }
-  .box-competencia::before {
-    left: -42px;
-    z-index: 2;
+  .hobbies--section {
+    margin: 30.5rem auto 0 auto;
+    padding: 2.25rem 1.25rem;
+    max-width: 400px;
   }
-  .hobbies--section{
-    width: max(80%);
-    grid-template-columns: 1fr;
-    margin: 1500px auto;
-    left: 30px;
-    gap: 160px;
-  }
-  .hobbies--section h2, .hobbies--descricao {
-    word-wrap: break-word;
-    max-width: 320px;
-  }
-  .hobbies--title, .hobbies-title {
-    padding: 5px;
-    position: relative;
-    left: 50px;
+  .hobbies--game {
+    margin: 0 auto 0 -20px;
+    left: 14%;
+    width: 350px;
   }
   .hobbies--section h2 {
-    margin: 0 0 0 30px;
-    width: max(80%);
     color: var(--cinza-c0);
-    font-size: 3.5rem;
+    margin-left: .7rem ;
+    text-align: center;
+    font-size: 3.7rem;
   }
-  .hobbies--viagem {
-    margin: -100px 0 0 10px;
-  }
-  .hobbies--descricao {
-    margin: 0 0 0 10px;
-    color: var(--cinza-c1);
+  .hobbies--title,.hobbies-title {
+    margin-left: 70px;
   }
   .hobbies--title::after {
     display: block;
-    content: url('/img/icones/game-mobile.svg');
-   position: relative;
-   left: -16px;
+    content: url(/img/icones/game-mobile.svg);
+    position: relative;
+    left: -13px;
+  } 
+  .hobbies-title {
+    margin-top: 5rem ;
+    color: #292929;
   }
+  .hobbies--viagem {
+    margin: 2.5rem auto 1rem 3rem;
+    padding-bottom: 7.5rem;
+    max-width: 300px;
+  } 
   .hobbies-title::after {
     display: block;
-    content: url('/img/icones/praia-mobile.svg');
-   position: relative;
-   left: -20px;
+    content: url(/img/icones/praia.svg);
+    max-width: 40%;
+    height: 205px;
+    position: relative;
+    top: -4px;
+    left: -50px;
   }
+  .hobbies--descricao, .hobbies-descricao-viagem {
+    width: 28ch;
+  }
+  
   .footer::after {
-    content: url('/img/icones/detalhe-mobile.svg');
+    content: url(/img/icones/detalhe-mobile.svg);
     display: block;
     position: absolute;
-    top: -60px;
+    top: 237em;
     left: 20px;
   }
-  .footer {
-    width: max(9em);
-    margin: 2450px auto 0 0;
-    height: 500px;
-    left: 0%;
+  .footer-contatiner {
+    padding: 0;
+    gap: 100px;
+    align-items: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
   .footer-descricao {
-    margin: 0 0 0 13px;
-    width: max(25ch)
+    margin-right: -1.25rem;
+    grid-column: 2 / 2;
+    text-align: center;
+    width: 25ch;
   }
-  .footer-contatiner{
-    width: max(12ch);
-    margin: 90px auto 3px -2px;
-    padding: 5px;
-    gap: 80px;
+  .footer-copy {
+    grid-column: -1;
+    text-align: center;
   }
-/* formation page */
-  .intro-formacao {
-    padding: 0;
-    margin: -20px 0 0 0;
-    width: max(auto);
-    height: max(400px);
+  .icone {
+    grid-column: -1;
+    align-items: center;
+    margin-left: 25px;
   }
-  .container-fundo {
-    margin: 0 auto 0 -100px;
-    width: max(355px);
-    height: 490px;
-    border-radius: .5rem;
-    position: absolute;
-    left: 3.7rem;
-    z-index: 3;
+  .intro  {
+    height: 520px ;
   }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(267px);
-    height: 350px;
-    position: relative;
-    left: 66px;
-  }
-  .container-formacao h1 {
-    font-size: 4rem;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .timeline, .container-timeline {
+  .container-timeline {
     width: max(100%);
   }
-  .container-experiencia {
-    padding: .9rem;
-    width: max(80%);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 100px;
-    position: static;
+  .timeline{
+    width: max(22.4em);
   }
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 3rem;
+  .container-fundo {
+    margin: -35px auto 0 -40px;
+    max-width: 404px;
+    height: 550px;
+    border-radius: .5rem;
+    position: absolute;
   }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 0;
+  .container-formacao {
+    min-width: 287px;
+    max-height: 500px;
+    top: -1rem;
+    left: -6rem;
   }
-  .container-experiencia h2::before {
-    top: -20%;
-    left: 80%;
-    transform: rotate(90.1deg);
+  .container-formacao h1 {
+    margin-top: 0;
+    font-size: 5rem;
   }
+  .timeline, .container-timeline {
+    max-width: 100%;
+  }
+  .container-experiencia{
+    max-width: 100% ;
+  }
+  .container-experiencia-descricao {
+    top: -25%;
+    font-size: 2.6rem;
+    width: 13ch;
+  }
+
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    padding: 0;
-    width: max(21em);
-    height: 1600px;
+   left: -40%;
   }
   .container-timeline {
     padding: 0;
     margin: 0 auto;
-     top: 28%;
+    width: 600px;
+    top: 28%;
     left: -125%;
+  }
+  .margin-timeline::after {
+    left: 24%;  
   }
    /* date timeline */
   .date-left{
@@ -5610,16 +2078,6 @@ a:hover:nth-child(n) {
     width: 45%;
     transition: 0.2s linear;
   }
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #101010;
-    top: 0;
-    bottom: 0;
-    left: 24%;
-    margin-left: -3px;
-  }
   .container::after {
     right: 75px;
   }
@@ -5633,15 +2091,13 @@ a:hover:nth-child(n) {
   }
   .formacao {
     width: max(100%);
-    height: 106em;
-    margin: 0 auto;
-    top: 254%;
+    height: 128em;
   }
   .formacao-container{
     padding: 1rem;
     grid-template-columns: 1fr;
     width: max(80%); 
-    margin: 250px 0 0 30px;
+    margin: 150px 0 0 30px;
   }
   .formacao-container>div:nth-child(even) {
     margin: 60px auto 0 0%;
@@ -5672,722 +2128,194 @@ a:hover:nth-child(n) {
     left: 60%;
     bottom: -14%;
   }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(22.9em);
-    height: max(30em);
-    left: 0;
-    top: 170%;
+  .footer-formacao::after {
+    top:251em;
   }
   .footer-copy {
-    width:  max(29ch);
+    width: max(29ch);
     margin:  auto auto auto -2px;
   }
   .icone {
     top: -80px;
-    left: -320px;
-  }
-}@media (max-width: 360px) and (min-width:350px)and (max-height: 690px){
-  .intro-formacao {
-    padding: 0;
-    margin: -20px 0 0 0;
-    width: max(auto);
-    height: max(400px);
-  }
-  .container-fundo {
-    margin: 0 auto 0 -100px;
-    width: max(336px);
-    height: 490px;
-    border-radius: 0.5rem;
-    position: absolute;
-    left: 4.6rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0;
-    width: max(260px);
-    height: 350px;
-    position: relative;
-    left: 63px;
-  }
- 
-}
-@media (max-width: 360px) and (min-width:350px) and (max-height: 740px) {
-  .intro-formacao {
-    padding: 0;
-    margin: -20px 0 0 0;
-    width: max(auto);
-    height: max(400px);
-  }
-  .container-fundo {
-    margin: 0 auto 0 -100px;
-    width: max(336px);
-    height: 490px;
-    border-radius: 0.5rem;
-    position: absolute;
-    left: 4.6rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0;
-    width: max(260px);
-    height: 350px;
-    position: relative;
-    left: 60px;
-  }
-  .container-timeline {
-    top: 28%;
-    left: -125%;
-  }
-  .formacao {
-    width: max(100%);
-    top: 330%;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 223%;
+    left: -360px;
   }
 }
-@media (max-width: 360px) and (min-width:350px) and (max-height: 890px){
-  .intro-formacao {
-    padding: 0;
-    margin: -20px 0 0 0;
-    width: max(auto);
-    height: max(400px);
-  }
-  .container-fundo {
-    margin: 0 auto 0 -100px;
-    width: max(354px);
-    height: 490px;
-    border-radius: 0.5rem;
-    position: absolute;
-    left: 4.6rem;
-    z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0;
-    width: max(260px);
-    height: 350px;
-    position: relative;
-    left: 69px;
-  }
-  .container-timeline {
-    top: 28%;
-    left: -125%;
-  }
-  .formacao {
-    width: max(100%);
-    top: 330%;
-  }
-  .footer-formacao {
-    width: max(100%);
-    top: 223%;
-  }
-}
-@media (max-width: 360px) and (min-width:350px) and (max-height:1200px) and (min-heigth:880px){
-  .intro-formacao {
-    width: max(90%);
-  }
-  .container-fundo {
-    margin: -2px;
-    width: max(377px);
-    height: 490px;
-    border-radius: 0.4rem;
-    position: absolute;
-    left: -1.2rem;
-    z-index: 3;
-  }
-  .formacao {
-    top: 320%;
-  }
-  .footer-formacao {
-    top: 215%;
-  }
-}
-@media (max-width: 362px) and (min-width:361px){
-  .formacao {
-    top: 320%;
-  }
-  .footer-formacao {
-    top: 219%;
-  }
-}
-@media (max-width: 363px) and (min-width:362px){
-  .container-formacao {
-    margin: 85px auto 0 0;
-    width: max(270px);
-    height: 350px;
-    position: relative;
-    left: 69px;
-  }
-  .formacao {
-    top: 350%;
-  }
-  .footer-formacao {
-    width: max(22em);
-    top: 229%;
-  }
-}
-@media ( max-width:320px) and (min-width:100px){
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(88%);
-    padding: 1.3rem;
-    margin: -1px auto;
-    position: relative;
-    left: 0;
-    background: #010000;
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
+@media (max-width: 490px) {
   .intro-descricao {
-    margin: 50px auto 60px 5px;
-    width: max(80%);
-    position: absolute
-  }
-  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-  color: var(--preto-c3);
-  font-size: 2.7rem;/**/
-  text-indent: 1rem;
-  line-height: 3.5rem;
-  }
-  .sobre {
-    padding: 1.3rem;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(88%);
-    height: 350px;
-    gap: 10px;
-    background: #F7F7F7;
-    position: relative;
-    left: 0px;
-  }
-  .sobre .subtitulo {
-    width: max(13ch);
-    margin: 0 auto 0 5px;
-    color: var(--preto-c6);
-  }
-  .sobre--descricao {
-    padding: 0px;
-    width: max(100%);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c9);
-   font-size: 1.1rem;
-   font-weight:400
-  }
-  .fundo-section-2 {
-    width: max(102%);
-    margin: 50px auto;
-    height: 1400px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(250px);
-    position: relative;
-    top: 40px;
-    left: -2px;
-    word-wrap: break-word;
-    font-size: 2.5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(12ch);
-    top: 40px;
-    left: -50px;
-    font-size: 2.4rem;
-  }
-  .section-2-box .title-h2::after {
-    top: -50%;
-    left: -4%;
-    z-index: 2;
-  }
-  figure {
-    width: max(40%);
-  }
-  #perfil-2 {
-    width: 155%;
-    height: 65%;
-    position: relative;
-    top: 24%;
-    left: -10%;
+    margin: 120px -60px;
+  } 
+  .section-2-box h2 {
+    font-size: 2.8rem;
   }
   .competencia {
-    padding: 10px;
-    width: max(60%);
-    gap: 1.2rem;
-    margin-top: -9%;
-    margin-left: 4%;
-    position: relative;
-    justify-content: space-around;
+    margin: 0 1.25rem 0 0;
+    justify-self: center;
   }
-  .box-competencia {
-    width: min(250px);
+  .footer-copy {
+    width: 25ch;
+    margin:  auto auto auto 18px;
   }
-  .box-competencia::before {
-    left: -32px;
-    z-index: 2;
+  .container-formacao {
+    min-width: 287px;
+    height: 370px;
+    top: -1rem;
+    left: 1rem;
   }
-  .hobbies--section{
-    width: max(70%);
-    grid-template-columns: 1fr;
-    margin: 1470px auto;
-    left: 30px;
-    gap: 100px;
+  .container-experiencia-descricao{
+    top: -35%;
+    left: 45%;
   }
- 
-  .hobbies--descricao {
-    width: max(22ch);
-    margin: 0 auto 0 -40px;
-    color: var(--cinza-c1)
-  }
-  .hobbies--game, .hobbies--viagem{
-    width: max(200px);
-    margin: 0 auto 0 0;
-  }
-  .hobbies--title, .hobbies-title {
-    width: max(200px);
-    padding: 5px;
-    position: relative;
-    left: 0;
-  }
-  .hobbies--section h2 {
-    width: max(200px);
-    margin: -100px auto 0 -1px;
-    font-size: 3rem;
-  }
-  .footer {
-    width: max(8.2em);;
-    left: -34px;
-  }
-  .footer-contatiner{
-    width: max(30%);
-    margin: 90px auto 0 0;
-    padding: 5px;
-    gap: 80px;
-  }
-  .footer-descricao {
-    width: max(22ch);
-    line-height: 1.33;
-    margin: 0 0 0 16px;
-}
- /* formation page */
- .intro-formacao {
-  padding: 0;
-  margin: -20px 0 0 0;
-  width: max(auto);
-  height: max(400px);
-}
-.container-fundo {
-  margin: 0 auto 0 -100px;
-  width: max(344px);
-  height: 490px;
-  border-radius: .4rem;
-  position: absolute;
-  left: 1.9rem;
-  z-index: 3;
-}
-.container-formacao {
-  margin: 85px auto 0 0 ;
-  width: max(270px);
-  height: 350px;
-  position: relative;
-  left: 66px;
-}
-.container-formacao h1 {
-  font-size: 4rem;
-}
-.laptop-svg {
-  display: none;
-}
-.timeline, .container-timeline {
-  width: max(100%);
-}
-.container-experiencia {
-  padding: .9rem;
-  width: max(80%);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns:1fr;
-  gap: 100px;
-  position: static;
-}
-.competencia-container-experiencia {
-  width: max(8ch);
-  font-size: 3rem;
-}
-.container-experiencia h2{
-  margin: 0 auto;
-  width: max(9ch);
-  font-size: 3.5rem;
-  position: relative;
-  top: -13%;
-  left: 0;
-}
-.container-experiencia h2::before {
-  top: -20%;
-  left: 80%;
-  transform: rotate(90.1deg);
-}
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  padding: 0;
-  width: max(20em);
-  height: 1600px;
-}
-.container-timeline {
-  padding: 0;
-  margin: 0 auto;
-   top: 28%;
-  left: -134%;
-}
- /* date timeline */
- .date-left{
-  top: -84%;
-  left: 34px;
-}
-.date-left2{
-  top: 16%;
-  left: -77px;
   
 }
-.date { /*right*/
-  top: -84%;
-  left: -75px;
-}
-/* The descrition das times */
-.time-descricao {
-  top: 30px;
-  left: 40px;
-}
-.time-descricao-left, .time-descricao-left2 {
-  top: 30px;
-  left: 170px;
-}
 
-/* Place the container to the left */
-.left {
-  left: -7%;
-}
-/* Place the container to the right */
-.right {
-  left: 24%;
-}
-.left::before {
-  left: 125px;
-  transform: rotate(1deg);
-}
-.right::before {
-  left: 16px;
-}
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-.container {
-  padding: 9px 20px;
-  position: relative;
-  background: transparent;
-  width: 45%;
-  transition: 0.2s linear;
-}
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #101010;
-  top: 0;
-  bottom: 0;
-  left: 24%;
-  margin-left: -3px;
-}
-.container::after {
-  right: 75px;
-}
-.right .content p{
-  left: 1%;
-  width: max(18ch);
-}
-.left .content p{
-  left: 70%;
-  width: max(18ch);
-}
-.formacao {
-  width: max(99%);
-  height: 104em;
-  margin: 0 auto;
-  top: 420%;
-}
-.formacao-container{
-  padding: 1rem;
-  grid-template-columns: 1fr;
-  width: max(80%); 
-  margin: 250px 0 0 20px;
-}
-.faculdade {
-  /* flex: 1; */
-  background: #000000;
-  padding: 1.3rem;
-  margin: 0 0 60px 0;
-  border-radius: 0.4rem;
-  width: 230px;
-  height: 200px;
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  gap: 11px;
-}
-.faculdade-lista {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  position: relative;
-  left: -10%;
-}
-.formacao-container .subtitulo {
-  transform: rotate(0deg);
-  font-size: 3rem;
-  position: relative;
-  top: 30%;
-  left: -5%;
-}
-.formacao-container::after {
-  top: 7%;
-  left: 3%;
-}
-.formacao-texto  {
-  width: max(20ch);
-}
-.curso-span {
-  position: relative;
-  left: 67%;
-  bottom: -17.4%;
-}
-.footer-formacao {
-  padding: 0px ;
-  width: max(100%);
-  height: max(30em);
-  left: 0;
-  top: 274%;
-}
-.footer-copy {
-  width:  max(20ch);
-  margin: 0 auto 0 50px;
-}
-.icone {
-top: -80px;
-left: -330px;
-}
-}
-@media screen and (max-width: 190px) {
-  .fundo {
-    display: none;
-  }
-  .intro {
-    width: max(75%);
-    padding: 1.3rem;
-    margin: -1px auto;
-    position: relative;
-    left: 0;
-    background: #010000;
-    z-index: -1;
-  } 
-  .intro img{
-    display: none;
-  }
+@media (max-width: 390px){
   .intro-descricao {
-    margin: 50px auto 70px -3px;
-    width: max(155px);
-    position: absolute
-  }
-  .intro h1 { /* usar como refencia e mudar os outros breakpointes */
-  color: var(--preto-c3);
-  font-size: 1.5rem;/**/
-  text-indent: 1rem;
-  line-height: 2.5rem;
-  }
-  .intro h1::before {
-    content: " ";
-    display: block;
-    width: 25px;
-    height: 5px;
-    background: url("../img/icones/det1-topo.svg") no-repeat center;
-    position: relative;
-    left:0px;
-    z-index: 2;
-    ;
-  }
-  .sobre {
-    padding: 1.3rem;
-    margin: 5px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: max(90%);
-    height: 350px;
-    gap: 10px;
-    background: #F7F7F7;
-    position: relative;
-    left: 0px;
-  }
-  .sobre .subtitulo {
-    width: max(150px);
-    font-size: 1rem;
-    margin: 40px auto 0 5px;
-    color: var(--preto-c6);
+    margin: 120px -70px;
+  } 
+  #perfil-2 {
+    width: 74%;
   }
   .sobre--descricao {
-    padding: 0px;
-    width: max(85%);
-    display: grid;
-   justify-items: start;
-   grid-column: 1 / 7;
-   color: var(--preto-c9);
-   font-size: .8rem;
-   font-weight:400
+    width: 24ch;
   }
-  .fundo-section-2 {
-    width: max(100%);
-    margin: 50px auto;
-    height: 1150px;
-  }
-  .section-2-box{
-    padding: 0 0 0 0;
-    padding-top: 20px;
-    width: max(250px);
-    position: relative;
-    top: -40px;
-    left: -2px;
-    word-wrap: break-word;
-    font-size: .5rem;
-  }
-  .section-2-box .title-h2{
-    padding: -20px 0 0 0;
-    width: max(12ch);
-    top: 150px;
-    left: -30px;
-    font-size: 1.2rem;
-  }
-  .section-2-box .title-h2::after {
-    content: url(/img/icones/det3-watch.svg);
-    top: -55%;
-    left: -1%;
-    z-index: 2;
-  }
-  figure {
-    width: max(30%);
-  }
-  #perfil-2 {
-    width: 165%;
-    height: 65%;
-    position: relative;
-    top: 70%;
-    left: -20%;
+  .section-2-box h2 {
+    margin: 2rem 0 0 0;
+    font-size: 2.5rem;
   }
   .competencia {
-    padding: 10px;
-    width: max(50%);
-    gap: 1.2rem;
-    margin-top: 20%;
-    margin-left: 6px;
-    font-size: .6rem;
-    position: relative;
-    justify-content: space-around;
-  }
-  .box-competencia {
-    width: min(100px);
-    font-size: .5rem;
-  }
-  .title {
-  font-size: .8rem;
-  }
-  .descricao {
-  font-size: .6rem;
-  }
-  .box-competencia::before {
-    width: 5px;
-    height: 17px;
-    left: 2%;
-    z-index: 2;
-  }
-  .hobbies--section{
-    width: max(70%);
-    grid-template-columns: 1fr;
-    margin: 1090px auto;
-    left: 30px;
-    gap: 50px;
-  }
- 
-  .hobbies-title::after {
-    content: url(/img/icones/praia-watch.svg);
-    position: relative;
-    left: -12px;
-  }
-  .hobbies--title::after {
-    content: url(/img/icones/game-watch.svg);
-    position: relative;
-    left: -12px;
-  }
-  .hobbies--descricao {
-    width: max(20ch);
-    margin: -50px auto 0 -30px;
-    color: var(--cinza-c1);
-    font-size: .8rem;
-    gap: 50px;
+    margin: 0;
+    justify-self: center;
   }
   .hobbies--game{
-    width: max(200px);
-    margin: 120px auto 0 0;
+    margin: 0;
+    left: 8%;
+    width: 300px;
   }
   .hobbies--title, .hobbies-title {
-    width: max(200px);
-    padding: 0;
-    position: relative;
-    left: 0;
-    font-size: 1.3rem;
+    margin-left: 90px;
   }
-  .hobbies--section h2 {
-    width: max(200px);
-    margin: 0 auto 0 1px;
-    color: var(--cinza-c0);
-    font-size: 1.5rem;
-  }  
-  .footer {
-    margin-top: 1790px;
-    width: max(20.4em);
-    left: 2px;
-  }
-  .footer-contatiner{
-    width: max(30%);
-    margin: 20px auto 0 0;
-    padding: 5px;
-    gap: 80px;
-  }
-  .footer::after {
-    content: url(/img/icones/detalhe-watch.svg);
-    display: block;
-    position: absolute;
-    top: -35px;
-    left: 2px;
+  .hobbies--descricao{
+    margin-left: -5px;
   }
   .footer-descricao {
-    width: max(22ch);
-    line-height: 1.33;
-    font-size: .8rem;
-    margin: 0 0 0 16px;
+    margin-right: -2.25rem;
+    grid-column: 2 / 2;
+    text-align: center;
+    width: 25ch;
   }
-   /* formation page */
-   .intro-formacao {
-    padding: 0;
-    margin: -20px 0 0 0;
-    width: max(auto);
-    height: max(400px);
+  .footer::after {
+    top: 235em;
+    left: 20px;
+  }
+  .footer-copy {
+    width: 24ch;
+  }
+  .container-fundo {
+    width: 350px;
+  }
+  .container-formacao {
+    margin: 85px auto 0 0;
+    width: 269px;
+    height: 360px;
+    position: relative;
+    left: 64px;
+  }
+  .formacao-container {
+    padding: .5rem;
+  }
+  .container-experiencia-descricao{
+    top: -35%;
+    left: 50%;
+  }
+  .timeline {
+    left: -45%;
+  }
+  .footer-formacao::after {
+    top:251em;
+  }
+}
+@media (max-width: 390px) and (max-height: 800px ){
+  .container-fundo {
+    width:366px;
+  }
+  .container-experiencia-descricao{
+    top: -35%;
+    left: 50%;
+  }
+  .container-formacao h1 {
+    margin-top: 0px;
+    padding: 2.5rem; 
+    font-size: 5rem;
+  }
+  .container-fundo {
+    margin-left: -40px;
+  }
+  .container-formacao {
+    margin-left: 0;
+    margin-right: 0;
+    width: 300px;
+    height: 420px;
+    left: 2.9rem;
+  }
+  .container-experiencia-descricao {
+    width: 12ch;
+  }
+  .timeline {
+    left: -40%;
+  }
+}
+@media (max-width: 380px){
+  .intro-descricao {
+  margin: 120px -80px;
+}
+}
+@media (max-width: 375px) and (max-height: 812px ){
+  .container-fundo {
+    width: 352px;
+  }
+  .container-formacao {
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 287px;
+    height: 415px;
+    left: 2.1rem;
+  }
+  .container-experiencia-descricao {
+    width: 12ch;
+  }
+  .timeline {
+    left: -42%;
+  }
+}
+@media (max-width: 360px){
+  .intro-descricao {
+    margin: 120px -85px;
+  }
+  .timeline {
+    max-width: 500px;
+  }
+  .container-fundo {
+    width: 336px;
+  }
+  .container-formacao {
+    margin-left: 0;
+    margin-right: 0;
+    width: 299px;
+    left: 1.2rem;
+  }
+  .container-experiencia-descricao {
+    width: 12ch;
+  }
+  .timeline {
+    left: -43.9%;
+  }
+} 
+@media (max-width:320px) and (min-width:100px){
+
+  .intro-formacao {
+    padding: .5rem;
+    margin: 0;
+    max-width: 90%;
   }
   .container-fundo {
     margin: 0 auto 0 -100px;
@@ -6397,48 +2325,268 @@ left: -330px;
     position: absolute;
     left: 1.9rem;
     z-index: 3;
-  }
-  .container-formacao {
-    margin: 85px auto 0 0 ;
-    width: max(270px);
-    height: 350px;
-    position: relative;
-    left: 66px;
-  }
-  .container-formacao h1 {
-    font-size: 4rem;
-  }
-  .laptop-svg {
-    display: none;
-  }
-  .timeline, .container-timeline {
-    width: max(100%);
-  }
+  } 
   .container-experiencia {
-    padding: .9rem;
-    width: max(80%);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 100px;
-    position: static;
+    width: 300px;
   }
-  .competencia-container-experiencia {
-    width: max(8ch);
-    font-size: 3rem;
-  }
-  .container-experiencia h2{
-    margin: 0 auto;
-    width: max(9ch);
-    font-size: 3.5rem;
-    position: relative;
-    top: -13%;
-    left: 0;
+  .container-experiencia-descricao {
+  top: -50%;
+  left: 52%;
+  font-size: 2.1rem;
   }
   .container-experiencia h2::before {
     top: -20%;
     left: 80%;
     transform: rotate(90.1deg);
+  }
+/* The actual timeline (the vertical ruler) */
+  .timeline {
+  top: 5% ;
+  left: -47%;
+  width: 104%;
+  }
+  .right .content p {
+    left: 1%;
+    width: max(15ch);
+  }
+ 
+  .left .content p {
+    left: 75%;
+    width: calc(15ch);
+  }
+  .faculdade {
+    width: 200px;
+  }
+  .cursos {
+    width: 20ch;
+  }
+  .footer-contatiner {
+    margin-right: -20px;
+    gap: 0px;
+  }
+  .footer-descricao{
+    max-width: 18ch;
+  }
+}
+
+
+@media screen and (max-width: 190px) {
+    .fundo {
+      display: none;
+    }
+    .intro {
+      padding: 1.3rem;
+      margin: -1px auto;
+      background: #010000;
+      z-index: -1;
+    } 
+    .intro img{
+      display: none;
+    }
+    .intro-descricao {
+     margin: 60px -94.5px;
+     text-align: center;
+     width: 200px;
+    }
+    .intro h1 { /* usar como refencia e mudar os outros breakpointes */
+    color: var(--preto-c3);
+    font-size: 1.5rem;/**/
+    text-indent: 1rem;
+    line-height: 2.5rem;
+    }
+    .intro h1::before {
+      content: " ";
+      display: block;
+      width: 25px;
+      height: 5px;
+      background: url("../img/icones/det1-topo.svg") no-repeat center;
+      position: relative;
+      left:0px;
+      z-index: 2;
+      ;
+    }
+    .sobre {
+      padding: 1.3rem;
+      margin: 5px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: max(90%);
+      height: 350px;
+      gap: 10px;
+      background: #F7F7F7;
+      position: relative;
+      left: 0px;
+    }
+    .sobre .subtitulo {
+      width: max(150px);
+      font-size: 1rem;
+      margin: 40px auto 0 5px;
+      color: var(--preto-c6);
+    }
+    .sobre--descricao {
+      padding: 0px;
+      width: max(85%);
+      display: grid;
+     justify-items: start;
+     grid-column: 1 / 7;
+     color: var(--preto-c9);
+     font-size: .8rem;
+     font-weight:400
+    }
+    .fundo-section-2 {
+      width: max(100%);
+      margin: 50px auto;
+      height: 1190px;
+    }
+    .section-2-box{
+      padding: 0 0 0 0;
+      padding-top: 20px;
+      width: max(250px);
+      position: relative;
+      top: -40px;
+      left: -2px;
+      word-wrap: break-word;
+      font-size: .5rem;
+    }
+    .section-2-box .title-h2{
+      padding: -20px 0 0 0;
+      width: max(12ch);
+      top: 50px;
+      left: -30px;
+      font-size: 1.2rem;
+    }
+    .section-2-box .title-h2::after {
+      content: url(/img/icones/det3-watch.svg);
+      top: 20%;
+      left: -1%;
+      z-index: 2;
+    }
+    figure {
+      width: max(30%);
+    }
+    #perfil-2 {
+      margin: 80px 60px 0 -80px;
+      width: 165%;
+      height: 150px;
+
+    }
+    .competencia {
+      padding: 10px;
+      width: max(50%);
+      gap: 1.2rem;
+      margin-top: -10px;
+      margin-right: 95px;
+      font-size: .6rem;
+    
+    }
+    .box-competencia {
+      width: min(100px);
+      font-size: .5rem;
+    }
+    .title {
+    font-size: .8rem;
+    }
+    .descricao {
+    font-size: .6rem;
+    }
+    .box-competencia::before {
+      width: 5px;
+      height: 17px;
+      left: 2%;
+      z-index: 2;
+    }
+    .hobbies--section{
+      margin: 12.5rem auto -30.5rem auto;
+      width: 70%;
+      grid-template-columns: 1fr;
+    }
+   
+    .hobbies-title::after {
+      content: url(/img/icones/praia-watch.svg);
+      position: relative;
+      left: -12px;
+    }
+    .hobbies--title::after {
+      content: url(/img/icones/game-watch.svg);
+      position: relative;
+      left: -12px;
+    }
+
+    .hobbies--descricao, .hobbies-descricao-viagem{
+      width: max(20ch);
+      margin: -50px 55px;
+      color: var(--cinza-c1);
+      font-size: .8rem;
+      gap: 50px;
+    }
+    .hobbies-descricao-viagem{
+      margin: -100px 55px;
+    }
+    .hobbies--game{
+      margin: 60px auto;
+    }
+    .hobbies--title, .hobbies-title {
+      width: max(200px);
+      padding: 0;
+      position: relative;
+      left: 0;
+      font-size: 1.3rem;
+    }
+    .hobbies--section h2 {
+      margin: 0 auto 0 1px;
+      color: var(--cinza-c0);
+      font-size: 1.5rem;
+    }  
+    .footer {
+      margin-top: 30em;
+      width: max(20.4em);
+      left: 2px;
+    }
+    .footer-contatiner{
+      margin: 0 auto 0 -30px;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      width: max(30%);
+      padding: 5px;
+      gap: 0;
+    }
+    .footer::after {
+      content: url(/img/icones/detalhe-watch.svg);
+      display: block;
+      position: absolute;
+      top: 180rem;
+      left: .5rem;
+    }
+    .footer-descricao {
+      width: max(22ch);
+      line-height: 1.33;
+      font-size: .8rem;
+      margin: 0 0 0 16px;
+    }
+    .facebook {
+      display: block;
+      content: url(../img/icones/icone-facebook\ -\ watch.svg);
+      width: 18px;
+      height: 22px;
+    }
+    .github {
+      display: block;
+      content: url(../img/icones/icone-git-watch.svg);
+      width: 18px;
+      height: 22px;
+    }
+    .linkdin {
+      display: block;
+      content: url(../img/icones/icone-linkdin-watch.svg);
+      width: 18px;
+      height: 22px;
+    }
+  .timeline, .container-timeline {
+    width: max(100%);
+  }
+  .footer-copy {
+    font-size: .8rem;
   }
   /* The actual timeline (the vertical ruler) */
   .timeline {
@@ -6523,93 +2671,5 @@ left: -330px;
     left: 70%;
     width: max(18ch);
   }
-  .formacao {
-    width: max(99%);
-    height: 104em;
-    margin: 0 auto;
-    top: 420%;
-  }
-  .formacao-container{
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    width: max(80%); 
-    margin: 250px 0 0 20px;
-  }
-  .faculdade {
-    /* flex: 1; */
-    background: #000000;
-    padding: 1.3rem;
-    margin: 0 0 60px 0;
-    border-radius: 0.4rem;
-    width: 230px;
-    height: 200px;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    gap: 11px;
-  }
-  .faculdade-lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: relative;
-    left: -10%;
-  }
-  .formacao-container .subtitulo {
-    transform: rotate(0deg);
-    font-size: 3rem;
-    position: relative;
-    top: 30%;
-    left: -5%;
-  }
-  .formacao-container::after {
-    top: 7%;
-    left: 3%;
-  }
-  .formacao-texto  {
-    width: max(20ch);
-  }
-  .curso-span {
-    position: relative;
-    left: 67%;
-    bottom: -17.4%;
-  }
-  .footer-formacao {
-    padding: 0px ;
-    width: max(100%);
-    height: max(20em);
-    left: 0;
-    top: 274%;
-  }
-  .footer-copy {
-    width:  max(17ch);
-    margin: -120px auto 0 0px;
-    font-size: 1rem;
-  }
-  .icone {
-  top: -120px;
-  left: -230px;
-  }
-  .linkdin{
-    content: " ";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url(../img/icones/icone-linkdin-watch.svg) no-repeat center;
-  }
-  .facebook {
-    content: " ";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url(../img/icones/icone-facebook\ -\ watch.svg) no-repeat center;
-  }
-  .github {
-    content: " ";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url(../img/icones/icone-git-watch.svg) no-repeat center;
-  }
-  }
-  
+
+} 
