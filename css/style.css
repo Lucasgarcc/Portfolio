@@ -1603,6 +1603,9 @@ a:hover:nth-child(n) {
     right: 26rem;
     bottom: 20rem;
   }
+  .hobbies--game, .hobbies--viagem {
+    width: 25ch;
+  }
  .decoracao2, .intro img {
     display: none;
   }
