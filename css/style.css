@@ -2645,7 +2645,7 @@ a:hover:nth-child(n) {
     padding-left: 0.1rem;
   }
   .box-competencia::before {
-    left: 5px;
+    left: -3px;
   }
   .hobbies--section {
     width: 300px;
