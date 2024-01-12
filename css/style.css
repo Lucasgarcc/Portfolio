@@ -2670,10 +2670,10 @@ a:hover:nth-child(n) {
   .container-formacao {
     margin: 85px 0 0 0;
     padding: .6rem;
-    width: 300px;
+    width: 350px;
     height: 400px;
     position: relative;
-    left: 60px;
+    left: 10px;
   }
   .formacao-container {
     padding: .5rem;
