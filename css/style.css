@@ -1955,7 +1955,7 @@ a:hover:nth-child(n) {
 
 @media(max-width: 797px) {
   .footer::after {
-    top: 258em;
+    top: 218em;
   }
 }
 
@@ -2068,7 +2068,7 @@ a:hover:nth-child(n) {
     content: url(/img/icones/detalhe-mobile.svg);
     display: block;
     position: absolute;
-    top: 237em;
+    top: 249em;
     left: 20px;
   }
   .footer-contatiner {
@@ -2092,9 +2092,6 @@ a:hover:nth-child(n) {
     grid-column: -1;
     align-items: center;
     margin-left: 25px;
-  }
-  .footer::after {
-    top: 242em;
   }
   .intro  {
     height: 520px ;
@@ -2283,9 +2280,6 @@ a:hover:nth-child(n) {
     font-size: 2.6rem;
     width: 13ch;
   }
-  .footer::after {
-    top: 265em;
-  }
 }
 @media  (max-width: 500px){
   .fundo {
@@ -2352,7 +2346,7 @@ a:hover:nth-child(n) {
   .hobbies--game {
     margin: 0 auto 0 -20px;
     left: 14%;
-    width: 350px;
+    width: 340px;
   }
   .hobbies--section h2 {
     color: var(--cinza-c0);
@@ -2428,7 +2422,7 @@ a:hover:nth-child(n) {
   }
   .container-fundo {
     margin: -35px auto 0 -40px;
-    max-width: 404px;
+    max-width: 420px;
     height: 550px;
     border-radius: .5rem;
     position: absolute;
@@ -2587,14 +2581,13 @@ a:hover:nth-child(n) {
 }
 @media (max-width: 490px) {
   .intro-descricao {
-    margin: 120px -60px;
+    margin: 50px -60px;
   } 
   .section-2-box h2 {
     font-size: 2.8rem;
   }
   .competencia {
-    margin: 0 1.25rem 0 0;
-    justify-self: center;
+    margin: 0 auto 0 20px ;
   }
   .footer-copy {
     width: 25ch;
@@ -2608,7 +2601,7 @@ a:hover:nth-child(n) {
   }
   .container-experiencia-descricao{
     top: -35%;
-    left: 55%;
+    left: 52%;
   }
   .timeline {
     left: -48%;
@@ -2623,15 +2616,16 @@ a:hover:nth-child(n) {
     margin:  0 0 40px -40px;
   }
   .footer::after {
-    top: 253em;
+    top: 235em;
   }
-
-  
+  .footer-formacao::after {
+    top:253em;
+  }
 }
 
-@media (max-width: 390px){
+@media (max-width: 393px){
   .intro-descricao {
-    margin: 120px -70px;
+    margin: 40px -70px;
   } 
   #perfil-2 {
     width: 74%;
@@ -2644,7 +2638,6 @@ a:hover:nth-child(n) {
     font-size: 2.5rem;
   }
   .competencia {
-    margin: 0;
     justify-self: center;
   }
   .hobbies--game{
@@ -2672,11 +2665,12 @@ a:hover:nth-child(n) {
     width: 24ch;
   }
   .container-fundo {
-    width: 385px;
+    width: 98%;
   }
   .container-formacao {
     margin: 85px auto 0 0;
-    width: 269px;
+    padding: .5rem;
+    width: 300px;
     height: 400px;
     position: relative;
     left: 45px;
@@ -2686,7 +2680,7 @@ a:hover:nth-child(n) {
   }
   .container-experiencia-descricao{
     top: -35%;
-    left: 50%;
+    left: 60%;
   }
   .timeline {
     left: -50%;
@@ -2735,8 +2729,11 @@ a:hover:nth-child(n) {
 }
 
 @media (max-width: 360px){
+  .competencia {
+    margin: 0 auto 0 0px ;
+  }
   .intro-descricao {
-    margin: 120px -85px;
+    margin: 50px -85px;
   }
   .container-fundo {
     width: 352px;
@@ -2755,6 +2752,12 @@ a:hover:nth-child(n) {
   }
   .faculdade {
     margin:  0 0 40px -60px;
+  }
+  .footer::after {
+    top: 237rem;
+  }
+  .footer-formacao::after {
+    top:252.5em;
   }
 
 } 
