@@ -2637,8 +2637,9 @@ a:hover:nth-child(n) {
     margin: 2rem 0 0 0;
     font-size: 2.5rem;
   }
+
   .competencia {
-    justify-self: center;
+    margin: 0 auto 0 10px ;
   }
   .hobbies--game{
     margin: 0;
