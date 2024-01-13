@@ -2620,7 +2620,102 @@ a:hover:nth-child(n) {
   }
 }
 
+@media (max-width: 393px){
+  .intro-descricao {
+    margin: 40px -70px;
+  } 
+  #perfil-2 {
+    width: 74%;
+  }
+  .sobre {
+    margin:0;
+    padding: 1rem 0 1rem 0;
+    width: 90%;
+  }
+  .sobre--descricao, .subtitulo{
+    padding: 2rem 0 2rem 0;
+    display: grid;
+    grid-column: 4 ;
+    width: 22ch;
+  }
+  .subtitulo {
+    padding: 0;
+    width: 2ch;
+  }
+  .section-2-box h2 {
+    margin: 2rem 0 0 0;
+    font-size: 2.5rem;
+  }
+  .competencia {
+    margin: 0 0 0 5px ;
+    padding-left: 0rem;
+  }
+  .box-competencia::before {
+    left: -3px;
+  }
+  .hobbies--section {
+    width: 300px;
+  }
+  .hobbies--game{
+    margin: 0;
+    left: 8%;
+    width: 300px;
+  }
+  .hobbies--section h2 {
+    margin: 5rem auto 0 1rem;
+    width: 300px;
+  }
+  .hobbies--title, .hobbies-title {
+    margin-left: 90px;
+  }
+  .hobbies--descricao{
+    margin-left: -5px;
+  }
+  .hobbies-descricao-viagem {
+    width: 26ch;
+  }
+  .footer-descricao {
+    margin-right: -2.25rem;
+    grid-column: 2 / 2;
+    text-align: center;
+    width: 25ch;
+  }
 
+  .footer::after {
+    top: 239em;
+    left: 20px;
+  }
+  .footer-copy {
+    width: 24ch;
+  }
+  .container-fundo {
+    width: 98%;
+  }
+  .container-formacao {
+    margin: 85px 0 0 0;
+    padding: .6rem;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 10px;
+  }
+  .formacao-container {
+    padding: .5rem;
+  }
+  .container-experiencia-descricao{
+    top: -35%;
+    left: 56%;
+  }
+  .timeline {
+    left: -57%;
+  }
+  .faculdade {
+    margin:  0 0 40px -40px;
+  }
+  .footer-formacao::after {
+    top:252em;
+  }
+}
 @media (max-width: 390px) and (min-height: 820px ){
   .container-fundo {
     width:347px;
