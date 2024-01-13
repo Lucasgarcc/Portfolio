@@ -2628,11 +2628,19 @@ a:hover:nth-child(n) {
     width: 74%;
   }
   .sobre {
-    padding-left: 2.7rem 0;
+    margin:0;
+    padding: 1rem 0 1rem 0;
     width: 90%;
   }
-  .sobre--descricao {
-    width: 24ch;
+  .sobre--descricao, .subtitulo{
+    padding: 2rem 0 2rem 0;
+    display: grid;
+    grid-column: 4 ;
+    width: 22ch;
+  }
+  .subtitulo {
+    padding: 0;
+    width: 2ch;
   }
   .section-2-box h2 {
     margin: 2rem 0 0 0;
