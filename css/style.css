@@ -1773,9 +1773,6 @@ a:hover:nth-child(n) {
   .decoracao2 {
     display: none;
   }
-  .sobre {
-    justify-content: initial;
-  }
  .sobre--descricao {
     margin: 0 auto;
     padding-right: 0 ;
@@ -2631,7 +2628,8 @@ a:hover:nth-child(n) {
     width: 74%;
   }
   .sobre {
-    padding: 2.7rem 2rem;
+    padding-left: 2.7rem 0;
+    width: 90%;
   }
   .sobre--descricao {
     width: 24ch;
@@ -2660,6 +2658,9 @@ a:hover:nth-child(n) {
   }
   .hobbies--descricao{
     margin-left: -5px;
+  }
+  .hobbies-descricao-viagem {
+    width: 26ch;
   }
   .footer-descricao {
     margin-right: -2.25rem;
