@@ -2647,8 +2647,8 @@ a:hover:nth-child(n) {
     font-size: 2.5rem;
   }
   .competencia {
-    margin: 0 auto 0 20px ;
-    padding-left: 0.1rem;
+    margin: 0 0 0 5px ;
+    padding-left: 0rem;
   }
   .box-competencia::before {
     left: -3px;
@@ -2660,6 +2660,9 @@ a:hover:nth-child(n) {
     margin: 0;
     left: 8%;
     width: 300px;
+  }
+  .hobbies--section h2 {
+    margin: 5rem auto 0 1rem;
   }
   .hobbies--title, .hobbies-title {
     margin-left: 90px;
@@ -2675,6 +2678,9 @@ a:hover:nth-child(n) {
     grid-column: 2 / 2;
     text-align: center;
     width: 25ch;
+  }
+  .footer {
+    width: 73.1%;
   }
   .footer::after {
     top: 235em;
