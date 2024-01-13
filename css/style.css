@@ -2663,6 +2663,7 @@ a:hover:nth-child(n) {
   }
   .hobbies--section h2 {
     margin: 5rem auto 0 1rem;
+    width: 300px;
   }
   .hobbies--title, .hobbies-title {
     margin-left: 90px;
@@ -2683,7 +2684,7 @@ a:hover:nth-child(n) {
     width: 73.1%;
   }
   .footer::after {
-    top: 235em;
+    top: 239em;
     left: 20px;
   }
   .footer-copy {
