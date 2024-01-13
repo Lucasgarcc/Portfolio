@@ -2680,9 +2680,7 @@ a:hover:nth-child(n) {
     text-align: center;
     width: 25ch;
   }
-  .footer {
-    width: 73.3%;
-  }
+
   .footer::after {
     top: 239em;
     left: 20px;
