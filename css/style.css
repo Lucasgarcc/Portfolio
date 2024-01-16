@@ -1723,7 +1723,6 @@ a:hover:nth-child(n) {
     margin-left: 120px;
     width: max(75%);
   }
-
   .hobbies--section{
     margin: 30% auto 0 20%;
     width: max(70%) ;
@@ -1747,6 +1746,10 @@ a:hover:nth-child(n) {
   }
   .footer-formacao::after {
     top: 228em;
+  }
+  .cards > h2 {
+    margin: 0 auto 2.5rem 5.5rem;
+    padding: 3.25rem 0 0 0;
   }
 }
 @media screen and (max-width: 1170px){
@@ -1883,6 +1886,9 @@ a:hover:nth-child(n) {
   .curso-span {
     left: 360px;
   }
+  .avatar {
+    left: 55%;
+  }
 }
 @media (max-width: 1024px) and (min-width: 1008px) { 
   .fundo {
@@ -2003,6 +2009,24 @@ a:hover:nth-child(n) {
   .footer-formacao::after {
     top: 241em;
   }
+  .avatar {
+    display: none;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 7.5rem;
+  }
+  .cards > h2 {
+    margin: 0 auto 2.5rem 2rem;
+    padding: 3.25rem 0 0 0;
+    font: 600 3.4rem/1.125 "Poppins", sans-serif;
+    color: var(--preto-c3);
+    text-transform: uppercase;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
 }
 @media (max-width: 990px){
   #perfil-2 {
@@ -2048,7 +2072,30 @@ a:hover:nth-child(n) {
   .footer::after {
     top: 173em;
   }
-}@media (max-width:899px){/* concluido */
+  .projetos-lista p {
+    width: 80ch;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 7.5rem;
+  }
+  .cards > h2 {
+    margin: 0 auto 2.5rem 2rem;
+    padding: 3.25rem 0 0 0;
+  }
+  .card {
+    position: relative;
+    width: 130px;
+    height: 220px;
+  }
+  .card::before {
+    width: 160px;
+    height: 230px;
+  }
+}
+@media (max-width:899px){/* concluido */
   .intro {
     margin: 50px;
   }
@@ -2257,20 +2304,100 @@ a:hover:nth-child(n) {
     top: 256em;
   }
 }
+
 @media (max-width: 870px) {
   .decoracao {
     right: 22em;
     bottom: 16rem;
   }
+  .projetos-lista p {
+    width: 70ch;
+  }
 } 
+@media (max-width: 800px) {
+  .avatar {
+    display: none;
+  }  
+}
 @media(max-width: 797px) {
   .footer::after {
     top: 218em;
   }
+  .projetos-container-fundo {
+    max-width: 300px;
+  }
+  .container-projetos {
+    min-width: 500px;
+    height: 350px;
+  }
+  .projetos-lista p {
+    width: 59ch;
+    line-height: 1.125;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 7.5rem;
+  }
+  .cards > h2 {
+    margin: 0 auto 2.5rem 2rem;
+    padding: 3.25rem 0 0 0;
+  }
+  .card {
+    position: relative;
+    width: 120px;
+    height: 200px;
+  }
+  .card::before {
+    width: 140px;
+    height: 190px;
+  }
+  .card::after {
+    transform: translate3d(0, 0, 0) scale(0.95);
 }
-
-
-@media  (max-width: 600px){
+  .card img {
+    width: 110px;
+  }
+  .card-js {
+    height: 220px;
+    position: relative;
+    top: 17px;
+}
+}
+@media (max-width: 751px) {
+  .projetos-lista p {
+    width: 59ch;
+    line-height: 1.125;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 7.5rem;
+  }
+  .card {
+    position: relative;
+    width: 110px;
+    height: 180px;
+  }
+  .card::before {
+    width: 120px;
+    height: 170px;
+  }
+  .card::after {
+    transform: translate3d(0, 0, 0) scale(0.95);
+}
+  .card img {
+    width: 110px;
+    position: relative;
+    top: 20px;
+  }
+  .card-js {
+    height: 220px;
+  }
+}
+@media  (max-width: 660px){
   .fundo {
     display: none;
     left: 2%;
@@ -2566,6 +2693,46 @@ a:hover:nth-child(n) {
     top: -80px;
     left: -360px;
   }
+  .projetos-container-fundo {
+    max-width: 300px;
+  }
+  .container-projetos {
+    min-width: 400px;
+    height: 350px;
+  }
+  .projetos-lista p {
+    width: 47ch;
+    line-height: 1.125;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 7.5rem;
+  }
+  .card {
+    position: relative;
+    width: 90px;
+    height: 180px;
+  }
+  .cards-container {
+    gap: 1.5rem;
+  }
+  .card::before {
+    width: 100px;
+    height: 140px;
+  }
+  .card::after {
+    transform: translate3d(0, 0, 0) scale(0.95);
+}
+  .card img {
+    width: 90px;
+    position: relative;
+    top: 20px;
+  }
+  .card-js {
+    height: 220px;
+  }
 }
 /* IOS Swift simple and pro/ androids */
 @media (max-width: 580px) {
@@ -2590,6 +2757,48 @@ a:hover:nth-child(n) {
     font-size: 2.6rem;
     width: 13ch;
   }
+  .projetos-container-fundo {
+    max-width: 300px;
+  }
+  .container-projetos {
+    min-width: 350px;
+    height: 350px;
+  }
+  .projetos-lista p {
+    width: 44ch;
+    line-height: 1.125;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 5.5rem;
+  }
+  .card {
+    position: relative;
+    width: 70px;
+    height: 150px;
+  }
+  .cards-container {
+    gap: 1.5rem;
+  }
+  .card::before {
+    width: 90px;
+    height: 100px;
+  }
+  .card p:last-child {
+    word-wrap: break-word;
+  }
+  .card::after {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  .card-js {
+    margin-top: 200px;
+    height: 220px;
+  }
+  .card img {
+    width: 70px;
+    position: relative;
+    top: 20px;
+  }
+  
 }
 @media  (max-width: 500px){
   .fundo {
@@ -2888,17 +3097,66 @@ a:hover:nth-child(n) {
     top: -80px;
     left: -360px;
   }
+  .projetos-container-fundo {
+    max-width: 300px;
+  }
+  .container-projetos {
+    min-width: 320px;
+    height: 350px;
+  }
+  .container-projetos > h1 {
+    padding: 2rem;
+    margin: 15px auto auto -30px;
+    font-size: 5rem;
+  }
+  .projetos-lista h2 {
+    font-size: 2.8rem;
+    width: 20ch;
+  }
+  .projetos-lista p {
+    width: 40ch;
+    line-height: 1.125;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 7.5rem;
+  }
+  .card {
+    margin-bottom: 40px;
+    position: relative;
+    width: 90px;
+    height: 180px;
+  }
+  .cards-container {
+    gap: 1.5rem;
+  }
+  .card::before {
+    width: 100px;
+    height: 140px;
+  }
+  .card img {
+    width: 90px;
+    position: relative;
+    top: 20px;
+  }
+  .card-js {
+    height: 220px;
+  }
+  .footer-projetos::after {
+    top: 162em;
+    left: 30px;
+  }
 }
 @media (max-width: 490px) {
   .wrapper {
     top: 340%;
   }
-  
   .circle {
     width: 15px;
     height: 15px;
   }
-
   .intro-descricao {
     margin: 50px -60px;
   } 
@@ -2954,6 +3212,78 @@ a:hover:nth-child(n) {
   }
   .footer-formacao::after {
     top:253em;
+  }
+  .projetos-container-fundo {
+    max-width: 300px;
+    height: 540px;
+  }
+  .container-projetos {
+    min-width: 200px;
+    height: 390px;
+    left: 2.4rem;
+  }
+  .container-projetos > h1 {
+    padding: 2rem;
+    margin: 15px auto auto -30px;
+    font-size: 4rem;
+  }
+  .projetos-lista h2 {
+  font: 600 2.8rem/1.125 "Poppins", sans-serif;
+  }
+  .projetos-lista p {
+    width: 25ch;
+    line-height: 1.225;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 1rem;
+    font-size: 2rem;
+  }
+  .projetos-lista h2, .objetivo , .cards > h2 {
+    font-size: 2rem;
+  }
+  .objetivo  li {
+    width: 21.5ch;
+    font-weight: 600;
+  }
+  .cards > h2 {
+    margin: 0 auto 2.5rem 4rem;
+    font-size: 2rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 5.5rem;
+  }
+  .card {
+    position: relative;
+    height: 120px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card::before {
+    width: 80px;
+    height: 100px;
+  }
+  .card p:last-child {
+    word-wrap: break-word;
+    margin-top: 5px;
+  }
+  .card::after {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  .card-js {
+    width: 50px;
+    position: relative;
+    bottom: -30%;
+  }
+  .card img {
+    width: 50px;
+    position: none;
+  }
+  .footer-projetos::after {
+    top: 197em;
+    left: 20px;
   }
 }
 @media (max-width: 393px){
@@ -3058,8 +3388,16 @@ a:hover:nth-child(n) {
   .footer-formacao::after {
     top:252em;
   }
+  .projetos-container-fundo {
+    max-width: 220px;
+    height: 540px;
+  }
+  .container-projetos {
+    min-width: 260px;
+  }
 }
 @media (max-width: 390px) and (min-height: 820px ){
+  
   .container-fundo {
     width:347px;
   }
@@ -3093,6 +3431,34 @@ a:hover:nth-child(n) {
   .intro-descricao {
   margin: 50px -80px;
 }
+}
+@media (max-width: 375px) {
+  .competencia {
+    margin: 0 0 0 5px ;
+    padding-left: .8rem;
+  }
+  .box-competencia::before {
+    left: 7px;
+  }
+  .projetos-container-fundo {
+    padding-left: 0;
+    max-width: 220px;
+    height: 540px;
+  }
+  .container-projetos {
+    min-width: 250px;
+    height: 390px;
+    left: 2rem;
+  }
+  .container-projetos > h1 {
+    padding: 2rem;
+    margin: 15px auto auto -30px;
+    font-size: 3.3rem;
+}
+  .projetos-lista h2 {
+    margin: 0 0 2.5rem 0;
+    width: 300px;
+  }
 }
 
 @media (max-width: 360px){
