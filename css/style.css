@@ -3295,7 +3295,6 @@ a:hover:nth-child(n) {
   }
   .card p:last-child {
     word-wrap: break-word;
-    margin-top: 5px;
   }
   .card::after {
     transform: translate3d(0, 0, 0) scale(0.95);
@@ -3381,7 +3380,6 @@ a:hover:nth-child(n) {
     text-align: center;
     width: 25ch;
   }
-
   .footer::after {
     top: 239em;
     left: 20px;
