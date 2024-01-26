@@ -2521,7 +2521,6 @@ a:hover:nth-child(n) {
   .hobbies--descricao, .hobbies-descricao-viagem {
     width: 28ch;
   }
-  
   .footer::after {
     content: url(/img/icones/detalhe-mobile.svg);
     display: block;
@@ -2754,6 +2753,13 @@ a:hover:nth-child(n) {
   .card-js {
     height: 220px;
   }
+  .footer-projetos {
+    margin-top: 100px;
+  }
+  .footer-projetos::after {
+    top: 172em;
+    left: 1em;
+  }
 }
 /* IOS Swift simple and pro/ androids */
 @media (max-width: 580px) {
@@ -2819,7 +2825,9 @@ a:hover:nth-child(n) {
     position: relative;
     top: 20px;
   }
-  
+  .footer-projetos {
+    margin: 0;
+  }
 }
 @media  (max-width: 500px){
   .fundo {
@@ -3162,8 +3170,8 @@ a:hover:nth-child(n) {
     height: 220px;
   }
   .footer-projetos::after {
-    top: 162em;
-    left: 30px;
+    top: 197em;
+    left: 20px;
   }
 }
 @media (max-width: 490px) {
@@ -3293,7 +3301,7 @@ a:hover:nth-child(n) {
     transform: translate3d(0, 0, 0) scale(0.95);
   }
   .card-js {
-    width: 50px;
+    width: 60px;
     position: relative;
     bottom: -30%;
   }
