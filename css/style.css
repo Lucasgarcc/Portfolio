@@ -3302,7 +3302,7 @@ a:hover:nth-child(n) {
   .card-js {
     width: 60px;
     position: relative;
-    top: 1%;
+    top: -1%;
   }
   .card img {
     width: 50px;
