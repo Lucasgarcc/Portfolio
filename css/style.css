@@ -3300,6 +3300,7 @@ a:hover:nth-child(n) {
     transform: translate3d(0, 0, 0) scale(0.95);
   }
   .card-js {
+    margin-top: 10px;
     width: 60px;
     position: none;
   }
