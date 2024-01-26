@@ -1686,6 +1686,24 @@ a:hover:nth-child(n) {
   .footer-formacao::after {
     top: 228em;
   }
+  .avatar {
+    margin: -300px auto;
+    width: max-content;
+    position: relative;
+    left: 95%;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem 10rem;
+  }
+  .objetivo ul li {
+    margin: 0 auto 2.5rem 17.5rem;
+  }
+  .cards > h2 {
+    margin: 0 auto 2.5rem 10.5rem;
+  }
+  .footer-projetos::after {
+    top: 165em;
+  }
 }
 @media screen and (max-width:1294px){
   .decoracao2 {
@@ -1888,6 +1906,9 @@ a:hover:nth-child(n) {
   }
   .avatar {
     left: 55%;
+  }
+  .objetivo h3 {
+    margin: 0 auto 2.5rem rem;
   }
 }
 @media (max-width: 1024px) and (min-width: 1008px) { 
@@ -2929,7 +2950,6 @@ a:hover:nth-child(n) {
     align-items: center;
     margin-left: 25px;
   }
-
   .intro  {
     height: 520px ;
   }
@@ -2967,7 +2987,6 @@ a:hover:nth-child(n) {
     font-size: 2.6rem;
     width: 13ch;
   }
-
   /* The actual timeline (the vertical ruler) */
   .timeline {
    left: -40%;
@@ -2993,7 +3012,6 @@ a:hover:nth-child(n) {
   .date-left2{
     top: 12%;
     left: -67px;
-    
   }
   .date { /*right*/
     top: -40%;
@@ -3011,7 +3029,6 @@ a:hover:nth-child(n) {
     top: 30px;
     left: 170px;
   }
-
   /* Place the container to the left */
   .left {
     left: -5%;
@@ -3234,6 +3251,9 @@ a:hover:nth-child(n) {
     width: 25ch;
     line-height: 1.225;
   }
+  .bicraft {
+    height: max-content;
+  }
   .objetivo h3 {
     margin: 0 auto 2.5rem 1rem;
     font-size: 2rem;
@@ -3395,6 +3415,9 @@ a:hover:nth-child(n) {
   .container-projetos {
     min-width: 260px;
   }
+  .footer-projetos::after {
+    top:197em;
+  }
 }
 @media (max-width: 390px) and (min-height: 820px ){
   
@@ -3496,7 +3519,10 @@ a:hover:nth-child(n) {
   .footer-formacao::after {
     top:252.5em;
   }
-
+  .footer-projetos::after {
+    top:197em;
+    left: -.1rem;
+  }
 } 
 @media (max-width:320px) and (min-width:100px){
 
