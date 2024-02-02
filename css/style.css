@@ -3472,6 +3472,15 @@ a:hover:nth-child(n) {
 }
 }
 @media (max-width: 375px) {
+  .left::before {
+    left: 120px;
+  }
+  .date-left1 {
+    top: -157%;
+  }
+  .date-right {
+    top: -50%;
+  }
   .competencia {
     margin: 0 0 0 5px ;
     padding-left: .8rem;
