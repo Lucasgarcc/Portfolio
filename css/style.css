@@ -3275,9 +3275,9 @@ a:hover:nth-child(n) {
   .projetos-lista h2, .objetivo , .cards > h2 {
     font-size: 2rem;
   }
-  .objetivo li {
+  .objetivo ul li  {
     width: 21.5ch;
-    font-weight: 600;
+    font: 550 1rem/1.125 "Roboto", sans-serif;
   }
   .cards > h2 {
     margin: 0 auto 2.5rem 4rem;
@@ -3300,8 +3300,8 @@ a:hover:nth-child(n) {
     gap: 1rem;
   }
   .card::before {
-    width: 80px;
-    height: 100px;
+    width: 85px;
+    height: 145px;
   }
   .card p:last-child {
     word-wrap: break-word;
@@ -3318,8 +3318,11 @@ a:hover:nth-child(n) {
     width: 50px;
     position: none;
   }
+  .footer-projetos {
+    margin-top: 100px;
+  }
   .footer-projetos::after {
-    top: 197em;
+    top: 203em;
     left: 20px;
   }
 }
@@ -3391,7 +3394,7 @@ a:hover:nth-child(n) {
     width: 25ch;
   }
   .footer::after {
-    top: 239em;
+    top: 240em;
     left: 20px;
   }
   .footer-copy {
@@ -3432,7 +3435,7 @@ a:hover:nth-child(n) {
     min-width: 260px;
   }
   .footer-projetos::after {
-    top:197em;
+    top: 202em;
   }
 }
 @media (max-width: 390px) and (min-height: 820px ){
@@ -3483,11 +3486,13 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin: 0 0 0 5px ;
-    padding-left: .8rem;
+    padding-left: 1rem;
   }
+
   .box-competencia::before {
     left: 7px;
   }
+ 
   .projetos-container-fundo {
     padding-left: 0;
     max-width: 220px;
@@ -3545,7 +3550,7 @@ a:hover:nth-child(n) {
     top:252.5em;
   }
   .footer-projetos::after {
-    top:197em;
+    top: 202em;
     left: -.1rem;
   }
 } 
