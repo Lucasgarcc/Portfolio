@@ -799,7 +799,7 @@ a span {
   top: 40px;
   width: 0;
   z-index: 2;
-  left: 300px;
+  left: 298px;
   transform: rotate(-180deg);
   border: medium var(--cinza-c0) solid;
   border-width: 10px 10px 10px 0;
@@ -1088,18 +1088,19 @@ a:hover:nth-child(n) {
 .cards-container {
   margin: 0 auto 0 auto;
   padding: 0 1.25rem 1.25rem;
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .card {
   position: relative;
-  width: 190px;
-  height: 224px;
+  width: 140px;
+  height: 204px;
   background-color: var(--preto-c4);
   display: flex;
   flex-direction: column;
@@ -1116,7 +1117,7 @@ a:hover:nth-child(n) {
   inset: 0;
   left: -5px;
   margin: auto;
-  width: 200px;
+  width: 160px;
   height: 224px;
   border-radius: 10px;
   background: linear-gradient(-45deg, var(--laranja-s) 0%, var(--laranja-t) 100%);
@@ -1136,7 +1137,7 @@ a:hover:nth-child(n) {
 }
 
 .card p:last-child {
-  padding: 0 0 1.25em;
+  padding: .5rem 0 1.25em;
   color: var(--cinza-c0);
   font-weight: 600;
   text-align: center; 
@@ -1145,14 +1146,14 @@ a:hover:nth-child(n) {
 
 .card img {
   width: 120px;
-  margin: 0 auto 30px;
+  margin: 30px auto 0px;
   border-radius: 7px;
 }
 
 .card-js {
   height: 220px;
   position: relative;
-  top: 5px;
+  top: 45px;
 }
 
 .card:hover::after {
@@ -1282,19 +1283,22 @@ a:hover:nth-child(n) {
   top: -15px;
   right: 25px;
 }
+
 .cards > p {
   margin: 0 auto 40px auto;
   padding: 0 2.25rem 0 1.25rem;
   font: 400 1.25rem/1.125 "Roboto", sans-serif;
   width: 90ch;
 }
+
 .footer-projetos::after {
   content: url(/img/icones/detalhe.svg);
   display: block;
   position: absolute;
-  top: 162em;
+  top: 167em;
   left: 30px;
 }
+
 @media (max-width: 1450px) {
   .bicraft {
     content: url(/img/icones/bikcraft-2.jpeg);
@@ -1617,9 +1621,7 @@ a:hover:nth-child(n) {
 
 /* responsive tela big desktops */
 
-@media (max-width:1584px){
-  
-  
+@media (max-width:1899px){
   .decoracao2 {
     position: relative;
     right: 29rem;
@@ -1705,7 +1707,33 @@ a:hover:nth-child(n) {
     top: 165em;
   }
 }
-@media screen and (max-width:1294px){
+@media (max-width: 1598px) {
+  .formacao-texto {
+    max-width: 24ch;
+  }
+  .formacao-container .subtitulo {
+    top: 30%;
+    left: -66%;
+  }
+  .formacao-container::after{
+    top: 1%;
+    right: 2%;
+  }
+}
+@media (max-width: 1490px) {
+  .formacao-texto {
+    max-width: 24ch;
+  }
+  .formacao-container .subtitulo {
+    top: 30%;
+    left: -126%;
+  }
+  .formacao-container::after{
+    top: 1%;
+    left: -50%;
+  }
+}
+@media screen and (max-width:1394px){
   .decoracao2 {
     left: -33.4rem;
   }
@@ -1770,7 +1798,7 @@ a:hover:nth-child(n) {
     padding: 3.25rem 0 0 0;
   }
 }
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1290px){
   #perfil-2 {
     width: 60%;
   }
@@ -1955,22 +1983,22 @@ a:hover:nth-child(n) {
   }
 /* date timeline */
   .date-left{
-    top: -80%;
+    top: -73%;
     left: 180px;
   } 
   .date-left1{
-    top: -137%;
+    top: -147%;
   }
   .date-left2{
-    top: 11%;
+    top: 22%;
     left: -140px;
   }
   .date { /*right*/
-    top: -42%;
+    top: -38%;
     left: 100px;
   }
   .date-right { /*right*/
-    top: -60%;
+    top: -43%;
   }
     /* Fix the circle for containers on the right side */
     .right::after {
@@ -1997,7 +2025,7 @@ a:hover:nth-child(n) {
     left: 50%;
   }
   .left::before {
-    left: 267px;
+    left: 279px;
   }
   .right::before {
     left: 31px;
@@ -2011,11 +2039,11 @@ a:hover:nth-child(n) {
     gap: 0;
   }
   .container-experiencia-descricao{
-    width: 10ch; 
+    width: 14ch; 
   }
   .timeline {
     width: 600px;  
-    left: 1%;
+    left: -45%;
   }
   .formacao {
     height: 1800px;
@@ -2092,6 +2120,9 @@ a:hover:nth-child(n) {
   }
   .footer::after {
     top: 173em;
+  }
+  .footer-formacao::after {
+    top: 230em;
   }
   .projetos-lista p {
     width: 80ch;
@@ -2236,18 +2267,18 @@ a:hover:nth-child(n) {
     left: 180px;
   } 
   .date-left1{
-    top: -145%;
+    top: -153%;
   }
   .date-left2{
-    top: 14%;
+    top: 18%;
     left: -140px;
   }
   .date { /*right*/
-    top: -42%;
+    top: -35%;
     left: 100px;
   }
   .date-right { /*right*/
-    top: -51%;
+    top: -48%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -2335,14 +2366,25 @@ a:hover:nth-child(n) {
     width: 70ch;
   }
 } 
+.card p:last-child  {
+  padding-top: 1rem;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .avatar {
     display: none;
   }  
 }
 @media(max-width: 797px) {
+  .left::before {
+    left: 258px;
+  }
   .footer::after {
     top: 218em;
+  }
+  .footer-formacao::after {
+    top: 262em;
   }
   .projetos-container-fundo {
     max-width: 300px;
@@ -2376,7 +2418,7 @@ a:hover:nth-child(n) {
   }
   .card::after {
     transform: translate3d(0, 0, 0) scale(0.95);
-}
+  }
   .card img {
     width: 110px;
   }
@@ -2384,9 +2426,19 @@ a:hover:nth-child(n) {
     height: 220px;
     position: relative;
     top: 17px;
-}
+  }
+  .footer-projetos {
+    margin-top: 120px;
+  }
+  .footer-projetos::after {
+    top: 167em;
+    left: 30px;
+  }
 }
 @media (max-width: 751px) {
+  .footer::after {
+    top: 262 em;
+  }
   .projetos-lista p {
     width: 59ch;
     line-height: 1.125;
@@ -2601,22 +2653,22 @@ a:hover:nth-child(n) {
   }
    /* date timeline */
   .date-left{
-    top: -69%;
+    top: -68%;
     left: 35px;
   }
   .date-left1{
-    top: -150%;
+    top: -154%;
   }
   .date-left2{
-    top: 12%;
+    top: 18%;
     left: -67px;
   }
   .date { /*right*/
-    top: -40%;
-    left: -65px;
+    top: -35%;
+    left: -70px;
   }
   .date-right { /*right*/
-    top: -52%;
+    top: -47%;
   }
   /* The descrition das times */
   .time-descricao {
@@ -2636,7 +2688,7 @@ a:hover:nth-child(n) {
     left: 24%;
   }
   .left::before {
-    left: 120px;
+    left: 127px;
     transform: rotate(1deg);
   }
   .right::before {
@@ -2744,11 +2796,11 @@ a:hover:nth-child(n) {
   }
   .card::after {
     transform: translate3d(0, 0, 0) scale(0.95);
-}
+  }
   .card img {
     width: 90px;
     position: relative;
-    top: 20px;
+    top: 0px;
   }
   .card-js {
     height: 220px;
@@ -2792,7 +2844,7 @@ a:hover:nth-child(n) {
     height: 350px;
   }
   .projetos-lista p {
-    width: 44ch;
+    width: 42ch;
     line-height: 1.125;
   }
   .objetivo ul li {
@@ -3009,53 +3061,7 @@ a:hover:nth-child(n) {
   .margin-timeline::after {
     left: 24%;  
   }
-   /* date timeline */
-  .date-left{
-    top: -69%;
-    left: 35px;
-  }
-  .date-left1{
-    top: -150%;
-  }
-  .date-left2{
-    top: 12%;
-    left: -67px;
-  }
-  .date { /*right*/
-    top: -40%;
-    left: -65px;
-  }
-  .date-right { /*right*/
-    top: -52%;
-  }
-  /* The descrition das times */
-  .time-descricao {
-    top: 30px;
-    left: 40px;
-  }
-  .time-descricao-left, .time-descricao-left2 {
-    top: 30px;
-    left: 170px;
-  }
-  /* Place the container to the left */
-  .left {
-    left: -5%;
-  }
-  /* Place the container to the right */
-  .right {
-    left: 24%;
-  }
-  .left::before {
-    left: 120px;
-    transform: rotate(1deg);
-  }
-  .right::before {
-    left: 16px;
-  }
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
+ 
   .container {
     padding: 9px 20px;
     position: relative;
@@ -3269,7 +3275,7 @@ a:hover:nth-child(n) {
   .projetos-lista h2, .objetivo , .cards > h2 {
     font-size: 2rem;
   }
-  .objetivo  li {
+  .objetivo li {
     width: 21.5ch;
     font-weight: 600;
   }
@@ -3283,6 +3289,10 @@ a:hover:nth-child(n) {
   .card {
     position: relative;
     height: 120px;
+  }
+  .card p:last-child  {
+    padding-top: 1rem;
+    text-align: center;
   }
   .cards-container {
     display: flex;
