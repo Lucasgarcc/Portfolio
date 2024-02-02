@@ -3486,7 +3486,7 @@ a:hover:nth-child(n) {
   }
   .competencia {
     margin: 0 0 0 5px ;
-    padding-left: 1rem;
+    padding-left: .7rem;
   }
 
   .box-competencia::before {
