@@ -1647,46 +1647,54 @@ a:hover:nth-child(n) {
   /* The actual timeline (the vertical ruler) */
   .timeline {
     margin-top: 15rem auto;
-    width: 600px;
+    width: 900px;
   }
   .container-timeline {
-    width: 900px;
+    width: 600px;
     top: 100%;
     left: -17%;
+  }
+  .time-descricao-left, .time-descricao-left2 {
+    left: 120px;
   }
    /* date timeline */
    .date-left{
     top: -78%;
-    left: 180px;
+    left: 150px;
   } 
   .date-left1{
-    top: -138%;
+    top: -136%;
   }
   .date-left2{
-    top: 13%;
+    top: 17%;
     left: -140px;
   }
   .date { /*right*/
-    top: -48%;
+    top: -43%;
     left: 100px;
   }
   .date-right { /*right*/
-    top: -55%;
+    top: -51%;
   }
   .left::before {
-    left: 278px;
-   
+    left: 258px;
   }
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
+  }
+  .left {
+    left: -4.5%;
+  }
+  .formacao {
+    height: 105em;
   }
   .formacao-container .subtitulo {
     top: 30%;
     left: -65%;
   }
   .footer-formacao::after {
-    top: 228em;
+    top: 234em;
   }
   .avatar {
     margin: -300px auto;
@@ -1707,7 +1715,22 @@ a:hover:nth-child(n) {
     top: 165em;
   }
 }
-@media (max-width: 1598px) {
+@media (max-width: 1400px) {
+
+  .date-left1{
+    top: -148%;
+  }
+  .date-left2{
+    top: 17%;
+    left: -140px;
+  }
+  .date { /*right*/
+    top: -37%;
+    left: 100px;
+  }
+  .date-right { /*right*/
+    top: -51%;
+  } 
   .formacao-texto {
     max-width: 24ch;
   }
@@ -1844,22 +1867,22 @@ a:hover:nth-child(n) {
   }
   /* date timeline */
     .date-left{
-      top: -78%;
+      top: -75%;
       left: 180px;
     } 
     .date-left1{
       top: -145%;
     }
     .date-left2{
-      top: 14%;
+      top: 20%;
       left: -140px;
     }
     .date { /*right*/
-      top: -42%;
+      top: -37%;
       left: 100px;
     }
     .date-right { /*right*/
-      top: -48%;
+      top: -44%;
     }
     /* Fix the circle for containers on the right side */
     .right::after {
@@ -2881,7 +2904,7 @@ a:hover:nth-child(n) {
     margin: 0;
   }
 }
-@media  (max-width: 500px){
+@media  (max-width: 560px){
   .fundo {
     display: none;
     left: 2%;
@@ -3061,7 +3084,6 @@ a:hover:nth-child(n) {
   .margin-timeline::after {
     left: 24%;  
   }
- 
   .container {
     padding: 9px 20px;
     position: relative;
@@ -3215,6 +3237,17 @@ a:hover:nth-child(n) {
   .footer-copy {
     width: 25ch;
     margin:  auto auto auto 18px;
+  }
+  .container-fundo {
+    width: 98%;
+  }
+  .container-formacao {
+    margin: 85px 0 0 0;
+    padding: .6rem;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 10px;
   }
   .container-formacao {
     min-width: 287px;
