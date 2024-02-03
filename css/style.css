@@ -1715,6 +1715,15 @@ a:hover:nth-child(n) {
     top: 165em;
   }
 }
+@media (max-width: 1668px) {
+  .formacao-texto {
+    max-width: 24ch;
+  }
+  .formacao-container::after{
+    top: 1%;
+    right: 2%;
+  }
+}
 @media (max-width: 1400px) {
 
   .date-left1{
