@@ -1723,6 +1723,9 @@ a:hover:nth-child(n) {
     top: 1%;
     right: 2%;
   }
+  .left {
+   left: -3.8%;
+  }
 }
 @media (max-width: 1400px) {
 
