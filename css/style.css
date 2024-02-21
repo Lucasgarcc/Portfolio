@@ -1729,6 +1729,7 @@ a:hover:nth-child(n) {
   .left::before {
     left: 278px;
   }
+}
 @media (max-width: 1400px) {
 
   .date-left1{
